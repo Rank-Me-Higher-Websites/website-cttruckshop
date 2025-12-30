@@ -6,6 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Phone, Mail, MapPin, Clock, Send } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import GoogleMap from "@/components/GoogleMap";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -207,6 +208,21 @@ const Contact = () => {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Map Section */}
+      <section className="section-padding bg-secondary">
+        <div className="container-custom">
+          <div className="text-center max-w-3xl mx-auto mb-10">
+            <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">
+              Find Us on the Map
+            </h2>
+            <p className="text-muted-foreground">
+              Visit our shop in Phoenix, AZ or call for mobile service anywhere in the metro area
+            </p>
+          </div>
+          <GoogleMap className="shadow-lg" />
         </div>
       </section>
     </Layout>
