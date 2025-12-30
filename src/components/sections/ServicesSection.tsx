@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, Wrench, Zap, Settings, Gauge, Truck, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { ScrollReveal } from "@/hooks/useScrollAnimation";
 
 const services = [
   {
@@ -46,51 +47,57 @@ const ServicesSection = () => {
     <section className="section-padding bg-secondary">
       <div className="container-custom">
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-14">
-          <span className="inline-block text-accent font-semibold text-sm uppercase tracking-wider mb-3">
-            What We Offer
-          </span>
-          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
-            Complete Truck & Trailer Services
-          </h2>
-          <p className="text-muted-foreground text-lg">
-            From routine maintenance to <Link to="/mobile-repair" className="text-accent hover:underline">emergency repairs</Link>, we provide comprehensive services 
-            for all your commercial fleet needs in <Link to="/locations" className="text-accent hover:underline">Phoenix and surrounding areas</Link>.
-          </p>
-        </div>
+        <ScrollReveal>
+          <div className="text-center max-w-3xl mx-auto mb-14">
+            <span className="inline-block text-accent font-semibold text-sm uppercase tracking-wider mb-3">
+              What We Offer
+            </span>
+            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-4">
+              Complete Truck & Trailer Services
+            </h2>
+            <p className="text-muted-foreground text-lg">
+              From routine maintenance to <Link to="/mobile-repair" className="text-accent hover:underline">emergency repairs</Link>, we provide comprehensive services 
+              for all your commercial fleet needs in <Link to="/locations" className="text-accent hover:underline">Phoenix and surrounding areas</Link>.
+            </p>
+          </div>
+        </ScrollReveal>
 
         {/* Services Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
-            <Link key={service.title} to={service.href} className="group">
-              <article className="service-card p-6 h-full">
-                <div className="icon-container mb-5 group-hover:scale-110 transition-transform duration-300">
-                  <service.icon className="h-7 w-7 text-accent-foreground" />
-                </div>
-                <h3 className="font-heading text-xl font-semibold text-foreground mb-3 group-hover:text-accent transition-colors">
-                  {service.title}
-                </h3>
-                <p className="text-muted-foreground mb-4 flex-1">
-                  {service.description}
-                </p>
-                <div className="flex items-center gap-2 text-accent font-medium text-sm">
-                  <span>Learn More</span>
-                  <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
-                </div>
-              </article>
-            </Link>
+            <ScrollReveal key={service.title} delay={index * 100}>
+              <Link to={service.href} className="group block h-full">
+                <article className="service-card p-6 h-full">
+                  <div className="icon-container mb-5 group-hover:scale-110 transition-transform duration-300">
+                    <service.icon className="h-7 w-7 text-accent-foreground" />
+                  </div>
+                  <h3 className="font-heading text-xl font-semibold text-foreground mb-3 group-hover:text-accent transition-colors">
+                    {service.title}
+                  </h3>
+                  <p className="text-muted-foreground mb-4 flex-1">
+                    {service.description}
+                  </p>
+                  <div className="flex items-center gap-2 text-accent font-medium text-sm">
+                    <span>Learn More</span>
+                    <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                  </div>
+                </article>
+              </Link>
+            </ScrollReveal>
           ))}
         </div>
 
         {/* Bottom CTA */}
-        <div className="text-center mt-12">
-          <Link to="/services">
-            <Button variant="default" size="lg">
-              View All Services
-              <ArrowRight className="h-4 w-4 ml-2" />
-            </Button>
-          </Link>
-        </div>
+        <ScrollReveal delay={600}>
+          <div className="text-center mt-12">
+            <Link to="/services">
+              <Button variant="default" size="lg">
+                View All Services
+                <ArrowRight className="h-4 w-4 ml-2" />
+              </Button>
+            </Link>
+          </div>
+        </ScrollReveal>
       </div>
     </section>
   );

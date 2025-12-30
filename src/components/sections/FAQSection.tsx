@@ -6,6 +6,7 @@ import {
 } from "@/components/ui/accordion";
 import { Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { ScrollReveal } from "@/hooks/useScrollAnimation";
 
 const faqs = [
   {
@@ -48,41 +49,44 @@ const FAQSection = () => {
       <div className="container-custom">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
           {/* Header */}
-          <div className="lg:sticky lg:top-32 lg:self-start">
-            <span className="inline-block text-accent font-semibold text-sm uppercase tracking-wider mb-3">
-              FAQ
-            </span>
-            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
-              Frequently Asked Questions
-            </h2>
-            <p className="text-muted-foreground text-lg mb-8">
-              Got questions about our truck and trailer repair services? 
-              Find answers to common questions below, or contact us directly for personalized assistance.
-            </p>
-            <a href="tel:6028303232">
-              <Button variant="accent" size="lg">
-                <Phone className="h-5 w-5 mr-2" />
-                Call (602) 830-3232
-              </Button>
-            </a>
-          </div>
+          <ScrollReveal direction="left">
+            <div className="lg:sticky lg:top-32 lg:self-start">
+              <span className="inline-block text-accent font-semibold text-sm uppercase tracking-wider mb-3">
+                FAQ
+              </span>
+              <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
+                Frequently Asked Questions
+              </h2>
+              <p className="text-muted-foreground text-lg mb-8">
+                Got questions about our truck and trailer repair services? 
+                Find answers to common questions below, or contact us directly for personalized assistance.
+              </p>
+              <a href="tel:6028303232">
+                <Button variant="accent" size="lg">
+                  <Phone className="h-5 w-5 mr-2" />
+                  Call (602) 830-3232
+                </Button>
+              </a>
+            </div>
+          </ScrollReveal>
 
           {/* FAQ Accordion */}
           <div>
             <Accordion type="single" collapsible className="space-y-4">
               {faqs.map((faq, index) => (
-                <AccordionItem
-                  key={index}
-                  value={`item-${index}`}
-                  className="bg-card rounded-xl border border-border px-6 data-[state=open]:shadow-md transition-shadow"
-                >
-                  <AccordionTrigger className="text-left font-semibold text-foreground hover:text-accent py-5">
-                    {faq.question}
-                  </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground pb-5">
-                    {faq.answer}
-                  </AccordionContent>
-                </AccordionItem>
+                <ScrollReveal key={index} delay={index * 80}>
+                  <AccordionItem
+                    value={`item-${index}`}
+                    className="bg-card rounded-xl border border-border px-6 data-[state=open]:shadow-md transition-shadow"
+                  >
+                    <AccordionTrigger className="text-left font-semibold text-foreground hover:text-accent py-5">
+                      {faq.question}
+                    </AccordionTrigger>
+                    <AccordionContent className="text-muted-foreground pb-5">
+                      {faq.answer}
+                    </AccordionContent>
+                  </AccordionItem>
+                </ScrollReveal>
               ))}
             </Accordion>
           </div>

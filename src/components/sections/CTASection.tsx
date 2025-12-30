@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Phone, ArrowRight, Clock, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { ScrollReveal } from "@/hooks/useScrollAnimation";
 import towingRecovery from "@/assets/towing-recovery.jpg";
 
 const CTASection = () => {
@@ -18,7 +19,7 @@ const CTASection = () => {
       
       <div className="container-custom relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div>
+          <ScrollReveal direction="left">
             <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground mb-6">
               Keep Your Business Moving — Contact Us Today
             </h2>
@@ -42,27 +43,31 @@ const CTASection = () => {
                 </Button>
               </a>
             </div>
-          </div>
+          </ScrollReveal>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <div className="bg-primary-foreground/10 backdrop-blur-sm rounded-xl p-6 border border-primary-foreground/20">
-              <Clock className="h-10 w-10 text-accent mb-4" />
-              <h3 className="font-heading text-xl font-bold text-primary-foreground mb-2">
-                24/7 Emergency Service
-              </h3>
-              <p className="text-primary-foreground/70">
-                Our mobile techs are ready around the clock for roadside emergencies
-              </p>
-            </div>
-            <div className="bg-primary-foreground/10 backdrop-blur-sm rounded-xl p-6 border border-primary-foreground/20">
-              <MapPin className="h-10 w-10 text-accent mb-4" />
-              <h3 className="font-heading text-xl font-bold text-primary-foreground mb-2">
-                Phoenix Metro Area
-              </h3>
-              <p className="text-primary-foreground/70">
-                Serving Phoenix, Glendale, Tempe, Mesa, and surrounding areas
-              </p>
-            </div>
+            <ScrollReveal delay={200}>
+              <div className="bg-primary-foreground/10 backdrop-blur-sm rounded-xl p-6 border border-primary-foreground/20 h-full">
+                <Clock className="h-10 w-10 text-accent mb-4" />
+                <h3 className="font-heading text-xl font-bold text-primary-foreground mb-2">
+                  24/7 Emergency Service
+                </h3>
+                <p className="text-primary-foreground/70">
+                  Our mobile techs are ready around the clock for roadside emergencies
+                </p>
+              </div>
+            </ScrollReveal>
+            <ScrollReveal delay={350}>
+              <div className="bg-primary-foreground/10 backdrop-blur-sm rounded-xl p-6 border border-primary-foreground/20 h-full">
+                <MapPin className="h-10 w-10 text-accent mb-4" />
+                <h3 className="font-heading text-xl font-bold text-primary-foreground mb-2">
+                  Phoenix Metro Area
+                </h3>
+                <p className="text-primary-foreground/70">
+                  Serving Phoenix, Glendale, Tempe, Mesa, and surrounding areas
+                </p>
+              </div>
+            </ScrollReveal>
           </div>
         </div>
       </div>

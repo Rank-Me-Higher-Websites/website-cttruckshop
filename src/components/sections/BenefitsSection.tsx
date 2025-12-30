@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { CheckCircle, Clock, Shield, Wrench, Users, Award } from "lucide-react";
+import { ScrollReveal } from "@/hooks/useScrollAnimation";
 import expertTechnician from "@/assets/expert-technician.png";
 
 const benefits = [
@@ -41,7 +42,7 @@ const BenefitsSection = () => {
       <div className="container-custom">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Image Side */}
-          <div className="relative order-2 lg:order-1">
+          <ScrollReveal direction="left" className="relative order-2 lg:order-1">
             <div className="relative rounded-2xl overflow-hidden shadow-xl">
               <img
                 src={expertTechnician}
@@ -66,10 +67,10 @@ const BenefitsSection = () => {
             
             {/* Accent Decorations */}
             <div className="absolute -top-4 -left-4 w-24 h-24 border-2 border-accent/30 rounded-xl -z-10" />
-          </div>
+          </ScrollReveal>
 
           {/* Content Side */}
-          <div className="order-1 lg:order-2">
+          <ScrollReveal direction="right" className="order-1 lg:order-2">
             <span className="inline-block text-accent font-semibold text-sm uppercase tracking-wider mb-3">
               Why Choose Us
             </span>
@@ -87,19 +88,21 @@ const BenefitsSection = () => {
 
             {/* Benefits Grid */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {benefits.map((benefit) => (
-                <div key={benefit.title} className="flex items-start gap-3 p-3 rounded-lg hover:bg-secondary/50 transition-colors">
-                  <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center">
-                    <benefit.icon className="h-5 w-5 text-accent" />
+              {benefits.map((benefit, index) => (
+                <ScrollReveal key={benefit.title} delay={index * 100}>
+                  <div className="flex items-start gap-3 p-3 rounded-lg hover:bg-secondary/50 transition-colors">
+                    <div className="flex-shrink-0 w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center">
+                      <benefit.icon className="h-5 w-5 text-accent" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-foreground text-sm">{benefit.title}</h4>
+                      <p className="text-muted-foreground text-sm">{benefit.description}</p>
+                    </div>
                   </div>
-                  <div>
-                    <h4 className="font-semibold text-foreground text-sm">{benefit.title}</h4>
-                    <p className="text-muted-foreground text-sm">{benefit.description}</p>
-                  </div>
-                </div>
+                </ScrollReveal>
               ))}
             </div>
-          </div>
+          </ScrollReveal>
         </div>
       </div>
     </section>

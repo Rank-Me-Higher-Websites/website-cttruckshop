@@ -1,4 +1,5 @@
 import { Star, Quote } from "lucide-react";
+import { ScrollReveal } from "@/hooks/useScrollAnimation";
 
 const reviews = [
   {
@@ -38,97 +39,99 @@ const ReviewsSection = () => {
     <section className="section-padding bg-primary text-primary-foreground overflow-hidden">
       <div className="container-custom">
         {/* Header */}
-        <div className="text-center max-w-3xl mx-auto mb-14">
-          <span className="inline-block text-accent font-semibold text-sm uppercase tracking-wider mb-3">
-            Customer Reviews
-          </span>
-          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-            What Our Customers Say
-          </h2>
-          <div className="flex items-center justify-center gap-2 mb-4">
-            <div className="flex">
-              {[...Array(5)].map((_, i) => (
-                <Star key={i} className="h-6 w-6 text-accent fill-accent" />
-              ))}
+        <ScrollReveal>
+          <div className="text-center max-w-3xl mx-auto mb-14">
+            <span className="inline-block text-accent font-semibold text-sm uppercase tracking-wider mb-3">
+              Customer Reviews
+            </span>
+            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+              What Our Customers Say
+            </h2>
+            <div className="flex items-center justify-center gap-2 mb-4">
+              <div className="flex">
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="h-6 w-6 text-accent fill-accent" />
+                ))}
+              </div>
+              <span className="text-lg font-semibold">5.0</span>
+              <span className="text-primary-foreground/60">from 22+ Google Reviews</span>
             </div>
-            <span className="text-lg font-semibold">5.0</span>
-            <span className="text-primary-foreground/60">from 22+ Google Reviews</span>
           </div>
-        </div>
+        </ScrollReveal>
 
         {/* Reviews Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {reviews.slice(0, 3).map((review, index) => (
-            <article
-              key={review.name}
-              className="bg-primary-foreground/5 rounded-xl p-6 border border-primary-foreground/10 hover:border-accent/30 transition-colors"
-            >
-              <Quote className="h-8 w-8 text-accent/40 mb-4" />
-              <p className="text-primary-foreground/80 mb-6 line-clamp-4">
-                "{review.text}"
-              </p>
-              <div className="flex items-center justify-between mt-auto">
-                <div>
-                  <p className="font-semibold">{review.name}</p>
-                  <p className="text-sm text-primary-foreground/50">{review.date}</p>
+            <ScrollReveal key={review.name} delay={index * 150}>
+              <article className="bg-primary-foreground/5 rounded-xl p-6 border border-primary-foreground/10 hover:border-accent/30 transition-colors h-full">
+                <Quote className="h-8 w-8 text-accent/40 mb-4" />
+                <p className="text-primary-foreground/80 mb-6 line-clamp-4">
+                  "{review.text}"
+                </p>
+                <div className="flex items-center justify-between mt-auto">
+                  <div>
+                    <p className="font-semibold">{review.name}</p>
+                    <p className="text-sm text-primary-foreground/50">{review.date}</p>
+                  </div>
+                  <div className="flex">
+                    {[...Array(review.rating)].map((_, i) => (
+                      <Star key={i} className="h-4 w-4 text-accent fill-accent" />
+                    ))}
+                  </div>
                 </div>
-                <div className="flex">
-                  {[...Array(review.rating)].map((_, i) => (
-                    <Star key={i} className="h-4 w-4 text-accent fill-accent" />
-                  ))}
-                </div>
-              </div>
-            </article>
+              </article>
+            </ScrollReveal>
           ))}
         </div>
 
         {/* Additional Reviews Row */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6 max-w-4xl mx-auto">
-          {reviews.slice(3).map((review) => (
-            <article
-              key={review.name}
-              className="bg-primary-foreground/5 rounded-xl p-6 border border-primary-foreground/10 hover:border-accent/30 transition-colors"
-            >
-              <div className="flex items-start gap-4">
-                <Quote className="h-6 w-6 text-accent/40 flex-shrink-0" />
-                <div>
-                  <p className="text-primary-foreground/80 mb-4 line-clamp-3">
-                    "{review.text}"
-                  </p>
-                  <div className="flex items-center justify-between">
-                    <div>
-                      <p className="font-semibold text-sm">{review.name}</p>
-                      <p className="text-xs text-primary-foreground/50">{review.date}</p>
-                    </div>
-                    <div className="flex">
-                      {[...Array(review.rating)].map((_, i) => (
-                        <Star key={i} className="h-3 w-3 text-accent fill-accent" />
-                      ))}
+          {reviews.slice(3).map((review, index) => (
+            <ScrollReveal key={review.name} delay={450 + index * 150}>
+              <article className="bg-primary-foreground/5 rounded-xl p-6 border border-primary-foreground/10 hover:border-accent/30 transition-colors h-full">
+                <div className="flex items-start gap-4">
+                  <Quote className="h-6 w-6 text-accent/40 flex-shrink-0" />
+                  <div>
+                    <p className="text-primary-foreground/80 mb-4 line-clamp-3">
+                      "{review.text}"
+                    </p>
+                    <div className="flex items-center justify-between">
+                      <div>
+                        <p className="font-semibold text-sm">{review.name}</p>
+                        <p className="text-xs text-primary-foreground/50">{review.date}</p>
+                      </div>
+                      <div className="flex">
+                        {[...Array(review.rating)].map((_, i) => (
+                          <Star key={i} className="h-3 w-3 text-accent fill-accent" />
+                        ))}
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </article>
+              </article>
+            </ScrollReveal>
           ))}
         </div>
 
         {/* Google Badge */}
-        <div className="text-center mt-10">
-          <a
-            href="https://www.google.com/maps/place/CT+Truck+and+Trailer+Shop"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-3 bg-primary-foreground/10 hover:bg-primary-foreground/20 px-6 py-3 rounded-lg transition-colors"
-          >
-            <svg className="h-6 w-6" viewBox="0 0 24 24">
-              <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
-              <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
-              <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
-              <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
-            </svg>
-            <span className="font-medium">View on Google Maps</span>
-          </a>
-        </div>
+        <ScrollReveal delay={750}>
+          <div className="text-center mt-10">
+            <a
+              href="https://www.google.com/maps/place/CT+Truck+and+Trailer+Shop"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-3 bg-primary-foreground/10 hover:bg-primary-foreground/20 px-6 py-3 rounded-lg transition-colors"
+            >
+              <svg className="h-6 w-6" viewBox="0 0 24 24">
+                <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+              </svg>
+              <span className="font-medium">View on Google Maps</span>
+            </a>
+          </div>
+        </ScrollReveal>
       </div>
     </section>
   );
