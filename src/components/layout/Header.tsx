@@ -53,7 +53,7 @@ const Header = () => {
         <div className="container-custom flex items-center justify-center gap-0">
           {/* XXII Century Logo */}
           <a 
-            href="https://xxiicentury.com" 
+            href="https://goxxii.com" 
             target="_blank" 
             rel="noopener noreferrer"
             className="flex items-center justify-center px-8 group"
