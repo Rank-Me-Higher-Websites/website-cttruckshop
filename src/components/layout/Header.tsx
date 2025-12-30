@@ -12,7 +12,7 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
-import logo from "@/assets/logo.png";
+import logo from "@/assets/ct-logo.webp";
 
 const truckServices = [
   { title: "Engine Repair", href: "/services/engine-repair", description: "Complete diesel engine diagnostics and repair" },
