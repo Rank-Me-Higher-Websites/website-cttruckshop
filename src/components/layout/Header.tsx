@@ -184,6 +184,18 @@ const Header = () => {
                       About
                     </Link>
                   </NavigationMenuItem>
+
+                  <NavigationMenuItem>
+                    <Link
+                      to="/blog"
+                      className={cn(
+                        "px-4 py-2 text-sm font-medium transition-colors hover:text-accent",
+                        location.pathname.includes("/blog") ? "text-accent" : "text-foreground"
+                      )}
+                    >
+                      Blog
+                    </Link>
+                  </NavigationMenuItem>
                 </NavigationMenuList>
               </NavigationMenu>
             </div>
@@ -267,6 +279,12 @@ const Header = () => {
                         className="block px-4 py-3 rounded-lg font-medium hover:bg-accent/10 transition-colors"
                       >
                         About Us
+                      </Link>
+                      <Link
+                        to="/blog"
+                        className="block px-4 py-3 rounded-lg font-medium hover:bg-accent/10 transition-colors"
+                      >
+                        Blog
                       </Link>
                     </div>
                   </nav>

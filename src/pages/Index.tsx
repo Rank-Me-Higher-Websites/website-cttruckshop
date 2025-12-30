@@ -8,6 +8,7 @@ import GallerySection from "@/components/sections/GallerySection";
 import ReviewsSection from "@/components/sections/ReviewsSection";
 import StorySection from "@/components/sections/StorySection";
 import LocationsSection from "@/components/sections/LocationsSection";
+import MapSection from "@/components/sections/MapSection";
 import FAQSection from "@/components/sections/FAQSection";
 import SEOContentSection from "@/components/sections/SEOContentSection";
 import CTASection from "@/components/sections/CTASection";
@@ -66,6 +67,7 @@ const Index = () => {
       <ReviewsSection />
       <StorySection />
       <LocationsSection />
+      <MapSection />
       <FAQSection />
       <SEOContentSection />
       <CTASection />
