@@ -1,7 +1,7 @@
 import Layout from "@/components/layout/Layout";
 import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
-import { Phone, Clock, Shield, Users, Award, Wrench, Target, Heart } from "lucide-react";
+import { Phone, Clock, Shield, Users, Award, Wrench, Heart } from "lucide-react";
 import CTASection from "@/components/sections/CTASection";
 import teamWork from "@/assets/team-work.jpeg";
 
@@ -44,15 +44,32 @@ const About = () => {
         keywords="about CT Truck Shop, Phoenix truck repair company, commercial fleet service"
       />
 
-      {/* Hero */}
-      <section className="bg-primary text-primary-foreground py-16 md:py-24">
-        <div className="container-custom">
+      {/* Hero with futuristic styling */}
+      <section className="relative bg-primary text-primary-foreground py-20 md:py-28 overflow-hidden">
+        {/* Background elements */}
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute top-0 right-1/4 w-96 h-96 bg-accent/10 rounded-full blur-3xl" />
+          <div className="absolute bottom-0 left-1/4 w-80 h-80 bg-accent/5 rounded-full blur-3xl" />
+          {/* Grid pattern */}
+          <div 
+            className="absolute inset-0 opacity-5"
+            style={{
+              backgroundImage: `linear-gradient(hsl(var(--accent)) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--accent)) 1px, transparent 1px)`,
+              backgroundSize: '50px 50px'
+            }}
+          />
+        </div>
+        
+        <div className="container-custom relative z-10">
           <div className="max-w-3xl">
-            <span className="inline-block text-accent font-semibold text-sm uppercase tracking-wider mb-3">
-              About CT Truck & Trailer Shop
+            <span className="inline-flex items-center gap-2 bg-accent/20 border border-accent/30 rounded-full px-4 py-2 mb-6">
+              <Users className="h-4 w-4 text-accent" />
+              <span className="text-sm font-medium text-primary-foreground">
+                About CT Truck & Trailer Shop
+              </span>
             </span>
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              Keeping Phoenix Fleets Moving Since 2015
+              Keeping Phoenix Fleets Moving <span className="text-gradient">Since 2015</span>
             </h1>
             <p className="text-xl text-primary-foreground/80">
               We're a family-owned truck and trailer repair shop dedicated to providing 
@@ -60,11 +77,26 @@ const About = () => {
             </p>
           </div>
         </div>
+
+        {/* Decorative corner accents */}
+        <div className="absolute top-4 left-4 w-16 h-16 border-l-2 border-t-2 border-accent/30 rounded-tl-lg" />
+        <div className="absolute top-4 right-4 w-16 h-16 border-r-2 border-t-2 border-accent/30 rounded-tr-lg" />
+        <div className="absolute bottom-4 left-4 w-16 h-16 border-l-2 border-b-2 border-accent/30 rounded-bl-lg" />
+        <div className="absolute bottom-4 right-4 w-16 h-16 border-r-2 border-b-2 border-accent/30 rounded-br-lg" />
       </section>
 
       {/* Stats */}
-      <section className="py-12 bg-accent">
-        <div className="container-custom">
+      <section className="py-12 bg-accent relative overflow-hidden">
+        {/* Background pattern */}
+        <div 
+          className="absolute inset-0 opacity-10"
+          style={{
+            backgroundImage: `linear-gradient(45deg, transparent 45%, hsl(var(--accent-foreground)) 45%, hsl(var(--accent-foreground)) 55%, transparent 55%)`,
+            backgroundSize: '20px 20px'
+          }}
+        />
+        
+        <div className="container-custom relative z-10">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {stats.map((stat) => (
               <div key={stat.label} className="text-center">
@@ -78,18 +110,27 @@ const About = () => {
         </div>
       </section>
 
-      {/* Story Section */}
-      <section className="section-padding bg-background">
-        <div className="container-custom">
+      {/* Story Section with futuristic styling */}
+      <section className="section-padding bg-primary relative overflow-hidden">
+        {/* Background elements */}
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute top-1/4 left-0 w-64 h-64 bg-accent/5 rounded-full blur-3xl" />
+          <div className="absolute bottom-1/4 right-0 w-72 h-72 bg-accent/10 rounded-full blur-3xl" />
+        </div>
+
+        <div className="container-custom relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             <div>
-              <span className="inline-block text-accent font-semibold text-sm uppercase tracking-wider mb-3">
-                Our Story
+              <span className="inline-flex items-center gap-2 bg-accent/20 border border-accent/30 rounded-full px-4 py-2 mb-6">
+                <Wrench className="h-4 w-4 text-accent" />
+                <span className="text-sm font-medium text-primary-foreground">
+                  Our Story
+                </span>
               </span>
-              <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-6">
-                Built on a Foundation of Service
+              <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary-foreground mb-6">
+                Built on a Foundation of <span className="text-gradient">Service</span>
               </h2>
-              <div className="space-y-4 text-muted-foreground">
+              <div className="space-y-4 text-primary-foreground/80">
                 <p>
                   CT Truck & Trailer Shop was founded with a simple mission: to provide 
                   commercial truck operators with reliable, honest, and efficient repair services. 
@@ -107,7 +148,7 @@ const About = () => {
                 </p>
               </div>
               <a href="tel:6028303232" className="inline-block mt-8">
-                <Button variant="accent" size="lg">
+                <Button variant="hero" size="lg">
                   <Phone className="h-5 w-5 mr-2" />
                   Contact Us Today
                 </Button>
@@ -115,44 +156,62 @@ const About = () => {
             </div>
             
             <div className="relative">
-              <img
-                src={teamWork}
-                alt="CT Truck & Trailer Shop team in Phoenix"
-                className="rounded-2xl shadow-xl"
-              />
-              <div className="absolute -bottom-6 -left-6 w-32 h-32 border-4 border-accent rounded-xl -z-10" />
+              {/* Glowing border effect */}
+              <div className="absolute -inset-1 bg-gradient-to-r from-accent/50 via-accent/20 to-accent/50 rounded-2xl blur-sm" />
+              
+              <div className="relative rounded-2xl overflow-hidden border border-accent/30">
+                <img
+                  src={teamWork}
+                  alt="CT Truck & Trailer Shop team in Phoenix"
+                  className="w-full h-auto"
+                />
+              </div>
+              
+              {/* Decorative corner accents */}
+              <div className="absolute -top-2 -left-2 w-8 h-8 border-l-2 border-t-2 border-accent rounded-tl-lg" />
+              <div className="absolute -top-2 -right-2 w-8 h-8 border-r-2 border-t-2 border-accent rounded-tr-lg" />
+              <div className="absolute -bottom-2 -left-2 w-8 h-8 border-l-2 border-b-2 border-accent rounded-bl-lg" />
+              <div className="absolute -bottom-2 -right-2 w-8 h-8 border-r-2 border-b-2 border-accent rounded-br-lg" />
             </div>
           </div>
         </div>
       </section>
 
-      {/* Values */}
-      <section className="section-padding bg-secondary">
-        <div className="container-custom">
+      {/* Values with futuristic styling */}
+      <section className="section-padding bg-primary relative overflow-hidden border-t border-accent/10">
+        <div className="container-custom relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-14">
-            <span className="inline-block text-accent font-semibold text-sm uppercase tracking-wider mb-3">
-              Our Values
+            <span className="inline-flex items-center gap-2 bg-accent/20 border border-accent/30 rounded-full px-4 py-2 mb-6">
+              <Award className="h-4 w-4 text-accent" />
+              <span className="text-sm font-medium text-primary-foreground">
+                Our Values
+              </span>
             </span>
-            <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">
-              What Drives Us
+            <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
+              What <span className="text-gradient">Drives Us</span>
             </h2>
-            <p className="text-muted-foreground text-lg">
+            <p className="text-primary-foreground/70 text-lg">
               These core values guide everything we do at CT Truck & Trailer Shop
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {values.map((value) => (
-              <div key={value.title} className="bg-card rounded-xl p-6 border border-border">
-                <div className="icon-container mb-4">
-                  <value.icon className="h-6 w-6 text-accent-foreground" />
+              <div key={value.title} className="relative bg-primary-foreground/5 rounded-xl p-6 border border-accent/20 hover:border-accent/50 transition-all overflow-hidden group">
+                {/* Glow effect */}
+                <div className="absolute inset-0 bg-gradient-to-br from-accent/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                
+                <div className="relative z-10">
+                  <div className="w-14 h-14 rounded-xl bg-accent/20 border border-accent/30 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
+                    <value.icon className="h-7 w-7 text-accent" />
+                  </div>
+                  <h3 className="font-heading text-xl font-bold text-primary-foreground mb-2">
+                    {value.title}
+                  </h3>
+                  <p className="text-primary-foreground/70">
+                    {value.description}
+                  </p>
                 </div>
-                <h3 className="font-heading text-xl font-bold text-foreground mb-2">
-                  {value.title}
-                </h3>
-                <p className="text-muted-foreground">
-                  {value.description}
-                </p>
               </div>
             ))}
           </div>

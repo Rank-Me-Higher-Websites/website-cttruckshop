@@ -28,17 +28,30 @@ const MobileRepair = () => {
         keywords="mobile truck repair, roadside assistance, emergency truck repair, 24/7 truck service, Phoenix mobile mechanic"
       />
 
-      {/* Hero */}
-      <section className="relative min-h-[70vh] flex items-center">
+      {/* Hero with futuristic styling */}
+      <section className="relative min-h-[70vh] flex items-center overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${nightTowing})` }}
         />
         <div className="absolute inset-0 hero-overlay" />
         
+        {/* Grid pattern overlay */}
+        <div 
+          className="absolute inset-0 opacity-5"
+          style={{
+            backgroundImage: `linear-gradient(hsl(var(--accent)) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--accent)) 1px, transparent 1px)`,
+            backgroundSize: '50px 50px'
+          }}
+        />
+        
+        {/* Glow effects */}
+        <div className="absolute top-20 right-10 w-72 h-72 bg-accent/10 rounded-full blur-3xl" />
+        <div className="absolute bottom-20 left-10 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
+        
         <div className="container-custom relative z-10">
           <div className="max-w-3xl">
-            <span className="inline-flex items-center gap-2 bg-accent/20 border border-accent/30 rounded-full px-4 py-2 mb-6">
+            <span className="inline-flex items-center gap-2 bg-accent/20 border border-accent/30 rounded-full px-4 py-2 mb-6 backdrop-blur-sm">
               <Clock className="h-4 w-4 text-accent" />
               <span className="text-sm font-medium text-primary-foreground">
                 24/7 Emergency Service
@@ -65,116 +78,145 @@ const MobileRepair = () => {
             </div>
           </div>
         </div>
+
+        {/* Decorative corner accents */}
+        <div className="absolute top-4 left-4 w-16 h-16 border-l-2 border-t-2 border-accent/30 rounded-tl-lg" />
+        <div className="absolute top-4 right-4 w-16 h-16 border-r-2 border-t-2 border-accent/30 rounded-tr-lg" />
+        <div className="absolute bottom-4 left-4 w-16 h-16 border-l-2 border-b-2 border-accent/30 rounded-bl-lg" />
+        <div className="absolute bottom-4 right-4 w-16 h-16 border-r-2 border-b-2 border-accent/30 rounded-br-lg" />
       </section>
 
-      {/* How It Works */}
-      <section className="section-padding bg-background">
-        <div className="container-custom">
+      {/* How It Works with futuristic styling */}
+      <section className="section-padding bg-primary relative overflow-hidden">
+        {/* Background elements */}
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute top-1/4 left-0 w-64 h-64 bg-accent/5 rounded-full blur-3xl" />
+          <div className="absolute bottom-1/4 right-0 w-72 h-72 bg-accent/10 rounded-full blur-3xl" />
+        </div>
+
+        <div className="container-custom relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-14">
-            <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">
-              How Our Mobile Service Works
+            <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
+              How Our Mobile Service <span className="text-gradient">Works</span>
             </h2>
-            <p className="text-muted-foreground text-lg">
+            <p className="text-primary-foreground/70 text-lg">
               Fast, reliable roadside assistance in three simple steps
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            <div className="text-center">
-              <div className="w-16 h-16 rounded-full bg-accent flex items-center justify-center mx-auto mb-4">
-                <Phone className="h-8 w-8 text-accent-foreground" />
+            <div className="text-center relative bg-primary-foreground/5 rounded-2xl p-8 border border-accent/20 hover:border-accent/50 transition-all group">
+              <div className="absolute inset-0 bg-gradient-to-br from-accent/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl" />
+              <div className="relative z-10">
+                <div className="w-16 h-16 rounded-full bg-accent flex items-center justify-center mx-auto mb-4">
+                  <Phone className="h-8 w-8 text-accent-foreground" />
+                </div>
+                <h3 className="font-heading text-xl font-bold text-primary-foreground mb-2">
+                  1. Call Us
+                </h3>
+                <p className="text-primary-foreground/70">
+                  Call our 24/7 dispatch line and describe your issue and location
+                </p>
               </div>
-              <h3 className="font-heading text-xl font-bold text-foreground mb-2">
-                1. Call Us
-              </h3>
-              <p className="text-muted-foreground">
-                Call our 24/7 dispatch line and describe your issue and location
-              </p>
             </div>
-            <div className="text-center">
-              <div className="w-16 h-16 rounded-full bg-accent flex items-center justify-center mx-auto mb-4">
-                <Truck className="h-8 w-8 text-accent-foreground" />
+            <div className="text-center relative bg-primary-foreground/5 rounded-2xl p-8 border border-accent/20 hover:border-accent/50 transition-all group">
+              <div className="absolute inset-0 bg-gradient-to-br from-accent/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl" />
+              <div className="relative z-10">
+                <div className="w-16 h-16 rounded-full bg-accent flex items-center justify-center mx-auto mb-4">
+                  <Truck className="h-8 w-8 text-accent-foreground" />
+                </div>
+                <h3 className="font-heading text-xl font-bold text-primary-foreground mb-2">
+                  2. We Dispatch
+                </h3>
+                <p className="text-primary-foreground/70">
+                  We send the nearest available mobile tech with a clear ETA
+                </p>
               </div>
-              <h3 className="font-heading text-xl font-bold text-foreground mb-2">
-                2. We Dispatch
-              </h3>
-              <p className="text-muted-foreground">
-                We send the nearest available mobile tech with a clear ETA
-              </p>
             </div>
-            <div className="text-center">
-              <div className="w-16 h-16 rounded-full bg-accent flex items-center justify-center mx-auto mb-4">
-                <Wrench className="h-8 w-8 text-accent-foreground" />
+            <div className="text-center relative bg-primary-foreground/5 rounded-2xl p-8 border border-accent/20 hover:border-accent/50 transition-all group">
+              <div className="absolute inset-0 bg-gradient-to-br from-accent/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-2xl" />
+              <div className="relative z-10">
+                <div className="w-16 h-16 rounded-full bg-accent flex items-center justify-center mx-auto mb-4">
+                  <Wrench className="h-8 w-8 text-accent-foreground" />
+                </div>
+                <h3 className="font-heading text-xl font-bold text-primary-foreground mb-2">
+                  3. We Repair
+                </h3>
+                <p className="text-primary-foreground/70">
+                  Our tech diagnoses and repairs your truck on-site to get you rolling
+                </p>
               </div>
-              <h3 className="font-heading text-xl font-bold text-foreground mb-2">
-                3. We Repair
-              </h3>
-              <p className="text-muted-foreground">
-                Our tech diagnoses and repairs your truck on-site to get you rolling
-              </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Services List */}
-      <section className="section-padding bg-secondary">
-        <div className="container-custom">
+      {/* Services List with futuristic styling */}
+      <section className="section-padding bg-primary relative overflow-hidden border-t border-accent/10">
+        <div className="container-custom relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <span className="inline-block text-accent font-semibold text-sm uppercase tracking-wider mb-3">
-                On-Site Services
+              <span className="inline-flex items-center gap-2 bg-accent/20 border border-accent/30 rounded-full px-4 py-2 mb-6">
+                <Zap className="h-4 w-4 text-accent" />
+                <span className="text-sm font-medium text-primary-foreground">
+                  On-Site Services
+                </span>
               </span>
-              <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-6">
-                What We Can Fix On The Road
+              <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary-foreground mb-6">
+                What We Can Fix <span className="text-gradient">On The Road</span>
               </h2>
-              <p className="text-muted-foreground text-lg mb-8">
+              <p className="text-primary-foreground/70 text-lg mb-8">
                 Our mobile units are equipped to handle many common roadside issues. 
                 For more complex repairs, we can tow you to our shop for full-service work.
               </p>
 
               <div className="grid sm:grid-cols-2 gap-3">
                 {mobileServices.map((service) => (
-                  <div key={service} className="flex items-center gap-2">
+                  <div key={service} className="flex items-center gap-2 p-2 rounded-lg bg-primary-foreground/5 border border-accent/20">
                     <CheckCircle className="h-5 w-5 text-accent flex-shrink-0" />
-                    <span className="text-foreground">{service}</span>
+                    <span className="text-primary-foreground">{service}</span>
                   </div>
                 ))}
               </div>
             </div>
 
-            <div className="bg-primary rounded-2xl p-8 text-primary-foreground">
-              <h3 className="font-heading text-2xl font-bold mb-6">
-                Coverage Area
-              </h3>
-              <p className="text-primary-foreground/80 mb-6">
-                Our mobile repair service covers the entire Phoenix metro area 
-                and major highways including:
-              </p>
-              <ul className="space-y-3 mb-8">
-                <li className="flex items-center gap-3">
-                  <MapPin className="h-5 w-5 text-accent" />
-                  <span>I-10 (East & West)</span>
-                </li>
-                <li className="flex items-center gap-3">
-                  <MapPin className="h-5 w-5 text-accent" />
-                  <span>I-17 (North & South)</span>
-                </li>
-                <li className="flex items-center gap-3">
-                  <MapPin className="h-5 w-5 text-accent" />
-                  <span>Loop 101 & Loop 202</span>
-                </li>
-                <li className="flex items-center gap-3">
-                  <MapPin className="h-5 w-5 text-accent" />
-                  <span>Phoenix Metro Industrial Areas</span>
-                </li>
-              </ul>
-              <a href="tel:6028303232">
-                <Button variant="hero" size="lg" className="w-full">
-                  <Phone className="h-5 w-5 mr-2" />
-                  Call Now: (602) 830-3232
-                </Button>
-              </a>
+            <div className="relative bg-accent/10 rounded-2xl p-8 border border-accent/30 overflow-hidden">
+              {/* Glow effect */}
+              <div className="absolute -inset-1 bg-gradient-to-br from-accent/20 to-transparent rounded-2xl blur-sm" />
+              
+              <div className="relative z-10">
+                <h3 className="font-heading text-2xl font-bold text-primary-foreground mb-6">
+                  Coverage Area
+                </h3>
+                <p className="text-primary-foreground/80 mb-6">
+                  Our mobile repair service covers the entire Phoenix metro area 
+                  and major highways including:
+                </p>
+                <ul className="space-y-3 mb-8">
+                  <li className="flex items-center gap-3 p-2 rounded-lg bg-primary-foreground/5 border border-accent/20">
+                    <MapPin className="h-5 w-5 text-accent" />
+                    <span className="text-primary-foreground">I-10 (East & West)</span>
+                  </li>
+                  <li className="flex items-center gap-3 p-2 rounded-lg bg-primary-foreground/5 border border-accent/20">
+                    <MapPin className="h-5 w-5 text-accent" />
+                    <span className="text-primary-foreground">I-17 (North & South)</span>
+                  </li>
+                  <li className="flex items-center gap-3 p-2 rounded-lg bg-primary-foreground/5 border border-accent/20">
+                    <MapPin className="h-5 w-5 text-accent" />
+                    <span className="text-primary-foreground">Loop 101 & Loop 202</span>
+                  </li>
+                  <li className="flex items-center gap-3 p-2 rounded-lg bg-primary-foreground/5 border border-accent/20">
+                    <MapPin className="h-5 w-5 text-accent" />
+                    <span className="text-primary-foreground">Phoenix Metro Industrial Areas</span>
+                  </li>
+                </ul>
+                <a href="tel:6028303232">
+                  <Button variant="hero" size="lg" className="w-full">
+                    <Phone className="h-5 w-5 mr-2" />
+                    Call Now: (602) 830-3232
+                  </Button>
+                </a>
+              </div>
             </div>
           </div>
         </div>

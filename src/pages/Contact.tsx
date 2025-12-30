@@ -19,7 +19,6 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // In production, this would send to a backend
     toast({
       title: "Message Sent",
       description: "We'll get back to you as soon as possible. For urgent needs, please call us directly.",
@@ -35,48 +34,77 @@ const Contact = () => {
         keywords="contact truck repair, Phoenix truck shop phone, commercial fleet service contact"
       />
 
-      {/* Hero */}
-      <section className="bg-primary text-primary-foreground py-16 md:py-24">
-        <div className="container-custom text-center">
-          <span className="inline-block text-accent font-semibold text-sm uppercase tracking-wider mb-3">
-            Get In Touch
+      {/* Hero with futuristic styling */}
+      <section className="relative bg-primary text-primary-foreground py-20 md:py-28 overflow-hidden">
+        {/* Background elements */}
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute top-0 right-1/4 w-96 h-96 bg-accent/10 rounded-full blur-3xl" />
+          <div className="absolute bottom-0 left-1/4 w-80 h-80 bg-accent/5 rounded-full blur-3xl" />
+          {/* Grid pattern */}
+          <div 
+            className="absolute inset-0 opacity-5"
+            style={{
+              backgroundImage: `linear-gradient(hsl(var(--accent)) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--accent)) 1px, transparent 1px)`,
+              backgroundSize: '50px 50px'
+            }}
+          />
+        </div>
+        
+        <div className="container-custom relative z-10 text-center">
+          <span className="inline-flex items-center gap-2 bg-accent/20 border border-accent/30 rounded-full px-4 py-2 mb-6">
+            <Phone className="h-4 w-4 text-accent" />
+            <span className="text-sm font-medium text-primary-foreground">
+              Get In Touch
+            </span>
           </span>
           <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-            Contact Us
+            Contact <span className="text-gradient">Us</span>
           </h1>
           <p className="text-xl text-primary-foreground/80 max-w-2xl mx-auto">
             Have a question or need service? Reach out by phone, email, or the form below. 
             For emergencies, call us directly for fastest response.
           </p>
         </div>
+
+        {/* Decorative corner accents */}
+        <div className="absolute top-4 left-4 w-16 h-16 border-l-2 border-t-2 border-accent/30 rounded-tl-lg" />
+        <div className="absolute top-4 right-4 w-16 h-16 border-r-2 border-t-2 border-accent/30 rounded-tr-lg" />
+        <div className="absolute bottom-4 left-4 w-16 h-16 border-l-2 border-b-2 border-accent/30 rounded-bl-lg" />
+        <div className="absolute bottom-4 right-4 w-16 h-16 border-r-2 border-b-2 border-accent/30 rounded-br-lg" />
       </section>
 
-      {/* Contact Section */}
-      <section className="section-padding bg-background">
-        <div className="container-custom">
+      {/* Contact Section with futuristic styling */}
+      <section className="section-padding bg-primary relative overflow-hidden">
+        {/* Background elements */}
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute top-1/4 left-0 w-64 h-64 bg-accent/5 rounded-full blur-3xl" />
+          <div className="absolute bottom-1/4 right-0 w-72 h-72 bg-accent/10 rounded-full blur-3xl" />
+        </div>
+
+        <div className="container-custom relative z-10">
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Info */}
             <div>
-              <h2 className="font-heading text-3xl font-bold text-foreground mb-8">
-                Contact Information
+              <h2 className="font-heading text-3xl font-bold text-primary-foreground mb-8">
+                Contact <span className="text-gradient">Information</span>
               </h2>
               
-              <div className="space-y-6 mb-10">
+              <div className="space-y-4 mb-10">
                 <a
                   href="tel:6028303232"
-                  className="flex items-start gap-4 p-4 rounded-xl bg-secondary hover:bg-accent/10 transition-colors group"
+                  className="flex items-start gap-4 p-4 rounded-xl bg-primary-foreground/5 border border-accent/20 hover:border-accent/50 transition-all group"
                 >
-                  <div className="icon-container flex-shrink-0">
-                    <Phone className="h-6 w-6 text-accent-foreground" />
+                  <div className="w-12 h-12 rounded-xl bg-accent/20 border border-accent/30 flex items-center justify-center flex-shrink-0">
+                    <Phone className="h-6 w-6 text-accent" />
                   </div>
                   <div>
-                    <p className="font-semibold text-foreground group-hover:text-accent transition-colors">
+                    <p className="font-semibold text-primary-foreground group-hover:text-accent transition-colors">
                       Phone
                     </p>
-                    <p className="text-lg font-heading font-bold text-foreground">
+                    <p className="text-lg font-heading font-bold text-primary-foreground">
                       (602) 830-3232
                     </p>
-                    <p className="text-sm text-muted-foreground">
+                    <p className="text-sm text-primary-foreground/60">
                       24/7 Emergency Line Available
                     </p>
                   </div>
@@ -84,127 +112,139 @@ const Contact = () => {
 
                 <a
                   href="mailto:service@clevertranscoshop.com"
-                  className="flex items-start gap-4 p-4 rounded-xl bg-secondary hover:bg-accent/10 transition-colors group"
+                  className="flex items-start gap-4 p-4 rounded-xl bg-primary-foreground/5 border border-accent/20 hover:border-accent/50 transition-all group"
                 >
-                  <div className="icon-container flex-shrink-0">
-                    <Mail className="h-6 w-6 text-accent-foreground" />
+                  <div className="w-12 h-12 rounded-xl bg-accent/20 border border-accent/30 flex items-center justify-center flex-shrink-0">
+                    <Mail className="h-6 w-6 text-accent" />
                   </div>
                   <div>
-                    <p className="font-semibold text-foreground group-hover:text-accent transition-colors">
+                    <p className="font-semibold text-primary-foreground group-hover:text-accent transition-colors">
                       Email
                     </p>
-                    <p className="text-foreground">
+                    <p className="text-primary-foreground">
                       service@clevertranscoshop.com
                     </p>
                   </div>
                 </a>
 
-                <div className="flex items-start gap-4 p-4 rounded-xl bg-secondary">
-                  <div className="icon-container flex-shrink-0">
-                    <MapPin className="h-6 w-6 text-accent-foreground" />
+                <div className="flex items-start gap-4 p-4 rounded-xl bg-primary-foreground/5 border border-accent/20">
+                  <div className="w-12 h-12 rounded-xl bg-accent/20 border border-accent/30 flex items-center justify-center flex-shrink-0">
+                    <MapPin className="h-6 w-6 text-accent" />
                   </div>
                   <div>
-                    <p className="font-semibold text-foreground">Location</p>
-                    <p className="text-foreground">Phoenix, AZ</p>
-                    <p className="text-sm text-muted-foreground">
+                    <p className="font-semibold text-primary-foreground">Location</p>
+                    <p className="text-primary-foreground">Phoenix, AZ</p>
+                    <p className="text-sm text-primary-foreground/60">
                       Serving the entire Phoenix Metro Area
                     </p>
                   </div>
                 </div>
 
-                <div className="flex items-start gap-4 p-4 rounded-xl bg-secondary">
-                  <div className="icon-container flex-shrink-0">
-                    <Clock className="h-6 w-6 text-accent-foreground" />
+                <div className="flex items-start gap-4 p-4 rounded-xl bg-primary-foreground/5 border border-accent/20">
+                  <div className="w-12 h-12 rounded-xl bg-accent/20 border border-accent/30 flex items-center justify-center flex-shrink-0">
+                    <Clock className="h-6 w-6 text-accent" />
                   </div>
                   <div>
-                    <p className="font-semibold text-foreground">Hours</p>
-                    <p className="text-foreground">Mon-Sat: 7:00 AM - 6:00 PM</p>
+                    <p className="font-semibold text-primary-foreground">Hours</p>
+                    <p className="text-primary-foreground">Mon-Sat: 7:00 AM - 6:00 PM</p>
                     <p className="text-accent font-medium">24/7 Emergency Service</p>
                   </div>
                 </div>
               </div>
 
               {/* Quick CTA */}
-              <div className="bg-primary rounded-xl p-6 text-primary-foreground">
-                <h3 className="font-heading text-xl font-bold mb-2">
-                  Need Immediate Help?
-                </h3>
-                <p className="text-primary-foreground/80 mb-4">
-                  For the fastest response on emergencies, call us directly.
-                </p>
-                <a href="tel:6028303232">
-                  <Button variant="hero" className="w-full">
-                    <Phone className="h-5 w-5 mr-2" />
-                    Call Now
-                  </Button>
-                </a>
+              <div className="relative bg-accent/10 rounded-xl p-6 border border-accent/30 overflow-hidden">
+                <div className="absolute -inset-1 bg-gradient-to-r from-accent/20 to-accent/5 rounded-xl blur-sm" />
+                <div className="relative z-10">
+                  <h3 className="font-heading text-xl font-bold text-primary-foreground mb-2">
+                    Need Immediate Help?
+                  </h3>
+                  <p className="text-primary-foreground/80 mb-4">
+                    For the fastest response on emergencies, call us directly.
+                  </p>
+                  <a href="tel:6028303232">
+                    <Button variant="hero" className="w-full">
+                      <Phone className="h-5 w-5 mr-2" />
+                      Call Now
+                    </Button>
+                  </a>
+                </div>
               </div>
             </div>
 
             {/* Contact Form */}
             <div>
-              <div className="bg-card rounded-2xl p-8 border border-border shadow-card">
-                <h2 className="font-heading text-2xl font-bold text-foreground mb-6">
-                  Send Us a Message
-                </h2>
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-foreground mb-2">
-                      Your Name
-                    </label>
-                    <Input
-                      id="name"
-                      value={formData.name}
-                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                      placeholder="John Doe"
-                      required
-                    />
-                  </div>
-                  <div className="grid sm:grid-cols-2 gap-4">
+              <div className="relative bg-primary-foreground/5 rounded-2xl p-8 border border-accent/20 overflow-hidden">
+                {/* Glow effect */}
+                <div className="absolute -inset-1 bg-gradient-to-br from-accent/10 to-transparent rounded-2xl blur-sm" />
+                
+                <div className="relative z-10">
+                  <h2 className="font-heading text-2xl font-bold text-primary-foreground mb-6">
+                    Send Us a Message
+                  </h2>
+                  <form onSubmit={handleSubmit} className="space-y-6">
                     <div>
-                      <label htmlFor="email" className="block text-sm font-medium text-foreground mb-2">
-                        Email Address
+                      <label htmlFor="name" className="block text-sm font-medium text-primary-foreground mb-2">
+                        Your Name
                       </label>
                       <Input
-                        id="email"
-                        type="email"
-                        value={formData.email}
-                        onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                        placeholder="john@example.com"
+                        id="name"
+                        value={formData.name}
+                        onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                        placeholder="John Doe"
                         required
+                        className="bg-primary-foreground/5 border-accent/30 text-primary-foreground placeholder:text-primary-foreground/40 focus:border-accent"
                       />
+                    </div>
+                    <div className="grid sm:grid-cols-2 gap-4">
+                      <div>
+                        <label htmlFor="email" className="block text-sm font-medium text-primary-foreground mb-2">
+                          Email Address
+                        </label>
+                        <Input
+                          id="email"
+                          type="email"
+                          value={formData.email}
+                          onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                          placeholder="john@example.com"
+                          required
+                          className="bg-primary-foreground/5 border-accent/30 text-primary-foreground placeholder:text-primary-foreground/40 focus:border-accent"
+                        />
+                      </div>
+                      <div>
+                        <label htmlFor="phone" className="block text-sm font-medium text-primary-foreground mb-2">
+                          Phone Number
+                        </label>
+                        <Input
+                          id="phone"
+                          type="tel"
+                          value={formData.phone}
+                          onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                          placeholder="(602) 555-1234"
+                          className="bg-primary-foreground/5 border-accent/30 text-primary-foreground placeholder:text-primary-foreground/40 focus:border-accent"
+                        />
+                      </div>
                     </div>
                     <div>
-                      <label htmlFor="phone" className="block text-sm font-medium text-foreground mb-2">
-                        Phone Number
+                      <label htmlFor="message" className="block text-sm font-medium text-primary-foreground mb-2">
+                        Message
                       </label>
-                      <Input
-                        id="phone"
-                        type="tel"
-                        value={formData.phone}
-                        onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
-                        placeholder="(602) 555-1234"
+                      <Textarea
+                        id="message"
+                        value={formData.message}
+                        onChange={(e) => setFormData({ ...formData, message: e.target.value })}
+                        placeholder="Tell us about your service needs..."
+                        rows={5}
+                        required
+                        className="bg-primary-foreground/5 border-accent/30 text-primary-foreground placeholder:text-primary-foreground/40 focus:border-accent"
                       />
                     </div>
-                  </div>
-                  <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-foreground mb-2">
-                      Message
-                    </label>
-                    <Textarea
-                      id="message"
-                      value={formData.message}
-                      onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                      placeholder="Tell us about your service needs..."
-                      rows={5}
-                      required
-                    />
-                  </div>
-                  <Button type="submit" variant="accent" size="lg" className="w-full">
-                    <Send className="h-5 w-5 mr-2" />
-                    Send Message
-                  </Button>
-                </form>
+                    <Button type="submit" variant="hero" size="lg" className="w-full">
+                      <Send className="h-5 w-5 mr-2" />
+                      Send Message
+                    </Button>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
@@ -212,17 +252,19 @@ const Contact = () => {
       </section>
 
       {/* Map Section */}
-      <section className="section-padding bg-secondary">
-        <div className="container-custom">
+      <section className="section-padding bg-primary relative overflow-hidden border-t border-accent/10">
+        <div className="container-custom relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-10">
-            <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Find Us on the Map
+            <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
+              Find Us on the <span className="text-gradient">Map</span>
             </h2>
-            <p className="text-muted-foreground">
+            <p className="text-primary-foreground/70">
               Visit our shop in Phoenix, AZ or call for mobile service anywhere in the metro area
             </p>
           </div>
-          <GoogleMap className="shadow-lg" />
+          <div className="rounded-2xl overflow-hidden border border-accent/30">
+            <GoogleMap className="shadow-lg" />
+          </div>
         </div>
       </section>
     </Layout>

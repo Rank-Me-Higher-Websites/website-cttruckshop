@@ -70,52 +70,85 @@ const Blog = () => {
         keywords="truck repair blog, semi truck maintenance tips, fleet management, Phoenix trucking news"
       />
 
-      {/* Hero */}
-      <section className="bg-primary text-primary-foreground py-16 md:py-24">
-        <div className="container-custom text-center">
-          <span className="inline-block text-accent font-semibold text-sm uppercase tracking-wider mb-3">
-            News & Publications
+      {/* Hero with futuristic styling */}
+      <section className="relative bg-primary text-primary-foreground py-20 md:py-28 overflow-hidden">
+        {/* Background elements */}
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute top-0 right-1/4 w-96 h-96 bg-accent/10 rounded-full blur-3xl" />
+          <div className="absolute bottom-0 left-1/4 w-80 h-80 bg-accent/5 rounded-full blur-3xl" />
+          {/* Grid pattern */}
+          <div 
+            className="absolute inset-0 opacity-5"
+            style={{
+              backgroundImage: `linear-gradient(hsl(var(--accent)) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--accent)) 1px, transparent 1px)`,
+              backgroundSize: '50px 50px'
+            }}
+          />
+        </div>
+        
+        <div className="container-custom relative z-10 text-center">
+          <span className="inline-flex items-center gap-2 bg-accent/20 border border-accent/30 rounded-full px-4 py-2 mb-6">
+            <Tag className="h-4 w-4 text-accent" />
+            <span className="text-sm font-medium text-primary-foreground">
+              News & Publications
+            </span>
           </span>
           <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-            Our Blog
+            Our <span className="text-gradient">Blog</span>
           </h1>
           <p className="text-xl text-primary-foreground/80 max-w-2xl mx-auto">
             Expert tips, industry insights, and the latest news from CT Truck & Trailer Shop. 
             Stay informed about truck maintenance and fleet management.
           </p>
         </div>
+
+        {/* Decorative corner accents */}
+        <div className="absolute top-4 left-4 w-16 h-16 border-l-2 border-t-2 border-accent/30 rounded-tl-lg" />
+        <div className="absolute top-4 right-4 w-16 h-16 border-r-2 border-t-2 border-accent/30 rounded-tr-lg" />
+        <div className="absolute bottom-4 left-4 w-16 h-16 border-l-2 border-b-2 border-accent/30 rounded-bl-lg" />
+        <div className="absolute bottom-4 right-4 w-16 h-16 border-r-2 border-b-2 border-accent/30 rounded-br-lg" />
       </section>
 
-      {/* Blog Grid */}
-      <section className="section-padding bg-background">
-        <div className="container-custom">
+      {/* Blog Grid with enhanced styling */}
+      <section className="section-padding bg-primary relative overflow-hidden">
+        {/* Background elements */}
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute top-1/4 left-0 w-64 h-64 bg-accent/5 rounded-full blur-3xl" />
+          <div className="absolute bottom-1/4 right-0 w-72 h-72 bg-accent/10 rounded-full blur-3xl" />
+        </div>
+
+        <div className="container-custom relative z-10">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {blogPosts.map((post) => (
               <article key={post.slug} className="group">
                 <Link to={`/blog/${post.slug}`} className="block">
-                  <div className="card-elevated overflow-hidden h-full flex flex-col">
-                    <div className="aspect-video overflow-hidden">
+                  <div className="relative bg-primary-foreground/5 border border-accent/20 rounded-2xl overflow-hidden h-full flex flex-col hover:border-accent/50 transition-all duration-300">
+                    {/* Glow effect on hover */}
+                    <div className="absolute inset-0 bg-gradient-to-b from-accent/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    
+                    <div className="aspect-video overflow-hidden relative">
                       <img
                         src={post.image}
                         alt={post.title}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                       />
+                      <div className="absolute inset-0 bg-gradient-to-t from-primary via-transparent to-transparent" />
                     </div>
-                    <div className="p-6 flex flex-col flex-1">
+                    <div className="p-6 flex flex-col flex-1 relative z-10">
                       <div className="flex items-center gap-4 mb-3">
-                        <span className="inline-flex items-center gap-1 text-xs font-medium text-accent">
+                        <span className="inline-flex items-center gap-1 text-xs font-medium text-accent bg-accent/10 px-2 py-1 rounded-full">
                           <Tag className="h-3 w-3" />
                           {post.category}
                         </span>
                       </div>
-                      <h2 className="font-heading text-xl font-bold text-foreground mb-3 group-hover:text-accent transition-colors line-clamp-2">
+                      <h2 className="font-heading text-xl font-bold text-primary-foreground mb-3 group-hover:text-accent transition-colors line-clamp-2">
                         {post.title}
                       </h2>
-                      <p className="text-muted-foreground text-sm mb-4 flex-1 line-clamp-3">
+                      <p className="text-primary-foreground/70 text-sm mb-4 flex-1 line-clamp-3">
                         {post.excerpt}
                       </p>
-                      <div className="flex items-center justify-between mt-auto pt-4 border-t border-border">
-                        <span className="flex items-center gap-1 text-xs text-muted-foreground">
+                      <div className="flex items-center justify-between mt-auto pt-4 border-t border-accent/20">
+                        <span className="flex items-center gap-1 text-xs text-primary-foreground/60">
                           <Calendar className="h-3 w-3" />
                           {post.date}
                         </span>
