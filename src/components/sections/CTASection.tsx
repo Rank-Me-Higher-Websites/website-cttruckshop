@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Phone, ArrowRight, Clock, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import facilityImage from "@/assets/facility.jpg";
+import towingRecovery from "@/assets/towing-recovery.jpg";
 
 const CTASection = () => {
   return (
@@ -9,7 +9,7 @@ const CTASection = () => {
       {/* Background */}
       <div
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url(${facilityImage})` }}
+        style={{ backgroundImage: `url(${towingRecovery})` }}
       />
       <div className="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/90 to-primary/80" />
       

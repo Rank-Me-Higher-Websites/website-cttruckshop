@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Phone, ArrowRight, Shield, Clock, Wrench } from "lucide-react";
 import ScrollIndicator from "@/components/ScrollIndicator";
-import heroBg from "@/assets/hero-bg.jpg";
+import nightTowing from "@/assets/night-towing.jpg";
 
 const HeroSection = () => {
   return (
@@ -10,7 +10,7 @@ const HeroSection = () => {
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroBg})` }}
+        style={{ backgroundImage: `url(${nightTowing})` }}
       />
       
       {/* Overlay */}

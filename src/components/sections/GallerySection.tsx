@@ -1,14 +1,26 @@
 import { useEffect, useRef, useState } from "react";
-import heroBg from "@/assets/hero-bg.jpg";
-import mobileRepair from "@/assets/mobile-repair.jpg";
-import facility from "@/assets/facility.jpg";
-import engineRepair from "@/assets/engine-repair.jpg";
+import shopInterior from "@/assets/shop-interior.jpg";
+import truckYard from "@/assets/truck-yard.png";
+import craneLift from "@/assets/crane-lift.png";
+import towService from "@/assets/tow-service.png";
+import towingRecovery from "@/assets/towing-recovery.jpg";
+import nightTowing from "@/assets/night-towing.jpg";
+import mechanicsWork from "@/assets/mechanics-work.jpeg";
+import expertTechnician from "@/assets/expert-technician.png";
+import truckDiagnostics from "@/assets/truck-diagnostics.jpg";
+import teamWork from "@/assets/team-work.jpeg";
 
 const images = [
-  { src: heroBg, alt: "Commercial truck repair shop interior" },
-  { src: mobileRepair, alt: "Mobile roadside repair service" },
-  { src: facility, alt: "CT Truck Shop facility exterior" },
-  { src: engineRepair, alt: "Diesel engine repair work" },
+  { src: shopInterior, alt: "CT Truck Shop interior with truck" },
+  { src: truckYard, alt: "Truck yard at sunset" },
+  { src: craneLift, alt: "Crane lifting truck for repair" },
+  { src: towService, alt: "Tow service in action" },
+  { src: towingRecovery, alt: "Towing and recovery service" },
+  { src: nightTowing, alt: "Night towing operation" },
+  { src: mechanicsWork, alt: "Mechanics working under truck" },
+  { src: expertTechnician, alt: "Expert technician at work" },
+  { src: truckDiagnostics, alt: "Truck computer diagnostics" },
+  { src: teamWork, alt: "Team working together" },
 ];
 
 // Duplicate for infinite scroll effect

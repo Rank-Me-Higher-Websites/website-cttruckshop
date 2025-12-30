@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Phone, Clock, MapPin, Truck, Wrench, Zap, CheckCircle } from "lucide-react";
 import CTASection from "@/components/sections/CTASection";
 import FAQSection from "@/components/sections/FAQSection";
-import mobileRepairImage from "@/assets/mobile-repair.jpg";
+import nightTowing from "@/assets/night-towing.jpg";
 
 const mobileServices = [
   "Battery & charging system issues",
@@ -32,7 +32,7 @@ const MobileRepair = () => {
       <section className="relative min-h-[70vh] flex items-center">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${mobileRepairImage})` }}
+          style={{ backgroundImage: `url(${nightTowing})` }}
         />
         <div className="absolute inset-0 hero-overlay" />
         
