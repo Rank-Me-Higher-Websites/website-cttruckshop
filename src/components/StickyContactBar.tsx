@@ -46,21 +46,21 @@ const StickyContactBar = () => {
         </div>
       </div>
 
-      {/* Desktop/Tablet Floating Buttons - Right Side */}
-      <div className={`fixed right-6 top-1/2 -translate-y-1/2 z-40 hidden md:flex flex-col gap-3 transition-all duration-300 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-20 pointer-events-none'}`}>
-        <a
-          href="tel:6028303232"
-          className="flex items-center gap-2 bg-accent text-accent-foreground py-3 px-4 rounded-xl font-semibold hover:bg-amber-600 transition-all shadow-lg hover:shadow-xl group"
-        >
-          <Phone className="h-5 w-5" />
-          <span className="whitespace-nowrap">Call Now</span>
-        </a>
+      {/* Desktop/Tablet Floating Buttons - Bottom Right */}
+      <div className={`fixed right-6 bottom-6 z-40 hidden md:flex flex-row gap-3 transition-all duration-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10 pointer-events-none'}`}>
         <a
           href="/contact"
-          className="flex items-center gap-2 bg-primary text-primary-foreground py-3 px-4 rounded-xl font-semibold hover:bg-primary/90 transition-all shadow-lg hover:shadow-xl border border-accent/30 group"
+          className="flex items-center gap-2 bg-primary text-primary-foreground py-2.5 px-4 rounded-lg font-semibold hover:bg-primary/90 transition-all shadow-lg hover:shadow-xl border border-accent/30 group text-sm"
         >
-          <MessageSquare className="h-5 w-5" />
+          <MessageSquare className="h-4 w-4" />
           <span className="whitespace-nowrap">Get a Quote</span>
+        </a>
+        <a
+          href="tel:6028303232"
+          className="flex items-center gap-2 bg-accent text-accent-foreground py-2.5 px-4 rounded-lg font-semibold hover:bg-amber-600 transition-all shadow-lg hover:shadow-xl group text-sm"
+        >
+          <Phone className="h-4 w-4" />
+          <span className="whitespace-nowrap">Call Now</span>
         </a>
       </div>
     </>

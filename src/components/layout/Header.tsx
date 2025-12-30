@@ -13,7 +13,8 @@ import {
 } from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
 import logo from "@/assets/ct-logo.webp";
-
+import xxiiLogo from "@/assets/xxii-logo.webp";
+import paddockLogo from "@/assets/paddock-logo.webp";
 const truckServices = [
   { title: "Engine Repair", href: "/services/engine-repair", description: "Complete diesel engine diagnostics and repair" },
   { title: "Brake Service", href: "/services/brake-service", description: "DOT compliant brake inspections and repairs" },
@@ -57,14 +58,11 @@ const Header = () => {
             rel="noopener noreferrer"
             className="flex items-center justify-center px-8 group"
           >
-            <div className="flex flex-col items-center">
-              <svg className="h-8 w-auto text-muted-foreground group-hover:text-accent transition-colors" viewBox="0 0 120 40" fill="currentColor">
-                <path d="M10 8L20 20L10 32M20 8L30 20L20 32" strokeWidth="2" stroke="currentColor" fill="none"/>
-                <path d="M32 8L42 20L32 32M42 8L52 20L42 32" strokeWidth="2" stroke="currentColor" fill="none"/>
-                <path d="M54 8L64 20L54 32" strokeWidth="2" stroke="currentColor" fill="none"/>
-              </svg>
-              <span className="text-xs font-bold tracking-wider text-muted-foreground group-hover:text-accent transition-colors mt-1">CENTURY</span>
-            </div>
+            <img 
+              src={xxiiLogo} 
+              alt="XXII Century" 
+              className="h-10 w-auto opacity-60 group-hover:opacity-100 transition-opacity filter grayscale group-hover:grayscale-0" 
+            />
           </a>
           
           {/* Divider */}
@@ -85,12 +83,11 @@ const Header = () => {
             rel="noopener noreferrer"
             className="flex items-center justify-center px-8 group"
           >
-            <div className="flex items-center gap-2">
-              <div className="flex flex-col">
-                <span className="text-lg font-black tracking-tight text-muted-foreground group-hover:text-accent transition-colors leading-none">PADDOCK</span>
-                <span className="text-lg font-black tracking-tight text-muted-foreground group-hover:text-accent transition-colors leading-none">PARKING</span>
-              </div>
-            </div>
+            <img 
+              src={paddockLogo} 
+              alt="Paddock Parking" 
+              className="h-8 w-auto opacity-60 group-hover:opacity-100 transition-opacity filter grayscale group-hover:grayscale-0" 
+            />
           </a>
         </div>
       </div>
