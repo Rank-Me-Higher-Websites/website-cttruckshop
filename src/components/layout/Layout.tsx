@@ -12,6 +12,7 @@ const Layout = ({ children }: LayoutProps) => {
       <Header />
       <main className="flex-1 pb-16 md:pb-0">{children}</main>
       <Footer />
+      <StickyContactBar />
     </div>
   );
 };
