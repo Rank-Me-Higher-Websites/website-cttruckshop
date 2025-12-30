@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, Wrench, Zap, Shield, Gauge, Truck, Settings } from "lucide-react";
-import heroBg from "@/assets/hero-bg.jpg";
-import mobileRepair from "@/assets/mobile-repair.jpg";
-import engineRepair from "@/assets/engine-repair.jpg";
-import facility from "@/assets/facility.jpg";
+import truckYard from "@/assets/truck-yard.png";
+import mechanicsWork from "@/assets/mechanics-work.jpeg";
+import truckDiagnostics from "@/assets/truck-diagnostics.jpg";
+import shopInterior from "@/assets/shop-interior.jpg";
 
 const services = [
   {
@@ -11,28 +11,28 @@ const services = [
     title: "Commercial Fleet Repair",
     description: "Preventive maintenance and fast turnarounds that keep your fleet on schedule.",
     href: "/services/fleet-repair",
-    image: heroBg,
+    image: truckYard,
   },
   {
     icon: Zap,
     title: "Emergency Mobile Repair",
     description: "24/7 roadside assistance with fully-equipped mobile service units.",
     href: "/mobile-repair",
-    image: mobileRepair,
+    image: mechanicsWork,
   },
   {
     icon: Settings,
     title: "Engine Service & Repair",
     description: "Complete diesel engine diagnostics and repair for all major brands.",
     href: "/services/engine-repair",
-    image: engineRepair,
+    image: truckDiagnostics,
   },
   {
     icon: Gauge,
     title: "DOT Inspections",
     description: "Comprehensive DOT compliance inspections to keep your fleet road-legal.",
     href: "/services/dot-inspections",
-    image: facility,
+    image: shopInterior,
   },
 ];
 

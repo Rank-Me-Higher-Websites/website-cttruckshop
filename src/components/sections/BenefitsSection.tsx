@@ -1,5 +1,5 @@
 import { CheckCircle, Clock, Shield, Wrench, Users, Award } from "lucide-react";
-import engineRepair from "@/assets/engine-repair.jpg";
+import expertTechnician from "@/assets/expert-technician.png";
 
 const benefits = [
   {
@@ -43,7 +43,7 @@ const BenefitsSection = () => {
           <div className="relative order-2 lg:order-1">
             <div className="relative rounded-2xl overflow-hidden shadow-xl">
               <img
-                src={engineRepair}
+                src={expertTechnician}
                 alt="Expert technician working on semi truck engine"
                 className="w-full h-auto object-cover aspect-[4/3]"
               />

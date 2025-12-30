@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import facilityImage from "@/assets/facility.jpg";
+import shopInterior from "@/assets/shop-interior.jpg";
 
 const StorySection = () => {
   return (
@@ -12,7 +12,7 @@ const StorySection = () => {
           <div className="relative order-2 lg:order-1">
             <div className="relative rounded-2xl overflow-hidden shadow-xl">
               <img
-                src={facilityImage}
+                src={shopInterior}
                 alt="CT Truck & Trailer Shop facility"
                 className="w-full h-auto object-cover aspect-[4/3]"
               />

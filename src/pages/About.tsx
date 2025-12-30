@@ -3,7 +3,7 @@ import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Phone, Clock, Shield, Users, Award, Wrench, Target, Heart } from "lucide-react";
 import CTASection from "@/components/sections/CTASection";
-import facilityImage from "@/assets/facility.jpg";
+import teamWork from "@/assets/team-work.jpeg";
 
 const values = [
   {
@@ -116,8 +116,8 @@ const About = () => {
             
             <div className="relative">
               <img
-                src={facilityImage}
-                alt="CT Truck & Trailer Shop facility in Phoenix"
+                src={teamWork}
+                alt="CT Truck & Trailer Shop team in Phoenix"
                 className="rounded-2xl shadow-xl"
               />
               <div className="absolute -bottom-6 -left-6 w-32 h-32 border-4 border-accent rounded-xl -z-10" />

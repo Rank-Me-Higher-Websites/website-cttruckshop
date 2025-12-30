@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Phone, Wrench, Clock, Shield, Zap, Settings, Gauge, Cog, ThermometerSun, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import dieselEngine from "@/assets/diesel-engine-repair.png";
+import teamWork from "@/assets/team-work.jpeg";
 
 const services = [
   { icon: Settings, name: "Engine Service & Repair" },
@@ -93,8 +93,8 @@ const SEOContentSection = () => {
             
             <div className="relative bg-primary rounded-2xl overflow-hidden border border-accent/30">
               <img
-                src={dieselEngine}
-                alt="Semi truck diesel engine repair at CT Truck Shop"
+                src={teamWork}
+                alt="CT Truck Shop team working together"
                 className="w-full h-auto object-cover"
               />
               

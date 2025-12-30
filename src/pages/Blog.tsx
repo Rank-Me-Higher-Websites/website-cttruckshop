@@ -3,12 +3,12 @@ import Layout from "@/components/layout/Layout";
 import SEO from "@/components/SEO";
 import { ArrowRight, Calendar, Tag } from "lucide-react";
 
-import semiTruckDiagnostics from "@/assets/blog/semi-truck-diagnostics.jpg";
-import truckMechanic from "@/assets/blog/truck-mechanic.jpg";
-import mobileTruckRepair from "@/assets/blog/mobile-truck-repair.jpg";
-import fastTruckRepair from "@/assets/blog/fast-truck-repair.png";
-import semiTruckService from "@/assets/blog/semi-truck-service.png";
-import emergencyTruckRepair from "@/assets/blog/emergency-truck-repair.jpg";
+import truckDiagnostics from "@/assets/truck-diagnostics.jpg";
+import expertTechnician from "@/assets/expert-technician.png";
+import nightTowing from "@/assets/night-towing.jpg";
+import towingRecovery from "@/assets/towing-recovery.jpg";
+import craneLift from "@/assets/crane-lift.png";
+import mechanicsWork from "@/assets/mechanics-work.jpeg";
 
 const blogPosts = [
   {
@@ -17,7 +17,7 @@ const blogPosts = [
     excerpt: "Time is money in trucking, and every hour your rig is down costs you. Learn how our semi truck repair services minimize downtime and get you back on the road fast.",
     category: "Truck & Trailer Maintenance Tips",
     date: "December 23, 2025",
-    image: semiTruckDiagnostics,
+    image: truckDiagnostics,
   },
   {
     slug: "truck-mechanic-near-me-phoenix-az",
@@ -25,7 +25,7 @@ const blogPosts = [
     excerpt: "Looking for a reliable truck mechanic near you in Phoenix? CT Truck Shop offers fast, professional semi-truck repair services with 24/7 emergency roadside assistance.",
     category: "Emergency Roadside Assistance",
     date: "December 15, 2025",
-    image: truckMechanic,
+    image: expertTechnician,
   },
   {
     slug: "mobile-truck-repair-keeping-your-rig-rolling",
@@ -33,7 +33,7 @@ const blogPosts = [
     excerpt: "Discover the benefits of mobile truck repair services. When you can't get to the shop, we bring the shop to you with fully-equipped service vehicles.",
     category: "Emergency Roadside Assistance",
     date: "December 10, 2025",
-    image: mobileTruckRepair,
+    image: nightTowing,
   },
   {
     slug: "fast-truck-repair-near-me",
@@ -41,7 +41,7 @@ const blogPosts = [
     excerpt: "When you need fast truck repair, you need a shop that understands urgency. Learn what to look for in a reliable truck repair service.",
     category: "Truck & Trailer Maintenance Tips",
     date: "December 2, 2025",
-    image: fastTruckRepair,
+    image: towingRecovery,
   },
   {
     slug: "emergency-truck-repair",
@@ -49,7 +49,7 @@ const blogPosts = [
     excerpt: "Breakdowns don't wait for convenient times. Our emergency truck repair services in Phoenix provide fast, professional help when you need it most.",
     category: "Emergency Roadside Assistance",
     date: "November 24, 2025",
-    image: emergencyTruckRepair,
+    image: craneLift,
   },
   {
     slug: "reliable-semi-truck-service-for-your-fleet",
@@ -57,7 +57,7 @@ const blogPosts = [
     excerpt: "Maximize your fleet's uptime with reliable semi truck service. Preventive maintenance and quick repairs keep your trucks on the road earning money.",
     category: "Truck & Trailer Maintenance Tips",
     date: "November 13, 2025",
-    image: semiTruckService,
+    image: mechanicsWork,
   },
 ];
 
