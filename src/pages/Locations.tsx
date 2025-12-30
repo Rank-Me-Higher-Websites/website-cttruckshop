@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import Layout from "@/components/layout/Layout";
 import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Phone, MapPin, Clock } from "lucide-react";
+import { ArrowRight, Phone, MapPin, Clock, Truck } from "lucide-react";
 import CTASection from "@/components/sections/CTASection";
 
 const locations = [
@@ -41,111 +41,150 @@ const Locations = () => {
         keywords="truck repair near me, Phoenix truck shop, trailer repair Arizona, commercial truck service locations"
       />
 
-      {/* Hero */}
-      <section className="bg-primary text-primary-foreground py-16 md:py-24">
-        <div className="container-custom text-center">
-          <span className="inline-block text-accent font-semibold text-sm uppercase tracking-wider mb-3">
-            Our Locations
+      {/* Hero with futuristic styling */}
+      <section className="relative bg-primary text-primary-foreground py-20 md:py-28 overflow-hidden">
+        {/* Background elements */}
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute top-0 right-1/4 w-96 h-96 bg-accent/10 rounded-full blur-3xl" />
+          <div className="absolute bottom-0 left-1/4 w-80 h-80 bg-accent/5 rounded-full blur-3xl" />
+          {/* Grid pattern */}
+          <div 
+            className="absolute inset-0 opacity-5"
+            style={{
+              backgroundImage: `linear-gradient(hsl(var(--accent)) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--accent)) 1px, transparent 1px)`,
+              backgroundSize: '50px 50px'
+            }}
+          />
+        </div>
+        
+        <div className="container-custom relative z-10 text-center">
+          <span className="inline-flex items-center gap-2 bg-accent/20 border border-accent/30 rounded-full px-4 py-2 mb-6">
+            <MapPin className="h-4 w-4 text-accent" />
+            <span className="text-sm font-medium text-primary-foreground">
+              Our Locations
+            </span>
           </span>
           <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-            Find Us in Phoenix
+            Find Us in <span className="text-gradient">Phoenix</span>
           </h1>
           <p className="text-xl text-primary-foreground/80 max-w-2xl mx-auto">
             Visit our shop or let us come to you with our mobile repair service. 
             We serve the entire Phoenix metro area.
           </p>
         </div>
+
+        {/* Decorative corner accents */}
+        <div className="absolute top-4 left-4 w-16 h-16 border-l-2 border-t-2 border-accent/30 rounded-tl-lg" />
+        <div className="absolute top-4 right-4 w-16 h-16 border-r-2 border-t-2 border-accent/30 rounded-tr-lg" />
+        <div className="absolute bottom-4 left-4 w-16 h-16 border-l-2 border-b-2 border-accent/30 rounded-bl-lg" />
+        <div className="absolute bottom-4 right-4 w-16 h-16 border-r-2 border-b-2 border-accent/30 rounded-br-lg" />
       </section>
 
-      {/* Locations List */}
-      <section className="section-padding bg-background">
-        <div className="container-custom">
+      {/* Locations List with futuristic styling */}
+      <section className="section-padding bg-primary relative overflow-hidden">
+        {/* Background elements */}
+        <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute top-1/4 left-0 w-64 h-64 bg-accent/5 rounded-full blur-3xl" />
+          <div className="absolute bottom-1/4 right-0 w-72 h-72 bg-accent/10 rounded-full blur-3xl" />
+        </div>
+
+        <div className="container-custom relative z-10">
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {locations.map((location) => (
-              <div key={location.slug} className="card-elevated p-8">
-                <div className="flex items-start justify-between mb-6">
-                  <div className="icon-container">
-                    <MapPin className="h-6 w-6 text-accent-foreground" />
-                  </div>
-                  {location.emergency && (
-                    <span className="bg-accent/10 text-accent px-3 py-1 rounded-full text-sm font-medium">
-                      24/7 Emergency
-                    </span>
-                  )}
-                </div>
+              <div key={location.slug} className="relative bg-primary-foreground/5 border border-accent/20 rounded-2xl p-8 hover:border-accent/50 transition-all overflow-hidden">
+                {/* Glow effect */}
+                <div className="absolute inset-0 bg-gradient-to-br from-accent/10 to-transparent opacity-50" />
                 
-                <h2 className="font-heading text-2xl font-bold text-foreground mb-2">
-                  {location.name}
-                </h2>
-                <p className="text-muted-foreground mb-4">{location.address}</p>
-                
-                <div className="space-y-2 mb-6">
-                  <a
-                    href={`tel:${location.phone.replace(/[^\d]/g, "")}`}
-                    className="flex items-center gap-2 text-foreground hover:text-accent transition-colors"
-                  >
-                    <Phone className="h-4 w-4 text-accent" />
-                    <span className="font-medium">{location.phone}</span>
-                  </a>
-                  <div className="flex items-center gap-2 text-muted-foreground">
-                    <Clock className="h-4 w-4 text-accent" />
-                    <span>{location.hours}</span>
+                <div className="relative z-10">
+                  <div className="flex items-start justify-between mb-6">
+                    <div className="w-14 h-14 rounded-xl bg-accent/20 border border-accent/30 flex items-center justify-center">
+                      <MapPin className="h-7 w-7 text-accent" />
+                    </div>
+                    {location.emergency && (
+                      <span className="bg-accent/20 text-accent px-3 py-1 rounded-full text-sm font-medium border border-accent/30">
+                        24/7 Emergency
+                      </span>
+                    )}
                   </div>
-                </div>
-
-                <div className="flex flex-wrap gap-2 mb-6">
-                  {location.services.map((service) => (
-                    <span
-                      key={service}
-                      className="bg-secondary px-3 py-1 rounded-full text-xs font-medium text-foreground"
+                  
+                  <h2 className="font-heading text-2xl font-bold text-primary-foreground mb-2">
+                    {location.name}
+                  </h2>
+                  <p className="text-primary-foreground/70 mb-4">{location.address}</p>
+                  
+                  <div className="space-y-2 mb-6">
+                    <a
+                      href={`tel:${location.phone.replace(/[^\d]/g, "")}`}
+                      className="flex items-center gap-2 text-primary-foreground hover:text-accent transition-colors"
                     >
-                      {service}
-                    </span>
-                  ))}
+                      <Phone className="h-4 w-4 text-accent" />
+                      <span className="font-medium">{location.phone}</span>
+                    </a>
+                    <div className="flex items-center gap-2 text-primary-foreground/70">
+                      <Clock className="h-4 w-4 text-accent" />
+                      <span>{location.hours}</span>
+                    </div>
+                  </div>
+
+                  <div className="flex flex-wrap gap-2 mb-6">
+                    {location.services.map((service) => (
+                      <span
+                        key={service}
+                        className="bg-accent/10 border border-accent/20 px-3 py-1 rounded-full text-xs font-medium text-primary-foreground"
+                      >
+                        {service}
+                      </span>
+                    ))}
+                  </div>
+                  
+                  <Link to={`/locations/${location.slug}`}>
+                    <Button variant="hero-outline" className="w-full">
+                      View Location Details
+                      <ArrowRight className="h-4 w-4 ml-2" />
+                    </Button>
+                  </Link>
                 </div>
-                
-                <Link to={`/locations/${location.slug}`}>
-                  <Button variant="outline" className="w-full">
-                    View Location Details
-                    <ArrowRight className="h-4 w-4 ml-2" />
-                  </Button>
-                </Link>
               </div>
             ))}
 
             {/* Mobile Repair Card */}
-            <div className="card-elevated p-8 bg-primary text-primary-foreground">
-              <div className="icon-container mb-6">
-                <Phone className="h-6 w-6 text-accent-foreground" />
+            <div className="relative bg-accent/10 border border-accent/30 rounded-2xl p-8 overflow-hidden">
+              {/* Glow effect */}
+              <div className="absolute -inset-1 bg-gradient-to-br from-accent/20 to-transparent rounded-2xl blur-sm" />
+              
+              <div className="relative z-10">
+                <div className="w-14 h-14 rounded-xl bg-accent flex items-center justify-center mb-6">
+                  <Truck className="h-7 w-7 text-accent-foreground" />
+                </div>
+                
+                <h2 className="font-heading text-2xl font-bold text-primary-foreground mb-2">
+                  Mobile Repair Service
+                </h2>
+                <p className="text-primary-foreground/70 mb-6">
+                  Can't make it to the shop? Our mobile techs come to you for on-site 
+                  diagnostics and repairs throughout the Phoenix metro area.
+                </p>
+                
+                <a href="tel:6028303232">
+                  <Button variant="hero" className="w-full">
+                    Call for Mobile Service
+                    <Phone className="h-4 w-4 ml-2" />
+                  </Button>
+                </a>
               </div>
-              
-              <h2 className="font-heading text-2xl font-bold mb-2">
-                Mobile Repair Service
-              </h2>
-              <p className="text-primary-foreground/70 mb-6">
-                Can't make it to the shop? Our mobile techs come to you for on-site 
-                diagnostics and repairs throughout the Phoenix metro area.
-              </p>
-              
-              <a href="tel:6028303232">
-                <Button variant="hero" className="w-full">
-                  Call for Mobile Service
-                  <Phone className="h-4 w-4 ml-2" />
-                </Button>
-              </a>
             </div>
           </div>
         </div>
       </section>
 
       {/* Service Areas */}
-      <section className="section-padding bg-secondary">
-        <div className="container-custom">
+      <section className="section-padding bg-primary relative overflow-hidden border-t border-accent/10">
+        <div className="container-custom relative z-10">
           <div className="text-center max-w-3xl mx-auto mb-10">
-            <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-4">
-              Areas We Serve
+            <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
+              Areas We <span className="text-gradient">Serve</span>
             </h2>
-            <p className="text-muted-foreground text-lg">
+            <p className="text-primary-foreground/70 text-lg">
               Our shop and mobile repair service covers the entire Phoenix metro area
             </p>
           </div>
@@ -154,14 +193,14 @@ const Locations = () => {
             {serviceAreas.map((area) => (
               <span
                 key={area}
-                className="bg-card px-5 py-2 rounded-full font-medium text-foreground border border-border hover:border-accent hover:text-accent transition-colors cursor-default"
+                className="bg-primary-foreground/5 px-5 py-2 rounded-full font-medium text-primary-foreground border border-accent/20 hover:border-accent/50 hover:text-accent transition-all cursor-default"
               >
                 {area}
               </span>
             ))}
           </div>
           
-          <p className="text-center text-muted-foreground mt-8">
+          <p className="text-center text-primary-foreground/60 mt-8">
             Plus coverage along I-10, I-17, Loop 101, Loop 202, and surrounding highways
           </p>
         </div>
