@@ -1,13 +1,17 @@
 import Layout from "@/components/layout/Layout";
 import SEO from "@/components/SEO";
 import HeroSection from "@/components/sections/HeroSection";
-import ServicesSection from "@/components/sections/ServicesSection";
+import TrustSection from "@/components/sections/TrustSection";
+import ServicesGridSection from "@/components/sections/ServicesGridSection";
 import BenefitsSection from "@/components/sections/BenefitsSection";
+import GallerySection from "@/components/sections/GallerySection";
 import ReviewsSection from "@/components/sections/ReviewsSection";
+import StorySection from "@/components/sections/StorySection";
 import LocationsSection from "@/components/sections/LocationsSection";
 import FAQSection from "@/components/sections/FAQSection";
 import SEOContentSection from "@/components/sections/SEOContentSection";
 import CTASection from "@/components/sections/CTASection";
+import StickyContactBar from "@/components/StickyContactBar";
 
 const structuredData = {
   "@context": "https://schema.org",
@@ -55,13 +59,17 @@ const Index = () => {
         structuredData={structuredData}
       />
       <HeroSection />
-      <ServicesSection />
+      <TrustSection />
+      <ServicesGridSection />
       <BenefitsSection />
+      <GallerySection />
       <ReviewsSection />
+      <StorySection />
       <LocationsSection />
       <FAQSection />
       <SEOContentSection />
       <CTASection />
+      <StickyContactBar />
     </Layout>
   );
 };
