@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Layout from "@/components/layout/Layout";
 import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
@@ -167,7 +168,9 @@ const MobileRepair = () => {
               </h2>
               <p className="text-primary-foreground/70 text-lg mb-8">
                 Our mobile units are equipped to handle many common roadside issues. 
-                For more complex repairs, we can tow you to our shop for full-service work.
+                For more complex repairs, we can tow you to our{" "}
+                <Link to="/locations" className="text-accent hover:underline">shop</Link> for{" "}
+                <Link to="/services" className="text-accent hover:underline">full-service work</Link>.
               </p>
 
               <div className="grid sm:grid-cols-2 gap-3">

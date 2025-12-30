@@ -39,13 +39,14 @@ const StorySection = () => {
                 principle: <strong className="text-foreground">get you back on the road, fast.</strong>
               </p>
               <p>
-                Our Phoenix facility is equipped with state-of-the-art diagnostic 
+                Our <Link to="/locations" className="text-accent hover:underline">Phoenix facility</Link> is equipped with state-of-the-art diagnostic 
                 tools and staffed by experienced technicians who specialize in 
-                commercial vehicles. Whether it's a quick PM service or major 
-                engine work, every truck receives the same attention to detail.
+                commercial vehicles. Whether it's a quick <Link to="/services" className="text-accent hover:underline">PM service</Link> or major{" "}
+                <Link to="/services/engine-repair" className="text-accent hover:underline">engine work</Link>, every truck receives the same attention to detail.
               </p>
               <p>
-                When your fleet's uptime matters, you bring it to CT Truck Shop.
+                When your fleet's uptime matters, you bring it to CT Truck Shop. Need help now?{" "}
+                <Link to="/mobile-repair" className="text-accent hover:underline">Our mobile repair team</Link> is ready 24/7.
               </p>
             </div>
             <Link to="/about" className="inline-block mt-8">

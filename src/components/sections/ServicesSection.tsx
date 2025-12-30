@@ -54,8 +54,8 @@ const ServicesSection = () => {
             Complete Truck & Trailer Services
           </h2>
           <p className="text-muted-foreground text-lg">
-            From routine maintenance to emergency repairs, we provide comprehensive services 
-            for all your commercial fleet needs in Phoenix and surrounding areas.
+            From routine maintenance to <Link to="/mobile-repair" className="text-accent hover:underline">emergency repairs</Link>, we provide comprehensive services 
+            for all your commercial fleet needs in <Link to="/locations" className="text-accent hover:underline">Phoenix and surrounding areas</Link>.
           </p>
         </div>
 

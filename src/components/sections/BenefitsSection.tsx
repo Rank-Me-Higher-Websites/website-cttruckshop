@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { CheckCircle, Clock, Shield, Wrench, Users, Award } from "lucide-react";
 import expertTechnician from "@/assets/expert-technician.png";
 
@@ -77,8 +78,11 @@ const BenefitsSection = () => {
             </h2>
             <p className="text-muted-foreground text-lg mb-8">
               CT Truck & Trailer Shop combines skilled technicians with state-of-the-art 
-              diagnostic tools to handle everything from routine maintenance to complex repairs. 
-              We keep your fleet running smoothly with fast, efficient, and reliable service.
+              diagnostic tools to handle everything from{" "}
+              <Link to="/services" className="text-accent hover:underline">routine maintenance</Link> to{" "}
+              <Link to="/services/engine-repair" className="text-accent hover:underline">complex repairs</Link>. 
+              We keep your fleet running smoothly with fast, efficient, and reliable service.{" "}
+              <Link to="/about" className="text-accent hover:underline">Learn more about our team</Link>.
             </p>
 
             {/* Benefits Grid */}

@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Layout from "@/components/layout/Layout";
 import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
@@ -133,7 +134,8 @@ const About = () => {
               <div className="space-y-4 text-primary-foreground/80">
                 <p>
                   CT Truck & Trailer Shop was founded with a simple mission: to provide 
-                  commercial truck operators with reliable, honest, and efficient repair services. 
+                  commercial truck operators with reliable, honest, and efficient{" "}
+                  <Link to="/services" className="text-accent hover:underline">repair services</Link>. 
                   We understand that when your truck is down, your business suffers.
                 </p>
                 <p>
@@ -142,9 +144,9 @@ const About = () => {
                   using quality parts and modern diagnostic tools to get the job done right.
                 </p>
                 <p>
-                  From our Phoenix shop, we serve fleets throughout the metro area with 
-                  both in-shop repairs and 24/7 mobile roadside assistance. Whether you 
-                  need a quick PM service or major engine work, we're here to help.
+                  From our <Link to="/locations" className="text-accent hover:underline">Phoenix shop</Link>, we serve fleets throughout the metro area with 
+                  both in-shop repairs and <Link to="/mobile-repair" className="text-accent hover:underline">24/7 mobile roadside assistance</Link>. Whether you 
+                  need a quick PM service or major <Link to="/services/engine-repair" className="text-accent hover:underline">engine work</Link>, we're here to help.
                 </p>
               </div>
               <a href="tel:6028303232" className="inline-block mt-8">

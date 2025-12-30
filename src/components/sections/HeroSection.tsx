@@ -36,11 +36,12 @@ const HeroSection = () => {
             Repair Shop
           </h1>
           
-          {/* Subheadline */}
+          {/* Subheadline with internal links */}
           <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 max-w-2xl animate-fade-in-up delay-200">
-            From routine maintenance to complex repairs, our expert technicians ensure 
+            From routine <Link to="/services" className="text-accent hover:underline">maintenance</Link> to complex{" "}
+            <Link to="/services/engine-repair" className="text-accent hover:underline">engine repairs</Link>, our expert technicians ensure 
             minimal downtime and maximum efficiency for your commercial fleet. 
-            <strong className="text-accent"> 24/7 Emergency Service Available.</strong>
+            <strong className="text-accent"> <Link to="/mobile-repair" className="hover:underline">24/7 Emergency Service</Link> Available.</strong>
           </p>
           
           {/* CTA Buttons */}
