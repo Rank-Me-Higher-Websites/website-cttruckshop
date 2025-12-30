@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Phone, ArrowRight, Shield, Clock, Wrench } from "lucide-react";
+import ScrollIndicator from "@/components/ScrollIndicator";
 import heroBg from "@/assets/hero-bg.jpg";
 
 const HeroSection = () => {
@@ -93,6 +94,9 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
+      
+      {/* Scroll Indicator */}
+      <ScrollIndicator />
     </section>
   );
 };
