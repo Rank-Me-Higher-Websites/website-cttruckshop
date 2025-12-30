@@ -46,8 +46,8 @@ const StickyContactBar = () => {
         </div>
       </div>
 
-      {/* Desktop/Tablet Floating Buttons - Bottom Right */}
-      <div className={`fixed right-6 bottom-6 z-40 hidden md:flex flex-row gap-2 transition-all duration-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10 pointer-events-none'}`}>
+      {/* Desktop/Tablet Floating Buttons - Bottom Right - hidden when footer is visible */}
+      <div className={`fixed right-6 bottom-6 z-40 hidden md:flex flex-row gap-2 transition-all duration-300 ${isVisible && !isFooterVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10 pointer-events-none'}`}>
         <a
           href="/contact"
           className="flex items-center gap-2 bg-primary text-primary-foreground py-2.5 px-4 rounded-lg font-semibold hover:bg-primary/90 transition-all shadow-lg hover:shadow-xl border border-accent/30 group text-sm"
