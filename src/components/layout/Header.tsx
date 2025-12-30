@@ -115,12 +115,14 @@ const Header = () => {
       {/* Main Header */}
       <header
         className={cn(
-          "sticky top-0 z-50 w-full transition-all duration-300",
+          "sticky top-0 z-50 w-full transition-all duration-300 relative",
           isScrolled
             ? "bg-background/95 backdrop-blur-md shadow-md py-2"
             : "bg-background py-4"
         )}
       >
+        {/* Futuristic accent line at bottom */}
+        <div className="absolute bottom-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-accent to-transparent" />
         <div className="container-custom">
           <nav className="flex items-center justify-between">
             {/* Logo */}
