@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { ScrollReveal } from "@/hooks/useScrollAnimation";
 import shopInterior from "@/assets/shop-interior.jpg";
 
 const StorySection = () => {
@@ -9,7 +10,7 @@ const StorySection = () => {
       <div className="container-custom">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Image */}
-          <div className="relative order-2 lg:order-1">
+          <ScrollReveal direction="left" className="relative order-2 lg:order-1">
             <div className="relative rounded-2xl overflow-hidden shadow-xl">
               <img
                 src={shopInterior}
@@ -22,10 +23,10 @@ const StorySection = () => {
             {/* Accent Decorations */}
             <div className="absolute -top-4 -left-4 w-32 h-32 border-4 border-accent/30 rounded-xl -z-10" />
             <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-accent/10 rounded-xl -z-10" />
-          </div>
+          </ScrollReveal>
 
           {/* Content */}
-          <div className="order-1 lg:order-2">
+          <ScrollReveal direction="right" className="order-1 lg:order-2">
             <span className="inline-block text-accent font-semibold text-sm uppercase tracking-wider mb-3">
               More Than Just a Repair Shop
             </span>
@@ -55,7 +56,7 @@ const StorySection = () => {
                 <ArrowRight className="h-4 w-4 ml-2" />
               </Button>
             </Link>
-          </div>
+          </ScrollReveal>
         </div>
       </div>
     </section>
