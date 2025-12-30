@@ -24,26 +24,18 @@ const StickyContactBar = () => {
 
   return (
     <>
-      {/* Mobile Bottom Bar - hidden when footer is visible */}
-      <div className={`fixed bottom-0 left-0 right-0 z-40 bg-primary border-t border-primary-foreground/10 py-3 md:hidden transition-transform duration-300 ${isFooterVisible ? 'translate-y-full' : 'translate-y-0'}`}>
-        <div className="container-custom">
-          <div className="flex items-center gap-3">
-            <a
-              href="tel:6028303232"
-              className="flex-1 flex items-center justify-center gap-2 bg-accent text-accent-foreground py-2.5 px-4 rounded-lg font-semibold hover:bg-amber-600 transition-colors"
-            >
-              <Phone className="h-4 w-4" />
-              <span>Call Now</span>
-            </a>
-            <a
-              href="/contact"
-              className="flex-1 flex items-center justify-center gap-2 bg-primary-foreground/10 text-primary-foreground py-2.5 px-4 rounded-lg font-semibold hover:bg-primary-foreground/20 transition-colors border border-primary-foreground/20"
-            >
-              <MessageSquare className="h-4 w-4" />
-              <span>Get Quote</span>
-            </a>
-          </div>
-        </div>
+      {/* Mobile Floating Call Button - appears when scrolling, hidden when footer visible */}
+      <div className={`fixed bottom-6 right-4 z-40 md:hidden transition-all duration-300 ${isVisible && !isFooterVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-75 pointer-events-none'}`}>
+        <a
+          href="tel:6028303232"
+          className="flex items-center justify-center gap-2 bg-accent text-accent-foreground py-3 px-5 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all animate-pulse"
+          style={{
+            boxShadow: '0 0 20px hsl(var(--accent) / 0.6), 0 0 40px hsl(var(--accent) / 0.3)'
+          }}
+        >
+          <Phone className="h-5 w-5" />
+          <span>Call Now</span>
+        </a>
       </div>
 
       {/* Desktop/Tablet Floating Buttons - Bottom Right - hidden when footer is visible */}
