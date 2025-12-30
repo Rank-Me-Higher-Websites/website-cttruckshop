@@ -585,8 +585,8 @@ const ServicePage = () => {
             </div>
 
             {/* Sidebar */}
-            <div className="lg:col-span-1">
-              <div className="sticky top-32 space-y-6">
+            <div className="lg:col-span-1 self-start">
+              <div className="sticky top-28 space-y-6">
                 {/* CTA Card */}
                 <div className="relative bg-primary-foreground/5 rounded-2xl p-6 border border-accent/30 overflow-hidden">
                   <div className="absolute -inset-1 bg-gradient-to-br from-accent/20 to-transparent rounded-2xl blur-sm" />
