@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, Wrench, Zap, Shield, Gauge, Truck, Settings } from "lucide-react";
+import { ArrowRight, Wrench, Zap, Shield, Gauge, Truck, Settings, Phone } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import truckYard from "@/assets/truck-yard.png";
 import mechanicsWork from "@/assets/mechanics-work.jpeg";
 import truckDiagnostics from "@/assets/truck-diagnostics.jpg";
@@ -96,8 +97,8 @@ const ServicesGridSection = () => {
           ))}
         </div>
 
-        {/* View All Link */}
-        <div className="text-center mt-10">
+        {/* CTA Section */}
+        <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
           <Link
             to="/services"
             className="inline-flex items-center gap-2 text-accent font-semibold hover:underline"
@@ -105,6 +106,13 @@ const ServicesGridSection = () => {
             View All Services
             <ArrowRight className="h-4 w-4" />
           </Link>
+          <span className="hidden sm:block text-muted-foreground">|</span>
+          <a href="tel:6028303232">
+            <Button variant="accent" size="default">
+              <Phone className="h-4 w-4 mr-2" />
+              Call for Service
+            </Button>
+          </a>
         </div>
       </div>
     </section>

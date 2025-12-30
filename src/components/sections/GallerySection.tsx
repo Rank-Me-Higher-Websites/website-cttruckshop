@@ -1,4 +1,7 @@
 import { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
+import { Button } from "@/components/ui/button";
+import { Phone, ArrowRight } from "lucide-react";
 import shopInterior from "@/assets/shop-interior.jpg";
 import truckYard from "@/assets/truck-yard.png";
 import craneLift from "@/assets/crane-lift.png";
@@ -88,6 +91,24 @@ const GallerySection = () => {
             />
           </div>
         ))}
+      </div>
+
+      {/* CTA below gallery */}
+      <div className="container-custom mt-10">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <a href="tel:6028303232">
+            <Button variant="hero" size="lg">
+              <Phone className="h-5 w-5 mr-2" />
+              Call (602) 830-3232
+            </Button>
+          </a>
+          <Link to="/contact">
+            <Button variant="hero-outline" size="lg">
+              Request a Quote
+              <ArrowRight className="h-5 w-5 ml-2" />
+            </Button>
+          </Link>
+        </div>
       </div>
     </section>
   );

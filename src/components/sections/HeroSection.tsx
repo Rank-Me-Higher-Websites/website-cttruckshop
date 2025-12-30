@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Phone, ArrowRight, Shield, Clock, Wrench } from "lucide-react";
-import ScrollIndicator from "@/components/ScrollIndicator";
 import nightTowing from "@/assets/night-towing.jpg";
 
 const HeroSection = () => {
@@ -94,9 +93,6 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-      
-      {/* Scroll Indicator */}
-      <ScrollIndicator />
     </section>
   );
 };
