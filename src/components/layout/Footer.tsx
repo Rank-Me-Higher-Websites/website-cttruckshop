@@ -184,8 +184,8 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Bottom Bar */}
-      <div className="border-t border-primary-foreground/10 py-6">
+      {/* Bottom Bar - Added extra padding for mobile sticky bar */}
+      <div className="border-t border-primary-foreground/10 py-6 pb-24 md:pb-6">
         <div className="container-custom">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-primary-foreground/60">
             <p>© {currentYear} CT Truck & Trailer Shop. All rights reserved.</p>

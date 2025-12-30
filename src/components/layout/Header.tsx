@@ -47,6 +47,54 @@ const Header = () => {
 
   return (
     <>
+      {/* Partner Logos Bar */}
+      <div className="hidden lg:block bg-background border-b border-border py-3">
+        <div className="container-custom flex items-center justify-center gap-0">
+          {/* XXII Century Logo */}
+          <a 
+            href="https://xxiicentury.com" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="flex items-center justify-center px-8 group"
+          >
+            <div className="flex flex-col items-center">
+              <svg className="h-8 w-auto text-muted-foreground group-hover:text-accent transition-colors" viewBox="0 0 120 40" fill="currentColor">
+                <path d="M10 8L20 20L10 32M20 8L30 20L20 32" strokeWidth="2" stroke="currentColor" fill="none"/>
+                <path d="M32 8L42 20L32 32M42 8L52 20L42 32" strokeWidth="2" stroke="currentColor" fill="none"/>
+                <path d="M54 8L64 20L54 32" strokeWidth="2" stroke="currentColor" fill="none"/>
+              </svg>
+              <span className="text-xs font-bold tracking-wider text-muted-foreground group-hover:text-accent transition-colors mt-1">CENTURY</span>
+            </div>
+          </a>
+          
+          {/* Divider */}
+          <div className="h-10 w-px bg-border mx-8" />
+          
+          {/* CT Shop Logo (center) */}
+          <Link to="/" className="flex items-center justify-center px-8">
+            <img src={logo} alt="CT Shop Logo" className="h-10 w-auto" />
+          </Link>
+          
+          {/* Divider */}
+          <div className="h-10 w-px bg-border mx-8" />
+          
+          {/* Paddock Parking Logo */}
+          <a 
+            href="https://paddockparking.com" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="flex items-center justify-center px-8 group"
+          >
+            <div className="flex items-center gap-2">
+              <div className="flex flex-col">
+                <span className="text-lg font-black tracking-tight text-muted-foreground group-hover:text-accent transition-colors leading-none">PADDOCK</span>
+                <span className="text-lg font-black tracking-tight text-muted-foreground group-hover:text-accent transition-colors leading-none">PARKING</span>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
       {/* Top Bar */}
       <div className="hidden lg:block bg-primary text-primary-foreground py-2">
         <div className="container-custom flex items-center justify-between text-sm">
