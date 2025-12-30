@@ -71,22 +71,30 @@ const Blog = () => {
       />
 
       {/* Hero with futuristic styling */}
-      <section className="relative bg-primary text-primary-foreground py-20 md:py-28 overflow-hidden">
-        {/* Background elements */}
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-0 right-1/4 w-96 h-96 bg-accent/10 rounded-full blur-3xl" />
-          <div className="absolute bottom-0 left-1/4 w-80 h-80 bg-accent/5 rounded-full blur-3xl" />
-          {/* Grid pattern */}
-          <div 
-            className="absolute inset-0 opacity-5"
-            style={{
-              backgroundImage: `linear-gradient(hsl(var(--accent)) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--accent)) 1px, transparent 1px)`,
-              backgroundSize: '50px 50px'
-            }}
-          />
-        </div>
+      <section className="relative min-h-[60vh] flex items-center text-primary-foreground overflow-hidden">
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url(${towingRecovery})` }}
+        />
         
-        <div className="container-custom relative z-10 text-center">
+        {/* Overlay */}
+        <div className="absolute inset-0 hero-overlay" />
+        
+        {/* Decorative Elements */}
+        <div className="absolute top-20 right-10 w-72 h-72 bg-accent/10 rounded-full blur-3xl" />
+        <div className="absolute bottom-20 left-10 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
+        
+        {/* Grid pattern */}
+        <div 
+          className="absolute inset-0 opacity-5"
+          style={{
+            backgroundImage: `linear-gradient(hsl(var(--accent)) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--accent)) 1px, transparent 1px)`,
+            backgroundSize: '50px 50px'
+          }}
+        />
+        
+        <div className="container-custom relative z-10 text-center w-full py-20 md:py-28">
           <span className="inline-flex items-center gap-2 bg-accent/20 border border-accent/30 rounded-full px-4 py-2 mb-6">
             <Tag className="h-4 w-4 text-accent" />
             <span className="text-sm font-medium text-primary-foreground">

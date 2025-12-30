@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Phone, Clock, Shield, Users, Award, Wrench, Heart } from "lucide-react";
 import CTASection from "@/components/sections/CTASection";
 import teamWork from "@/assets/team-work.jpeg";
+import shopInterior from "@/assets/shop-interior.jpg";
 
 const values = [
   {
@@ -46,20 +47,28 @@ const About = () => {
       />
 
       {/* Hero with futuristic styling */}
-      <section className="relative bg-primary text-primary-foreground py-20 md:py-28 overflow-hidden">
-        {/* Background elements */}
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-0 right-1/4 w-96 h-96 bg-accent/10 rounded-full blur-3xl" />
-          <div className="absolute bottom-0 left-1/4 w-80 h-80 bg-accent/5 rounded-full blur-3xl" />
-          {/* Grid pattern */}
-          <div 
-            className="absolute inset-0 opacity-5"
-            style={{
-              backgroundImage: `linear-gradient(hsl(var(--accent)) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--accent)) 1px, transparent 1px)`,
-              backgroundSize: '50px 50px'
-            }}
-          />
-        </div>
+      <section className="relative min-h-[60vh] flex items-center text-primary-foreground overflow-hidden">
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url(${shopInterior})` }}
+        />
+        
+        {/* Overlay */}
+        <div className="absolute inset-0 hero-overlay" />
+        
+        {/* Decorative Elements */}
+        <div className="absolute top-20 right-10 w-72 h-72 bg-accent/10 rounded-full blur-3xl" />
+        <div className="absolute bottom-20 left-10 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
+        
+        {/* Grid pattern */}
+        <div 
+          className="absolute inset-0 opacity-5"
+          style={{
+            backgroundImage: `linear-gradient(hsl(var(--accent)) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--accent)) 1px, transparent 1px)`,
+            backgroundSize: '50px 50px'
+          }}
+        />
         
         <div className="container-custom relative z-10">
           <div className="max-w-3xl">
