@@ -120,7 +120,7 @@ const Footer = () => {
                 </span>
                 <div>
                   <span className="text-[11px] uppercase tracking-wider text-primary-foreground/40 block">Hours</span>
-                  <span className="text-sm font-medium">24/7 Emergency Service</span>
+                  <span className="text-sm font-medium">Mon–Sat · Emergency Available</span>
                 </div>
               </div>
             </div>

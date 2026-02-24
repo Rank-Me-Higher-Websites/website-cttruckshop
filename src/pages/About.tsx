@@ -154,7 +154,7 @@ const About = () => {
                 </p>
                 <p>
                   From our <Link to="/locations" className="text-accent hover:underline">Phoenix shop</Link>, we serve fleets throughout the metro area with 
-                  both in-shop repairs and <Link to="/mobile-repair" className="text-accent hover:underline">24/7 mobile roadside assistance</Link>. Whether you 
+                  both in-shop repairs and <Link to="/mobile-repair" className="text-accent hover:underline">mobile roadside assistance</Link>. Whether you 
                   need a quick PM service or major <Link to="/services/engine-repair" className="text-accent hover:underline">engine work</Link>, we're here to help.
                 </p>
               </div>

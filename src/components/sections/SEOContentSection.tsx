@@ -112,7 +112,7 @@ const SEOContentSection = () => {
                   </div>
                   <div>
                     <h4 className="font-heading font-bold text-primary-foreground">
-                      24/7 Emergency Roadside
+                      Fast Emergency Roadside
                     </h4>
                     <p className="text-sm text-primary-foreground/70">
                       Fast dispatch on I-10, I-17 & Loop 101

@@ -116,7 +116,7 @@ const MobileRepair = () => {
                   1. Call Us
                 </h3>
                 <p className="text-primary-foreground/70">
-                  Call our 24/7 dispatch line and describe your issue and location
+                  Call our dispatch line and describe your issue and location
                 </p>
               </div>
             </div>
