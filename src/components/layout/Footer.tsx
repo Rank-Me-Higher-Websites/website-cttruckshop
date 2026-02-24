@@ -83,10 +83,15 @@ const Footer = () => {
                   <Mail className="h-5 w-5 text-accent" />
                   <span>service@clevertranscoshop.com</span>
                 </a>
-                <div className="flex items-start gap-3 text-primary-foreground/90">
+                <a
+                  href="https://www.google.com/maps/dir//3883+N+36th+Ave,+Phoenix,+AZ+85019"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-start gap-3 text-primary-foreground/90 hover:text-accent transition-colors"
+                >
                   <MapPin className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
-                  <span>Phoenix, AZ & Surrounding Areas</span>
-                </div>
+                  <span>3883 N 36th Ave<br />Phoenix, AZ 85019</span>
+                </a>
                 <div className="flex items-center gap-3 text-primary-foreground/90">
                   <Clock className="h-5 w-5 text-accent" />
                   <span>24/7 Emergency Service Available</span>

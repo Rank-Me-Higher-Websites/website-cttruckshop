@@ -10,7 +10,7 @@ const locations = [
   {
     slug: "phoenix",
     name: "Phoenix Main Shop",
-    address: "Phoenix, AZ",
+    address: "3883 N 36th Ave, Phoenix, AZ 85019",
     phone: "(602) 830-3232",
     hours: "Mon-Sat: 7AM-6PM",
     emergency: true,
