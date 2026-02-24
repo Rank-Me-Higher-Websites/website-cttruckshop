@@ -334,4 +334,4 @@ const ServicePageTemplate = ({ slug }: ServicePageTemplateProps) => {
   );
 };
 
-export default RealServicePage;
+export default ServicePageTemplate;
