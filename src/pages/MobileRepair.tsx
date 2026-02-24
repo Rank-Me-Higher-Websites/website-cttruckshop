@@ -69,7 +69,7 @@ const MobileRepair = () => {
               throughout the Phoenix metro area.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <a href="tel:6028303232">
                 <Button variant="hero" size="xl">
                   <Phone className="h-5 w-5 mr-2" />
