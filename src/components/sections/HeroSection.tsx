@@ -4,20 +4,6 @@ import { Phone, ArrowRight, Shield, Clock, Wrench } from "lucide-react";
 import nightTowing from "@/assets/night-towing.jpg";
 import LeadForm from "@/components/LeadForm";
 
-const serviceOptions = [
-  "Engine Repair",
-  "Brake Service",
-  "DOT Inspection",
-  "Transmission Repair",
-  "Electrical Diagnostics",
-  "Oil Change & Lube",
-  "Suspension & Steering",
-  "Welding & Fabrication",
-  "Towing & Recovery",
-  "Mobile Repair",
-  "Other",
-];
-
 const HeroSection = () => {
   const [formData, setFormData] = useState({
     name: "",
