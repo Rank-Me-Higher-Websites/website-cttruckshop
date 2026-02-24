@@ -40,7 +40,7 @@ const HeroSection = () => {
             </h1>
             
             {/* Subheadline */}
-            <p className="text-base md:text-lg text-primary-foreground/80 mb-7 max-w-xl mx-auto lg:mx-0 animate-fade-in-up delay-200">
+            <p className="text-base md:text-lg xl:text-xl text-primary-foreground/80 mb-7 max-w-xl xl:max-w-2xl mx-auto lg:mx-0 animate-fade-in-up delay-200">
               From routine <Link to="/services" className="text-accent hover:underline">maintenance</Link> to complex{" "}
               <Link to="/services/engine-repair" className="text-accent hover:underline">engine repairs</Link>, our expert technicians ensure 
               minimal downtime and maximum efficiency for your commercial fleet. 
