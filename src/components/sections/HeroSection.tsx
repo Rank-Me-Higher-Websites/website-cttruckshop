@@ -33,7 +33,7 @@ const HeroSection = () => {
             </div>
             
             {/* Headline - smaller sizes */}
-            <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground leading-tight mb-5 animate-fade-in-up">
+            <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold text-primary-foreground leading-tight mb-5 animate-fade-in-up">
               Phoenix's Premier{" "}
               <span className="text-gradient">Truck & Trailer</span>{" "}
               Repair Shop
