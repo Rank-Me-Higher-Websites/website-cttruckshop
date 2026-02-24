@@ -29,17 +29,17 @@ const CTASection = () => {
               Get fast, reliable service from Phoenix's trusted truck repair experts.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-3">
               <a href="tel:6028303232">
-                <Button variant="hero" size="xl" className="w-full sm:w-auto">
-                  <Phone className="h-5 w-5 mr-2" />
+                <Button variant="hero" size="lg" className="w-full sm:w-auto">
+                  <Phone className="h-4 w-4 mr-2" />
                   Call (602) 830-3232
                 </Button>
               </a>
               <a href="mailto:service@clevertranscoshop.com">
-                <Button variant="hero-outline" size="xl" className="w-full sm:w-auto">
+                <Button variant="hero-outline" size="lg" className="w-full sm:w-auto">
                   Request a Quote
-                  <ArrowRight className="h-5 w-5 ml-2" />
+                  <ArrowRight className="h-4 w-4 ml-2" />
                 </Button>
               </a>
             </div>
