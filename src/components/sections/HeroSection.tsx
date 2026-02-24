@@ -5,22 +5,6 @@ import nightTowing from "@/assets/night-towing.jpg";
 import LeadForm from "@/components/LeadForm";
 
 const HeroSection = () => {
-  const [formData, setFormData] = useState({
-    name: "",
-    email: "",
-    phone: "",
-    service: "",
-  });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    const subject = encodeURIComponent(`Service Request: ${formData.service}`);
-    const body = encodeURIComponent(
-      `Name: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nService Needed: ${formData.service}`
-    );
-    window.location.href = `mailto:info@cttruckshop.com?subject=${subject}&body=${body}`;
-  };
-
   return (
     <section className="relative min-h-[90vh] flex items-center overflow-hidden">
       {/* Background Image */}
