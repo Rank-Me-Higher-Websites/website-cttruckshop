@@ -9,12 +9,21 @@ import { useToast } from "@/hooks/use-toast";
 import GoogleMap from "@/components/GoogleMap";
 import facility from "@/assets/facility.jpg";
 
+const serviceOptions = [
+  "Truck Repair",
+  "Trailer Repair",
+  "Roadside Assistance",
+  "Fleet Maintenance Request",
+];
+
 const Contact = () => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
-    name: "",
+    firstName: "",
+    lastName: "",
     email: "",
     phone: "",
+    service: "",
     message: "",
   });
 
@@ -24,7 +33,7 @@ const Contact = () => {
       title: "Message Sent",
       description: "We'll get back to you as soon as possible. For urgent needs, please call us directly.",
     });
-    setFormData({ name: "", email: "", phone: "", message: "" });
+    setFormData({ firstName: "", lastName: "", email: "", phone: "", service: "", message: "" });
   };
 
   return (
@@ -142,10 +151,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-semibold text-primary-foreground">Location</p>
-                    <p className="text-primary-foreground">Phoenix, AZ</p>
-                    <p className="text-sm text-primary-foreground/60">
-                      Serving the entire Phoenix Metro Area
-                    </p>
+                    <p className="text-primary-foreground">3883 N 36th Ave</p>
+                    <p className="text-primary-foreground">Phoenix, AZ 85019</p>
                   </div>
                 </div>
 
@@ -155,7 +162,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-semibold text-primary-foreground">Hours</p>
-                    <p className="text-primary-foreground">Mon-Sat: 7:00 AM - 6:00 PM</p>
+                    <p className="text-primary-foreground">Mon-Fri: 8:00 AM - 5:00 PM</p>
+                    <p className="text-primary-foreground/70">Sat & Sun: Closed</p>
                     <p className="text-accent font-medium">24/7 Emergency Service</p>
                   </div>
                 </div>
@@ -188,38 +196,43 @@ const Contact = () => {
                 <div className="absolute -inset-1 bg-gradient-to-br from-accent/10 to-transparent rounded-2xl blur-sm" />
                 
                 <div className="relative z-10">
-                  <h2 className="font-heading text-2xl font-bold text-primary-foreground mb-6">
-                    Send Us a Message
+                  <h2 className="font-heading text-2xl font-bold text-primary-foreground mb-2">
+                    Service Request
                   </h2>
-                  <form onSubmit={handleSubmit} className="space-y-6">
-                    <div>
-                      <label htmlFor="name" className="block text-sm font-medium text-primary-foreground mb-2">
-                        Your Name <span className="text-accent">*</span>
-                      </label>
-                      <Input
-                        id="name"
-                        value={formData.name}
-                        onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                        placeholder="John Doe"
-                        required
-                        className="bg-primary-foreground/5 border-accent/30 text-primary-foreground placeholder:text-primary-foreground/40 focus:border-accent"
-                      />
-                    </div>
+                  <p className="text-primary-foreground/70 mb-6 text-sm">
+                    We'd love to hear from you – Truck not hauling up the hill like it used to? Knocking sound coming from the engine? Whatever you need, our team is here to help!
+                  </p>
+                  <p className="text-primary-foreground/60 text-xs mb-4">Fields marked with <span className="text-accent">*</span> are required</p>
+                  <form onSubmit={handleSubmit} className="space-y-5">
                     <div className="grid sm:grid-cols-2 gap-4">
                       <div>
-                        <label htmlFor="email" className="block text-sm font-medium text-primary-foreground mb-2">
-                          Email Address <span className="text-accent">*</span>
+                        <label htmlFor="firstName" className="block text-sm font-medium text-primary-foreground mb-2">
+                          First Name <span className="text-accent">*</span>
                         </label>
                         <Input
-                          id="email"
-                          type="email"
-                          value={formData.email}
-                          onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                          placeholder="john@example.com"
+                          id="firstName"
+                          value={formData.firstName}
+                          onChange={(e) => setFormData({ ...formData, firstName: e.target.value })}
+                          placeholder="John"
                           required
                           className="bg-primary-foreground/5 border-accent/30 text-primary-foreground placeholder:text-primary-foreground/40 focus:border-accent"
                         />
                       </div>
+                      <div>
+                        <label htmlFor="lastName" className="block text-sm font-medium text-primary-foreground mb-2">
+                          Last Name <span className="text-accent">*</span>
+                        </label>
+                        <Input
+                          id="lastName"
+                          value={formData.lastName}
+                          onChange={(e) => setFormData({ ...formData, lastName: e.target.value })}
+                          placeholder="Doe"
+                          required
+                          className="bg-primary-foreground/5 border-accent/30 text-primary-foreground placeholder:text-primary-foreground/40 focus:border-accent"
+                        />
+                      </div>
+                    </div>
+                    <div className="grid sm:grid-cols-2 gap-4">
                       <div>
                         <label htmlFor="phone" className="block text-sm font-medium text-primary-foreground mb-2">
                           Phone Number <span className="text-accent">*</span>
@@ -234,23 +247,54 @@ const Contact = () => {
                           className="bg-primary-foreground/5 border-accent/30 text-primary-foreground placeholder:text-primary-foreground/40 focus:border-accent"
                         />
                       </div>
+                      <div>
+                        <label htmlFor="email" className="block text-sm font-medium text-primary-foreground mb-2">
+                          Email <span className="text-accent">*</span>
+                        </label>
+                        <Input
+                          id="email"
+                          type="email"
+                          value={formData.email}
+                          onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                          placeholder="john@example.com"
+                          required
+                          className="bg-primary-foreground/5 border-accent/30 text-primary-foreground placeholder:text-primary-foreground/40 focus:border-accent"
+                        />
+                      </div>
+                    </div>
+                    <div>
+                      <label htmlFor="service" className="block text-sm font-medium text-primary-foreground mb-2">
+                        Services Needed <span className="text-accent">*</span>
+                      </label>
+                      <select
+                        id="service"
+                        value={formData.service}
+                        onChange={(e) => setFormData({ ...formData, service: e.target.value })}
+                        required
+                        className="flex h-10 w-full rounded-md border bg-primary-foreground/5 border-accent/30 px-3 py-2 text-sm text-primary-foreground focus:border-accent focus:outline-none focus:ring-1 focus:ring-accent"
+                      >
+                        <option value="" className="bg-primary text-primary-foreground">Select a service</option>
+                        {serviceOptions.map((opt) => (
+                          <option key={opt} value={opt} className="bg-primary text-primary-foreground">{opt}</option>
+                        ))}
+                      </select>
                     </div>
                     <div>
                       <label htmlFor="message" className="block text-sm font-medium text-primary-foreground mb-2">
-                        Message
+                        Additional Details
                       </label>
                       <Textarea
                         id="message"
                         value={formData.message}
                         onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                         placeholder="Tell us about your service needs..."
-                        rows={5}
+                        rows={4}
                         className="bg-primary-foreground/5 border-accent/30 text-primary-foreground placeholder:text-primary-foreground/40 focus:border-accent"
                       />
                     </div>
                     <Button type="submit" variant="hero" size="lg" className="w-full">
                       <Send className="h-5 w-5 mr-2" />
-                      Send Message
+                      Submit Service Request
                     </Button>
                   </form>
                 </div>

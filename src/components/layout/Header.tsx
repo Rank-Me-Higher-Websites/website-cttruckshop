@@ -102,7 +102,7 @@ const Header = () => {
             </a>
             <span className="flex items-center gap-2">
               <MapPin className="h-4 w-4" />
-              <span>Phoenix, AZ</span>
+              <span>3883 N 36th Ave, Phoenix, AZ 85019</span>
             </span>
           </div>
           <div className="flex items-center gap-2">
@@ -234,6 +234,18 @@ const Header = () => {
 
                   <NavigationMenuItem>
                     <Link
+                      to="/contact"
+                      className={cn(
+                        "px-4 py-2 text-sm font-medium transition-colors hover:text-accent",
+                        location.pathname === "/contact" ? "text-accent" : "text-foreground"
+                      )}
+                    >
+                      Contact
+                    </Link>
+                  </NavigationMenuItem>
+
+                  <NavigationMenuItem>
+                    <Link
                       to="/blog"
                       className={cn(
                         "px-4 py-2 text-sm font-medium transition-colors hover:text-accent",
@@ -326,6 +338,12 @@ const Header = () => {
                         className="block px-4 py-3 rounded-lg font-medium hover:bg-accent/10 transition-colors"
                       >
                         About Us
+                      </Link>
+                      <Link
+                        to="/contact"
+                        className="block px-4 py-3 rounded-lg font-medium hover:bg-accent/10 transition-colors"
+                      >
+                        Contact
                       </Link>
                       <Link
                         to="/blog"
