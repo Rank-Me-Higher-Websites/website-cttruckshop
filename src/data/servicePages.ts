@@ -334,7 +334,7 @@ export const servicePages: Record<string, ServicePageData> = {
     ],
     sections: [],
     highlights: [
-      { title: "24/7 Service", description: "We understand the importance of a properly functioning suspension system in semi trailers, and our goal is to deliver solutions that meet or exceed customer expectations." },
+      { title: "Fast Response", description: "We understand the importance of a properly functioning suspension system in semi trailers, and our goal is to deliver solutions that meet or exceed customer expectations." },
       { title: "Expert Knowledge", description: "Our extensive knowledge of various trailer models and suspension systems equips us to diagnose and resolve issues efficiently. With CT Shop, you can trust that your trailer's suspension is in capable hands." },
       { title: "Comprehensive Solutions", description: "From airbag repairs to complete leaf spring replacement, our comprehensive approach ensures that your suspension system operates at peak performance, promoting safety and minimizing downtime." },
     ],
