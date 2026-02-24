@@ -177,7 +177,7 @@ export const servicePages: Record<string, ServicePageData> = {
     ],
     sections: [],
     highlights: [
-      { title: "24/7 Service", description: "We understand the importance of properly functioning brakes and tires in heavy-duty trucks, and our goal is to deliver solutions that meet or exceed customer expectations." },
+      { title: "Fast Response", description: "We understand the importance of properly functioning brakes and tires in heavy-duty trucks, and our goal is to deliver solutions that meet or exceed customer expectations." },
       { title: "Expert Knowledge", description: "Our extensive knowledge of various truck models and braking systems equips us to diagnose and resolve issues efficiently. With CT Shop, you can trust that your truck is in capable hands." },
       { title: "Comprehensive Solutions", description: "From brake pad replacement to complete tire service, our comprehensive approach ensures that your truck operates at peak performance, promoting safety and minimizing downtime." },
     ],
