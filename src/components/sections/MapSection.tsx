@@ -42,13 +42,6 @@ const MapSection = () => {
             <div className="relative">
               <GoogleMap className="h-[350px] md:h-[400px]" />
               
-              {/* Location badge overlay */}
-              <div className="absolute top-4 left-4 bg-white/95 backdrop-blur-sm rounded-lg px-3 py-2 shadow-lg">
-                <div className="flex items-center gap-2">
-                  <div className="w-3 h-3 bg-accent rounded-full animate-pulse" />
-                  <span className="text-sm font-medium text-gray-800">CT Truck & Trailer Shop</span>
-                </div>
-              </div>
             </div>
 
             {/* Info Footer */}
