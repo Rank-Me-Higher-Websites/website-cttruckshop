@@ -194,7 +194,7 @@ const Contact = () => {
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div>
                       <label htmlFor="name" className="block text-sm font-medium text-primary-foreground mb-2">
-                        Your Name
+                        Your Name <span className="text-accent">*</span>
                       </label>
                       <Input
                         id="name"
