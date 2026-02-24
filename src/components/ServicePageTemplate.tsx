@@ -302,9 +302,9 @@ const ServicePageTemplate = ({ slug }: ServicePageTemplateProps) => {
           <p className="text-accent-foreground/80 mb-6">
             Click the button to call for service
           </p>
-          <a href="tel:6028303232">
-            <Button variant="default" size="xl" className="font-bold">
-              <Phone className="h-5 w-5 mr-2" />
+          <a href="tel:6028303232" className="block w-full sm:w-auto sm:inline-block">
+            <Button variant="default" size="xl" className="font-bold w-full sm:w-auto whitespace-normal sm:whitespace-nowrap">
+              <Phone className="h-5 w-5 mr-2 flex-shrink-0" />
               Call For Service: (602) 830-3232
             </Button>
           </a>

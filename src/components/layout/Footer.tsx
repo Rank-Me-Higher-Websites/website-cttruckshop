@@ -44,8 +44,8 @@ const Footer = () => {
                 Our mobile techs are ready 24/7 to get you back on the road
               </p>
             </div>
-            <a href="tel:6028303232" className="flex-shrink-0">
-              <Button variant="default" size="lg" className="font-bold text-base">
+            <a href="tel:6028303232" className="flex-shrink-0 w-full sm:w-auto">
+              <Button variant="default" size="lg" className="font-bold text-base w-full sm:w-auto">
                 <Phone className="h-5 w-5" />
                 Call Now: (602) 830-3232
               </Button>
