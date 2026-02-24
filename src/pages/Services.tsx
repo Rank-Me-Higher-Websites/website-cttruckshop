@@ -56,26 +56,28 @@ const Services = () => {
           }}
         />
         
-        <div className="container-custom relative z-10 text-center w-full py-20 md:py-28">
-          <span className="inline-flex items-center gap-2 bg-accent/20 border border-accent/30 rounded-full px-4 py-2 mb-6">
-            <Wrench className="h-4 w-4 text-accent" />
-            <span className="text-sm font-medium text-primary-foreground">
-              Our Services
+        <div className="container-custom relative z-10 py-20 md:py-28">
+          <div className="max-w-3xl">
+            <span className="inline-flex items-center gap-2 bg-accent/20 border border-accent/30 rounded-full px-4 py-2 mb-6">
+              <Wrench className="h-4 w-4 text-accent" />
+              <span className="text-sm font-medium text-primary-foreground">
+                Our Services
+              </span>
             </span>
-          </span>
-          <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-            Complete Truck & Trailer <span className="text-gradient">Services</span>
-          </h1>
-          <p className="text-xl text-primary-foreground/80 max-w-2xl mx-auto mb-8">
-            From routine maintenance to emergency repairs, our expert technicians 
-            provide comprehensive services for your commercial fleet.
-          </p>
-          <a href="tel:6028303232">
-            <Button variant="hero" size="xl">
-              <Phone className="h-5 w-5 mr-2" />
-              Call (602) 830-3232
-            </Button>
-          </a>
+            <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+              Complete Truck & Trailer <span className="text-gradient">Services</span>
+            </h1>
+            <p className="text-xl text-primary-foreground/80 mb-8">
+              From routine maintenance to emergency repairs, our expert technicians 
+              provide comprehensive services for your commercial fleet.
+            </p>
+            <a href="tel:6028303232">
+              <Button variant="hero" size="xl">
+                <Phone className="h-5 w-5 mr-2" />
+                Call (602) 830-3232
+              </Button>
+            </a>
+          </div>
         </div>
 
         {/* Decorative corner accents */}
