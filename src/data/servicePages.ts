@@ -125,7 +125,7 @@ export const servicePages: Record<string, ServicePageData> = {
       },
       {
         question: "Why choose CT Truck and Trailer Shop for semi breakdown services in Arizona?",
-        answer: "CT Shop stands out as the Best Mobile Truck Repair in Phoenix because of our certified technicians, 24/7 availability, and commitment to fast, high-quality service. We bring the shop to you, saving time, towing costs, and helping your truck stay road-ready across Arizona highways.",
+        answer: "CT Shop stands out as the Best Mobile Truck Repair in Phoenix because of our certified technicians, fast availability, and commitment to high-quality service. We bring the shop to you, saving time, towing costs, and helping your truck stay road-ready across Arizona highways.",
       },
       {
         question: "What should I do if I need emergency truck repair in Phoenix?",
