@@ -28,7 +28,7 @@ const Services = () => {
     <Layout>
       <SEO
         title="Services"
-        description="Complete truck and trailer repair services in Phoenix. Engine repair, brake service, DOT inspections, transmission, electrical, welding, and 24/7 emergency roadside assistance."
+        description="Complete truck and trailer repair services in Phoenix. Engine repair, brake service, DOT inspections, transmission, electrical, welding, and emergency roadside assistance."
         keywords="truck repair services, trailer repair, DOT inspection, engine repair, brake service, Phoenix truck shop"
       />
 
