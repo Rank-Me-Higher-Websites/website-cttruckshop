@@ -147,7 +147,7 @@ const Contact = () => {
                   </div>
                 </a>
 
-                <a href="https://maps.app.goo.gl/XFyDXt5avVXvvDPr5" target="_blank" rel="noopener noreferrer" className="flex items-start gap-4 p-4 rounded-xl bg-primary-foreground/5 border border-accent/20 hover:border-accent/40 transition-colors">
+                <a href="https://maps.app.goo.gl/XFyDXt5avVXvvDPr5" target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 sm:gap-4 p-3 sm:p-4 rounded-xl bg-primary-foreground/5 border border-accent/20 hover:border-accent/40 transition-colors overflow-hidden">
                   <div className="w-12 h-12 rounded-xl bg-accent/20 border border-accent/30 flex items-center justify-center flex-shrink-0">
                     <MapPin className="h-6 w-6 text-accent" />
                   </div>
