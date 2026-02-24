@@ -156,8 +156,8 @@ const MobileRepair = () => {
       <section className="section-padding bg-primary relative overflow-hidden border-t border-accent/10">
         <div className="container-custom relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <span className="inline-flex items-center gap-2 bg-accent/20 border border-accent/30 rounded-full px-4 py-2 mb-6">
+            <div className="text-center lg:text-left">
+              <span className="inline-flex items-center gap-2 bg-accent/20 border border-accent/30 rounded-full px-4 py-2 mb-6 mx-auto lg:mx-0">
                 <Zap className="h-4 w-4 text-accent" />
                 <span className="text-sm font-medium text-primary-foreground">
                   On-Site Services

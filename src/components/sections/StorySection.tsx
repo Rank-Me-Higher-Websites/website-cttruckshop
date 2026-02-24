@@ -50,7 +50,7 @@ const StorySection = () => {
                 <Link to="/mobile-repair" className="text-accent hover:underline">Our mobile repair team</Link> is ready 24/7.
               </p>
             </div>
-            <Link to="/about" className="inline-block mt-8">
+            <Link to="/about" className="inline-block mt-8 mx-auto lg:mx-0">
               <Button variant="outline" size="lg">
                 Learn Our Story
                 <ArrowRight className="h-4 w-4 ml-2" />

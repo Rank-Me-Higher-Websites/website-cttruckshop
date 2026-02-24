@@ -97,7 +97,7 @@ const ServicePageTemplate = ({ slug }: ServicePageTemplateProps) => {
               <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
                 {service.heroHeadline}
               </h1>
-              <div className="flex flex-col sm:flex-row gap-3">
+              <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
                 <a href="tel:6028303232" className="w-full sm:w-auto">
                   <Button variant="hero" size="lg" className="w-full sm:w-auto">
                     <Phone className="h-4 w-4 mr-2" />

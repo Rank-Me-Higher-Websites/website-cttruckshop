@@ -61,7 +61,7 @@ const FAQSection = () => {
                 Got questions about our truck and trailer repair services? 
                 Find answers to common questions below, or contact us directly for personalized assistance.
               </p>
-              <a href="tel:6028303232">
+              <a href="tel:6028303232" className="inline-block">
                 <Button variant="accent" size="lg">
                   <Phone className="h-5 w-5 mr-2" />
                   Call (602) 830-3232

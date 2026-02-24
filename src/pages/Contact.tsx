@@ -105,7 +105,7 @@ const Contact = () => {
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Info */}
             <div className="pb-20 lg:pb-0">
-              <h2 className="font-heading text-3xl font-bold text-primary-foreground mb-8">
+              <h2 className="font-heading text-3xl font-bold text-primary-foreground mb-8 text-center lg:text-left">
                 Contact <span className="text-gradient">Information</span>
               </h2>
               

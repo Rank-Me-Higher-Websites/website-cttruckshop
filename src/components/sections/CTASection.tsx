@@ -29,7 +29,7 @@ const CTASection = () => {
               Get fast, reliable service from Phoenix's trusted truck repair experts.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-3">
+            <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
               <a href="tel:6028303232">
                 <Button variant="hero" size="lg" className="w-full sm:w-auto">
                   <Phone className="h-4 w-4 mr-2" />

@@ -48,7 +48,7 @@ const HeroSection = () => {
             </p>
             
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up delay-300">
+            <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up delay-300 justify-center lg:justify-start">
               <a href="tel:6028303232" className="w-full sm:w-auto">
                 <Button variant="hero" size="lg" className="w-full sm:w-auto">
                   <Phone className="h-5 w-5 mr-2" />
