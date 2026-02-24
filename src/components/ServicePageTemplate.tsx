@@ -127,7 +127,7 @@ const ServicePageTemplate = ({ slug }: ServicePageTemplateProps) => {
       </section>
 
       {/* Content Section */}
-      <section className="section-padding bg-primary relative overflow-hidden">
+      <section className="section-padding bg-primary relative">
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute top-1/4 left-0 w-64 h-64 bg-accent/5 rounded-full blur-3xl" />
           <div className="absolute bottom-1/4 right-0 w-72 h-72 bg-accent/10 rounded-full blur-3xl" />
