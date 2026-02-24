@@ -145,6 +145,7 @@ export const servicePages: Record<string, ServicePageData> = {
     metaTitle: "Semi Truck AC Repair Services Phoenix, AZ | CT Truck & Trailer Shop",
     metaDescription: "Professional semi truck AC repair and services in Phoenix, AZ. Expert mechanics, comprehensive evaluation, reliable AC solutions. CT Shop.",
     heroHeadline: "Semi Air Conditioning Repairs",
+    introHeading: "Expert Semi Truck AC Repair & Service in Phoenix, AZ",
     introParagraphs: [
       "Maintaining a well-functioning air conditioning system is essential for heavy-duty trucks operating in hot and demanding conditions. To ensure your comfort and confidence in the reliability of your semi truck's AC system throughout your job, it is crucial to maintain its maximum efficiency. It's equally important to have a skilled team of mechanics available in case any issues arise. At CT Shop, our experienced mechanics are capable of addressing any concerns you may have for your semi truck's AC system.",
       "Neglecting to have your AC unit inspected when you notice any of the check indicators can exacerbate the problem and eventually lead to a complete AC failure. In addition to offering AC repairs, our mechanics can conduct a comprehensive evaluation of your system to ensure seamless operation.",
