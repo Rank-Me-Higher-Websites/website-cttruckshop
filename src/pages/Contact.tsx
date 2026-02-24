@@ -33,7 +33,7 @@ const Contact = () => {
       title: "Message Sent",
       description: "We'll get back to you as soon as possible. For urgent needs, please call us directly.",
     });
-    setFormData({ name: "", email: "", phone: "", message: "" });
+    setFormData({ firstName: "", lastName: "", email: "", phone: "", service: "", message: "" });
   };
 
   return (
