@@ -55,7 +55,7 @@ const StickyContactBar = () => {
         </button>
         <a
           href="tel:6028303232"
-          className="flex items-center gap-2 bg-accent text-accent-foreground py-2.5 px-4 rounded-lg font-semibold hover:bg-amber-600 transition-all shadow-lg hover:shadow-xl group text-sm"
+          className="flex items-center gap-2 bg-accent text-accent-foreground py-2.5 px-4 rounded-lg font-semibold hover:bg-accent/85 transition-all shadow-lg hover:shadow-xl group text-sm"
         >
           <Phone className="h-4 w-4" />
           <span className="whitespace-nowrap">Call Now</span>
