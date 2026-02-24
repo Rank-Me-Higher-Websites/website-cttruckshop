@@ -30,6 +30,7 @@ export const servicePages: Record<string, ServicePageData> = {
     metaTitle: "Emergency Truck Repair Phoenix, AZ | CT Truck & Trailer Shop",
     metaDescription: "24/7 Emergency truck repair in Phoenix, AZ. Fast response, certified mechanics, roadside assistance. CT Truck & Trailer Shop gets you back on the road quickly.",
     heroHeadline: "#1 Emergency Truck Repair Phoenix, AZ",
+    introHeading: "Fast 24/7 Emergency Truck Repair in Phoenix, AZ",
     introParagraphs: [
       "When your truck breaks down on the road, every minute counts. CT Truck & Trailer Shop provides emergency truck repair in Phoenix, AZ, helping drivers get back on the road quickly and safely. Our certified mechanics are always on standby, ready to handle any roadside issue—from engine failure to brake or tire problems. With fully equipped service trucks and years of experience in the heavy-duty repair industry, we deliver fast response times and reliable workmanship that keep your truck running strong.",
     ],
