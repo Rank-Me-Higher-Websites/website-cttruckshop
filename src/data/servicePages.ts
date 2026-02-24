@@ -195,6 +195,7 @@ export const servicePages: Record<string, ServicePageData> = {
     metaTitle: "Semi Truck Diagnostics Phoenix, AZ | CT Truck & Trailer Shop",
     metaDescription: "Fast, accurate semi truck diagnostics in Phoenix, AZ. Dealer-level software, certified technicians. Engine, electrical, emissions testing. CT Shop.",
     heroHeadline: "Semi Truck Diagnostics",
+    introHeading: "Advanced Semi Truck Diagnostics in Phoenix, AZ",
     introParagraphs: [
       "CT Shop delivers fast, accurate Semi Truck Diagnostics to keep your rig running at peak performance. Our certified technicians use advanced dealer-level software to identify engine faults, electrical issues, aftertreatment problems, sensor failures, and performance irregularities with precision. Whether your truck is showing an active fault code, losing power, or burning extra fuel, we pinpoint the root cause—not just the symptom. With quick turnaround times, clear repair recommendations, and transparent communication, CT Shop is the go-to destination in Phoenix for reliable Semi Truck Diagnostics near me. Get back on the road faster, safer, and with confidence.",
       "CT Shop provides comprehensive Semi Truck Diagnostics, including detailed engine performance analysis, transmission and drivetrain evaluation, electrical and electronic system testing, emissions control verification, and complete brake system inspections. Our technicians use advanced diagnostic tools to accurately identify faults, improve performance, and keep your truck road-ready and compliant.",
