@@ -44,7 +44,7 @@ const locationsData: Record<string, {
       "Full-service repair bays",
       "State-of-the-art diagnostics",
       "Secure truck parking",
-      "24/7 access for fleet customers",
+      "Extended access for fleet customers",
       "Mobile repair dispatch",
     ],
     description: "Our Phoenix location serves as the headquarters for CT Truck & Trailer Shop, providing comprehensive repair and maintenance services for the entire Phoenix metro area.",
