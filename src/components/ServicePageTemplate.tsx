@@ -89,15 +89,15 @@ const ServicePageTemplate = ({ slug }: ServicePageTemplateProps) => {
 
           <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
             {/* Left Content */}
-            <div>
-              <span className="inline-flex items-center gap-2 bg-accent/20 border border-accent/30 rounded-full px-4 py-2 mb-6">
+            <div className="text-center lg:text-left">
+              <span className="inline-flex items-center gap-2 bg-accent/20 border border-accent/30 rounded-full px-4 py-2 mb-6 mx-auto lg:mx-0">
                 <Wrench className="h-4 w-4 text-accent" />
                 <span className="text-sm font-medium text-primary-foreground">CT Truck & Trailer Shop</span>
               </span>
               <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
                 {service.heroHeadline}
               </h1>
-              <div className="flex flex-col sm:flex-row gap-3">
+              <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
                 <a href="tel:6028303232" className="w-full sm:w-auto">
                   <Button variant="hero" size="lg" className="w-full sm:w-auto">
                     <Phone className="h-4 w-4 mr-2" />

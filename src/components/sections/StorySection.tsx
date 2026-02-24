@@ -26,7 +26,7 @@ const StorySection = () => {
           </ScrollReveal>
 
           {/* Content */}
-          <ScrollReveal direction="right" className="order-1 lg:order-2">
+          <ScrollReveal direction="right" className="order-1 lg:order-2 text-center lg:text-left">
             <span className="inline-block text-accent font-semibold text-sm uppercase tracking-wider mb-3">
               More Than Just a Repair Shop
             </span>
@@ -50,7 +50,7 @@ const StorySection = () => {
                 <Link to="/mobile-repair" className="text-accent hover:underline">Our mobile repair team</Link> is ready 24/7.
               </p>
             </div>
-            <Link to="/about" className="inline-block mt-8">
+            <Link to="/about" className="inline-block mt-8 mx-auto lg:mx-0">
               <Button variant="outline" size="lg">
                 Learn Our Story
                 <ArrowRight className="h-4 w-4 ml-2" />

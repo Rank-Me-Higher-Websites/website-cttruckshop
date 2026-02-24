@@ -23,9 +23,9 @@ const HeroSection = () => {
       <div className="container-custom relative z-10">
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           {/* Left Content */}
-          <div>
+          <div className="text-center lg:text-left">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 bg-accent/20 border border-accent/30 rounded-full px-4 py-2 mb-6 animate-fade-in">
+            <div className="inline-flex items-center gap-2 bg-accent/20 border border-accent/30 rounded-full px-4 py-2 mb-6 animate-fade-in mx-auto lg:mx-0">
               <Shield className="h-4 w-4 text-accent" />
               <span className="text-sm font-medium text-primary-foreground">
                 Trusted Fleet Maintenance Since 2015
@@ -40,7 +40,7 @@ const HeroSection = () => {
             </h1>
             
             {/* Subheadline */}
-            <p className="text-base md:text-lg text-primary-foreground/80 mb-7 max-w-xl animate-fade-in-up delay-200">
+            <p className="text-base md:text-lg text-primary-foreground/80 mb-7 max-w-xl mx-auto lg:mx-0 animate-fade-in-up delay-200">
               From routine <Link to="/services" className="text-accent hover:underline">maintenance</Link> to complex{" "}
               <Link to="/services/engine-repair" className="text-accent hover:underline">engine repairs</Link>, our expert technicians ensure 
               minimal downtime and maximum efficiency for your commercial fleet. 
@@ -48,7 +48,7 @@ const HeroSection = () => {
             </p>
             
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up delay-300">
+            <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up delay-300 justify-center lg:justify-start">
               <a href="tel:6028303232" className="w-full sm:w-auto">
                 <Button variant="hero" size="lg" className="w-full sm:w-auto">
                   <Phone className="h-5 w-5 mr-2" />

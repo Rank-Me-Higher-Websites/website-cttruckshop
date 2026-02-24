@@ -51,8 +51,8 @@ const MobileRepair = () => {
         <div className="absolute bottom-20 left-10 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
         
         <div className="container-custom relative z-10">
-          <div className="max-w-3xl">
-            <span className="inline-flex items-center gap-2 bg-accent/20 border border-accent/30 rounded-full px-4 py-2 mb-6 backdrop-blur-sm">
+          <div className="max-w-3xl text-center md:text-left">
+            <span className="inline-flex items-center gap-2 bg-accent/20 border border-accent/30 rounded-full px-4 py-2 mb-6 backdrop-blur-sm mx-auto md:mx-0">
               <Clock className="h-4 w-4 text-accent" />
               <span className="text-sm font-medium text-primary-foreground">
                 24/7 Emergency Service
@@ -69,7 +69,7 @@ const MobileRepair = () => {
               throughout the Phoenix metro area.
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
               <a href="tel:6028303232">
                 <Button variant="hero" size="xl">
                   <Phone className="h-5 w-5 mr-2" />
@@ -156,8 +156,8 @@ const MobileRepair = () => {
       <section className="section-padding bg-primary relative overflow-hidden border-t border-accent/10">
         <div className="container-custom relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <span className="inline-flex items-center gap-2 bg-accent/20 border border-accent/30 rounded-full px-4 py-2 mb-6">
+            <div className="text-center lg:text-left">
+              <span className="inline-flex items-center gap-2 bg-accent/20 border border-accent/30 rounded-full px-4 py-2 mb-6 mx-auto lg:mx-0">
                 <Zap className="h-4 w-4 text-accent" />
                 <span className="text-sm font-medium text-primary-foreground">
                   On-Site Services

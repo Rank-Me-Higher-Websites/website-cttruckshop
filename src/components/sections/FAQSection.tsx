@@ -49,9 +49,9 @@ const FAQSection = () => {
       <div className="container-custom">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
           {/* Header */}
-          <div>
+          <div className="text-center lg:text-left">
             <ScrollReveal direction="left">
-              <span className="inline-block text-accent font-semibold text-sm uppercase tracking-wider mb-3">
+              <span className="inline-block text-accent font-semibold text-sm uppercase tracking-wider mb-3 mx-auto lg:mx-0">
                 FAQ
               </span>
               <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
@@ -61,7 +61,7 @@ const FAQSection = () => {
                 Got questions about our truck and trailer repair services? 
                 Find answers to common questions below, or contact us directly for personalized assistance.
               </p>
-              <a href="tel:6028303232">
+              <a href="tel:6028303232" className="inline-block">
                 <Button variant="accent" size="lg">
                   <Phone className="h-5 w-5 mr-2" />
                   Call (602) 830-3232
