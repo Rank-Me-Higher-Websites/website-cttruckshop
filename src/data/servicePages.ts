@@ -129,7 +129,7 @@ export const servicePages: Record<string, ServicePageData> = {
       },
       {
         question: "What should I do if I need emergency truck repair in Phoenix?",
-        answer: "If you experience a breakdown or mechanical issue, call CT Truck and Trailer Shop for Emergency Truck Repair in Phoenix. Our mobile service team is available 24/7 to provide roadside assistance, including diagnostics, tire replacement, air leak repair, and more—getting you back on the road quickly and safely.",
+        answer: "If you experience a breakdown or mechanical issue, call CT Truck and Trailer Shop for Emergency Truck Repair in Phoenix. Our mobile service team is available to provide roadside assistance, including diagnostics, tire replacement, air leak repair, and more—getting you back on the road quickly and safely.",
       },
     ],
     relatedServices: [
