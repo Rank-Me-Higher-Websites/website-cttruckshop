@@ -42,7 +42,7 @@ const About = () => {
     <Layout>
       <SEO
         title="About Us"
-        description="Learn about CT Truck & Trailer Shop, Phoenix's trusted commercial truck repair service. Expert technicians, 24/7 emergency service, and a commitment to keeping your fleet moving."
+        description="Learn about CT Truck & Trailer Shop, Phoenix's trusted commercial truck repair service. Expert technicians, fast emergency response, and a commitment to keeping your fleet moving."
         keywords="about CT Truck Shop, Phoenix truck repair company, commercial fleet service"
       />
 
