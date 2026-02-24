@@ -57,59 +57,70 @@ const Footer = () => {
       {/* Main Footer */}
       <div className="section-padding-sm">
         <div className="container-custom">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-8">
-            {/* Company Info */}
-            <div className="lg:col-span-2">
-              <Link to="/" className="inline-block mb-6">
-                <img src={logo} alt="CT Shop" className="h-16 brightness-0 invert" />
+          {/* Top row: Logo + description | Contact info */}
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-12">
+            <div>
+              <Link to="/" className="inline-block mb-4">
+                <img src={logo} alt="CT Shop" className="h-14 brightness-0 invert" />
               </Link>
-              <p className="text-primary-foreground/80 mb-6 max-w-md">
+              <p className="text-primary-foreground/70 max-w-md text-sm leading-relaxed">
                 CT Truck & Trailer Shop provides expert fleet maintenance and repair services 
                 for heavy-duty trucks and trailers in Phoenix, AZ. From routine maintenance 
                 to emergency roadside assistance, we keep your business moving.
               </p>
+            </div>
+
+            <div className="grid grid-cols-2 gap-6">
               <div className="space-y-3">
                 <a
                   href="tel:6028303232"
-                  className="flex items-center gap-3 text-primary-foreground/90 hover:text-accent transition-colors"
+                  className="flex items-center gap-3 text-primary-foreground/90 hover:text-accent transition-colors text-sm"
                 >
-                  <Phone className="h-5 w-5 text-accent" />
+                  <Phone className="h-4 w-4 text-accent flex-shrink-0" />
                   <span>(602) 830-3232</span>
                 </a>
                 <a
                   href="mailto:service@clevertranscoshop.com"
-                  className="flex items-center gap-3 text-primary-foreground/90 hover:text-accent transition-colors"
+                  className="flex items-center gap-3 text-primary-foreground/90 hover:text-accent transition-colors text-sm"
                 >
-                  <Mail className="h-5 w-5 text-accent" />
+                  <Mail className="h-4 w-4 text-accent flex-shrink-0" />
                   <span>service@clevertranscoshop.com</span>
                 </a>
+              </div>
+              <div className="space-y-3">
                 <a
                   href="https://www.google.com/maps/dir//3883+N+36th+Ave,+Phoenix,+AZ+85019"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-start gap-3 text-primary-foreground/90 hover:text-accent transition-colors"
+                  className="flex items-start gap-3 text-primary-foreground/90 hover:text-accent transition-colors text-sm"
                 >
-                  <MapPin className="h-5 w-5 text-accent flex-shrink-0 mt-0.5" />
+                  <MapPin className="h-4 w-4 text-accent flex-shrink-0 mt-0.5" />
                   <span>3883 N 36th Ave<br />Phoenix, AZ 85019</span>
                 </a>
-                <div className="flex items-center gap-3 text-primary-foreground/90">
-                  <Clock className="h-5 w-5 text-accent" />
-                  <span>24/7 Emergency Service Available</span>
+                <div className="flex items-center gap-3 text-primary-foreground/90 text-sm">
+                  <Clock className="h-4 w-4 text-accent flex-shrink-0" />
+                  <span>24/7 Emergency Service</span>
                 </div>
               </div>
             </div>
+          </div>
 
+          {/* Divider */}
+          <div className="border-t border-primary-foreground/10 mb-10" />
+
+          {/* Bottom row: 4 equal columns */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
             {/* Truck Services */}
             <div>
-              <h4 className="font-heading text-lg font-semibold mb-4 text-accent">
+              <h4 className="font-heading text-sm font-semibold mb-4 text-accent uppercase tracking-wider">
                 Truck Services
               </h4>
-              <ul className="space-y-2">
+              <ul className="space-y-2.5">
                 {truckServices.map((service) => (
                   <li key={service.href}>
                     <Link
                       to={service.href}
-                      className="text-primary-foreground/80 hover:text-accent transition-colors text-sm"
+                      className="text-primary-foreground/70 hover:text-accent transition-colors text-sm"
                     >
                       {service.name}
                     </Link>
@@ -120,15 +131,15 @@ const Footer = () => {
 
             {/* Trailer Services */}
             <div>
-              <h4 className="font-heading text-lg font-semibold mb-4 text-accent">
+              <h4 className="font-heading text-sm font-semibold mb-4 text-accent uppercase tracking-wider">
                 Trailer Services
               </h4>
-              <ul className="space-y-2">
+              <ul className="space-y-2.5">
                 {trailerServices.map((service) => (
                   <li key={service.href}>
                     <Link
                       to={service.href}
-                      className="text-primary-foreground/80 hover:text-accent transition-colors text-sm"
+                      className="text-primary-foreground/70 hover:text-accent transition-colors text-sm"
                     >
                       {service.name}
                     </Link>
@@ -139,50 +150,50 @@ const Footer = () => {
 
             {/* Quick Links */}
             <div>
-              <h4 className="font-heading text-lg font-semibold mb-4 text-accent">
+              <h4 className="font-heading text-sm font-semibold mb-4 text-accent uppercase tracking-wider">
                 Quick Links
               </h4>
-              <ul className="space-y-2">
+              <ul className="space-y-2.5">
                 {quickLinks.map((link) => (
                   <li key={link.href}>
                     <Link
                       to={link.href}
-                      className="text-primary-foreground/80 hover:text-accent transition-colors text-sm"
+                      className="text-primary-foreground/70 hover:text-accent transition-colors text-sm"
                     >
                       {link.name}
                     </Link>
                   </li>
                 ))}
               </ul>
+            </div>
 
-              {/* Social Links */}
-              <div className="mt-6">
-                <h5 className="font-heading text-sm font-semibold mb-3 text-accent">
-                  Follow Us
-                </h5>
-                <div className="flex items-center gap-3">
-                  <a
-                    href="#"
-                    className="w-10 h-10 rounded-lg bg-primary-foreground/10 flex items-center justify-center hover:bg-accent hover:text-accent-foreground transition-colors"
-                    aria-label="Facebook"
-                  >
-                    <Facebook className="h-5 w-5" />
-                  </a>
-                  <a
-                    href="#"
-                    className="w-10 h-10 rounded-lg bg-primary-foreground/10 flex items-center justify-center hover:bg-accent hover:text-accent-foreground transition-colors"
-                    aria-label="Instagram"
-                  >
-                    <Instagram className="h-5 w-5" />
-                  </a>
-                  <a
-                    href="#"
-                    className="w-10 h-10 rounded-lg bg-primary-foreground/10 flex items-center justify-center hover:bg-accent hover:text-accent-foreground transition-colors"
-                    aria-label="LinkedIn"
-                  >
-                    <Linkedin className="h-5 w-5" />
-                  </a>
-                </div>
+            {/* Follow Us */}
+            <div>
+              <h4 className="font-heading text-sm font-semibold mb-4 text-accent uppercase tracking-wider">
+                Follow Us
+              </h4>
+              <div className="flex items-center gap-3">
+                <a
+                  href="#"
+                  className="w-10 h-10 rounded-lg bg-primary-foreground/10 flex items-center justify-center hover:bg-accent hover:text-accent-foreground transition-colors"
+                  aria-label="Facebook"
+                >
+                  <Facebook className="h-5 w-5" />
+                </a>
+                <a
+                  href="#"
+                  className="w-10 h-10 rounded-lg bg-primary-foreground/10 flex items-center justify-center hover:bg-accent hover:text-accent-foreground transition-colors"
+                  aria-label="Instagram"
+                >
+                  <Instagram className="h-5 w-5" />
+                </a>
+                <a
+                  href="#"
+                  className="w-10 h-10 rounded-lg bg-primary-foreground/10 flex items-center justify-center hover:bg-accent hover:text-accent-foreground transition-colors"
+                  aria-label="LinkedIn"
+                >
+                  <Linkedin className="h-5 w-5" />
+                </a>
               </div>
             </div>
           </div>
