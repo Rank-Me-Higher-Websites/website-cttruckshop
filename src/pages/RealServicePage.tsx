@@ -46,7 +46,8 @@ const FAQItem = ({ question, answer }: { question: string; answer: string }) => 
 };
 
 const RealServicePage = () => {
-  const { serviceSlug } = useParams<{ serviceSlug: string }>();
+  const location = useLocation();
+  const serviceSlug = location.pathname.replace(/^\//, "").replace(/\/$/, "");
   const service = serviceSlug ? getServicePage(serviceSlug) : null;
 
   if (!service) return <NotFound />;
