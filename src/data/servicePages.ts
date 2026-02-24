@@ -152,7 +152,7 @@ export const servicePages: Record<string, ServicePageData> = {
     ],
     sections: [],
     highlights: [
-      { title: "24/7 Service", description: "We understand the importance of a properly functioning AC system in heavy-duty trucks, and our goal is to deliver solutions that meet or exceed customer expectations." },
+      { title: "Fast Response", description: "We understand the importance of a properly functioning AC system in heavy-duty trucks, and our goal is to deliver solutions that meet or exceed customer expectations." },
       { title: "Expert Knowledge", description: "Our extensive knowledge of various truck models and AC systems equips us to diagnose and resolve issues efficiently. With CT Shop, you can trust that your truck's AC system is in capable hands." },
       { title: "Comprehensive Solutions", description: "From inspecting and cleaning filters to replacing major components, our comprehensive approach ensures that your AC system operates at peak performance, promoting driver comfort and minimizing downtime." },
     ],
