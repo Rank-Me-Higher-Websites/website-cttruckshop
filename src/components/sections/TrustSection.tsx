@@ -21,11 +21,11 @@ const TrustSection = () => {
           >
             <div className="flex items-center gap-1">
               {[...Array(5)].map((_, i) => (
-                <Star key={i} className="h-5 w-5 text-amber-500 fill-amber-500" />
+                <Star key={i} className={`h-5 w-5 ${i < 4 ? 'text-amber-500 fill-amber-500' : 'text-amber-500 fill-amber-500/50'}`} />
               ))}
             </div>
             <div className="text-left">
-              <p className="font-bold text-foreground">5.0 Rating</p>
+              <p className="font-bold text-foreground">4.4 Rating</p>
               <p className="text-sm text-muted-foreground">22 Google Reviews</p>
             </div>
           </a>
