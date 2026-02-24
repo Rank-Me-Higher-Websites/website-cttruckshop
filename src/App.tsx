@@ -27,7 +27,6 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/services" element={<Services />} />
-            <Route path="/services/:serviceSlug" element={<ServicePage />} />
             {/* Real service pages with old URLs */}
             <Route path="/emergency-truck-repair-phoenix" element={<RealServicePage />} />
             <Route path="/truck-breakdown-service-phoenix" element={<RealServicePage />} />
