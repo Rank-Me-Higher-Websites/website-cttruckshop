@@ -8,7 +8,7 @@ import FAQSection from "@/components/sections/FAQSection";
 import mechanicsWork from "@/assets/mechanics-work.jpeg";
 
 const truckServices = [
-  { icon: Settings, title: "Emergency Truck Repair", description: "24/7 emergency roadside truck repair services in Phoenix and surrounding areas.", href: "/emergency-truck-repair-phoenix" },
+  { icon: Settings, title: "Emergency Truck Repair", description: "Fast emergency roadside truck repair services in Phoenix and surrounding areas.", href: "/emergency-truck-repair-phoenix" },
   { icon: Truck, title: "Truck Breakdown Service", description: "Fast mobile breakdown service with certified technicians ready day or night.", href: "/truck-breakdown-service-phoenix" },
   { icon: Settings, title: "Engine Repairs", description: "Diesel engine diagnostics, repair, and optimization for all semi-truck models.", href: "/semi-truck-engine-repairs-in-phoenix-az" },
   { icon: Zap, title: "AC Repair", description: "Semi truck AC system service to keep drivers comfortable in Arizona heat.", href: "/semi-truck-ac-repair-services" },
