@@ -9,12 +9,21 @@ import { useToast } from "@/hooks/use-toast";
 import GoogleMap from "@/components/GoogleMap";
 import facility from "@/assets/facility.jpg";
 
+const serviceOptions = [
+  "Truck Repair",
+  "Trailer Repair",
+  "Roadside Assistance",
+  "Fleet Maintenance Request",
+];
+
 const Contact = () => {
   const { toast } = useToast();
   const [formData, setFormData] = useState({
-    name: "",
+    firstName: "",
+    lastName: "",
     email: "",
     phone: "",
+    service: "",
     message: "",
   });
 
