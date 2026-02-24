@@ -55,7 +55,7 @@ const MobileRepair = () => {
             <span className="inline-flex items-center gap-2 bg-accent/20 border border-accent/30 rounded-full px-4 py-2 mb-6 backdrop-blur-sm mx-auto md:mx-0">
               <Clock className="h-4 w-4 text-accent" />
               <span className="text-sm font-medium text-primary-foreground">
-                24/7 Emergency Service
+                Fast Emergency Response
               </span>
             </span>
             
