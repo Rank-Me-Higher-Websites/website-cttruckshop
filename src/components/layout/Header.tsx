@@ -105,7 +105,7 @@ const Header = () => {
   const isAboutActive = location.pathname === "/about" || location.pathname.includes("/blog");
 
   return (
-    <div className="sticky top-0 z-[60]">
+    <div className="fixed inset-x-0 top-0 z-[100]">
       {/* Partner Logos Bar */}
       <div className={cn("hidden lg:block bg-background border-b border-border transition-all duration-300", isScrolled ? "max-h-0 overflow-hidden py-0" : "max-h-20 py-3")}>
         <div className="container-custom flex items-center justify-center gap-0">
