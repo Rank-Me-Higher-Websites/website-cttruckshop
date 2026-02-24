@@ -222,7 +222,7 @@ const Contact = () => {
                       </div>
                       <div>
                         <label htmlFor="phone" className="block text-sm font-medium text-primary-foreground mb-2">
-                          Phone Number
+                          Phone Number <span className="text-accent">*</span>
                         </label>
                         <Input
                           id="phone"
