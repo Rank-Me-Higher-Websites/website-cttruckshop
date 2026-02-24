@@ -3,26 +3,22 @@ import { ScrollReveal } from "@/hooks/useScrollAnimation";
 
 const ReviewsSection = () => {
   const widgetRef = useRef<HTMLDivElement>(null);
+  const scriptLoaded = useRef(false);
 
   useEffect(() => {
-    // Load Trustindex script
+    if (scriptLoaded.current || !widgetRef.current) return;
+    scriptLoaded.current = true;
+
     const script = document.createElement("script");
     script.src = "https://cdn.trustindex.io/loader.js?238c26a65a4a652ab72673dc0c6";
     script.defer = true;
     script.async = true;
-    widgetRef.current?.appendChild(script);
-
-    return () => {
-      if (widgetRef.current && script.parentNode === widgetRef.current) {
-        widgetRef.current.removeChild(script);
-      }
-    };
+    widgetRef.current.appendChild(script);
   }, []);
 
   return (
     <section className="pt-6 pb-16 md:pb-20 lg:pb-24 bg-primary text-primary-foreground overflow-hidden">
       <div className="container-custom">
-        {/* Header */}
         <ScrollReveal>
           <div className="text-center max-w-3xl mx-auto mb-14">
             <span className="inline-block text-accent font-semibold text-sm uppercase tracking-wider mb-3">
@@ -34,7 +30,6 @@ const ReviewsSection = () => {
           </div>
         </ScrollReveal>
 
-        {/* Trustindex Widget */}
         <ScrollReveal>
           <div ref={widgetRef} className="max-w-5xl mx-auto" />
         </ScrollReveal>
