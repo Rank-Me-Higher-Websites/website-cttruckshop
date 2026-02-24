@@ -20,27 +20,27 @@ const HeroSection = () => {
       <div className="absolute top-20 right-10 w-72 h-72 bg-accent/10 rounded-full blur-3xl hidden sm:block" />
       <div className="absolute bottom-20 left-10 w-96 h-96 bg-accent/5 rounded-full blur-3xl hidden sm:block" />
       
-      <div className="container-custom relative z-10">
+      <div className="container-custom max-w-[1400px] 2xl:max-w-[1600px] relative z-10">
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           {/* Left Content */}
           <div className="text-center lg:text-left">
             {/* Badge */}
             <div className="inline-flex items-center gap-2 bg-accent/20 border border-accent/30 rounded-full px-4 py-2 mb-6 animate-fade-in mx-auto lg:mx-0">
               <Shield className="h-4 w-4 text-accent" />
-              <span className="text-sm font-medium text-primary-foreground">
+              <span className="text-sm xl:text-base font-medium text-primary-foreground">
                 Trusted Fleet Maintenance Since 2015
               </span>
             </div>
             
             {/* Headline - smaller sizes */}
-            <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground leading-tight mb-5 animate-fade-in-up">
+            <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold text-primary-foreground leading-tight mb-5 animate-fade-in-up">
               Phoenix's Premier{" "}
               <span className="text-gradient">Truck & Trailer</span>{" "}
               Repair Shop
             </h1>
             
             {/* Subheadline */}
-            <p className="text-base md:text-lg text-primary-foreground/80 mb-7 max-w-xl mx-auto lg:mx-0 animate-fade-in-up delay-200">
+            <p className="text-base md:text-lg xl:text-xl text-primary-foreground/80 mb-7 max-w-xl xl:max-w-2xl mx-auto lg:mx-0 animate-fade-in-up delay-200">
               From routine <Link to="/services" className="text-accent hover:underline">maintenance</Link> to complex{" "}
               <Link to="/services/engine-repair" className="text-accent hover:underline">engine repairs</Link>, our expert technicians ensure 
               minimal downtime and maximum efficiency for your commercial fleet. 
@@ -71,8 +71,8 @@ const HeroSection = () => {
                     <Clock className="h-4 w-4 sm:h-5 sm:w-5 text-accent" />
                   </div>
                   <div>
-                    <p className="font-heading text-base sm:text-lg font-bold text-primary-foreground">24/7</p>
-                    <p className="text-[10px] sm:text-xs text-primary-foreground/60">Emergency Service</p>
+                    <p className="font-heading text-base sm:text-lg xl:text-xl font-bold text-primary-foreground">24/7</p>
+                     <p className="text-[10px] sm:text-xs xl:text-sm text-primary-foreground/60">Emergency Service</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-2">
@@ -80,8 +80,8 @@ const HeroSection = () => {
                     <Wrench className="h-4 w-4 sm:h-5 sm:w-5 text-accent" />
                   </div>
                   <div>
-                    <p className="font-heading text-base sm:text-lg font-bold text-primary-foreground">2,500+</p>
-                    <p className="text-[10px] sm:text-xs text-primary-foreground/60">Repairs Completed</p>
+                    <p className="font-heading text-base sm:text-lg xl:text-xl font-bold text-primary-foreground">2,500+</p>
+                     <p className="text-[10px] sm:text-xs xl:text-sm text-primary-foreground/60">Repairs Completed</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-2">
@@ -89,8 +89,8 @@ const HeroSection = () => {
                     <Shield className="h-4 w-4 sm:h-5 sm:w-5 text-accent" />
                   </div>
                   <div>
-                    <p className="font-heading text-base sm:text-lg font-bold text-primary-foreground">DOT</p>
-                    <p className="text-[10px] sm:text-xs text-primary-foreground/60">Certified Inspections</p>
+                    <p className="font-heading text-base sm:text-lg xl:text-xl font-bold text-primary-foreground">DOT</p>
+                     <p className="text-[10px] sm:text-xs xl:text-sm text-primary-foreground/60">Certified Inspections</p>
                   </div>
                 </div>
               </div>
