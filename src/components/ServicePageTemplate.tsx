@@ -243,7 +243,7 @@ const ServicePageTemplate = ({ slug }: ServicePageTemplateProps) => {
 
             {/* Sidebar */}
             <div className="lg:col-span-1 self-start">
-              <div className="sticky top-28 space-y-6">
+              <div className="space-y-6">
                 {/* Lead Form */}
                 <LeadForm
                   title="Request a Free Quote"
