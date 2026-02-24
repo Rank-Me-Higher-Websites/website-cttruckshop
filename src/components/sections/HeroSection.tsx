@@ -1,9 +1,42 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Phone, ArrowRight, Shield, Clock, Wrench } from "lucide-react";
+import { Input } from "@/components/ui/input";
+import { Phone, ArrowRight, Shield, Clock, Wrench, Send } from "lucide-react";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import nightTowing from "@/assets/night-towing.jpg";
+import { useState } from "react";
+
+const serviceOptions = [
+  "Engine Repair",
+  "Brake Service",
+  "DOT Inspection",
+  "Transmission Repair",
+  "Electrical Diagnostics",
+  "Oil Change & Lube",
+  "Suspension & Steering",
+  "Welding & Fabrication",
+  "Towing & Recovery",
+  "Mobile Repair",
+  "Other",
+];
 
 const HeroSection = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    service: "",
+  });
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    const subject = encodeURIComponent(`Service Request: ${formData.service}`);
+    const body = encodeURIComponent(
+      `Name: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nService Needed: ${formData.service}`
+    );
+    window.location.href = `mailto:info@cttruckshop.com?subject=${subject}&body=${body}`;
+  };
+
   return (
     <section className="relative min-h-[90vh] flex items-center overflow-hidden">
       {/* Background Image */}
@@ -20,75 +53,157 @@ const HeroSection = () => {
       <div className="absolute bottom-20 left-10 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
       
       <div className="container-custom relative z-10">
-        <div className="max-w-3xl">
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 bg-accent/20 border border-accent/30 rounded-full px-4 py-2 mb-6 animate-fade-in">
-            <Shield className="h-4 w-4 text-accent" />
-            <span className="text-sm font-medium text-primary-foreground">
-              Trusted Fleet Maintenance Since 2015
-            </span>
-          </div>
-          
-          {/* Headline */}
-          <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-primary-foreground leading-tight mb-6 animate-fade-in-up">
-            Phoenix's Premier{" "}
-            <span className="text-gradient">Truck & Trailer</span>{" "}
-            Repair Shop
-          </h1>
-          
-          {/* Subheadline with internal links */}
-          <p className="text-lg md:text-xl text-primary-foreground/80 mb-8 max-w-2xl animate-fade-in-up delay-200">
-            From routine <Link to="/services" className="text-accent hover:underline">maintenance</Link> to complex{" "}
-            <Link to="/services/engine-repair" className="text-accent hover:underline">engine repairs</Link>, our expert technicians ensure 
-            minimal downtime and maximum efficiency for your commercial fleet. 
-            <strong className="text-accent"> <Link to="/mobile-repair" className="hover:underline">24/7 Emergency Service</Link> Available.</strong>
-          </p>
-          
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up delay-300">
-            <a href="tel:6028303232">
-              <Button variant="hero" size="xl">
-                <Phone className="h-5 w-5 mr-2" />
-                Call (602) 830-3232
-              </Button>
-            </a>
-            <Link to="/services">
-              <Button variant="hero-outline" size="xl">
-                View Our Services
-                <ArrowRight className="h-5 w-5 ml-2" />
-              </Button>
-            </Link>
-          </div>
-          
-          {/* Trust Indicators */}
-          <div className="mt-12 pt-8 border-t border-primary-foreground/10 animate-fade-in delay-500">
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-10">
-              <div className="flex items-center gap-3">
-                <div className="icon-container-outline">
-                  <Clock className="h-6 w-6 text-accent" />
+        <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+          {/* Left Content */}
+          <div>
+            {/* Badge */}
+            <div className="inline-flex items-center gap-2 bg-accent/20 border border-accent/30 rounded-full px-4 py-2 mb-6 animate-fade-in">
+              <Shield className="h-4 w-4 text-accent" />
+              <span className="text-sm font-medium text-primary-foreground">
+                Trusted Fleet Maintenance Since 2015
+              </span>
+            </div>
+            
+            {/* Headline - smaller sizes */}
+            <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground leading-tight mb-5 animate-fade-in-up">
+              Phoenix's Premier{" "}
+              <span className="text-gradient">Truck & Trailer</span>{" "}
+              Repair Shop
+            </h1>
+            
+            {/* Subheadline */}
+            <p className="text-base md:text-lg text-primary-foreground/80 mb-7 max-w-xl animate-fade-in-up delay-200">
+              From routine <Link to="/services" className="text-accent hover:underline">maintenance</Link> to complex{" "}
+              <Link to="/services/engine-repair" className="text-accent hover:underline">engine repairs</Link>, our expert technicians ensure 
+              minimal downtime and maximum efficiency for your commercial fleet. 
+              <strong className="text-accent"> <Link to="/mobile-repair" className="hover:underline">24/7 Emergency Service</Link> Available.</strong>
+            </p>
+            
+            {/* CTA Buttons */}
+            <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up delay-300">
+              <a href="tel:6028303232">
+                <Button variant="hero" size="lg">
+                  <Phone className="h-5 w-5 mr-2" />
+                  Call (602) 830-3232
+                </Button>
+              </a>
+              <Link to="/services">
+                <Button variant="hero-outline" size="lg">
+                  View Our Services
+                  <ArrowRight className="h-5 w-5 ml-2" />
+                </Button>
+              </Link>
+            </div>
+            
+            {/* Trust Indicators */}
+            <div className="mt-10 pt-6 border-t border-primary-foreground/10 animate-fade-in delay-500">
+              <div className="grid grid-cols-3 gap-4 md:gap-8">
+                <div className="flex items-center gap-2">
+                  <div className="icon-container-outline">
+                    <Clock className="h-5 w-5 text-accent" />
+                  </div>
+                  <div>
+                    <p className="font-heading text-lg font-bold text-primary-foreground">24/7</p>
+                    <p className="text-xs text-primary-foreground/60">Emergency Service</p>
+                  </div>
                 </div>
-                <div>
-                  <p className="font-heading text-xl font-bold text-primary-foreground">24/7</p>
-                  <p className="text-sm text-primary-foreground/60">Emergency Service</p>
+                <div className="flex items-center gap-2">
+                  <div className="icon-container-outline">
+                    <Wrench className="h-5 w-5 text-accent" />
+                  </div>
+                  <div>
+                    <p className="font-heading text-lg font-bold text-primary-foreground">2,500+</p>
+                    <p className="text-xs text-primary-foreground/60">Repairs Completed</p>
+                  </div>
+                </div>
+                <div className="flex items-center gap-2">
+                  <div className="icon-container-outline">
+                    <Shield className="h-5 w-5 text-accent" />
+                  </div>
+                  <div>
+                    <p className="font-heading text-lg font-bold text-primary-foreground">DOT</p>
+                    <p className="text-xs text-primary-foreground/60">Certified Inspections</p>
+                  </div>
                 </div>
               </div>
-              <div className="flex items-center gap-3">
-                <div className="icon-container-outline">
-                  <Wrench className="h-6 w-6 text-accent" />
-                </div>
-                <div>
-                  <p className="font-heading text-xl font-bold text-primary-foreground">2,500+</p>
-                  <p className="text-sm text-primary-foreground/60">Repairs Completed</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-3">
-                <div className="icon-container-outline">
-                  <Shield className="h-6 w-6 text-accent" />
-                </div>
-                <div>
-                  <p className="font-heading text-xl font-bold text-primary-foreground">DOT</p>
-                  <p className="text-sm text-primary-foreground/60">Certified Inspections</p>
-                </div>
+            </div>
+          </div>
+
+          {/* Right Side - Contact Form */}
+          <div className="animate-fade-in-up delay-300 hidden lg:block">
+            <div className="relative">
+              <div className="absolute -inset-1 bg-gradient-to-br from-accent/40 via-accent/10 to-accent/40 rounded-2xl blur-sm" />
+              <div className="relative bg-primary/90 backdrop-blur-md rounded-2xl p-6 border border-accent/30">
+                <h3 className="font-heading text-xl font-bold text-primary-foreground mb-1">
+                  Request a <span className="text-accent">Free Quote</span>
+                </h3>
+                <p className="text-sm text-primary-foreground/60 mb-5">
+                  Fill out the form and we'll get back to you ASAP.
+                </p>
+
+                <form onSubmit={handleSubmit} className="space-y-4">
+                  <div>
+                    <Input
+                      placeholder="Full Name"
+                      value={formData.name}
+                      onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                      required
+                      maxLength={100}
+                      className="bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/40 focus:border-accent"
+                    />
+                  </div>
+                  <div>
+                    <Input
+                      type="email"
+                      placeholder="Email Address"
+                      value={formData.email}
+                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                      required
+                      maxLength={255}
+                      className="bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/40 focus:border-accent"
+                    />
+                  </div>
+                  <div>
+                    <Input
+                      type="tel"
+                      placeholder="Phone Number"
+                      value={formData.phone}
+                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
+                      required
+                      maxLength={20}
+                      className="bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/40 focus:border-accent"
+                    />
+                  </div>
+                  <div>
+                    <Select
+                      value={formData.service}
+                      onValueChange={(value) => setFormData({ ...formData, service: value })}
+                      required
+                    >
+                      <SelectTrigger className="bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground focus:border-accent [&>span]:text-primary-foreground/40 [&[data-state=open]>span]:text-primary-foreground data-[placeholder]:text-primary-foreground/40">
+                        <SelectValue placeholder="Service Needed" />
+                      </SelectTrigger>
+                      <SelectContent>
+                        {serviceOptions.map((service) => (
+                          <SelectItem key={service} value={service}>
+                            {service}
+                          </SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
+                  </div>
+                  <Button type="submit" variant="hero" size="lg" className="w-full">
+                    <Send className="h-4 w-4 mr-2" />
+                    Get Your Free Quote
+                  </Button>
+                </form>
+
+                <p className="text-xs text-primary-foreground/40 mt-3 text-center">
+                  Or call us directly at{" "}
+                  <a href="tel:6028303232" className="text-accent hover:underline">
+                    (602) 830-3232
+                  </a>
+                </p>
               </div>
             </div>
           </div>
