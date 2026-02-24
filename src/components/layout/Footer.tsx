@@ -1,52 +1,52 @@
 import { Link } from "react-router-dom";
-import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Linkedin, Youtube } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import logo from "@/assets/ct-logo.webp";
+
+const truckServices = [
+  { name: "Engine Repair", href: "/services/engine-repair" },
+  { name: "Brake Service", href: "/services/brake-service" },
+  { name: "Electrical Systems", href: "/services/electrical" },
+  { name: "Transmission Repair", href: "/services/transmission" },
+  { name: "DOT Inspections", href: "/services/dot-inspections" },
+];
+
+const trailerServices = [
+  { name: "Trailer Brakes", href: "/services/trailer-brakes" },
+  { name: "Suspension", href: "/services/suspension" },
+  { name: "Welding", href: "/services/welding" },
+  { name: "Hydraulics", href: "/services/hydraulics" },
+  { name: "ABS Systems", href: "/services/abs-systems" },
+];
+
+const quickLinks = [
+  { name: "About Us", href: "/about" },
+  { name: "Mobile Repair", href: "/mobile-repair" },
+  { name: "Locations", href: "/locations" },
+  { name: "Contact", href: "/contact" },
+  { name: "Blog", href: "/blog" },
+];
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
-  const truckServices = [
-    { name: "Engine Repair", href: "/services/engine-repair" },
-    { name: "Brake Service", href: "/services/brake-service" },
-    { name: "Electrical Systems", href: "/services/electrical" },
-    { name: "Transmission Repair", href: "/services/transmission" },
-    { name: "DOT Inspections", href: "/services/dot-inspections" },
-  ];
-
-  const trailerServices = [
-    { name: "Trailer Brakes", href: "/services/trailer-brakes" },
-    { name: "Suspension", href: "/services/suspension" },
-    { name: "Welding", href: "/services/welding" },
-    { name: "Hydraulics", href: "/services/hydraulics" },
-    { name: "ABS Systems", href: "/services/abs-systems" },
-  ];
-
-  const quickLinks = [
-    { name: "About Us", href: "/about" },
-    { name: "Mobile Repair", href: "/mobile-repair" },
-    { name: "Locations", href: "/locations" },
-    { name: "Contact", href: "/contact" },
-    { name: "Blog", href: "/blog" },
-  ];
-
   return (
     <footer className="bg-primary text-primary-foreground">
-      {/* CTA Section */}
-      <div className="bg-accent text-accent-foreground py-8">
-        <div className="container-custom">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-            <div>
-              <h3 className="font-heading text-2xl md:text-3xl font-bold">
+      {/* Emergency CTA Banner */}
+      <div className="bg-accent">
+        <div className="container-custom py-6 md:py-8">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div className="text-center sm:text-left">
+              <h3 className="font-heading text-xl md:text-2xl lg:text-3xl font-bold text-accent-foreground">
                 Need Emergency Roadside Assistance?
               </h3>
-              <p className="text-accent-foreground/80 mt-1">
+              <p className="text-accent-foreground/80 text-sm md:text-base mt-1">
                 Our mobile techs are ready 24/7 to get you back on the road
               </p>
             </div>
-            <a href="tel:6028303232">
-              <Button variant="default" size="xl" className="font-bold">
-                <Phone className="h-5 w-5 mr-2" />
+            <a href="tel:6028303232" className="flex-shrink-0">
+              <Button variant="default" size="lg" className="font-bold text-base">
+                <Phone className="h-5 w-5" />
                 Call Now: (602) 830-3232
               </Button>
             </a>
@@ -54,165 +54,160 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Main Footer */}
-      <div className="section-padding-sm">
-        <div className="container-custom">
-          {/* Top row: Logo + description | Contact info */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-12">
-            <div>
-              <Link to="/" className="inline-block mb-4">
-                <img src={logo} alt="CT Shop" className="h-14 brightness-0 invert" />
-              </Link>
-              <p className="text-primary-foreground/70 max-w-md text-sm leading-relaxed">
-                CT Truck & Trailer Shop provides expert fleet maintenance and repair services 
-                for heavy-duty trucks and trailers in Phoenix, AZ. From routine maintenance 
-                to emergency roadside assistance, we keep your business moving.
-              </p>
-            </div>
+      {/* Main Footer Content */}
+      <div className="container-custom pt-12 pb-8 md:pt-16 md:pb-10">
+        {/* Top: Logo + Contact */}
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 pb-10 border-b border-primary-foreground/10">
+          {/* Brand */}
+          <div className="md:col-span-5">
+            <Link to="/" className="inline-block mb-4">
+              <img src={logo} alt="CT Shop" className="h-12 md:h-14 brightness-0 invert" />
+            </Link>
+            <p className="text-primary-foreground/60 text-sm leading-relaxed max-w-sm">
+              Expert fleet maintenance and repair services for heavy-duty trucks and trailers 
+              in Phoenix, AZ. From routine maintenance to emergency roadside assistance, 
+              we keep your business moving.
+            </p>
+          </div>
 
-            <div className="grid grid-cols-2 gap-6">
-              <div className="space-y-3">
-                <a
-                  href="tel:6028303232"
-                  className="flex items-center gap-3 text-primary-foreground/90 hover:text-accent transition-colors text-sm"
-                >
-                  <Phone className="h-4 w-4 text-accent flex-shrink-0" />
-                  <span>(602) 830-3232</span>
-                </a>
-                <a
-                  href="mailto:service@clevertranscoshop.com"
-                  className="flex items-center gap-3 text-primary-foreground/90 hover:text-accent transition-colors text-sm"
-                >
-                  <Mail className="h-4 w-4 text-accent flex-shrink-0" />
-                  <span>service@clevertranscoshop.com</span>
-                </a>
-              </div>
-              <div className="space-y-3">
-                <a
-                  href="https://www.google.com/maps/dir//3883+N+36th+Ave,+Phoenix,+AZ+85019"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-start gap-3 text-primary-foreground/90 hover:text-accent transition-colors text-sm"
-                >
-                  <MapPin className="h-4 w-4 text-accent flex-shrink-0 mt-0.5" />
-                  <span>3883 N 36th Ave<br />Phoenix, AZ 85019</span>
-                </a>
-                <div className="flex items-center gap-3 text-primary-foreground/90 text-sm">
-                  <Clock className="h-4 w-4 text-accent flex-shrink-0" />
-                  <span>24/7 Emergency Service</span>
+          {/* Contact Info */}
+          <div className="md:col-span-7">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
+              <a
+                href="tel:6028303232"
+                className="flex items-center gap-3 text-primary-foreground/80 hover:text-accent transition-colors group"
+              >
+                <span className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center group-hover:bg-accent/20 transition-colors flex-shrink-0">
+                  <Phone className="h-4 w-4 text-accent" />
+                </span>
+                <div>
+                  <span className="text-[11px] uppercase tracking-wider text-primary-foreground/40 block">Phone</span>
+                  <span className="text-sm font-medium">(602) 830-3232</span>
+                </div>
+              </a>
+
+              <a
+                href="mailto:service@clevertranscoshop.com"
+                className="flex items-center gap-3 text-primary-foreground/80 hover:text-accent transition-colors group"
+              >
+                <span className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center group-hover:bg-accent/20 transition-colors flex-shrink-0">
+                  <Mail className="h-4 w-4 text-accent" />
+                </span>
+                <div>
+                  <span className="text-[11px] uppercase tracking-wider text-primary-foreground/40 block">Email</span>
+                  <span className="text-sm font-medium break-all">service@clevertranscoshop.com</span>
+                </div>
+              </a>
+
+              <a
+                href="https://www.google.com/maps/dir//3883+N+36th+Ave,+Phoenix,+AZ+85019"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-3 text-primary-foreground/80 hover:text-accent transition-colors group"
+              >
+                <span className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center group-hover:bg-accent/20 transition-colors flex-shrink-0">
+                  <MapPin className="h-4 w-4 text-accent" />
+                </span>
+                <div>
+                  <span className="text-[11px] uppercase tracking-wider text-primary-foreground/40 block">Address</span>
+                  <span className="text-sm font-medium">3883 N 36th Ave, Phoenix, AZ 85019</span>
+                </div>
+              </a>
+
+              <div className="flex items-center gap-3 text-primary-foreground/80">
+                <span className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
+                  <Clock className="h-4 w-4 text-accent" />
+                </span>
+                <div>
+                  <span className="text-[11px] uppercase tracking-wider text-primary-foreground/40 block">Hours</span>
+                  <span className="text-sm font-medium">24/7 Emergency Service</span>
                 </div>
               </div>
             </div>
           </div>
+        </div>
 
-          {/* Divider */}
-          <div className="border-t border-primary-foreground/10 mb-10" />
+        {/* Links Grid */}
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 py-10 border-b border-primary-foreground/10">
+          <div>
+            <h4 className="font-heading text-xs font-semibold mb-4 text-accent uppercase tracking-widest">
+              Truck Services
+            </h4>
+            <ul className="space-y-2.5">
+              {truckServices.map((s) => (
+                <li key={s.href}>
+                  <Link to={s.href} className="text-primary-foreground/60 hover:text-accent transition-colors text-sm">
+                    {s.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-          {/* Bottom row: 4 equal columns */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-            {/* Truck Services */}
-            <div>
-              <h4 className="font-heading text-sm font-semibold mb-4 text-accent uppercase tracking-wider">
-                Truck Services
-              </h4>
-              <ul className="space-y-2.5">
-                {truckServices.map((service) => (
-                  <li key={service.href}>
-                    <Link
-                      to={service.href}
-                      className="text-primary-foreground/70 hover:text-accent transition-colors text-sm"
-                    >
-                      {service.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
+          <div>
+            <h4 className="font-heading text-xs font-semibold mb-4 text-accent uppercase tracking-widest">
+              Trailer Services
+            </h4>
+            <ul className="space-y-2.5">
+              {trailerServices.map((s) => (
+                <li key={s.href}>
+                  <Link to={s.href} className="text-primary-foreground/60 hover:text-accent transition-colors text-sm">
+                    {s.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-            {/* Trailer Services */}
-            <div>
-              <h4 className="font-heading text-sm font-semibold mb-4 text-accent uppercase tracking-wider">
-                Trailer Services
-              </h4>
-              <ul className="space-y-2.5">
-                {trailerServices.map((service) => (
-                  <li key={service.href}>
-                    <Link
-                      to={service.href}
-                      className="text-primary-foreground/70 hover:text-accent transition-colors text-sm"
-                    >
-                      {service.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
+          <div>
+            <h4 className="font-heading text-xs font-semibold mb-4 text-accent uppercase tracking-widest">
+              Quick Links
+            </h4>
+            <ul className="space-y-2.5">
+              {quickLinks.map((l) => (
+                <li key={l.href}>
+                  <Link to={l.href} className="text-primary-foreground/60 hover:text-accent transition-colors text-sm">
+                    {l.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-            {/* Quick Links */}
-            <div>
-              <h4 className="font-heading text-sm font-semibold mb-4 text-accent uppercase tracking-wider">
-                Quick Links
-              </h4>
-              <ul className="space-y-2.5">
-                {quickLinks.map((link) => (
-                  <li key={link.href}>
-                    <Link
-                      to={link.href}
-                      className="text-primary-foreground/70 hover:text-accent transition-colors text-sm"
-                    >
-                      {link.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* Follow Us */}
-            <div>
-              <h4 className="font-heading text-sm font-semibold mb-4 text-accent uppercase tracking-wider">
-                Follow Us
-              </h4>
-              <div className="flex items-center gap-3">
+          <div>
+            <h4 className="font-heading text-xs font-semibold mb-4 text-accent uppercase tracking-widest">
+              Follow Us
+            </h4>
+            <div className="flex items-center gap-2.5">
+              {[
+                { icon: Facebook, label: "Facebook" },
+                { icon: Instagram, label: "Instagram" },
+                { icon: Linkedin, label: "LinkedIn" },
+              ].map(({ icon: Icon, label }) => (
                 <a
+                  key={label}
                   href="#"
-                  className="w-10 h-10 rounded-lg bg-primary-foreground/10 flex items-center justify-center hover:bg-accent hover:text-accent-foreground transition-colors"
-                  aria-label="Facebook"
+                  className="w-9 h-9 rounded-lg bg-primary-foreground/5 border border-primary-foreground/10 flex items-center justify-center hover:bg-accent hover:text-accent-foreground hover:border-accent transition-all duration-200"
+                  aria-label={label}
                 >
-                  <Facebook className="h-5 w-5" />
+                  <Icon className="h-4 w-4" />
                 </a>
-                <a
-                  href="#"
-                  className="w-10 h-10 rounded-lg bg-primary-foreground/10 flex items-center justify-center hover:bg-accent hover:text-accent-foreground transition-colors"
-                  aria-label="Instagram"
-                >
-                  <Instagram className="h-5 w-5" />
-                </a>
-                <a
-                  href="#"
-                  className="w-10 h-10 rounded-lg bg-primary-foreground/10 flex items-center justify-center hover:bg-accent hover:text-accent-foreground transition-colors"
-                  aria-label="LinkedIn"
-                >
-                  <Linkedin className="h-5 w-5" />
-                </a>
-              </div>
+              ))}
             </div>
           </div>
         </div>
-      </div>
 
-      {/* Bottom Bar - Added extra padding for mobile sticky bar */}
-      <div className="border-t border-primary-foreground/10 py-6 pb-24 md:pb-6">
-        <div className="container-custom">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-primary-foreground/60">
-            <p>© {currentYear} CT Truck & Trailer Shop. All rights reserved.</p>
-            <div className="flex items-center gap-6">
-              <Link to="/privacy" className="hover:text-accent transition-colors">
-                Privacy Policy
-              </Link>
-              <Link to="/terms" className="hover:text-accent transition-colors">
-                Terms of Service
-              </Link>
-            </div>
+        {/* Bottom Bar */}
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-3 pt-6 pb-16 md:pb-0 text-xs text-primary-foreground/40">
+          <p>© {currentYear} CT Truck & Trailer Shop. All rights reserved.</p>
+          <div className="flex items-center gap-4">
+            <Link to="/privacy" className="hover:text-accent transition-colors">
+              Privacy Policy
+            </Link>
+            <span className="text-primary-foreground/20">|</span>
+            <Link to="/terms" className="hover:text-accent transition-colors">
+              Terms of Service
+            </Link>
           </div>
         </div>
       </div>
