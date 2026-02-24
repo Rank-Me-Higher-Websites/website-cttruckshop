@@ -94,7 +94,7 @@ const Contact = () => {
       </section>
 
       {/* Contact Section with futuristic styling */}
-      <section className="section-padding bg-primary relative overflow-hidden px-4 sm:px-6 lg:px-8">
+      <section className="section-padding bg-primary relative overflow-hidden">
         {/* Background elements */}
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute top-1/4 left-0 w-64 h-64 bg-accent/5 rounded-full blur-3xl" />
@@ -104,7 +104,7 @@ const Contact = () => {
         <div className="container-custom relative z-10">
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Contact Info */}
-            <div className="pb-20 lg:pb-0">
+            <div className="pb-20 lg:pb-0 w-full max-w-xl mx-auto lg:max-w-none">
               <h2 className="font-heading text-3xl font-bold text-primary-foreground mb-8 text-center lg:text-left">
                 Contact <span className="text-gradient">Information</span>
               </h2>
@@ -112,7 +112,7 @@ const Contact = () => {
               <div className="space-y-4 mb-10 overflow-hidden">
                 <a
                   href="tel:6028303232"
-                  className="flex items-start gap-3 sm:gap-4 p-3 sm:p-4 rounded-xl bg-primary-foreground/5 border border-accent/20 hover:border-accent/50 transition-all group overflow-hidden"
+                  className="flex flex-col items-center text-center sm:flex-row sm:items-start sm:text-left gap-3 sm:gap-4 p-3 sm:p-4 rounded-xl bg-primary-foreground/5 border border-accent/20 hover:border-accent/50 transition-all group overflow-hidden"
                 >
                   <div className="w-12 h-12 rounded-xl bg-accent/20 border border-accent/30 flex items-center justify-center flex-shrink-0">
                     <Phone className="h-6 w-6 text-accent" />
@@ -132,7 +132,7 @@ const Contact = () => {
 
                 <a
                   href="mailto:service@clevertranscoshop.com"
-                  className="flex items-start gap-3 sm:gap-4 p-3 sm:p-4 rounded-xl bg-primary-foreground/5 border border-accent/20 hover:border-accent/50 transition-all group overflow-hidden"
+                  className="flex flex-col items-center text-center sm:flex-row sm:items-start sm:text-left gap-3 sm:gap-4 p-3 sm:p-4 rounded-xl bg-primary-foreground/5 border border-accent/20 hover:border-accent/50 transition-all group overflow-hidden"
                 >
                   <div className="w-12 h-12 rounded-xl bg-accent/20 border border-accent/30 flex items-center justify-center flex-shrink-0">
                     <Mail className="h-6 w-6 text-accent" />
@@ -147,22 +147,22 @@ const Contact = () => {
                   </div>
                 </a>
 
-                <a href="https://maps.app.goo.gl/XFyDXt5avVXvvDPr5" target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 sm:gap-4 p-3 sm:p-4 rounded-xl bg-primary-foreground/5 border border-accent/20 hover:border-accent/40 transition-colors overflow-hidden">
+                <a href="https://maps.app.goo.gl/XFyDXt5avVXvvDPr5" target="_blank" rel="noopener noreferrer" className="flex flex-col items-center text-center sm:flex-row sm:items-start sm:text-left gap-3 sm:gap-4 p-3 sm:p-4 rounded-xl bg-primary-foreground/5 border border-accent/20 hover:border-accent/40 transition-colors overflow-hidden">
                   <div className="w-12 h-12 rounded-xl bg-accent/20 border border-accent/30 flex items-center justify-center flex-shrink-0">
                     <MapPin className="h-6 w-6 text-accent" />
                   </div>
-                  <div>
+                  <div className="min-w-0">
                     <p className="font-semibold text-primary-foreground">Location</p>
                     <p className="text-primary-foreground">3883 N 36th Ave</p>
                     <p className="text-primary-foreground">Phoenix, AZ 85019</p>
                   </div>
                 </a>
 
-                <div className="flex items-start gap-3 sm:gap-4 p-3 sm:p-4 rounded-xl bg-primary-foreground/5 border border-accent/20 overflow-hidden">
+                <div className="flex flex-col items-center text-center sm:flex-row sm:items-start sm:text-left gap-3 sm:gap-4 p-3 sm:p-4 rounded-xl bg-primary-foreground/5 border border-accent/20 overflow-hidden">
                   <div className="w-12 h-12 rounded-xl bg-accent/20 border border-accent/30 flex items-center justify-center flex-shrink-0">
                     <Clock className="h-6 w-6 text-accent" />
                   </div>
-                  <div>
+                  <div className="min-w-0">
                     <p className="font-semibold text-primary-foreground">Hours</p>
                     <p className="text-primary-foreground">Mon-Fri: 8:00 AM - 5:00 PM</p>
                     <p className="text-primary-foreground/70">Sat & Sun: Closed</p>
@@ -174,7 +174,7 @@ const Contact = () => {
               {/* Quick CTA */}
               <div className="relative bg-accent/10 rounded-xl p-6 border border-accent/30 overflow-hidden">
                 <div className="absolute -inset-1 bg-gradient-to-r from-accent/20 to-accent/5 rounded-xl blur-sm" />
-                <div className="relative z-10">
+                <div className="relative z-10 text-center lg:text-left">
                   <h3 className="font-heading text-xl font-bold text-primary-foreground mb-2">
                     Need Immediate Help?
                   </h3>
@@ -192,8 +192,8 @@ const Contact = () => {
             </div>
 
             {/* Contact Form */}
-            <div>
-              <div className="relative bg-primary-foreground/5 rounded-2xl p-8 border border-accent/20 overflow-hidden">
+            <div className="w-full max-w-xl mx-auto lg:max-w-none">
+              <div className="relative bg-primary-foreground/5 rounded-2xl p-5 sm:p-8 border border-accent/20 overflow-hidden">
                 {/* Glow effect */}
                 <div className="absolute -inset-1 bg-gradient-to-br from-accent/10 to-transparent rounded-2xl blur-sm" />
                 
