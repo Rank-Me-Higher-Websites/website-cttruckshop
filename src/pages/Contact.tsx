@@ -125,7 +125,7 @@ const Contact = () => {
                       (602) 830-3232
                     </p>
                     <p className="text-sm text-primary-foreground/60">
-                      24/7 Emergency Line Available
+                      Emergency Line Available
                     </p>
                   </div>
                 </a>
