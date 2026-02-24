@@ -25,7 +25,7 @@ const StickyContactBar = () => {
   return (
     <>
       {/* Mobile Floating Call Button - appears when scrolling, hidden when footer visible */}
-      <div className={`fixed bottom-6 right-4 z-40 md:hidden transition-all duration-300 ${isVisible && !isFooterVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-75 pointer-events-none'}`}>
+      <div className={`fixed bottom-6 left-1/2 -translate-x-1/2 z-40 md:hidden transition-all duration-300 ${isVisible && !isFooterVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-75 pointer-events-none'}`}>
         <a
           href="tel:6028303232"
           className="flex items-center justify-center gap-2 bg-accent text-accent-foreground py-3 px-5 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all animate-pulse"
