@@ -93,6 +93,40 @@ const Contact = () => {
         <div className="absolute bottom-4 right-4 w-16 h-16 border-r-2 border-b-2 border-accent/30 rounded-br-lg hidden sm:block" />
       </section>
 
+      {/* Why Contact Us Section */}
+      <section className="section-padding bg-secondary">
+        <div className="container-custom">
+          <div className="max-w-4xl mx-auto text-center">
+            <span className="inline-block text-accent font-semibold text-sm uppercase tracking-wider mb-3">
+              Why CT Truck Shop
+            </span>
+            <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mb-6">
+              The Shop Drivers and Fleets Count On
+            </h2>
+            <p className="text-muted-foreground text-lg mb-6">
+              When your truck breaks down, every minute counts. CT Truck and Trailer Shop has built its reputation on fast turnarounds, honest pricing, and experienced technicians who treat every rig like their own. From owner-operators to full commercial fleets, we deliver the same level of care and urgency on every job.
+            </p>
+            <p className="text-muted-foreground text-lg mb-8">
+              Whether you need a scheduled PM service, a complex engine repair, or emergency roadside help at 2 AM, we are ready. Our Phoenix shop is fully equipped with modern diagnostic tools, and our mobile units are dispatched around the clock to get you back on the road. No shortcuts, no surprises on the bill, just reliable work from a team that understands the trucking business.
+            </p>
+            <div className="grid sm:grid-cols-3 gap-6">
+              <div className="p-6 rounded-xl bg-card border border-border">
+                <p className="font-heading text-3xl font-bold text-accent mb-1">24/7</p>
+                <p className="text-muted-foreground text-sm">Emergency response any time of day or night</p>
+              </div>
+              <div className="p-6 rounded-xl bg-card border border-border">
+                <p className="font-heading text-3xl font-bold text-accent mb-1">2,500+</p>
+                <p className="text-muted-foreground text-sm">Repairs completed for Phoenix-area fleets</p>
+              </div>
+              <div className="p-6 rounded-xl bg-card border border-border">
+                <p className="font-heading text-3xl font-bold text-accent mb-1">5.0★</p>
+                <p className="text-muted-foreground text-sm">Rated on Google by real customers</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Contact Section with futuristic styling */}
       <section className="section-padding bg-primary relative overflow-hidden">
         {/* Background elements */}
