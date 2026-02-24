@@ -47,9 +47,9 @@ const Header = () => {
   }, [location]);
 
   return (
-    <>
+    <div className="sticky top-0 z-50">
       {/* Partner Logos Bar */}
-      <div className="hidden lg:block bg-background border-b border-border py-3">
+      <div className={cn("hidden lg:block bg-background border-b border-border transition-all duration-300", isScrolled ? "max-h-0 overflow-hidden py-0" : "max-h-20 py-3")}>
         <div className="container-custom flex items-center justify-center gap-0">
           {/* XXII Century Logo */}
           <a 
