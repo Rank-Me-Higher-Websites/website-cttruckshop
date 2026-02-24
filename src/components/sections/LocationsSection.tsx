@@ -8,7 +8,7 @@ const locations = [
     address: "Phoenix, AZ",
     phone: "(602) 830-3232",
     hours: "Mon-Sat: 7AM-6PM",
-    emergency: "24/7 Emergency Service",
+    emergency: "Emergency Service Available",
     href: "/locations/phoenix",
   },
   {
