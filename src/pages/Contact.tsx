@@ -198,12 +198,14 @@ const Contact = () => {
                 <div className="absolute -inset-1 bg-gradient-to-br from-accent/10 to-transparent rounded-2xl blur-sm" />
                 
                 <div className="relative z-10">
-                  <h2 className="font-heading text-2xl font-bold text-primary-foreground mb-2">
-                    Service Request
-                  </h2>
-                  <p className="text-primary-foreground/70 mb-6 text-sm">
-                    We'd love to hear from you – Truck not hauling up the hill like it used to? Knocking sound coming from the engine? Whatever you need, our team is here to help!
-                  </p>
+                  <div className="text-center lg:text-left">
+                    <h2 className="font-heading text-2xl font-bold text-primary-foreground mb-2">
+                      Service Request
+                    </h2>
+                    <p className="text-primary-foreground/70 mb-6 text-sm">
+                      We'd love to hear from you – Truck not hauling up the hill like it used to? Knocking sound coming from the engine? Whatever you need, our team is here to help!
+                    </p>
+                  </div>
                   <p className="text-primary-foreground/60 text-xs mb-4">Fields marked with <span className="text-accent">*</span> are required</p>
                   <form onSubmit={handleSubmit} className="space-y-5">
                     <div className="grid sm:grid-cols-2 gap-4">
