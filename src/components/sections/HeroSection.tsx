@@ -27,7 +27,7 @@ const HeroSection = () => {
             {/* Badge */}
             <div className="inline-flex items-center gap-2 bg-accent/20 border border-accent/30 rounded-full px-4 py-2 mb-6 animate-fade-in mx-auto lg:mx-0">
               <Shield className="h-4 w-4 text-accent" />
-              <span className="text-sm font-medium text-primary-foreground">
+              <span className="text-sm xl:text-base font-medium text-primary-foreground">
                 Trusted Fleet Maintenance Since 2015
               </span>
             </div>
