@@ -1,66 +1,116 @@
 
+## What is actually happening (why it still looks off on mobile)
 
-## Goal
-Center all section text, headings, and buttons on mobile across every page, while keeping left-aligned or layout-specific alignment on desktop (`lg:`/`md:` breakpoints).
+You’re right to call this out. The issue is inside the Contact page content section itself, not desktop/tablet, and not just text alignment.
 
-## Scope of Changes
+From the current `src/pages/Contact.tsx`, the “square” blocks (contact cards + CTA/form cards) look off on mobile because of a combination of layout choices:
 
-After reviewing all pages and shared components, here are the sections that currently have left-aligned content on mobile and need `text-center md:text-left` (or similar) treatment:
+1. **Double horizontal padding** in that section:
+   - Section has `px-4 sm:px-6 lg:px-8`
+   - Inside it, `.container-custom` also adds `px-4 sm:px-6 lg:px-8`
+   - On small screens this makes spacing feel uneven and visually “pushed”/compressed.
 
-### 1. `src/components/sections/CTASection.tsx`
-- **Line 22**: The left grid column (`ScrollReveal`) — h2, p, and button row are all left-aligned on mobile
-- Fix: Add `text-center lg:text-left` to the left column wrapper; center buttons with `items-center sm:items-start` on the flex container
+2. **Cards are full-width row layouts with left-anchored content**
+   - Each contact card uses `flex items-start` and left text block.
+   - On mobile, this makes the cards feel left-heavy instead of centered “squares”.
 
-### 2. `src/components/sections/HeroSection.tsx`
-- **Line 26**: The left content `<div>` — h1, paragraph, badge, buttons, trust indicators all left-aligned on mobile
-- Fix: Add `text-center lg:text-left` and center the badge/buttons with `mx-auto lg:mx-0` / `items-center lg:items-start`
+3. **Column wrappers are not width-constrained on mobile**
+   - The two major blocks (contact info side, form side) are not given `max-w-* + mx-auto` constraints on mobile.
+   - So visually they don’t read as centered card groups.
 
-### 3. `src/components/ServicePageTemplate.tsx` (hero, lines 92-113)
-- Left column content — badge, h1, buttons left-aligned on mobile
-- Fix: Add `text-center lg:text-left`, center badge and button row on mobile
+## Implementation plan (mobile-only, desktop/tablet unchanged)
 
-### 4. `src/pages/About.tsx`
-- **Hero** (line 74): `max-w-3xl` div — badge, h1, p all left-aligned on mobile
-- **Story section** (line 133): Left column — badge, h2, paragraphs, button left-aligned on mobile
-- Fix: Add `text-center md:text-left` and center inline elements on mobile
+### 1) Normalize horizontal spacing in Contact content section
+**File:** `src/pages/Contact.tsx`  
+**Section:** Contact section wrapper (current line around 97)
 
-### 5. `src/pages/Services.tsx`
-- **Hero** (line 60): `max-w-3xl` — badge, h1, p, button left-aligned on mobile
-- Fix: Same pattern
+- Remove extra section-level horizontal padding from:
+  - `section className="section-padding bg-primary relative overflow-hidden px-4 sm:px-6 lg:px-8"`
+- Keep spacing controlled by `.container-custom` only.
+- Result: cards no longer feel clipped/compressed from double-padding.
 
-### 6. `src/pages/MobileRepair.tsx`
-- **Hero** (line 54): `max-w-3xl` — badge, h1, p, buttons left-aligned on mobile
-- **"What We Can Fix"** (line 158-184): Left column — badge, h2, p left-aligned on mobile
-- Fix: Same pattern
+### 2) Center the “square groups” themselves on mobile
+**File:** `src/pages/Contact.tsx`  
+**Section:** two grid columns inside contact section
 
-### 7. `src/pages/Contact.tsx`
-- **Hero** (line 71-86): `max-w-3xl` — badge, h1, p left-aligned on mobile
-- **Contact info header** (line 108): h2 left-aligned on mobile
-- Fix: Same pattern
+- Contact-info column wrapper:
+  - from `className="pb-20 lg:pb-0"`
+  - to something like `className="pb-20 lg:pb-0 w-full max-w-xl mx-auto lg:max-w-none"`
+- Form column wrapper:
+  - add `w-full max-w-xl mx-auto lg:max-w-none`
+- Result: both card groups are visually centered on mobile while preserving desktop grid layout.
 
-### 8. `src/components/sections/FAQSection.tsx`
-- **Left column** (line 52-71): Section title, h2, p, button all left-aligned on mobile
-- Fix: Add `text-center lg:text-left` and center button on mobile
+### 3) Convert contact info cards to true mobile-centered card layout
+**File:** `src/pages/Contact.tsx`  
+**Section:** Phone / Email / Location / Hours cards
 
-### Pattern for Each Fix
-For every affected section, apply this consistent pattern:
-- Add `text-center md:text-left` or `text-center lg:text-left` (depending on grid breakpoint) to the content wrapper
-- Add `mx-auto md:mx-0` or `mx-auto lg:mx-0` to inline-flex badges so they center on mobile
-- Add `justify-center md:justify-start` or `items-center` to button flex containers
-- Add `mx-auto md:mx-0` to `max-w-xl` paragraph wrappers if present
+For each card:
+- Keep desktop/tablet row alignment.
+- On mobile use vertical centered arrangement:
+  - `flex flex-col items-center text-center sm:flex-row sm:items-start sm:text-left`
+- Keep each card `w-full`.
+- Keep `min-w-0` on text wrappers; add where missing (Location/Hours currently missing).
+- Use `break-words` for long text (email/address) to prevent hard overflow.
 
-### Files Modified (8 files)
-1. `src/components/sections/CTASection.tsx`
-2. `src/components/sections/HeroSection.tsx`
-3. `src/components/sections/FAQSection.tsx`
-4. `src/components/ServicePageTemplate.tsx`
-5. `src/pages/About.tsx`
-6. `src/pages/Services.tsx`
-7. `src/pages/MobileRepair.tsx`
-8. `src/pages/Contact.tsx`
+Result:
+- Each “square” looks centered and balanced on mobile.
+- No right-edge clipping for long content.
 
-### What Won't Change
-- Sections that are already centered (stats bars, "Why Choose CT Shop", values grid headers, map sections)
-- Desktop/tablet layout — all changes are mobile-first with responsive overrides
-- Footer layout — already handles mobile centering appropriately
+### 4) Center content inside the “Need Immediate Help?” square on mobile
+**File:** `src/pages/Contact.tsx`  
+**Section:** quick CTA block
 
+- Add `text-center lg:text-left` to CTA inner wrapper.
+- Keep button full-width.
+- Result: CTA square content is visually centered on mobile.
+
+### 5) Center the Service Request square header and control internal spacing
+**File:** `src/pages/Contact.tsx`  
+**Section:** form card
+
+- Add `text-center lg:text-left` to header wrapper (heading + intro text).
+- Adjust form card padding for smaller phones:
+  - e.g. `p-5 sm:p-8` instead of always `p-8`.
+- Keep labels/inputs left-aligned for usability unless you want fully centered labels too.
+- Result: card frame is centered and no cramped/cut-off appearance on narrow phones.
+
+### 6) Ensure lower “squares” are centered too (Why CT Truck Shop stats cards)
+**File:** `src/pages/Contact.tsx`  
+**Section:** stats cards at bottom
+
+- On mobile each stat card can be constrained with:
+  - `max-w-sm mx-auto`
+- Keep current grid behavior for `sm+`.
+- Result: the three lower squares also read centered on mobile.
+
+## Verification plan (must run after implementation)
+
+Test on `/contact` with widths **320, 360, 375, 390**:
+
+1. Hero unchanged (already centered on mobile).
+2. Contact information cards:
+   - equal left/right visual spacing
+   - icon + text centered on mobile
+   - no clipped borders/content
+3. Quick CTA square centered
+4. Service Request square centered, no text clipping
+5. Stats squares centered and consistent width
+6. Desktop/tablet unchanged (`lg:` behavior intact)
+
+## Technical details (for implementation precision)
+
+Use this responsive class pattern across contact cards:
+
+```text
+Mobile first:
+- centered: text-center, items-center, mx-auto, max-w-*
+Desktop/tablet restore:
+- sm:flex-row sm:items-start sm:text-left
+- lg:max-w-none
+```
+
+Primary class-level changes will be contained to one file:
+
+- `src/pages/Contact.tsx` (contact section wrapper, two column wrappers, 4 info cards, quick CTA card, form card header/padding, stats cards)
+
+No routing, logic, or shared component behavior changes are required.
