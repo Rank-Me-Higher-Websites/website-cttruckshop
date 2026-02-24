@@ -20,9 +20,9 @@ const StorySection = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent" />
             </div>
             
-            {/* Accent Decorations */}
-            <div className="absolute -top-4 -left-4 w-32 h-32 border-4 border-accent/30 rounded-xl -z-10" />
-            <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-accent/10 rounded-xl -z-10" />
+            {/* Accent Decorations - hidden on mobile */}
+            <div className="absolute -top-4 -left-4 w-32 h-32 border-4 border-accent/30 rounded-xl -z-10 hidden sm:block" />
+            <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-accent/10 rounded-xl -z-10 hidden sm:block" />
           </ScrollReveal>
 
           {/* Content */}

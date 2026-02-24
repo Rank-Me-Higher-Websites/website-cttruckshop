@@ -53,20 +53,20 @@ const BenefitsSection = () => {
             </div>
             
             {/* Floating Stats Card */}
-            <div className="absolute -bottom-6 -right-6 bg-card rounded-xl shadow-xl p-6 border border-border max-w-xs">
-              <div className="flex items-center gap-4">
-                <div className="icon-container">
-                  <Award className="h-6 w-6 text-accent-foreground" />
+            <div className="absolute -bottom-4 right-2 sm:-bottom-6 sm:-right-6 bg-card rounded-xl shadow-xl p-4 sm:p-6 border border-border max-w-[200px] sm:max-w-xs">
+              <div className="flex items-center gap-3 sm:gap-4">
+                <div className="icon-container w-10 h-10 sm:w-14 sm:h-14">
+                  <Award className="h-5 w-5 sm:h-6 sm:w-6 text-accent-foreground" />
                 </div>
                 <div>
-                  <p className="font-heading text-2xl font-bold text-foreground">5.0★</p>
-                  <p className="text-sm text-muted-foreground">Google Reviews</p>
+                  <p className="font-heading text-xl sm:text-2xl font-bold text-foreground">5.0★</p>
+                  <p className="text-xs sm:text-sm text-muted-foreground">Google Reviews</p>
                 </div>
               </div>
             </div>
             
-            {/* Accent Decorations */}
-            <div className="absolute -top-4 -left-4 w-24 h-24 border-2 border-accent/30 rounded-xl -z-10" />
+            {/* Accent Decorations - hidden on mobile to prevent overflow */}
+            <div className="absolute -top-4 -left-4 w-24 h-24 border-2 border-accent/30 rounded-xl -z-10 hidden sm:block" />
           </ScrollReveal>
 
           {/* Content Side */}
