@@ -70,7 +70,7 @@ const BenefitsSection = () => {
           </ScrollReveal>
 
           {/* Content Side */}
-          <ScrollReveal direction="right" className="order-1 lg:order-2">
+          <ScrollReveal direction="right" className="order-1 lg:order-2 text-center lg:text-left">
             <span className="inline-block text-accent font-semibold text-sm uppercase tracking-wider mb-3">
               Why Choose Us
             </span>
