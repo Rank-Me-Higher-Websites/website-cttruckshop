@@ -89,8 +89,8 @@ const HeroSection = () => {
                     <Shield className="h-4 w-4 sm:h-5 sm:w-5 text-accent" />
                   </div>
                   <div>
-                    <p className="font-heading text-base sm:text-lg font-bold text-primary-foreground">DOT</p>
-                    <p className="text-[10px] sm:text-xs text-primary-foreground/60">Certified Inspections</p>
+                    <p className="font-heading text-base sm:text-lg xl:text-xl font-bold text-primary-foreground">DOT</p>
+                     <p className="text-[10px] sm:text-xs xl:text-sm text-primary-foreground/60">Certified Inspections</p>
                   </div>
                 </div>
               </div>
