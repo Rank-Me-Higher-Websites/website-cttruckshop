@@ -47,10 +47,10 @@ const FAQSection = () => {
   return (
     <section className="section-padding bg-secondary">
       <div className="container-custom">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
+        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
           {/* Header */}
-          <ScrollReveal direction="left">
-            <div className="lg:sticky lg:top-32 lg:self-start">
+          <div className="lg:sticky lg:top-32">
+            <ScrollReveal direction="left">
               <span className="inline-block text-accent font-semibold text-sm uppercase tracking-wider mb-3">
                 FAQ
               </span>
@@ -67,8 +67,8 @@ const FAQSection = () => {
                   Call (602) 830-3232
                 </Button>
               </a>
-            </div>
-          </ScrollReveal>
+            </ScrollReveal>
+          </div>
 
           {/* FAQ Accordion */}
           <div>
