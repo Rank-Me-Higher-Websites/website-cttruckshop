@@ -40,7 +40,7 @@ const HeroSection = () => {
             </h1>
             
             {/* Subheadline */}
-            <p className="text-base md:text-lg xl:text-xl text-primary-foreground/80 mb-7 max-w-xl xl:max-w-2xl mx-auto lg:mx-0 animate-fade-in-up delay-200">
+            <p className="text-base md:text-lg xl:text-xl text-primary-foreground mb-7 max-w-xl xl:max-w-2xl mx-auto lg:mx-0 animate-fade-in-up delay-200">
               From routine <Link to="/services" className="text-accent hover:underline">maintenance</Link> to complex{" "}
               <Link to="/services/engine-repair" className="text-accent hover:underline">engine repairs</Link>, our expert technicians ensure 
               minimal downtime and maximum efficiency for your commercial fleet. 
@@ -64,7 +64,7 @@ const HeroSection = () => {
             </div>
             
             {/* Trust Indicators */}
-            <div className="mt-10 pt-6 border-t border-primary-foreground/10 animate-fade-in delay-500">
+            <div className="mt-10 pt-6 border-t border-primary-foreground/20 animate-fade-in delay-500">
               <div className="grid grid-cols-3 gap-3 md:gap-8">
                 <div className="flex items-center gap-2">
                   <div className="icon-container-outline w-10 h-10 sm:w-14 sm:h-14">
@@ -72,7 +72,7 @@ const HeroSection = () => {
                   </div>
                   <div>
                     <p className="font-heading text-base sm:text-lg xl:text-xl font-bold text-primary-foreground">Fast</p>
-                     <p className="text-[10px] sm:text-xs xl:text-sm text-primary-foreground/60">Response Time</p>
+                     <p className="text-[10px] sm:text-xs xl:text-sm text-primary-foreground">Response Time</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-2">
@@ -81,7 +81,7 @@ const HeroSection = () => {
                   </div>
                   <div>
                     <p className="font-heading text-base sm:text-lg xl:text-xl font-bold text-primary-foreground">2,500+</p>
-                     <p className="text-[10px] sm:text-xs xl:text-sm text-primary-foreground/60">Repairs Completed</p>
+                     <p className="text-[10px] sm:text-xs xl:text-sm text-primary-foreground">Repairs Completed</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-2">
@@ -90,7 +90,7 @@ const HeroSection = () => {
                   </div>
                   <div>
                     <p className="font-heading text-base sm:text-lg xl:text-xl font-bold text-primary-foreground">DOT</p>
-                     <p className="text-[10px] sm:text-xs xl:text-sm text-primary-foreground/60">Certified Inspections</p>
+                     <p className="text-[10px] sm:text-xs xl:text-sm text-primary-foreground">Certified Inspections</p>
                   </div>
                 </div>
               </div>
