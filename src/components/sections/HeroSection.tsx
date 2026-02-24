@@ -17,8 +17,8 @@ const HeroSection = () => {
       <div className="absolute inset-0 hero-overlay" />
       
       {/* Decorative Elements */}
-      <div className="absolute top-20 right-10 w-72 h-72 bg-accent/10 rounded-full blur-3xl" />
-      <div className="absolute bottom-20 left-10 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
+      <div className="absolute top-20 right-10 w-72 h-72 bg-accent/10 rounded-full blur-3xl hidden sm:block" />
+      <div className="absolute bottom-20 left-10 w-96 h-96 bg-accent/5 rounded-full blur-3xl hidden sm:block" />
       
       <div className="container-custom relative z-10">
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
