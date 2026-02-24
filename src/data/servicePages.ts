@@ -51,7 +51,7 @@ export const servicePages: Record<string, ServicePageData> = {
       },
     ],
     highlights: [
-      { title: "24/7 Availability", description: "Round-the-clock emergency service for any breakdown situation." },
+      { title: "Fast Response", description: "Quick emergency service for any breakdown situation." },
       { title: "Fast Response", description: "Quick dispatch with fully equipped service trucks." },
       { title: "Certified Mechanics", description: "Experienced technicians ready for any roadside issue." },
     ],
