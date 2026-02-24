@@ -94,20 +94,22 @@ const Blog = () => {
           }}
         />
         
-        <div className="container-custom relative z-10 text-center w-full py-20 md:py-28">
-          <span className="inline-flex items-center gap-2 bg-accent/20 border border-accent/30 rounded-full px-4 py-2 mb-6">
-            <Tag className="h-4 w-4 text-accent" />
-            <span className="text-sm font-medium text-primary-foreground">
-              News & Publications
+        <div className="container-custom relative z-10 py-20 md:py-28">
+          <div className="max-w-3xl">
+            <span className="inline-flex items-center gap-2 bg-accent/20 border border-accent/30 rounded-full px-4 py-2 mb-6">
+              <Tag className="h-4 w-4 text-accent" />
+              <span className="text-sm font-medium text-primary-foreground">
+                News & Publications
+              </span>
             </span>
-          </span>
-          <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-            Our <span className="text-gradient">Blog</span>
-          </h1>
-          <p className="text-xl text-primary-foreground/80 max-w-2xl mx-auto">
-            Expert tips, industry insights, and the latest news from CT Truck & Trailer Shop. 
-            Stay informed about truck maintenance and fleet management.
-          </p>
+            <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
+              Our <span className="text-gradient">Blog</span>
+            </h1>
+            <p className="text-xl text-primary-foreground/80">
+              Expert tips, industry insights, and the latest news from CT Truck & Trailer Shop. 
+              Stay informed about truck maintenance and fleet management.
+            </p>
+          </div>
         </div>
 
         {/* Decorative corner accents */}
