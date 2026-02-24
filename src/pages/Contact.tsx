@@ -132,7 +132,7 @@ const Contact = () => {
 
                 <a
                   href="mailto:service@clevertranscoshop.com"
-                  className="flex items-start gap-4 p-4 rounded-xl bg-primary-foreground/5 border border-accent/20 hover:border-accent/50 transition-all group"
+                  className="flex items-start gap-3 sm:gap-4 p-3 sm:p-4 rounded-xl bg-primary-foreground/5 border border-accent/20 hover:border-accent/50 transition-all group overflow-hidden"
                 >
                   <div className="w-12 h-12 rounded-xl bg-accent/20 border border-accent/30 flex items-center justify-center flex-shrink-0">
                     <Mail className="h-6 w-6 text-accent" />
