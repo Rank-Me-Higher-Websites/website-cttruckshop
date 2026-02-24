@@ -241,6 +241,7 @@ export const servicePages: Record<string, ServicePageData> = {
     metaTitle: "Semi Truck Engine Repairs Phoenix, AZ | CT Truck & Trailer Shop",
     metaDescription: "Professional semi truck engine repair services in Phoenix, AZ. Diesel & gas engine diagnostics, repair, and optimization. CT Shop.",
     heroHeadline: "Semi Engine Repair Services",
+    introHeading: "Certified Semi Truck Engine Repair in Phoenix, AZ",
     introParagraphs: [
       "We understand the crucial role that engines play in the performance and profitability of your fleet. Whether you're dealing with a minor issue or a major breakdown, our experts are here to diagnose, repair, and optimize your semi-truck engines efficiently and effectively.",
       "Our technicians have extensive experience working with a wide range of semi-truck engines, including diesel engines, gas engines, and more. They stay up to date with the latest advancements in engine technology to provide you with the most accurate diagnoses and efficient repairs.",
