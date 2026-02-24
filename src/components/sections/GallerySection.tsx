@@ -69,7 +69,7 @@ const GallerySection = () => {
             </h2>
             <p className="text-primary-foreground/70 text-lg max-w-2xl mx-auto">
               Every vehicle receives our signature attention to detail. See the quality 
-              of work that has earned us a 5-star reputation.
+              of work that has earned us a 4.4-star reputation.
             </p>
           </div>
         </div>
