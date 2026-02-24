@@ -172,7 +172,7 @@ const LocationPage = () => {
                   <div>
                     <p className="font-medium">{location.hours}</p>
                     {location.emergency && (
-                      <p className="text-accent">24/7 Emergency Service Available</p>
+                      <p className="text-accent">Emergency Service Available</p>
                     )}
                   </div>
                 </div>

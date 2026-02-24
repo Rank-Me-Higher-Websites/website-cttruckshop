@@ -47,7 +47,7 @@ const StorySection = () => {
               </p>
               <p>
                 When your fleet's uptime matters, you bring it to CT Truck Shop. Need help now?{" "}
-                <Link to="/mobile-repair" className="text-accent hover:underline">Our mobile repair team</Link> is ready 24/7.
+                <Link to="/mobile-repair" className="text-accent hover:underline">Our mobile repair team</Link> is ready to help.
               </p>
             </div>
             <Link to="/about" className="inline-block mt-8 mx-auto lg:mx-0">

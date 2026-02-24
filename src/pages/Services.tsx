@@ -190,7 +190,7 @@ const Services = () => {
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
               <h3 className="font-heading text-2xl md:text-3xl font-bold text-accent-foreground">
-                24/7 Emergency Roadside Assistance
+                Emergency Roadside Assistance
               </h3>
               <p className="text-accent-foreground/80 mt-1">
                 Stranded on the highway? Our mobile techs are ready to help.

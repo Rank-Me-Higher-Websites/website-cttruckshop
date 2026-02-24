@@ -255,7 +255,7 @@ const Header = () => {
                     </a>
                     <div className="flex items-center gap-2 text-sm text-muted-foreground justify-center">
                       <Clock className="h-4 w-4" />
-                      <span>24/7 Emergency Service</span>
+                      <span>Fast Emergency Response</span>
                     </div>
                   </div>
                 </div>

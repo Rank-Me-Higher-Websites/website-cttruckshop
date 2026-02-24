@@ -17,7 +17,7 @@ const services = [
   {
     icon: Zap,
     title: "Emergency Mobile Repair",
-    description: "24/7 roadside assistance with fully-equipped mobile service units.",
+    description: "Fast roadside assistance with fully-equipped mobile service units.",
     href: "/mobile-repair",
     image: mechanicsWork,
   },
