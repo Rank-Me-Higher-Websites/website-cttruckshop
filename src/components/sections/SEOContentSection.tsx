@@ -67,7 +67,7 @@ const SEOContentSection = () => {
             </div>
 
             {/* Services Grid */}
-            <div className="grid grid-cols-2 gap-3 mb-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
               {services.map((service) => (
                 <div 
                   key={service.name} 
@@ -122,11 +122,11 @@ const SEOContentSection = () => {
               </div>
             </div>
 
-            {/* Decorative corner accents */}
-            <div className="absolute -top-2 -left-2 w-8 h-8 border-l-2 border-t-2 border-accent rounded-tl-lg" />
-            <div className="absolute -top-2 -right-2 w-8 h-8 border-r-2 border-t-2 border-accent rounded-tr-lg" />
-            <div className="absolute -bottom-2 -left-2 w-8 h-8 border-l-2 border-b-2 border-accent rounded-bl-lg" />
-            <div className="absolute -bottom-2 -right-2 w-8 h-8 border-r-2 border-b-2 border-accent rounded-br-lg" />
+            {/* Decorative corner accents - hidden on mobile */}
+            <div className="absolute -top-2 -left-2 w-8 h-8 border-l-2 border-t-2 border-accent rounded-tl-lg hidden sm:block" />
+            <div className="absolute -top-2 -right-2 w-8 h-8 border-r-2 border-t-2 border-accent rounded-tr-lg hidden sm:block" />
+            <div className="absolute -bottom-2 -left-2 w-8 h-8 border-l-2 border-b-2 border-accent rounded-bl-lg hidden sm:block" />
+            <div className="absolute -bottom-2 -right-2 w-8 h-8 border-r-2 border-b-2 border-accent rounded-br-lg hidden sm:block" />
           </div>
         </div>
 

@@ -17,8 +17,8 @@ const HeroSection = () => {
       <div className="absolute inset-0 hero-overlay" />
       
       {/* Decorative Elements */}
-      <div className="absolute top-20 right-10 w-72 h-72 bg-accent/10 rounded-full blur-3xl" />
-      <div className="absolute bottom-20 left-10 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
+      <div className="absolute top-20 right-10 w-72 h-72 bg-accent/10 rounded-full blur-3xl hidden sm:block" />
+      <div className="absolute bottom-20 left-10 w-96 h-96 bg-accent/5 rounded-full blur-3xl hidden sm:block" />
       
       <div className="container-custom relative z-10">
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
@@ -49,14 +49,14 @@ const HeroSection = () => {
             
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up delay-300">
-              <a href="tel:6028303232">
-                <Button variant="hero" size="lg">
+              <a href="tel:6028303232" className="w-full sm:w-auto">
+                <Button variant="hero" size="lg" className="w-full sm:w-auto">
                   <Phone className="h-5 w-5 mr-2" />
                   Call (602) 830-3232
                 </Button>
               </a>
-              <Link to="/services">
-                <Button variant="hero-outline" size="lg">
+              <Link to="/services" className="w-full sm:w-auto">
+                <Button variant="hero-outline" size="lg" className="w-full sm:w-auto">
                   View Our Services
                   <ArrowRight className="h-5 w-5 ml-2" />
                 </Button>
@@ -65,32 +65,32 @@ const HeroSection = () => {
             
             {/* Trust Indicators */}
             <div className="mt-10 pt-6 border-t border-primary-foreground/10 animate-fade-in delay-500">
-              <div className="grid grid-cols-3 gap-4 md:gap-8">
+              <div className="grid grid-cols-3 gap-3 md:gap-8">
                 <div className="flex items-center gap-2">
-                  <div className="icon-container-outline">
-                    <Clock className="h-5 w-5 text-accent" />
+                  <div className="icon-container-outline w-10 h-10 sm:w-14 sm:h-14">
+                    <Clock className="h-4 w-4 sm:h-5 sm:w-5 text-accent" />
                   </div>
                   <div>
-                    <p className="font-heading text-lg font-bold text-primary-foreground">24/7</p>
-                    <p className="text-xs text-primary-foreground/60">Emergency Service</p>
+                    <p className="font-heading text-base sm:text-lg font-bold text-primary-foreground">24/7</p>
+                    <p className="text-[10px] sm:text-xs text-primary-foreground/60">Emergency Service</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-2">
-                  <div className="icon-container-outline">
-                    <Wrench className="h-5 w-5 text-accent" />
+                  <div className="icon-container-outline w-10 h-10 sm:w-14 sm:h-14">
+                    <Wrench className="h-4 w-4 sm:h-5 sm:w-5 text-accent" />
                   </div>
                   <div>
-                    <p className="font-heading text-lg font-bold text-primary-foreground">2,500+</p>
-                    <p className="text-xs text-primary-foreground/60">Repairs Completed</p>
+                    <p className="font-heading text-base sm:text-lg font-bold text-primary-foreground">2,500+</p>
+                    <p className="text-[10px] sm:text-xs text-primary-foreground/60">Repairs Completed</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-2">
-                  <div className="icon-container-outline">
-                    <Shield className="h-5 w-5 text-accent" />
+                  <div className="icon-container-outline w-10 h-10 sm:w-14 sm:h-14">
+                    <Shield className="h-4 w-4 sm:h-5 sm:w-5 text-accent" />
                   </div>
                   <div>
-                    <p className="font-heading text-lg font-bold text-primary-foreground">DOT</p>
-                    <p className="text-xs text-primary-foreground/60">Certified Inspections</p>
+                    <p className="font-heading text-base sm:text-lg font-bold text-primary-foreground">DOT</p>
+                    <p className="text-[10px] sm:text-xs text-primary-foreground/60">Certified Inspections</p>
                   </div>
                 </div>
               </div>

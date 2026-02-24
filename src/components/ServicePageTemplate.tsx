@@ -98,14 +98,14 @@ const ServicePageTemplate = ({ slug }: ServicePageTemplateProps) => {
                 {service.heroHeadline}
               </h1>
               <div className="flex flex-col sm:flex-row gap-3">
-                <a href="tel:6028303232">
-                  <Button variant="hero" size="lg">
+                <a href="tel:6028303232" className="w-full sm:w-auto">
+                  <Button variant="hero" size="lg" className="w-full sm:w-auto">
                     <Phone className="h-4 w-4 mr-2" />
                     Call (602) 830-3232
                   </Button>
                 </a>
-                <Link to="/contact">
-                  <Button variant="hero-outline" size="lg">
+                <Link to="/contact" className="w-full sm:w-auto">
+                  <Button variant="hero-outline" size="lg" className="w-full sm:w-auto">
                     Request a Quote
                     <ArrowRight className="h-4 w-4 ml-2" />
                   </Button>
@@ -120,10 +120,11 @@ const ServicePageTemplate = ({ slug }: ServicePageTemplateProps) => {
           </div>
         </div>
 
-        <div className="absolute top-4 left-4 w-16 h-16 border-l-2 border-t-2 border-accent/30 rounded-tl-lg" />
-        <div className="absolute top-4 right-4 w-16 h-16 border-r-2 border-t-2 border-accent/30 rounded-tr-lg" />
-        <div className="absolute bottom-4 left-4 w-16 h-16 border-l-2 border-b-2 border-accent/30 rounded-bl-lg" />
-        <div className="absolute bottom-4 right-4 w-16 h-16 border-r-2 border-b-2 border-accent/30 rounded-br-lg" />
+        {/* Decorative corners - hidden on mobile */}
+        <div className="absolute top-4 left-4 w-16 h-16 border-l-2 border-t-2 border-accent/30 rounded-tl-lg hidden sm:block" />
+        <div className="absolute top-4 right-4 w-16 h-16 border-r-2 border-t-2 border-accent/30 rounded-tr-lg hidden sm:block" />
+        <div className="absolute bottom-4 left-4 w-16 h-16 border-l-2 border-b-2 border-accent/30 rounded-bl-lg hidden sm:block" />
+        <div className="absolute bottom-4 right-4 w-16 h-16 border-r-2 border-b-2 border-accent/30 rounded-br-lg hidden sm:block" />
       </section>
 
       {/* Content Section */}
@@ -161,10 +162,10 @@ const ServicePageTemplate = ({ slug }: ServicePageTemplateProps) => {
                     className="w-full h-auto object-cover"
                   />
                 </div>
-                <div className="absolute -top-2 -left-2 w-8 h-8 border-l-2 border-t-2 border-accent rounded-tl-lg" />
-                <div className="absolute -top-2 -right-2 w-8 h-8 border-r-2 border-t-2 border-accent rounded-tr-lg" />
-                <div className="absolute -bottom-2 -left-2 w-8 h-8 border-l-2 border-b-2 border-accent rounded-bl-lg" />
-                <div className="absolute -bottom-2 -right-2 w-8 h-8 border-r-2 border-b-2 border-accent rounded-br-lg" />
+                <div className="absolute -top-2 -left-2 w-8 h-8 border-l-2 border-t-2 border-accent rounded-tl-lg hidden sm:block" />
+                <div className="absolute -top-2 -right-2 w-8 h-8 border-r-2 border-t-2 border-accent rounded-tr-lg hidden sm:block" />
+                <div className="absolute -bottom-2 -left-2 w-8 h-8 border-l-2 border-b-2 border-accent rounded-bl-lg hidden sm:block" />
+                <div className="absolute -bottom-2 -right-2 w-8 h-8 border-r-2 border-b-2 border-accent rounded-br-lg hidden sm:block" />
               </div>
 
               {/* Additional Sections */}
