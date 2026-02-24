@@ -54,8 +54,8 @@ const MapSection = () => {
                       <MapPin className="h-5 w-5 text-accent" />
                     </div>
                     <div>
-                      <p className="text-white font-medium">Phoenix, AZ</p>
-                      <p className="text-gray-400 text-sm">Main Shop Location</p>
+                      <p className="text-white font-medium">3883 N 36th Ave</p>
+                      <p className="text-gray-400 text-sm">Phoenix, AZ 85019</p>
                     </div>
                   </div>
                   
