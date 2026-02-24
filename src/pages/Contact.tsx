@@ -230,6 +230,7 @@ const Contact = () => {
                           value={formData.phone}
                           onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                           placeholder="(602) 555-1234"
+                          required
                           className="bg-primary-foreground/5 border-accent/30 text-primary-foreground placeholder:text-primary-foreground/40 focus:border-accent"
                         />
                       </div>
