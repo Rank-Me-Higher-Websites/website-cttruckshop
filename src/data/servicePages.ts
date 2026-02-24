@@ -359,7 +359,7 @@ export const servicePages: Record<string, ServicePageData> = {
     ],
     sections: [],
     highlights: [
-      { title: "24/7 Service", description: "We understand the importance of maintaining your trailer's structural integrity, and our goal is to deliver solutions that meet or exceed customer expectations." },
+      { title: "Fast Response", description: "We understand the importance of maintaining your trailer's structural integrity, and our goal is to deliver solutions that meet or exceed customer expectations." },
       { title: "Expert Knowledge", description: "Our extensive knowledge of various trailer models and body repair techniques equips us to handle any job efficiently. With CT Shop, you can trust that your trailer is in capable hands." },
       { title: "Comprehensive Solutions", description: "From welding and patching to complete body restoration, our comprehensive approach ensures that your trailer looks great and performs reliably for years to come." },
     ],
