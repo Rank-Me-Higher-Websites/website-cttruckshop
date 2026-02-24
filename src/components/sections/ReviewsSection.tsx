@@ -20,7 +20,7 @@ const ReviewsSection = () => {
   }, []);
 
   return (
-    <section className="section-padding bg-primary text-primary-foreground overflow-hidden">
+    <section className="pt-6 pb-16 md:pb-20 lg:pb-24 bg-primary text-primary-foreground overflow-hidden">
       <div className="container-custom">
         {/* Header */}
         <ScrollReveal>
