@@ -194,16 +194,7 @@ const Footer = () => {
                 >
                   <Icon className="h-4 w-4" />
                 </a>
-              ))}
-              <a
-                href="https://www.yelp.com/biz/ct-truck-and-trailer-shop-phoenix-5"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-9 h-9 rounded-lg bg-primary-foreground/5 border border-primary-foreground/10 flex items-center justify-center hover:bg-accent hover:text-accent-foreground hover:border-accent transition-all duration-200"
-                aria-label="Yelp"
-              >
-                <svg viewBox="0 0 384 512" className="h-4 w-4 fill-current"><path d="M42.9 240.32l99.62 48.61c19.2 9.4 16.2 37.51-4.5 42.71L30.5 358.45a22.79 22.79 0 0 1-28.21-19.6 197.16 197.16 0 0 1 9-85.32 22.8 22.8 0 0 1 31.61-13.21zm44 239.25a199.45 199.45 0 0 0 79.42 32.11A22.78 22.78 0 0 0 192.94 490l3.9-110.82c.7-21.3-25.5-31.91-39.81-16.1l-74.21 82.4a22.82 22.82 0 0 0 4.09 34.09zm145.34-109.92l58.81 94a22.93 22.93 0 0 0 34 5.5 198.36 198.36 0 0 0 52.71-67.61A22.8 22.8 0 0 0 367.61 373.5l-108.51-30.21c-20.79-5.8-38.31 16.11-27.09 36.1zM160.33 0a199.21 199.21 0 0 0-166.59 113.61 22.81 22.81 0 0 0 13.31 30.31l106.62 34.2c21 6.7 40.01-14 29.61-33.51L92.37 42.51A22.68 22.68 0 0 0 86.38 32l-.01-.01C108.64 11.28 133.76 1.87 160.33 0zm153.18 113.61L267.61 185.9c-13.81 16.41 2.5 40.71 22.31 36.51l109.91-25c10.1-2.29 18.8-11.59 18.41-22.6a197.63 197.63 0 0 0-30.51-79.72 22.78 22.78 0 0 0-24.21-9.48z"/></svg>
-              </a>
+              )}
             </div>
           </div>
         </div>
