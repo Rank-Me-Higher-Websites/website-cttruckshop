@@ -37,13 +37,36 @@ const LeadForm = ({
     service: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const subject = encodeURIComponent(`Service Request: ${formData.service}`);
-    const body = encodeURIComponent(
-      `Name: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nTruck Model: ${formData.truckModel}\nService Needed: ${formData.service}`
-    );
-    window.location.href = `mailto:info@cttruckshop.com?subject=${subject}&body=${body}`;
+    setIsSubmitting(true);
+    try {
+      const payload = {
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        truckModel: formData.truckModel,
+        service: formData.service,
+        form_type: "quote",
+        submittedAt: new Date().toISOString(),
+      };
+      const res = await fetch("https://cdlagency.app.n8n.cloud/webhook/44b2b794-4536-4293-9233-8f8c869e321a", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+      });
+      if (!res.ok) throw new Error("Failed to submit");
+      setSubmitted(true);
+      setFormData({ name: "", email: "", phone: "", truckModel: "", service: "" });
+    } catch (err) {
+      console.error("Quote form submission error:", err);
+      alert("Something went wrong. Please call us at (602) 830-3232.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -121,9 +144,14 @@ const LeadForm = ({
               </SelectContent>
             </Select>
           </div>
-          <Button type="submit" variant="hero" size="lg" className="w-full">
-            <Send className="h-4 w-4 mr-2" />
-            Get Your Free Quote
+          <Button type="submit" variant="hero" size="lg" className="w-full" disabled={isSubmitting || submitted}>
+            {submitted ? (
+              "✓ Quote Request Sent!"
+            ) : isSubmitting ? (
+              "Sending..."
+            ) : (
+              <><Send className="h-4 w-4 mr-2" /> Get Your Free Quote</>
+            )}
           </Button>
         </form>
 
