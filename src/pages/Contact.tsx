@@ -69,8 +69,8 @@ const Contact = () => {
         />
         
         <div className="container-custom relative z-10 py-20 md:py-28">
-          <div className="max-w-3xl">
-            <span className="inline-flex items-center gap-2 bg-accent/20 border border-accent/30 rounded-full px-4 py-2 mb-6">
+          <div className="max-w-3xl text-center md:text-left">
+            <span className="inline-flex items-center gap-2 bg-accent/20 border border-accent/30 rounded-full px-4 py-2 mb-6 mx-auto md:mx-0">
               <Phone className="h-4 w-4 text-accent" />
               <span className="text-sm font-medium text-primary-foreground">
                 Get In Touch
