@@ -94,7 +94,7 @@ const Contact = () => {
       </section>
 
       {/* Contact Section with futuristic styling */}
-      <section className="section-padding bg-primary relative overflow-hidden">
+      <section className="section-padding bg-primary relative overflow-hidden px-4 sm:px-6 lg:px-8">
         {/* Background elements */}
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute top-1/4 left-0 w-64 h-64 bg-accent/5 rounded-full blur-3xl" />
