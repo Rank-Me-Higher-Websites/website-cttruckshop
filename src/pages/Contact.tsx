@@ -208,7 +208,7 @@ const Contact = () => {
                     <div className="grid sm:grid-cols-2 gap-4">
                       <div>
                         <label htmlFor="email" className="block text-sm font-medium text-primary-foreground mb-2">
-                          Email Address
+                          Email Address <span className="text-accent">*</span>
                         </label>
                         <Input
                           id="email"
