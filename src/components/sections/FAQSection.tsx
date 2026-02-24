@@ -49,7 +49,7 @@ const FAQSection = () => {
       <div className="container-custom">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-start">
           {/* Header */}
-          <div className="lg:sticky lg:top-32">
+          <div>
             <ScrollReveal direction="left">
               <span className="inline-block text-accent font-semibold text-sm uppercase tracking-wider mb-3">
                 FAQ
