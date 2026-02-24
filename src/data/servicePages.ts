@@ -57,7 +57,7 @@ export const servicePages: Record<string, ServicePageData> = {
     ],
     faqs: [
       {
-        question: "Do you offer Emergency Truck Repair and 24/7 roadside help?",
+        question: "Do you offer Emergency Truck Repair and roadside help?",
         answer: "Yes. We provide Emergency Truck Repair across the Phoenix metro and major corridors (I-10, I-17, Loop 101). We triage your call and dispatch the nearest unit; arrival times vary by distance and traffic. Call now or submit the service form for immediate assistance.",
       },
       {
