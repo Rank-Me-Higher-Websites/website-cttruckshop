@@ -121,7 +121,7 @@ const Locations = () => {
                   <h2 className="font-heading text-2xl font-bold text-primary-foreground mb-2">
                     {location.name}
                   </h2>
-                  <p className="text-primary-foreground/70 mb-4">{location.address}</p>
+                  <a href="https://maps.app.goo.gl/XFyDXt5avVXvvDPr5" target="_blank" rel="noopener noreferrer" className="text-primary-foreground/70 mb-4 hover:text-accent transition-colors block">{location.address}</a>
                   
                   <div className="space-y-2 mb-6">
                     <a
