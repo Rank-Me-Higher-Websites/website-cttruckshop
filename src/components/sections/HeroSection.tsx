@@ -20,7 +20,7 @@ const HeroSection = () => {
       <div className="absolute top-20 right-10 w-72 h-72 bg-accent/10 rounded-full blur-3xl hidden sm:block" />
       <div className="absolute bottom-20 left-10 w-96 h-96 bg-accent/5 rounded-full blur-3xl hidden sm:block" />
       
-      <div className="container-custom relative z-10">
+      <div className="container-custom max-w-[1400px] 2xl:max-w-[1600px] relative z-10">
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
           {/* Left Content */}
           <div className="text-center lg:text-left">
