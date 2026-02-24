@@ -134,9 +134,9 @@ const ServicePageTemplate = ({ slug }: ServicePageTemplateProps) => {
         </div>
 
         <div className="container-custom relative z-10">
-          <div className="max-w-4xl">
+          <div className="grid lg:grid-cols-3 gap-12">
             {/* Main Content */}
-            <div className="space-y-10">
+            <div className="lg:col-span-2 space-y-10">
               {/* Intro */}
               {service.introParagraphs.length > 0 && (
                 <div>
@@ -246,6 +246,46 @@ const ServicePageTemplate = ({ slug }: ServicePageTemplateProps) => {
                     </Link>
                   ))}
                 </div>
+              </div>
+            </div>
+
+            {/* Sidebar */}
+            <div className="lg:col-span-1 self-start">
+              <div className="space-y-6">
+                {/* Quick Info */}
+                <div className="bg-primary-foreground/5 rounded-2xl p-6 border border-accent/20">
+                  <h4 className="font-heading font-bold text-primary-foreground mb-4">Quick Info</h4>
+                  <div className="space-y-4 text-sm">
+                    <div className="flex items-center gap-3">
+                      <Clock className="h-5 w-5 text-accent" />
+                      <span className="text-primary-foreground/80">Same-day service available</span>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <Shield className="h-5 w-5 text-accent" />
+                      <span className="text-primary-foreground/80">Warranty on all repairs</span>
+                    </div>
+                    <div className="flex items-center gap-3">
+                      <Award className="h-5 w-5 text-accent" />
+                      <span className="text-primary-foreground/80">Certified technicians</span>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Mobile Repair CTA */}
+                <Link to="/mobile-repair" className="block">
+                  <div className="bg-accent/10 rounded-2xl p-6 border border-accent/30 hover:border-accent/50 transition-all group">
+                    <h4 className="font-heading font-bold text-primary-foreground mb-2 group-hover:text-accent transition-colors">
+                      Need Roadside Help?
+                    </h4>
+                    <p className="text-primary-foreground/70 text-sm mb-4">
+                      Our mobile technicians can come to you.
+                    </p>
+                    <span className="flex items-center gap-2 text-accent font-medium text-sm">
+                      Learn about mobile repair
+                      <ArrowRight className="h-4 w-4 group-hover:translate-x-1 transition-transform" />
+                    </span>
+                  </div>
+                </Link>
               </div>
             </div>
           </div>
