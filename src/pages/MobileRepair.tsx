@@ -24,9 +24,9 @@ const MobileRepair = () => {
   return (
     <Layout>
       <SEO
-        title="24/7 Mobile Truck Repair"
-        description="24/7 emergency roadside assistance for semi-trucks in Phoenix, AZ. Mobile repair service throughout the Phoenix metro area. Call (602) 830-3232 for fast response."
-        keywords="mobile truck repair, roadside assistance, emergency truck repair, 24/7 truck service, Phoenix mobile mechanic"
+        title="Mobile Truck Repair"
+        description="Emergency roadside assistance for semi-trucks in Phoenix, AZ. Fast mobile repair service throughout the Phoenix metro area. Call (602) 830-3232 for quick response."
+        keywords="mobile truck repair, roadside assistance, emergency truck repair, fast truck service, Phoenix mobile mechanic"
       />
 
       {/* Hero with futuristic styling */}
