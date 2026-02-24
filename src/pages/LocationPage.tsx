@@ -48,7 +48,7 @@ const locationsData: Record<string, {
       "Mobile repair dispatch",
     ],
     description: "Our Phoenix location serves as the headquarters for CT Truck & Trailer Shop, providing comprehensive repair and maintenance services for the entire Phoenix metro area.",
-    metaDescription: "CT Truck & Trailer Shop in Phoenix, AZ. Full-service truck and trailer repair, DOT inspections, 24/7 emergency service. Call (602) 830-3232.",
+    metaDescription: "CT Truck & Trailer Shop in Phoenix, AZ. Full-service truck and trailer repair, DOT inspections, fast emergency service. Call (602) 830-3232.",
   },
 };
 
