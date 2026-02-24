@@ -158,11 +158,6 @@
     padding-right: 0 !important;
   }
 
-  [data-radix-select-viewport] {
-    max-height: 300px;
-    overflow-y: auto;
-  }
-
   /* Prevent Radix RemoveScroll from locking page */
   [data-remove-scroll-bar] {
     display: none !important;
