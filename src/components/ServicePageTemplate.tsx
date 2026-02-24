@@ -244,33 +244,11 @@ const ServicePageTemplate = ({ slug }: ServicePageTemplateProps) => {
             {/* Sidebar */}
             <div className="lg:col-span-1 self-start">
               <div className="sticky top-28 space-y-6">
-                {/* CTA Card */}
-                <div className="relative bg-primary-foreground/5 rounded-2xl p-6 border border-accent/30 overflow-hidden">
-                  <div className="absolute -inset-1 bg-gradient-to-br from-accent/20 to-transparent rounded-2xl blur-sm" />
-                  <div className="relative z-10">
-                    <h3 className="font-heading text-xl font-bold text-primary-foreground mb-4">
-                      Get a Quote
-                    </h3>
-                    <p className="text-primary-foreground/70 mb-6 text-sm">
-                      Contact us for fast, reliable service. Our team is standing by.
-                    </p>
-                    <a href="tel:6028303232" className="block mb-3">
-                      <Button variant="hero" size="lg" className="w-full">
-                        <Phone className="h-5 w-5 mr-2" />
-                        (602) 830-3232
-                      </Button>
-                    </a>
-                    <a href="mailto:service@clevertranscoshop.com" className="block mb-4">
-                      <Button variant="hero-outline" size="default" className="w-full text-xs">
-                        service@clevertranscoshop.com
-                      </Button>
-                    </a>
-                    <div className="flex items-center gap-2 justify-center text-primary-foreground/60 text-sm">
-                      <Clock className="h-4 w-4 text-accent" />
-                      <span>24/7 Emergency Service Available</span>
-                    </div>
-                  </div>
-                </div>
+                {/* Lead Form */}
+                <LeadForm
+                  title="Request a Free Quote"
+                  subtitle="Fill out the form and we'll get back to you ASAP."
+                />
 
                 {/* Quick Info */}
                 <div className="bg-primary-foreground/5 rounded-2xl p-6 border border-accent/20">
