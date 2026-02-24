@@ -245,7 +245,6 @@ const Contact = () => {
                         onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                         placeholder="Tell us about your service needs..."
                         rows={5}
-                        required
                         className="bg-primary-foreground/5 border-accent/30 text-primary-foreground placeholder:text-primary-foreground/40 focus:border-accent"
                       />
                     </div>
