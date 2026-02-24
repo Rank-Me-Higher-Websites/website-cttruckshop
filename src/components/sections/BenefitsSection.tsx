@@ -59,7 +59,7 @@ const BenefitsSection = () => {
                   <Award className="h-5 w-5 sm:h-6 sm:w-6 text-accent-foreground" />
                 </div>
                 <div>
-                  <p className="font-heading text-xl sm:text-2xl font-bold text-foreground">5.0★</p>
+                  <p className="font-heading text-xl sm:text-2xl font-bold text-foreground">4.4★</p>
                   <p className="text-xs sm:text-sm text-muted-foreground">Google Reviews</p>
                 </div>
               </div>
