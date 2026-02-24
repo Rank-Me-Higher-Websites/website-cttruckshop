@@ -26,7 +26,7 @@ const TrustSection = () => {
             </div>
             <div className="text-left">
               <p className="font-bold text-foreground text-xs sm:text-base">4.4 Rating</p>
-              <p className="text-[10px] sm:text-sm text-muted-foreground">22 Google Reviews</p>
+              <p className="text-[10px] sm:text-sm text-muted-foreground">61 Google Reviews</p>
             </div>
           </a>
 
