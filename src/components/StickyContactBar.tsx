@@ -7,10 +7,8 @@ const StickyContactBar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      // Show after scrolling 300px
       setIsVisible(window.scrollY > 300);
       
-      // Check if footer is visible (for mobile)
       const footer = document.querySelector('footer');
       if (footer) {
         const footerRect = footer.getBoundingClientRect();
@@ -24,21 +22,27 @@ const StickyContactBar = () => {
 
   return (
     <>
-      {/* Mobile Floating Call Button - appears when scrolling, hidden when footer visible */}
-      <div className={`fixed bottom-6 left-1/2 -translate-x-1/2 z-40 md:hidden transition-all duration-300 ${isVisible && !isFooterVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-75 pointer-events-none'}`}>
-        <a
-          href="tel:6028303232"
-          className="flex items-center justify-center gap-2 bg-accent text-accent-foreground py-3 px-5 rounded-full font-semibold shadow-lg hover:shadow-xl transition-all animate-pulse"
-          style={{
-            boxShadow: '0 0 20px hsl(var(--accent) / 0.6), 0 0 40px hsl(var(--accent) / 0.3)'
-          }}
-        >
-          <Phone className="h-5 w-5" />
-          <span>Call Now</span>
-        </a>
+      {/* Mobile Fixed Bottom Bar */}
+      <div className="fixed bottom-0 left-0 right-0 z-40 md:hidden bg-primary border-t border-accent/20 safe-area-bottom">
+        <div className="flex gap-2 p-3">
+          <a
+            href="/contact"
+            className="flex-1 flex items-center justify-center gap-2 bg-primary-foreground/10 border border-accent/30 text-primary-foreground py-3 rounded-lg font-semibold text-sm transition-all"
+          >
+            <MessageSquare className="h-4 w-4" />
+            <span>Get a Quote</span>
+          </a>
+          <a
+            href="tel:6028303232"
+            className="flex-1 flex items-center justify-center gap-2 bg-accent text-accent-foreground py-3 rounded-lg font-semibold text-sm transition-all"
+          >
+            <Phone className="h-4 w-4" />
+            <span>Call Now</span>
+          </a>
+        </div>
       </div>
 
-      {/* Desktop/Tablet Floating Buttons - Bottom Right - hidden when footer is visible */}
+      {/* Desktop/Tablet Floating Buttons - Bottom Right */}
       <div className={`fixed right-6 bottom-6 z-40 hidden md:flex flex-row gap-2 transition-all duration-300 ${isVisible && !isFooterVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10 pointer-events-none'}`}>
         <a
           href="/contact"
