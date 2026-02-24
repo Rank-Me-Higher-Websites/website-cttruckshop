@@ -44,7 +44,7 @@ const HeroSection = () => {
               From routine <Link to="/services" className="text-accent hover:underline">maintenance</Link> to complex{" "}
               <Link to="/services/engine-repair" className="text-accent hover:underline">engine repairs</Link>, our expert technicians ensure 
               minimal downtime and maximum efficiency for your commercial fleet. 
-              <strong className="text-accent"> <Link to="/mobile-repair" className="hover:underline">24/7 Emergency Service</Link> Available.</strong>
+              <strong className="text-accent"> <Link to="/mobile-repair" className="hover:underline">Fast Emergency Response</Link> Available.</strong>
             </p>
             
             {/* CTA Buttons */}
