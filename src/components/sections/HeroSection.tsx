@@ -49,14 +49,14 @@ const HeroSection = () => {
             
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up delay-300">
-              <a href="tel:6028303232">
-                <Button variant="hero" size="lg">
+              <a href="tel:6028303232" className="w-full sm:w-auto">
+                <Button variant="hero" size="lg" className="w-full sm:w-auto">
                   <Phone className="h-5 w-5 mr-2" />
                   Call (602) 830-3232
                 </Button>
               </a>
-              <Link to="/services">
-                <Button variant="hero-outline" size="lg">
+              <Link to="/services" className="w-full sm:w-auto">
+                <Button variant="hero-outline" size="lg" className="w-full sm:w-auto">
                   View Our Services
                   <ArrowRight className="h-5 w-5 ml-2" />
                 </Button>
