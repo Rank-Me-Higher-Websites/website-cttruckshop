@@ -102,7 +102,7 @@ const Header = () => {
             </a>
             <span className="flex items-center gap-2">
               <MapPin className="h-4 w-4" />
-              <span>Phoenix, AZ</span>
+              <span>3883 N 36th Ave, Phoenix, AZ 85019</span>
             </span>
           </div>
           <div className="flex items-center gap-2">
