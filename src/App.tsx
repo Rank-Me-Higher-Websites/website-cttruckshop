@@ -7,6 +7,7 @@ import { HelmetProvider } from "react-helmet-async";
 import Index from "./pages/Index";
 import Services from "./pages/Services";
 import ServicePage from "./pages/ServicePage";
+import RealServicePage from "./pages/RealServicePage";
 import Locations from "./pages/Locations";
 import LocationPage from "./pages/LocationPage";
 import MobileRepair from "./pages/MobileRepair";
@@ -28,6 +29,17 @@ const App = () => (
             <Route path="/" element={<Index />} />
             <Route path="/services" element={<Services />} />
             <Route path="/services/:serviceSlug" element={<ServicePage />} />
+            {/* Real service pages with old URLs */}
+            <Route path="/emergency-truck-repair-phoenix" element={<RealServicePage />} />
+            <Route path="/truck-breakdown-service-phoenix" element={<RealServicePage />} />
+            <Route path="/semi-truck-ac-repair-services" element={<RealServicePage />} />
+            <Route path="/semi-truck-tire-and-brake-repair-services-phoenix-az" element={<RealServicePage />} />
+            <Route path="/semi-truck-diagnostics-in-phoenix-az" element={<RealServicePage />} />
+            <Route path="/semi-truck-engine-repairs-in-phoenix-az" element={<RealServicePage />} />
+            <Route path="/semi-trailer-electrical-repair-services-phoenix-az" element={<RealServicePage />} />
+            <Route path="/semi-trailer-brake-and-tire-repair-services-in-phoenix-az" element={<RealServicePage />} />
+            <Route path="/semi-trailer-suspension-repair-services-phoenix-az" element={<RealServicePage />} />
+            <Route path="/full-body-semi-trailer-repair-in-phoenix-az" element={<RealServicePage />} />
             <Route path="/locations" element={<Locations />} />
             <Route path="/locations/:locationSlug" element={<LocationPage />} />
             <Route path="/mobile-repair" element={<MobileRepair />} />

@@ -16,17 +16,19 @@ import logo from "@/assets/ct-logo.webp";
 import xxiiLogo from "@/assets/xxii-logo.webp";
 import paddockLogo from "@/assets/paddock-logo.webp";
 const truckServices = [
-  { title: "Engine Repair", href: "/services/engine-repair", description: "Complete diesel engine diagnostics and repair" },
-  { title: "Brake Service", href: "/services/brake-service", description: "DOT compliant brake inspections and repairs" },
-  { title: "Electrical Systems", href: "/services/electrical", description: "Full electrical diagnostics and repairs" },
-  { title: "Transmission Repair", href: "/services/transmission", description: "Transmission and drivetrain service" },
+  { title: "Emergency Truck Repair", href: "/emergency-truck-repair-phoenix", description: "24/7 emergency roadside truck repair" },
+  { title: "Truck Breakdown Service", href: "/truck-breakdown-service-phoenix", description: "Fast mobile breakdown service" },
+  { title: "Engine Repairs", href: "/semi-truck-engine-repairs-in-phoenix-az", description: "Diesel engine diagnostics & repair" },
+  { title: "AC Repair", href: "/semi-truck-ac-repair-services", description: "Semi truck AC system service" },
+  { title: "Truck Diagnostics", href: "/semi-truck-diagnostics-in-phoenix-az", description: "Advanced dealer-level diagnostics" },
+  { title: "Tire & Brake Repair", href: "/semi-truck-tire-and-brake-repair-services-phoenix-az", description: "Semi truck tire and brake service" },
 ];
 
 const trailerServices = [
-  { title: "Trailer Brakes", href: "/services/trailer-brakes", description: "Air brake and ABS system repairs" },
-  { title: "Suspension", href: "/services/suspension", description: "Suspension repairs and replacements" },
-  { title: "Welding", href: "/services/welding", description: "Structural welding and fabrication" },
-  { title: "Hydraulics", href: "/services/hydraulics", description: "Hydraulic system repairs" },
+  { title: "Trailer Electrical Repair", href: "/semi-trailer-electrical-repair-services-phoenix-az", description: "Electrical system diagnostics & repair" },
+  { title: "Trailer Brake & Tire", href: "/semi-trailer-brake-and-tire-repair-services-in-phoenix-az", description: "Brake and tire service for trailers" },
+  { title: "Trailer Suspension", href: "/semi-trailer-suspension-repair-services-phoenix-az", description: "Air suspension & leaf spring repair" },
+  { title: "Full Body Trailer Repair", href: "/full-body-semi-trailer-repair-in-phoenix-az", description: "Body repair, welding & restoration" },
 ];
 
 const Header = () => {

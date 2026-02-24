@@ -4,19 +4,19 @@ import { Button } from "@/components/ui/button";
 import logo from "@/assets/ct-logo.webp";
 
 const truckServices = [
-  { name: "Engine Repair", href: "/services/engine-repair" },
-  { name: "Brake Service", href: "/services/brake-service" },
-  { name: "Electrical Systems", href: "/services/electrical" },
-  { name: "Transmission Repair", href: "/services/transmission" },
-  { name: "DOT Inspections", href: "/services/dot-inspections" },
+  { name: "Emergency Truck Repair", href: "/emergency-truck-repair-phoenix" },
+  { name: "Truck Breakdown Service", href: "/truck-breakdown-service-phoenix" },
+  { name: "Engine Repairs", href: "/semi-truck-engine-repairs-in-phoenix-az" },
+  { name: "AC Repair", href: "/semi-truck-ac-repair-services" },
+  { name: "Truck Diagnostics", href: "/semi-truck-diagnostics-in-phoenix-az" },
+  { name: "Tire & Brake Repair", href: "/semi-truck-tire-and-brake-repair-services-phoenix-az" },
 ];
 
 const trailerServices = [
-  { name: "Trailer Brakes", href: "/services/trailer-brakes" },
-  { name: "Suspension", href: "/services/suspension" },
-  { name: "Welding", href: "/services/welding" },
-  { name: "Hydraulics", href: "/services/hydraulics" },
-  { name: "ABS Systems", href: "/services/abs-systems" },
+  { name: "Trailer Electrical Repair", href: "/semi-trailer-electrical-repair-services-phoenix-az" },
+  { name: "Trailer Brake & Tire", href: "/semi-trailer-brake-and-tire-repair-services-in-phoenix-az" },
+  { name: "Trailer Suspension", href: "/semi-trailer-suspension-repair-services-phoenix-az" },
+  { name: "Full Body Trailer Repair", href: "/full-body-semi-trailer-repair-in-phoenix-az" },
 ];
 
 const quickLinks = [
