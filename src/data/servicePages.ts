@@ -327,6 +327,7 @@ export const servicePages: Record<string, ServicePageData> = {
     metaTitle: "Semi Trailer Suspension Repair Phoenix, AZ | CT Truck & Trailer Shop",
     metaDescription: "Professional semi trailer suspension repair services in Phoenix, AZ. Air suspension, leaf springs, shock absorbers. CT Shop.",
     heroHeadline: "Trailer Suspension Repair",
+    introHeading: "Semi Trailer Suspension Repair & Service in Phoenix, AZ",
     introParagraphs: [
       "With our comprehensive range of trailer suspension services, we are here to provide you with top-notch solutions that keep your trailer in optimal condition. Our team of skilled technicians specializes in air suspension repairs, offering a wide array of services to address any issues you may encounter.",
       "Our expert technicians are well-equipped to handle various aspects of air suspension repairs, including airbag repairs, airline replacements, shock absorber repairs, leaf spring and hanger repairs, bushing repairs, and much more. Whether your trailer requires a simple fix or a complex repair, we have the knowledge and expertise to get the job done right.",
