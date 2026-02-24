@@ -137,7 +137,7 @@ const Contact = () => {
                   <div className="w-12 h-12 rounded-xl bg-accent/20 border border-accent/30 flex items-center justify-center flex-shrink-0">
                     <Mail className="h-6 w-6 text-accent" />
                   </div>
-                  <div>
+                  <div className="min-w-0">
                     <p className="font-semibold text-primary-foreground group-hover:text-accent transition-colors">
                       Email
                     </p>
