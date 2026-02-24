@@ -94,7 +94,7 @@ const Contact = () => {
       </section>
 
       {/* Contact Section with futuristic styling */}
-      <section className="section-padding bg-primary relative overflow-hidden">
+      <section className="section-padding bg-primary relative overflow-hidden px-4 sm:px-6 lg:px-8">
         {/* Background elements */}
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute top-1/4 left-0 w-64 h-64 bg-accent/5 rounded-full blur-3xl" />
@@ -109,15 +109,15 @@ const Contact = () => {
                 Contact <span className="text-gradient">Information</span>
               </h2>
               
-              <div className="space-y-4 mb-10">
+              <div className="space-y-4 mb-10 overflow-hidden">
                 <a
                   href="tel:6028303232"
-                  className="flex items-start gap-4 p-4 rounded-xl bg-primary-foreground/5 border border-accent/20 hover:border-accent/50 transition-all group"
+                  className="flex items-start gap-3 sm:gap-4 p-3 sm:p-4 rounded-xl bg-primary-foreground/5 border border-accent/20 hover:border-accent/50 transition-all group overflow-hidden"
                 >
                   <div className="w-12 h-12 rounded-xl bg-accent/20 border border-accent/30 flex items-center justify-center flex-shrink-0">
                     <Phone className="h-6 w-6 text-accent" />
                   </div>
-                  <div>
+                  <div className="min-w-0">
                     <p className="font-semibold text-primary-foreground group-hover:text-accent transition-colors">
                       Phone
                     </p>
@@ -132,22 +132,22 @@ const Contact = () => {
 
                 <a
                   href="mailto:service@clevertranscoshop.com"
-                  className="flex items-start gap-4 p-4 rounded-xl bg-primary-foreground/5 border border-accent/20 hover:border-accent/50 transition-all group"
+                  className="flex items-start gap-3 sm:gap-4 p-3 sm:p-4 rounded-xl bg-primary-foreground/5 border border-accent/20 hover:border-accent/50 transition-all group overflow-hidden"
                 >
                   <div className="w-12 h-12 rounded-xl bg-accent/20 border border-accent/30 flex items-center justify-center flex-shrink-0">
                     <Mail className="h-6 w-6 text-accent" />
                   </div>
-                  <div>
+                  <div className="min-w-0">
                     <p className="font-semibold text-primary-foreground group-hover:text-accent transition-colors">
                       Email
                     </p>
-                    <p className="text-primary-foreground">
+                    <p className="text-primary-foreground break-all">
                       service@clevertranscoshop.com
                     </p>
                   </div>
                 </a>
 
-                <a href="https://maps.app.goo.gl/XFyDXt5avVXvvDPr5" target="_blank" rel="noopener noreferrer" className="flex items-start gap-4 p-4 rounded-xl bg-primary-foreground/5 border border-accent/20 hover:border-accent/40 transition-colors">
+                <a href="https://maps.app.goo.gl/XFyDXt5avVXvvDPr5" target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 sm:gap-4 p-3 sm:p-4 rounded-xl bg-primary-foreground/5 border border-accent/20 hover:border-accent/40 transition-colors overflow-hidden">
                   <div className="w-12 h-12 rounded-xl bg-accent/20 border border-accent/30 flex items-center justify-center flex-shrink-0">
                     <MapPin className="h-6 w-6 text-accent" />
                   </div>
@@ -158,7 +158,7 @@ const Contact = () => {
                   </div>
                 </a>
 
-                <div className="flex items-start gap-4 p-4 rounded-xl bg-primary-foreground/5 border border-accent/20">
+                <div className="flex items-start gap-3 sm:gap-4 p-3 sm:p-4 rounded-xl bg-primary-foreground/5 border border-accent/20 overflow-hidden">
                   <div className="w-12 h-12 rounded-xl bg-accent/20 border border-accent/30 flex items-center justify-center flex-shrink-0">
                     <Clock className="h-6 w-6 text-accent" />
                   </div>
