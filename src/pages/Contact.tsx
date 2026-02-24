@@ -40,7 +40,7 @@ const Contact = () => {
     <Layout>
       <SEO
         title="Contact Us"
-        description="Contact CT Truck & Trailer Shop in Phoenix, AZ. Call (602) 830-3232 for truck and trailer repair, 24/7 emergency roadside assistance, or to request a quote."
+        description="Contact CT Truck & Trailer Shop in Phoenix, AZ. Call (602) 830-3232 for truck and trailer repair, emergency roadside assistance, or to request a quote."
         keywords="contact truck repair, Phoenix truck shop phone, commercial fleet service contact"
       />
 
