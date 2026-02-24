@@ -1,17 +1,15 @@
-import { useLocation, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Layout from "@/components/layout/Layout";
 import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Phone, ArrowRight, ArrowLeft, Wrench, Clock, Shield, Award, Check, ChevronDown } from "lucide-react";
 import CTASection from "@/components/sections/CTASection";
 import { getServicePage } from "@/data/servicePages";
-import NotFound from "./NotFound";
 import truckDiagnostics from "@/assets/truck-diagnostics.jpg";
 import mechanicsWork from "@/assets/mechanics-work.jpeg";
 import expertTechnician from "@/assets/expert-technician.png";
 import { useState } from "react";
 
-// Map slugs to images
 const imageMap: Record<string, string> = {
   "emergency-truck-repair-phoenix": mechanicsWork,
   "truck-breakdown-service-phoenix": truckDiagnostics,
@@ -45,12 +43,13 @@ const FAQItem = ({ question, answer }: { question: string; answer: string }) => 
   );
 };
 
-const RealServicePage = () => {
-  const location = useLocation();
-  const serviceSlug = location.pathname.replace(/^\//, "").replace(/\/$/, "");
-  const service = serviceSlug ? getServicePage(serviceSlug) : null;
+interface ServicePageTemplateProps {
+  slug: string;
+}
 
-  if (!service) return <NotFound />;
+const ServicePageTemplate = ({ slug }: ServicePageTemplateProps) => {
+  const service = getServicePage(slug);
+  if (!service) return null;
 
   const heroImage = imageMap[service.slug] || truckDiagnostics;
 
