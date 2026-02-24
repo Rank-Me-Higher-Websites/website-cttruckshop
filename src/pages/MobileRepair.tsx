@@ -24,9 +24,9 @@ const MobileRepair = () => {
   return (
     <Layout>
       <SEO
-        title="24/7 Mobile Truck Repair"
-        description="24/7 emergency roadside assistance for semi-trucks in Phoenix, AZ. Mobile repair service throughout the Phoenix metro area. Call (602) 830-3232 for fast response."
-        keywords="mobile truck repair, roadside assistance, emergency truck repair, 24/7 truck service, Phoenix mobile mechanic"
+        title="Mobile Truck Repair"
+        description="Emergency roadside assistance for semi-trucks in Phoenix, AZ. Fast mobile repair service throughout the Phoenix metro area. Call (602) 830-3232 for quick response."
+        keywords="mobile truck repair, roadside assistance, emergency truck repair, fast truck service, Phoenix mobile mechanic"
       />
 
       {/* Hero with futuristic styling */}
@@ -55,7 +55,7 @@ const MobileRepair = () => {
             <span className="inline-flex items-center gap-2 bg-accent/20 border border-accent/30 rounded-full px-4 py-2 mb-6 backdrop-blur-sm mx-auto md:mx-0">
               <Clock className="h-4 w-4 text-accent" />
               <span className="text-sm font-medium text-primary-foreground">
-                24/7 Emergency Service
+                Fast Emergency Response
               </span>
             </span>
             
@@ -116,7 +116,7 @@ const MobileRepair = () => {
                   1. Call Us
                 </h3>
                 <p className="text-primary-foreground/70">
-                  Call our 24/7 dispatch line and describe your issue and location
+                  Call our dispatch line and describe your issue and location
                 </p>
               </div>
             </div>

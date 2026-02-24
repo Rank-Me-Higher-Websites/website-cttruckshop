@@ -55,7 +55,7 @@ const Index = () => {
     <Layout>
       <SEO
         title="Truck & Trailer Repair Phoenix"
-        description="CT Truck & Trailer Shop offers expert fleet maintenance, semi-truck repair, and 24/7 emergency roadside assistance in Phoenix, AZ. DOT inspections, brake service, engine repair & more."
+        description="CT Truck & Trailer Shop offers expert fleet maintenance, semi-truck repair, and emergency roadside assistance in Phoenix, AZ. DOT inspections, brake service, engine repair & more."
         keywords="truck repair phoenix, trailer repair, semi truck repair, fleet maintenance, DOT inspection, roadside assistance, commercial truck service"
         structuredData={structuredData}
       />

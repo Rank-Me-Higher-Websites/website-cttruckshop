@@ -40,7 +40,7 @@ const Contact = () => {
     <Layout>
       <SEO
         title="Contact Us"
-        description="Contact CT Truck & Trailer Shop in Phoenix, AZ. Call (602) 830-3232 for truck and trailer repair, 24/7 emergency roadside assistance, or to request a quote."
+        description="Contact CT Truck & Trailer Shop in Phoenix, AZ. Call (602) 830-3232 for truck and trailer repair, emergency roadside assistance, or to request a quote."
         keywords="contact truck repair, Phoenix truck shop phone, commercial fleet service contact"
       />
 
@@ -125,7 +125,7 @@ const Contact = () => {
                       (602) 830-3232
                     </p>
                     <p className="text-sm text-primary-foreground/60">
-                      24/7 Emergency Line Available
+                      Emergency Line Available
                     </p>
                   </div>
                 </a>
@@ -166,7 +166,7 @@ const Contact = () => {
                     <p className="font-semibold text-primary-foreground">Hours</p>
                     <p className="text-primary-foreground">Mon-Fri: 8:00 AM - 5:00 PM</p>
                     <p className="text-primary-foreground/70">Sat & Sun: Closed</p>
-                    <p className="text-accent font-medium">24/7 Emergency Service</p>
+                    <p className="text-accent font-medium">Emergency Service Available</p>
                   </div>
                 </div>
               </div>
@@ -326,8 +326,8 @@ const Contact = () => {
             </p>
             <div className="grid sm:grid-cols-3 gap-6">
               <div className="p-6 rounded-xl bg-card border border-border max-w-sm mx-auto w-full sm:max-w-none">
-                <p className="font-heading text-3xl font-bold text-accent mb-1">24/7</p>
-                <p className="text-muted-foreground text-sm">Emergency response any time of day or night</p>
+                <p className="font-heading text-3xl font-bold text-accent mb-1">Fast</p>
+                <p className="text-muted-foreground text-sm">Emergency response when you need it most</p>
               </div>
               <div className="p-6 rounded-xl bg-card border border-border max-w-sm mx-auto w-full sm:max-w-none">
                 <p className="font-heading text-3xl font-bold text-accent mb-1">2,500+</p>

@@ -38,7 +38,7 @@ const Locations = () => {
     <Layout>
       <SEO
         title="Locations"
-        description="Find CT Truck & Trailer Shop locations in Phoenix, AZ. Full-service truck and trailer repair, 24/7 emergency roadside assistance throughout the Phoenix metro area."
+        description="Find CT Truck & Trailer Shop locations in Phoenix, AZ. Full-service truck and trailer repair, emergency roadside assistance throughout the Phoenix metro area."
         keywords="truck repair near me, Phoenix truck shop, trailer repair Arizona, commercial truck service locations"
       />
 
@@ -113,7 +113,7 @@ const Locations = () => {
                     </div>
                     {location.emergency && (
                       <span className="bg-accent/20 text-accent px-3 py-1 rounded-full text-sm font-medium border border-accent/30">
-                        24/7 Emergency
+                        Emergency Available
                       </span>
                     )}
                   </div>

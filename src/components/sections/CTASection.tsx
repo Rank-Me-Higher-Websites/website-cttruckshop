@@ -50,10 +50,10 @@ const CTASection = () => {
               <div className="bg-primary-foreground/10 backdrop-blur-sm rounded-xl p-6 border border-primary-foreground/20 h-full">
                 <Clock className="h-10 w-10 text-accent mb-4" />
                 <h3 className="font-heading text-xl font-bold text-primary-foreground mb-2">
-                  24/7 Emergency Service
+                  Fast Emergency Response
                 </h3>
                 <p className="text-primary-foreground/70">
-                  Our mobile techs are ready around the clock for roadside emergencies
+                  Our mobile techs are ready to respond quickly for roadside emergencies
                 </p>
               </div>
             </ScrollReveal>

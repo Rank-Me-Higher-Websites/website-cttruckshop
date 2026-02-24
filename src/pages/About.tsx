@@ -32,7 +32,7 @@ const values = [
 
 const stats = [
   { number: "2,500+", label: "Trucks Repaired" },
-  { number: "24/7", label: "Emergency Service" },
+  { number: "Fast", label: "Response Time" },
   { number: "4.4★", label: "Google Rating" },
   { number: "8+", label: "Years Experience" },
 ];
@@ -42,7 +42,7 @@ const About = () => {
     <Layout>
       <SEO
         title="About Us"
-        description="Learn about CT Truck & Trailer Shop, Phoenix's trusted commercial truck repair service. Expert technicians, 24/7 emergency service, and a commitment to keeping your fleet moving."
+        description="Learn about CT Truck & Trailer Shop, Phoenix's trusted commercial truck repair service. Expert technicians, fast emergency response, and a commitment to keeping your fleet moving."
         keywords="about CT Truck Shop, Phoenix truck repair company, commercial fleet service"
       />
 
@@ -154,7 +154,7 @@ const About = () => {
                 </p>
                 <p>
                   From our <Link to="/locations" className="text-accent hover:underline">Phoenix shop</Link>, we serve fleets throughout the metro area with 
-                  both in-shop repairs and <Link to="/mobile-repair" className="text-accent hover:underline">24/7 mobile roadside assistance</Link>. Whether you 
+                  both in-shop repairs and <Link to="/mobile-repair" className="text-accent hover:underline">mobile roadside assistance</Link>. Whether you 
                   need a quick PM service or major <Link to="/services/engine-repair" className="text-accent hover:underline">engine work</Link>, we're here to help.
                 </p>
               </div>

@@ -41,7 +41,7 @@ const Footer = () => {
                 Need Emergency Roadside Assistance?
               </h3>
               <p className="text-accent-foreground/80 text-sm md:text-base mt-1">
-                Our mobile techs are ready 24/7 to get you back on the road
+                Our mobile techs are ready to get you back on the road
               </p>
             </div>
             <a href="tel:6028303232" className="flex-shrink-0 w-full sm:w-auto">
@@ -120,7 +120,7 @@ const Footer = () => {
                 </span>
                 <div>
                   <span className="text-[11px] uppercase tracking-wider text-primary-foreground/40 block">Hours</span>
-                  <span className="text-sm font-medium">24/7 Emergency Service</span>
+                  <span className="text-sm font-medium">Mon–Sat · Emergency Available</span>
                 </div>
               </div>
             </div>

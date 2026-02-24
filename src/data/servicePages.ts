@@ -28,9 +28,9 @@ export const servicePages: Record<string, ServicePageData> = {
     slug: "emergency-truck-repair-phoenix",
     title: "Emergency Truck Repair Phoenix, AZ",
     metaTitle: "Emergency Truck Repair Phoenix, AZ | CT Truck & Trailer Shop",
-    metaDescription: "24/7 Emergency truck repair in Phoenix, AZ. Fast response, certified mechanics, roadside assistance. CT Truck & Trailer Shop gets you back on the road quickly.",
+    metaDescription: "Emergency truck repair in Phoenix, AZ. Fast response, certified mechanics, roadside assistance. CT Truck & Trailer Shop gets you back on the road quickly.",
     heroHeadline: "#1 Emergency Truck Repair Phoenix, AZ",
-    introHeading: "Fast 24/7 Emergency Truck Repair in Phoenix, AZ",
+    introHeading: "Fast Emergency Truck Repair in Phoenix, AZ",
     introParagraphs: [
       "When your truck breaks down on the road, every minute counts. CT Truck & Trailer Shop provides emergency truck repair in Phoenix, AZ, helping drivers get back on the road quickly and safely. Our certified mechanics are always on standby, ready to handle any roadside issue—from engine failure to brake or tire problems. With fully equipped service trucks and years of experience in the heavy-duty repair industry, we deliver fast response times and reliable workmanship that keep your truck running strong.",
     ],
@@ -51,13 +51,13 @@ export const servicePages: Record<string, ServicePageData> = {
       },
     ],
     highlights: [
-      { title: "24/7 Availability", description: "Round-the-clock emergency service for any breakdown situation." },
+      { title: "Fast Response", description: "Quick emergency service for any breakdown situation." },
       { title: "Fast Response", description: "Quick dispatch with fully equipped service trucks." },
       { title: "Certified Mechanics", description: "Experienced technicians ready for any roadside issue." },
     ],
     faqs: [
       {
-        question: "Do you offer Emergency Truck Repair and 24/7 roadside help?",
+        question: "Do you offer Emergency Truck Repair and roadside help?",
         answer: "Yes. We provide Emergency Truck Repair across the Phoenix metro and major corridors (I-10, I-17, Loop 101). We triage your call and dispatch the nearest unit; arrival times vary by distance and traffic. Call now or submit the service form for immediate assistance.",
       },
       {
@@ -87,13 +87,13 @@ export const servicePages: Record<string, ServicePageData> = {
   "truck-breakdown-service-phoenix": {
     slug: "truck-breakdown-service-phoenix",
     title: "Truck Breakdown Service Phoenix",
-    metaTitle: "24/7 Truck Breakdown Service Phoenix | CT Truck & Trailer Shop",
-    metaDescription: "24/7 truck breakdown service and repair in Phoenix, AZ. Fast mobile response, certified technicians, roadside assistance. CT Truck and Trailer Shop.",
-    heroHeadline: "24/7 Truck Breakdown Service and Repair",
+    metaTitle: "Truck Breakdown Service Phoenix | CT Truck & Trailer Shop",
+    metaDescription: "Fast truck breakdown service and repair in Phoenix, AZ. Quick mobile response, certified technicians, roadside assistance. CT Truck and Trailer Shop.",
+    heroHeadline: "Truck Breakdown Service and Repair",
     introHeading: "Reliable Truck Breakdown Service & Roadside Repair in Phoenix",
     introParagraphs: [
-      "When your rig breaks down on the road, every minute counts. That's why CT Truck and Trailer Shop provides 24/7 truck breakdown service and repair throughout Phoenix and nearby areas. Our certified mobile technicians are always ready to respond — day or night — to get you back on the road fast. Whether it's an engine issue, electrical failure, tire blowout, or brake problem, we bring the tools and expertise directly to you.",
-      "From emergency roadside repairs to full-service shop diagnostics, we ensure your downtime stays minimal and your truck stays reliable. When you need 24/7 truck repair you can trust, call CT Truck and Trailer Shop — where help is always just a phone call away.",
+      "When your rig breaks down on the road, every minute counts. That's why CT Truck and Trailer Shop provides fast truck breakdown service and repair throughout Phoenix and nearby areas. Our certified mobile technicians are always ready to respond to get you back on the road fast. Whether it's an engine issue, electrical failure, tire blowout, or brake problem, we bring the tools and expertise directly to you.",
+      "From emergency roadside repairs to full-service shop diagnostics, we ensure your downtime stays minimal and your truck stays reliable. When you need truck repair you can trust, call CT Truck and Trailer Shop — where help is always just a phone call away.",
     ],
     sections: [
       {
@@ -105,12 +105,12 @@ export const servicePages: Record<string, ServicePageData> = {
           "Skilled & certified technicians",
           "Competitive pricing with no hidden fees",
           "Complete diagnostics and repair solutions",
-          "24/7 mobile repair & roadside assistance",
+          "Mobile repair & roadside assistance",
         ],
       },
     ],
     highlights: [
-      { title: "24/7 Service", description: "Day or night, our mobile technicians are always ready to respond." },
+      { title: "Fast Response", description: "Our mobile technicians are always ready to respond quickly." },
       { title: "Fast Response", description: "In most cases, our technicians arrive within the hour." },
       { title: "Full-Service", description: "From roadside repairs to complete shop diagnostics." },
     ],
@@ -125,11 +125,11 @@ export const servicePages: Record<string, ServicePageData> = {
       },
       {
         question: "Why choose CT Truck and Trailer Shop for semi breakdown services in Arizona?",
-        answer: "CT Shop stands out as the Best Mobile Truck Repair in Phoenix because of our certified technicians, 24/7 availability, and commitment to fast, high-quality service. We bring the shop to you, saving time, towing costs, and helping your truck stay road-ready across Arizona highways.",
+        answer: "CT Shop stands out as the Best Mobile Truck Repair in Phoenix because of our certified technicians, fast availability, and commitment to high-quality service. We bring the shop to you, saving time, towing costs, and helping your truck stay road-ready across Arizona highways.",
       },
       {
         question: "What should I do if I need emergency truck repair in Phoenix?",
-        answer: "If you experience a breakdown or mechanical issue, call CT Truck and Trailer Shop for Emergency Truck Repair in Phoenix. Our mobile service team is available 24/7 to provide roadside assistance, including diagnostics, tire replacement, air leak repair, and more—getting you back on the road quickly and safely.",
+        answer: "If you experience a breakdown or mechanical issue, call CT Truck and Trailer Shop for Emergency Truck Repair in Phoenix. Our mobile service team is available to provide roadside assistance, including diagnostics, tire replacement, air leak repair, and more—getting you back on the road quickly and safely.",
       },
     ],
     relatedServices: [
@@ -152,7 +152,7 @@ export const servicePages: Record<string, ServicePageData> = {
     ],
     sections: [],
     highlights: [
-      { title: "24/7 Service", description: "We understand the importance of a properly functioning AC system in heavy-duty trucks, and our goal is to deliver solutions that meet or exceed customer expectations." },
+      { title: "Fast Response", description: "We understand the importance of a properly functioning AC system in heavy-duty trucks, and our goal is to deliver solutions that meet or exceed customer expectations." },
       { title: "Expert Knowledge", description: "Our extensive knowledge of various truck models and AC systems equips us to diagnose and resolve issues efficiently. With CT Shop, you can trust that your truck's AC system is in capable hands." },
       { title: "Comprehensive Solutions", description: "From inspecting and cleaning filters to replacing major components, our comprehensive approach ensures that your AC system operates at peak performance, promoting driver comfort and minimizing downtime." },
     ],
@@ -177,7 +177,7 @@ export const servicePages: Record<string, ServicePageData> = {
     ],
     sections: [],
     highlights: [
-      { title: "24/7 Service", description: "We understand the importance of properly functioning brakes and tires in heavy-duty trucks, and our goal is to deliver solutions that meet or exceed customer expectations." },
+      { title: "Fast Response", description: "We understand the importance of properly functioning brakes and tires in heavy-duty trucks, and our goal is to deliver solutions that meet or exceed customer expectations." },
       { title: "Expert Knowledge", description: "Our extensive knowledge of various truck models and braking systems equips us to diagnose and resolve issues efficiently. With CT Shop, you can trust that your truck is in capable hands." },
       { title: "Comprehensive Solutions", description: "From brake pad replacement to complete tire service, our comprehensive approach ensures that your truck operates at peak performance, promoting safety and minimizing downtime." },
     ],
@@ -249,7 +249,7 @@ export const servicePages: Record<string, ServicePageData> = {
     ],
     sections: [],
     highlights: [
-      { title: "24/7 Service", description: "We understand the importance of a properly functioning engine in heavy-duty trucks, and our goal is to deliver solutions that meet or exceed customer expectations." },
+      { title: "Fast Response", description: "We understand the importance of a properly functioning engine in heavy-duty trucks, and our goal is to deliver solutions that meet or exceed customer expectations." },
       { title: "Expert Knowledge", description: "Our extensive knowledge of various truck models and engine systems equips us to diagnose and resolve issues efficiently. With CT Shop, you can trust that your truck's engine is in capable hands." },
       { title: "Comprehensive Solutions", description: "From inspecting and diagnosing issues to replacing major components, our comprehensive approach ensures that your engine operates at peak performance, promoting reliability and minimizing downtime." },
     ],
@@ -274,7 +274,7 @@ export const servicePages: Record<string, ServicePageData> = {
     ],
     sections: [],
     highlights: [
-      { title: "24/7 Service", description: "We understand the importance of a properly functioning electrical system in heavy-duty trucks, and our goal is to deliver solutions that meet or exceed customer expectations." },
+      { title: "Fast Response", description: "We understand the importance of a properly functioning electrical system in heavy-duty trucks, and our goal is to deliver solutions that meet or exceed customer expectations." },
       { title: "Expert Knowledge", description: "Our extensive knowledge of various truck models and electrical systems equips us to diagnose and resolve issues efficiently. With CT Shop, you can trust that your truck's electrical system is in capable hands." },
       { title: "Comprehensive Solutions", description: "From inspecting and cleaning connections to replacing major components, our comprehensive approach ensures that your electrical system operates at peak performance, promoting driver safety and minimizing downtime." },
     ],
@@ -309,7 +309,7 @@ export const servicePages: Record<string, ServicePageData> = {
       },
     ],
     highlights: [
-      { title: "24/7 Service", description: "We understand the importance of properly functioning brakes and tires in semi trailers, and our goal is to deliver solutions that meet or exceed customer expectations." },
+      { title: "Fast Response", description: "We understand the importance of properly functioning brakes and tires in semi trailers, and our goal is to deliver solutions that meet or exceed customer expectations." },
       { title: "Expert Knowledge", description: "Our extensive knowledge of various trailer models and braking systems equips us to diagnose and resolve issues efficiently. With CT Shop, you can trust that your trailer is in capable hands." },
       { title: "Comprehensive Solutions", description: "From brake inspections to complete tire service, our comprehensive approach ensures that your trailer operates safely, promoting compliance and minimizing downtime." },
     ],
@@ -334,7 +334,7 @@ export const servicePages: Record<string, ServicePageData> = {
     ],
     sections: [],
     highlights: [
-      { title: "24/7 Service", description: "We understand the importance of a properly functioning suspension system in semi trailers, and our goal is to deliver solutions that meet or exceed customer expectations." },
+      { title: "Fast Response", description: "We understand the importance of a properly functioning suspension system in semi trailers, and our goal is to deliver solutions that meet or exceed customer expectations." },
       { title: "Expert Knowledge", description: "Our extensive knowledge of various trailer models and suspension systems equips us to diagnose and resolve issues efficiently. With CT Shop, you can trust that your trailer's suspension is in capable hands." },
       { title: "Comprehensive Solutions", description: "From airbag repairs to complete leaf spring replacement, our comprehensive approach ensures that your suspension system operates at peak performance, promoting safety and minimizing downtime." },
     ],
@@ -359,7 +359,7 @@ export const servicePages: Record<string, ServicePageData> = {
     ],
     sections: [],
     highlights: [
-      { title: "24/7 Service", description: "We understand the importance of maintaining your trailer's structural integrity, and our goal is to deliver solutions that meet or exceed customer expectations." },
+      { title: "Fast Response", description: "We understand the importance of maintaining your trailer's structural integrity, and our goal is to deliver solutions that meet or exceed customer expectations." },
       { title: "Expert Knowledge", description: "Our extensive knowledge of various trailer models and body repair techniques equips us to handle any job efficiently. With CT Shop, you can trust that your trailer is in capable hands." },
       { title: "Comprehensive Solutions", description: "From welding and patching to complete body restoration, our comprehensive approach ensures that your trailer looks great and performs reliably for years to come." },
     ],

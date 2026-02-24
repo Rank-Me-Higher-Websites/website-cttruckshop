@@ -22,7 +22,7 @@ const blogPosts = [
   {
     slug: "truck-mechanic-near-me-phoenix-az",
     title: "Truck Mechanic Near Me Phoenix, AZ | Fast & Reliable Semi-Truck Repair",
-    excerpt: "Looking for a reliable truck mechanic near you in Phoenix? CT Truck Shop offers fast, professional semi-truck repair services with 24/7 emergency roadside assistance.",
+    excerpt: "Looking for a reliable truck mechanic near you in Phoenix? CT Truck Shop offers fast, professional semi-truck repair services with emergency roadside assistance.",
     category: "Emergency Roadside Assistance",
     date: "December 15, 2025",
     image: expertTechnician,

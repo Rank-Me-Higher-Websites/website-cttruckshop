@@ -14,8 +14,8 @@ const faqs = [
     answer: "We service all types of heavy-duty commercial vehicles including semi-trucks, tractor-trailers, box trucks, flatbeds, refrigerated trailers, and full commercial fleets. Our technicians are experienced with all major manufacturers including Freightliner, Peterbilt, Kenworth, Volvo, International, and Mack.",
   },
   {
-    question: "Do you offer 24/7 emergency roadside assistance?",
-    answer: "Yes! We provide 24/7 emergency roadside assistance throughout Phoenix, AZ and surrounding areas including Glendale, Tempe, Mesa, and along major routes like I-10, I-17, and Loop 101. Our mobile techs are equipped to handle most common breakdowns on-site.",
+    question: "Do you offer emergency roadside assistance?",
+    answer: "Yes! We provide emergency roadside assistance throughout Phoenix, AZ and surrounding areas including Glendale, Tempe, Mesa, and along major routes like I-10, I-17, and Loop 101. Our mobile techs are equipped to handle most common breakdowns on-site.",
   },
   {
     question: "What services do you provide?",

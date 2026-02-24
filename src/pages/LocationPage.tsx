@@ -44,11 +44,11 @@ const locationsData: Record<string, {
       "Full-service repair bays",
       "State-of-the-art diagnostics",
       "Secure truck parking",
-      "24/7 access for fleet customers",
+      "Extended access for fleet customers",
       "Mobile repair dispatch",
     ],
     description: "Our Phoenix location serves as the headquarters for CT Truck & Trailer Shop, providing comprehensive repair and maintenance services for the entire Phoenix metro area.",
-    metaDescription: "CT Truck & Trailer Shop in Phoenix, AZ. Full-service truck and trailer repair, DOT inspections, 24/7 emergency service. Call (602) 830-3232.",
+    metaDescription: "CT Truck & Trailer Shop in Phoenix, AZ. Full-service truck and trailer repair, DOT inspections, fast emergency service. Call (602) 830-3232.",
   },
 };
 
@@ -62,9 +62,9 @@ const defaultLocation = {
   hours: "Mon-Sat: 7AM-6PM",
   emergency: true,
   services: ["Engine Repair", "Brake Service", "Electrical", "Transmission", "DOT Inspections"],
-  features: ["Full-service repairs", "Mobile service", "24/7 emergency"],
+  features: ["Full-service repairs", "Mobile service", "Emergency available"],
   description: "CT Truck & Trailer Shop provides professional truck and trailer repair services throughout the Phoenix metro area.",
-  metaDescription: "CT Truck & Trailer Shop - Professional truck and trailer repair in Phoenix, AZ. 24/7 emergency service available.",
+  metaDescription: "CT Truck & Trailer Shop - Professional truck and trailer repair in Phoenix, AZ. Emergency service available.",
 };
 
 // Pricing plans
@@ -106,7 +106,7 @@ const pricingPlans = [
       "Volume discounts",
       "PM reminders",
       "Dedicated account manager",
-      "24/7 emergency priority",
+      "Emergency priority",
     ],
     popular: false,
   },
@@ -172,7 +172,7 @@ const LocationPage = () => {
                   <div>
                     <p className="font-medium">{location.hours}</p>
                     {location.emergency && (
-                      <p className="text-accent">24/7 Emergency Service Available</p>
+                      <p className="text-accent">Emergency Service Available</p>
                     )}
                   </div>
                 </div>

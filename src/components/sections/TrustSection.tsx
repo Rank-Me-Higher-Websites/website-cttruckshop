@@ -47,13 +47,13 @@ const TrustSection = () => {
           {/* Divider */}
           <div className="w-px h-8 sm:h-12 bg-border" />
 
-          {/* 24/7 Badge */}
+          {/* Emergency Badge */}
           <div className="flex items-center gap-2 sm:gap-3">
             <div className="w-8 h-8 sm:w-12 sm:h-12 rounded-full bg-accent/10 flex items-center justify-center flex-shrink-0">
               <Shield className="h-4 w-4 sm:h-6 sm:w-6 text-accent" />
             </div>
             <div className="text-left">
-              <p className="font-bold text-foreground text-xs sm:text-base">24/7 Emergency</p>
+              <p className="font-bold text-foreground text-xs sm:text-base">Fast Response</p>
               <p className="text-[10px] sm:text-sm text-muted-foreground">Roadside Assistance</p>
             </div>
           </div>

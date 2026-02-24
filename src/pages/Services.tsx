@@ -8,7 +8,7 @@ import FAQSection from "@/components/sections/FAQSection";
 import mechanicsWork from "@/assets/mechanics-work.jpeg";
 
 const truckServices = [
-  { icon: Settings, title: "Emergency Truck Repair", description: "24/7 emergency roadside truck repair services in Phoenix and surrounding areas.", href: "/emergency-truck-repair-phoenix" },
+  { icon: Settings, title: "Emergency Truck Repair", description: "Fast emergency roadside truck repair services in Phoenix and surrounding areas.", href: "/emergency-truck-repair-phoenix" },
   { icon: Truck, title: "Truck Breakdown Service", description: "Fast mobile breakdown service with certified technicians ready day or night.", href: "/truck-breakdown-service-phoenix" },
   { icon: Settings, title: "Engine Repairs", description: "Diesel engine diagnostics, repair, and optimization for all semi-truck models.", href: "/semi-truck-engine-repairs-in-phoenix-az" },
   { icon: Zap, title: "AC Repair", description: "Semi truck AC system service to keep drivers comfortable in Arizona heat.", href: "/semi-truck-ac-repair-services" },
@@ -28,7 +28,7 @@ const Services = () => {
     <Layout>
       <SEO
         title="Services"
-        description="Complete truck and trailer repair services in Phoenix. Engine repair, brake service, DOT inspections, transmission, electrical, welding, and 24/7 emergency roadside assistance."
+        description="Complete truck and trailer repair services in Phoenix. Engine repair, brake service, DOT inspections, transmission, electrical, welding, and emergency roadside assistance."
         keywords="truck repair services, trailer repair, DOT inspection, engine repair, brake service, Phoenix truck shop"
       />
 
@@ -190,7 +190,7 @@ const Services = () => {
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             <div>
               <h3 className="font-heading text-2xl md:text-3xl font-bold text-accent-foreground">
-                24/7 Emergency Roadside Assistance
+                Emergency Roadside Assistance
               </h3>
               <p className="text-accent-foreground/80 mt-1">
                 Stranded on the highway? Our mobile techs are ready to help.

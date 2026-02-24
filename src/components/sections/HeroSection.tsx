@@ -44,7 +44,7 @@ const HeroSection = () => {
               From routine <Link to="/services" className="text-accent hover:underline">maintenance</Link> to complex{" "}
               <Link to="/services/engine-repair" className="text-accent hover:underline">engine repairs</Link>, our expert technicians ensure 
               minimal downtime and maximum efficiency for your commercial fleet. 
-              <strong className="text-accent"> <Link to="/mobile-repair" className="hover:underline">24/7 Emergency Service</Link> Available.</strong>
+              <strong className="text-accent"> <Link to="/mobile-repair" className="hover:underline">Fast Emergency Response</Link> Available.</strong>
             </p>
             
             {/* CTA Buttons */}
@@ -71,8 +71,8 @@ const HeroSection = () => {
                     <Clock className="h-4 w-4 sm:h-5 sm:w-5 text-accent" />
                   </div>
                   <div>
-                    <p className="font-heading text-base sm:text-lg xl:text-xl font-bold text-primary-foreground">24/7</p>
-                     <p className="text-[10px] sm:text-xs xl:text-sm text-primary-foreground/60">Emergency Service</p>
+                    <p className="font-heading text-base sm:text-lg xl:text-xl font-bold text-primary-foreground">Fast</p>
+                     <p className="text-[10px] sm:text-xs xl:text-sm text-primary-foreground/60">Response Time</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-2">
