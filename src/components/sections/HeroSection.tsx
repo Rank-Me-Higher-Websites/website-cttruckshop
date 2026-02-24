@@ -67,30 +67,30 @@ const HeroSection = () => {
             <div className="mt-10 pt-6 border-t border-primary-foreground/10 animate-fade-in delay-500">
               <div className="grid grid-cols-3 gap-3 md:gap-8">
                 <div className="flex items-center gap-2">
-                  <div className="icon-container-outline">
-                    <Clock className="h-5 w-5 text-accent" />
+                  <div className="icon-container-outline w-10 h-10 sm:w-14 sm:h-14">
+                    <Clock className="h-4 w-4 sm:h-5 sm:w-5 text-accent" />
                   </div>
                   <div>
-                    <p className="font-heading text-lg font-bold text-primary-foreground">24/7</p>
-                    <p className="text-xs text-primary-foreground/60">Emergency Service</p>
+                    <p className="font-heading text-base sm:text-lg font-bold text-primary-foreground">24/7</p>
+                    <p className="text-[10px] sm:text-xs text-primary-foreground/60">Emergency Service</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-2">
-                  <div className="icon-container-outline">
-                    <Wrench className="h-5 w-5 text-accent" />
+                  <div className="icon-container-outline w-10 h-10 sm:w-14 sm:h-14">
+                    <Wrench className="h-4 w-4 sm:h-5 sm:w-5 text-accent" />
                   </div>
                   <div>
-                    <p className="font-heading text-lg font-bold text-primary-foreground">2,500+</p>
-                    <p className="text-xs text-primary-foreground/60">Repairs Completed</p>
+                    <p className="font-heading text-base sm:text-lg font-bold text-primary-foreground">2,500+</p>
+                    <p className="text-[10px] sm:text-xs text-primary-foreground/60">Repairs Completed</p>
                   </div>
                 </div>
                 <div className="flex items-center gap-2">
-                  <div className="icon-container-outline">
-                    <Shield className="h-5 w-5 text-accent" />
+                  <div className="icon-container-outline w-10 h-10 sm:w-14 sm:h-14">
+                    <Shield className="h-4 w-4 sm:h-5 sm:w-5 text-accent" />
                   </div>
                   <div>
-                    <p className="font-heading text-lg font-bold text-primary-foreground">DOT</p>
-                    <p className="text-xs text-primary-foreground/60">Certified Inspections</p>
+                    <p className="font-heading text-base sm:text-lg font-bold text-primary-foreground">DOT</p>
+                    <p className="text-[10px] sm:text-xs text-primary-foreground/60">Certified Inspections</p>
                   </div>
                 </div>
               </div>
