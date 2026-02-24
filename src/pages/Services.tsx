@@ -8,69 +8,19 @@ import FAQSection from "@/components/sections/FAQSection";
 import mechanicsWork from "@/assets/mechanics-work.jpeg";
 
 const truckServices = [
-  {
-    icon: Settings,
-    title: "Engine Repair",
-    description: "Complete diesel engine diagnostics, repair, and maintenance with state-of-the-art tools.",
-    href: "/services/engine-repair",
-  },
-  {
-    icon: Shield,
-    title: "Brake Service",
-    description: "DOT-compliant brake inspections, repairs, and replacements for trucks and trailers.",
-    href: "/services/brake-service",
-  },
-  {
-    icon: Zap,
-    title: "Electrical Systems",
-    description: "Full electrical diagnostics, wiring repair, alternators, starters, and computer systems.",
-    href: "/services/electrical",
-  },
-  {
-    icon: Cog,
-    title: "Transmission Repair",
-    description: "Complete transmission diagnostics, clutch replacement, and drivetrain service.",
-    href: "/services/transmission",
-  },
-  {
-    icon: Gauge,
-    title: "DOT Inspections",
-    description: "Comprehensive DOT compliance inspections to keep your fleet road-legal and safe.",
-    href: "/services/dot-inspections",
-  },
-  {
-    icon: Wrench,
-    title: "Preventive Maintenance",
-    description: "Regular PM services including oil changes, quick-lube, and comprehensive check-ups.",
-    href: "/services/pm-maintenance",
-  },
+  { icon: Settings, title: "Emergency Truck Repair", description: "24/7 emergency roadside truck repair services in Phoenix and surrounding areas.", href: "/emergency-truck-repair-phoenix" },
+  { icon: Truck, title: "Truck Breakdown Service", description: "Fast mobile breakdown service with certified technicians ready day or night.", href: "/truck-breakdown-service-phoenix" },
+  { icon: Settings, title: "Engine Repairs", description: "Diesel engine diagnostics, repair, and optimization for all semi-truck models.", href: "/semi-truck-engine-repairs-in-phoenix-az" },
+  { icon: Zap, title: "AC Repair", description: "Semi truck AC system service to keep drivers comfortable in Arizona heat.", href: "/semi-truck-ac-repair-services" },
+  { icon: Gauge, title: "Truck Diagnostics", description: "Advanced dealer-level diagnostics for engine, electrical, and emissions systems.", href: "/semi-truck-diagnostics-in-phoenix-az" },
+  { icon: Shield, title: "Tire & Brake Repair", description: "Professional semi truck tire and brake service for safety and compliance.", href: "/semi-truck-tire-and-brake-repair-services-phoenix-az" },
 ];
 
 const trailerServices = [
-  {
-    icon: Shield,
-    title: "Trailer Brakes",
-    description: "Air brake systems, ABS diagnostics and repair for all trailer types.",
-    href: "/services/trailer-brakes",
-  },
-  {
-    icon: Truck,
-    title: "Suspension",
-    description: "Complete suspension repairs and replacements for smooth hauling.",
-    href: "/services/suspension",
-  },
-  {
-    icon: Hammer,
-    title: "Welding",
-    description: "Structural welding and fabrication for trailers and truck components.",
-    href: "/services/welding",
-  },
-  {
-    icon: Cog,
-    title: "Hydraulics",
-    description: "Hydraulic system diagnostics, repair, and maintenance.",
-    href: "/services/hydraulics",
-  },
+  { icon: Zap, title: "Trailer Electrical Repair", description: "Electrical system diagnostics, wiring repair, and lighting services.", href: "/semi-trailer-electrical-repair-services-phoenix-az" },
+  { icon: Shield, title: "Trailer Brake & Tire", description: "Brake and tire service for semi trailers to ensure road safety.", href: "/semi-trailer-brake-and-tire-repair-services-in-phoenix-az" },
+  { icon: Cog, title: "Trailer Suspension", description: "Air suspension, leaf spring, and shock absorber repair services.", href: "/semi-trailer-suspension-repair-services-phoenix-az" },
+  { icon: Hammer, title: "Full Body Trailer Repair", description: "Body repair, welding, panel replacement, and full restoration.", href: "/full-body-semi-trailer-repair-in-phoenix-az" },
 ];
 
 const Services = () => {
