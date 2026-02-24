@@ -47,9 +47,9 @@ const Header = () => {
   }, [location]);
 
   return (
-    <>
+    <div className="sticky top-0 z-50">
       {/* Partner Logos Bar */}
-      <div className="hidden lg:block bg-background border-b border-border py-3">
+      <div className={cn("hidden lg:block bg-background border-b border-border transition-all duration-300", isScrolled ? "max-h-0 overflow-hidden py-0" : "max-h-20 py-3")}>
         <div className="container-custom flex items-center justify-center gap-0">
           {/* XXII Century Logo */}
           <a 
@@ -93,7 +93,7 @@ const Header = () => {
       </div>
 
       {/* Top Bar */}
-      <div className="hidden lg:block bg-primary text-primary-foreground py-2">
+      <div className={cn("hidden lg:block bg-primary text-primary-foreground transition-all duration-300", isScrolled ? "max-h-0 overflow-hidden py-0" : "max-h-10 py-2")}>
         <div className="container-custom flex items-center justify-between text-sm">
           <div className="flex items-center gap-6">
             <a href="tel:6028303232" className="flex items-center gap-2 hover:text-accent transition-colors">
@@ -115,7 +115,7 @@ const Header = () => {
       {/* Main Header */}
       <header
         className={cn(
-          "sticky top-0 z-50 w-full transition-all duration-300 relative",
+          "w-full transition-all duration-300 relative",
           isScrolled
             ? "bg-background/95 backdrop-blur-md shadow-md py-2"
             : "bg-background py-4"
@@ -371,7 +371,7 @@ const Header = () => {
           </nav>
         </div>
       </header>
-    </>
+    </div>
   );
 };
 
