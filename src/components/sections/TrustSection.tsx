@@ -14,7 +14,7 @@ const TrustSection = () => {
         <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12 lg:gap-16">
           {/* Trust Badge */}
           <a
-            href="https://www.google.com/maps/place/CT+Truck+and+Trailer+Shop"
+            href="https://maps.app.goo.gl/XFyDXt5avVXvvDPr5"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-3 hover:scale-105 transition-transform"

@@ -100,7 +100,7 @@ const Footer = () => {
               </a>
 
               <a
-                href="https://www.google.com/maps/dir//3883+N+36th+Ave,+Phoenix,+AZ+85019"
+                href="https://maps.app.goo.gl/XFyDXt5avVXvvDPr5"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-3 text-primary-foreground/80 hover:text-accent transition-colors group"

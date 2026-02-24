@@ -84,7 +84,7 @@ const MapSection = () => {
 
                 {/* CTA Button */}
                 <a 
-                  href="https://www.google.com/maps/dir//CT+Truck+and+Trailer+Shop" 
+                  href="https://maps.app.goo.gl/XFyDXt5avVXvvDPr5" 
                   target="_blank" 
                   rel="noopener noreferrer"
                 >
