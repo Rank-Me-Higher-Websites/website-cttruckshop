@@ -5,6 +5,7 @@ export interface ServicePageData {
   metaDescription: string;
   heroHeadline: string;
   heroSubheadline?: string;
+  introHeading: string;
   introParagraphs: string[];
   sections: {
     heading: string;
@@ -29,6 +30,7 @@ export const servicePages: Record<string, ServicePageData> = {
     metaTitle: "Emergency Truck Repair Phoenix, AZ | CT Truck & Trailer Shop",
     metaDescription: "24/7 Emergency truck repair in Phoenix, AZ. Fast response, certified mechanics, roadside assistance. CT Truck & Trailer Shop gets you back on the road quickly.",
     heroHeadline: "#1 Emergency Truck Repair Phoenix, AZ",
+    introHeading: "Fast 24/7 Emergency Truck Repair in Phoenix, AZ",
     introParagraphs: [
       "When your truck breaks down on the road, every minute counts. CT Truck & Trailer Shop provides emergency truck repair in Phoenix, AZ, helping drivers get back on the road quickly and safely. Our certified mechanics are always on standby, ready to handle any roadside issue—from engine failure to brake or tire problems. With fully equipped service trucks and years of experience in the heavy-duty repair industry, we deliver fast response times and reliable workmanship that keep your truck running strong.",
     ],
@@ -88,6 +90,7 @@ export const servicePages: Record<string, ServicePageData> = {
     metaTitle: "24/7 Truck Breakdown Service Phoenix | CT Truck & Trailer Shop",
     metaDescription: "24/7 truck breakdown service and repair in Phoenix, AZ. Fast mobile response, certified technicians, roadside assistance. CT Truck and Trailer Shop.",
     heroHeadline: "24/7 Truck Breakdown Service and Repair",
+    introHeading: "Reliable Truck Breakdown Service & Roadside Repair in Phoenix",
     introParagraphs: [
       "When your rig breaks down on the road, every minute counts. That's why CT Truck and Trailer Shop provides 24/7 truck breakdown service and repair throughout Phoenix and nearby areas. Our certified mobile technicians are always ready to respond — day or night — to get you back on the road fast. Whether it's an engine issue, electrical failure, tire blowout, or brake problem, we bring the tools and expertise directly to you.",
       "From emergency roadside repairs to full-service shop diagnostics, we ensure your downtime stays minimal and your truck stays reliable. When you need 24/7 truck repair you can trust, call CT Truck and Trailer Shop — where help is always just a phone call away.",
@@ -142,6 +145,7 @@ export const servicePages: Record<string, ServicePageData> = {
     metaTitle: "Semi Truck AC Repair Services Phoenix, AZ | CT Truck & Trailer Shop",
     metaDescription: "Professional semi truck AC repair and services in Phoenix, AZ. Expert mechanics, comprehensive evaluation, reliable AC solutions. CT Shop.",
     heroHeadline: "Semi Air Conditioning Repairs",
+    introHeading: "Expert Semi Truck AC Repair & Service in Phoenix, AZ",
     introParagraphs: [
       "Maintaining a well-functioning air conditioning system is essential for heavy-duty trucks operating in hot and demanding conditions. To ensure your comfort and confidence in the reliability of your semi truck's AC system throughout your job, it is crucial to maintain its maximum efficiency. It's equally important to have a skilled team of mechanics available in case any issues arise. At CT Shop, our experienced mechanics are capable of addressing any concerns you may have for your semi truck's AC system.",
       "Neglecting to have your AC unit inspected when you notice any of the check indicators can exacerbate the problem and eventually lead to a complete AC failure. In addition to offering AC repairs, our mechanics can conduct a comprehensive evaluation of your system to ensure seamless operation.",
@@ -166,6 +170,7 @@ export const servicePages: Record<string, ServicePageData> = {
     metaTitle: "Semi Truck Tire & Brake Repair Phoenix, AZ | CT Truck & Trailer Shop",
     metaDescription: "Professional semi truck tire and brake repair services in Phoenix, AZ. Expert technicians, safety-first approach. CT Shop.",
     heroHeadline: "Brake and Tire Repairs",
+    introHeading: "Professional Semi Truck Tire & Brake Repair Services in Phoenix",
     introParagraphs: [
       "Brakes and tires are crucial components of any vehicle, and their proper maintenance is even more critical when it comes to semi trucks. Especially, with their heavy loads and long-distance trips, semi trucks put significant strain on braking systems and tires. Regular brake and tire service is essential to ensure optimal performance, maximize safety, and extend the lifespan of these vital components.",
       "Here, at CT Shop our professional technicians will provide you with the high-level semi truck brake and tire services to reduce the risk of brake failure which can have catastrophic consequences.",
@@ -190,6 +195,7 @@ export const servicePages: Record<string, ServicePageData> = {
     metaTitle: "Semi Truck Diagnostics Phoenix, AZ | CT Truck & Trailer Shop",
     metaDescription: "Fast, accurate semi truck diagnostics in Phoenix, AZ. Dealer-level software, certified technicians. Engine, electrical, emissions testing. CT Shop.",
     heroHeadline: "Semi Truck Diagnostics",
+    introHeading: "Advanced Semi Truck Diagnostics in Phoenix, AZ",
     introParagraphs: [
       "CT Shop delivers fast, accurate Semi Truck Diagnostics to keep your rig running at peak performance. Our certified technicians use advanced dealer-level software to identify engine faults, electrical issues, aftertreatment problems, sensor failures, and performance irregularities with precision. Whether your truck is showing an active fault code, losing power, or burning extra fuel, we pinpoint the root cause—not just the symptom. With quick turnaround times, clear repair recommendations, and transparent communication, CT Shop is the go-to destination in Phoenix for reliable Semi Truck Diagnostics near me. Get back on the road faster, safer, and with confidence.",
       "CT Shop provides comprehensive Semi Truck Diagnostics, including detailed engine performance analysis, transmission and drivetrain evaluation, electrical and electronic system testing, emissions control verification, and complete brake system inspections. Our technicians use advanced diagnostic tools to accurately identify faults, improve performance, and keep your truck road-ready and compliant.",
@@ -235,6 +241,7 @@ export const servicePages: Record<string, ServicePageData> = {
     metaTitle: "Semi Truck Engine Repairs Phoenix, AZ | CT Truck & Trailer Shop",
     metaDescription: "Professional semi truck engine repair services in Phoenix, AZ. Diesel & gas engine diagnostics, repair, and optimization. CT Shop.",
     heroHeadline: "Semi Engine Repair Services",
+    introHeading: "Certified Semi Truck Engine Repair in Phoenix, AZ",
     introParagraphs: [
       "We understand the crucial role that engines play in the performance and profitability of your fleet. Whether you're dealing with a minor issue or a major breakdown, our experts are here to diagnose, repair, and optimize your semi-truck engines efficiently and effectively.",
       "Our technicians have extensive experience working with a wide range of semi-truck engines, including diesel engines, gas engines, and more. They stay up to date with the latest advancements in engine technology to provide you with the most accurate diagnoses and efficient repairs.",
@@ -260,6 +267,7 @@ export const servicePages: Record<string, ServicePageData> = {
     metaTitle: "Semi Trailer Electrical Repair Phoenix, AZ | CT Truck & Trailer Shop",
     metaDescription: "Professional semi trailer electrical repair services in Phoenix, AZ. Expert diagnostics, wiring repair, lighting systems. CT Shop.",
     heroHeadline: "Trailer Electrical Repair",
+    introHeading: "Semi Trailer Electrical Repair & Diagnostics in Phoenix",
     introParagraphs: [
       "Similar to the circuitry and wires running to the correct terminals in your home, your truck's electrical system comprises interconnected components that ensure smooth operation. However, if the battery powering your engine encounters any issues, it can bring your truck to a halt. Therefore, it's essential to pay attention to potential signs of electrical system trouble, such as flickering truck lights, problems starting the truck, uneven or dim lighting, sudden decrease in fuel efficiency, etc.",
       "Don't let electrical issues compromise your truck's performance. Contact CT Truck and Trailer Repair Shop today to schedule an appointment and experience our exceptional semi-trailer electrical repair services.",
@@ -284,6 +292,7 @@ export const servicePages: Record<string, ServicePageData> = {
     metaTitle: "Semi Trailer Brake & Tire Repair Phoenix, AZ | CT Truck & Trailer Shop",
     metaDescription: "Professional semi trailer brake and tire repair services in Phoenix, AZ. Expert technicians, comprehensive inspections. CT Shop.",
     heroHeadline: "Trailer Brake & Tire Repair Services",
+    introHeading: "Semi Trailer Brake & Tire Repair Services in Phoenix, AZ",
     introParagraphs: [],
     sections: [
       {
@@ -318,6 +327,7 @@ export const servicePages: Record<string, ServicePageData> = {
     metaTitle: "Semi Trailer Suspension Repair Phoenix, AZ | CT Truck & Trailer Shop",
     metaDescription: "Professional semi trailer suspension repair services in Phoenix, AZ. Air suspension, leaf springs, shock absorbers. CT Shop.",
     heroHeadline: "Trailer Suspension Repair",
+    introHeading: "Semi Trailer Suspension Repair & Service in Phoenix, AZ",
     introParagraphs: [
       "With our comprehensive range of trailer suspension services, we are here to provide you with top-notch solutions that keep your trailer in optimal condition. Our team of skilled technicians specializes in air suspension repairs, offering a wide array of services to address any issues you may encounter.",
       "Our expert technicians are well-equipped to handle various aspects of air suspension repairs, including airbag repairs, airline replacements, shock absorber repairs, leaf spring and hanger repairs, bushing repairs, and much more. Whether your trailer requires a simple fix or a complex repair, we have the knowledge and expertise to get the job done right.",
@@ -342,6 +352,7 @@ export const servicePages: Record<string, ServicePageData> = {
     metaTitle: "Full Body Semi Trailer Repair Phoenix, AZ | CT Truck & Trailer Shop",
     metaDescription: "Professional full body semi trailer repair and restoration in Phoenix, AZ. Welding, panel replacement, paint, refinishing. CT Shop.",
     heroHeadline: "Trailer Body Repair & Restoration",
+    introHeading: "Full Body Semi Trailer Repair & Restoration in Phoenix, AZ",
     introParagraphs: [
       "Restore your semi-trailer's strength and appearance with professional trailer body repair and restoration services. From aluminum and steel welding and patching to full panel replacements and frame straightening, our technicians handle every detail with precision. We specialize in fixing sidewalls, doors and floors to keep your trailer safe, durable and road-ready for long hauls.",
       "Bring your equipment back to life with expert trailer paint, polishing, and refinishing services. Our restoration team removes rust, repairs damage, and applies high-quality coatings that protect against corrosion and weathering. Whether you need minor touch-ups or complete semi-trailer body restoration, we deliver lasting results that enhance your trailer's look and performance. Get a quote today!",
