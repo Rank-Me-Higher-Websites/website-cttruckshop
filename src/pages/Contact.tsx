@@ -109,7 +109,7 @@ const Contact = () => {
                 Contact <span className="text-gradient">Information</span>
               </h2>
               
-              <div className="space-y-4 mb-10">
+              <div className="space-y-4 mb-10 overflow-hidden">
                 <a
                   href="tel:6028303232"
                   className="flex items-start gap-4 p-4 rounded-xl bg-primary-foreground/5 border border-accent/20 hover:border-accent/50 transition-all group"
