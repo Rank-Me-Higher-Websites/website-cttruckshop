@@ -194,7 +194,7 @@ const Contact = () => {
                   <form onSubmit={handleSubmit} className="space-y-6">
                     <div>
                       <label htmlFor="name" className="block text-sm font-medium text-primary-foreground mb-2">
-                        Your Name
+                        Your Name <span className="text-accent">*</span>
                       </label>
                       <Input
                         id="name"
@@ -208,7 +208,7 @@ const Contact = () => {
                     <div className="grid sm:grid-cols-2 gap-4">
                       <div>
                         <label htmlFor="email" className="block text-sm font-medium text-primary-foreground mb-2">
-                          Email Address
+                          Email Address <span className="text-accent">*</span>
                         </label>
                         <Input
                           id="email"
@@ -222,7 +222,7 @@ const Contact = () => {
                       </div>
                       <div>
                         <label htmlFor="phone" className="block text-sm font-medium text-primary-foreground mb-2">
-                          Phone Number
+                          Phone Number <span className="text-accent">*</span>
                         </label>
                         <Input
                           id="phone"
@@ -230,6 +230,7 @@ const Contact = () => {
                           value={formData.phone}
                           onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                           placeholder="(602) 555-1234"
+                          required
                           className="bg-primary-foreground/5 border-accent/30 text-primary-foreground placeholder:text-primary-foreground/40 focus:border-accent"
                         />
                       </div>
@@ -244,7 +245,6 @@ const Contact = () => {
                         onChange={(e) => setFormData({ ...formData, message: e.target.value })}
                         placeholder="Tell us about your service needs..."
                         rows={5}
-                        required
                         className="bg-primary-foreground/5 border-accent/30 text-primary-foreground placeholder:text-primary-foreground/40 focus:border-accent"
                       />
                     </div>
