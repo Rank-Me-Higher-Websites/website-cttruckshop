@@ -170,6 +170,7 @@ export const servicePages: Record<string, ServicePageData> = {
     metaTitle: "Semi Truck Tire & Brake Repair Phoenix, AZ | CT Truck & Trailer Shop",
     metaDescription: "Professional semi truck tire and brake repair services in Phoenix, AZ. Expert technicians, safety-first approach. CT Shop.",
     heroHeadline: "Brake and Tire Repairs",
+    introHeading: "Professional Semi Truck Tire & Brake Repair Services in Phoenix",
     introParagraphs: [
       "Brakes and tires are crucial components of any vehicle, and their proper maintenance is even more critical when it comes to semi trucks. Especially, with their heavy loads and long-distance trips, semi trucks put significant strain on braking systems and tires. Regular brake and tire service is essential to ensure optimal performance, maximize safety, and extend the lifespan of these vital components.",
       "Here, at CT Shop our professional technicians will provide you with the high-level semi truck brake and tire services to reduce the risk of brake failure which can have catastrophic consequences.",
