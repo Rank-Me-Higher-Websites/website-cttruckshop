@@ -309,7 +309,7 @@ export const servicePages: Record<string, ServicePageData> = {
       },
     ],
     highlights: [
-      { title: "24/7 Service", description: "We understand the importance of properly functioning brakes and tires in semi trailers, and our goal is to deliver solutions that meet or exceed customer expectations." },
+      { title: "Fast Response", description: "We understand the importance of properly functioning brakes and tires in semi trailers, and our goal is to deliver solutions that meet or exceed customer expectations." },
       { title: "Expert Knowledge", description: "Our extensive knowledge of various trailer models and braking systems equips us to diagnose and resolve issues efficiently. With CT Shop, you can trust that your trailer is in capable hands." },
       { title: "Comprehensive Solutions", description: "From brake inspections to complete tire service, our comprehensive approach ensures that your trailer operates safely, promoting compliance and minimizing downtime." },
     ],
