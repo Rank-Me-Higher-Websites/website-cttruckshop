@@ -194,7 +194,7 @@ const Footer = () => {
                 >
                   <Icon className="h-4 w-4" />
                 </a>
-              )}
+              ))}
             </div>
           </div>
         </div>
