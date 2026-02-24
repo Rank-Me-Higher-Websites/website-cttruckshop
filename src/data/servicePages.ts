@@ -292,6 +292,7 @@ export const servicePages: Record<string, ServicePageData> = {
     metaTitle: "Semi Trailer Brake & Tire Repair Phoenix, AZ | CT Truck & Trailer Shop",
     metaDescription: "Professional semi trailer brake and tire repair services in Phoenix, AZ. Expert technicians, comprehensive inspections. CT Shop.",
     heroHeadline: "Trailer Brake & Tire Repair Services",
+    introHeading: "Semi Trailer Brake & Tire Repair Services in Phoenix, AZ",
     introParagraphs: [],
     sections: [
       {
