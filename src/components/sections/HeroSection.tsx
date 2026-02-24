@@ -44,7 +44,7 @@ const HeroSection = () => {
               From routine <Link to="/services" className="text-accent hover:underline">maintenance</Link> to complex{" "}
               <Link to="/services/engine-repair" className="text-accent hover:underline">engine repairs</Link>, our expert technicians ensure 
               minimal downtime and maximum efficiency for your commercial fleet. 
-              <strong className="text-accent"> <Link to="/mobile-repair" className="hover:underline">Fast Emergency Response</Link> Available.</strong>
+              <strong className="text-accent"> No. #1 Phoenix Repair Shop Since 2022.</strong>
             </p>
             
             {/* CTA Buttons */}
