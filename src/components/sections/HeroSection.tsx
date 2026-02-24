@@ -1,10 +1,8 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Phone, ArrowRight, Shield, Clock, Wrench, Send } from "lucide-react";
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Phone, ArrowRight, Shield, Clock, Wrench } from "lucide-react";
 import nightTowing from "@/assets/night-towing.jpg";
-import { useState } from "react";
+import LeadForm from "@/components/LeadForm";
 
 const serviceOptions = [
   "Engine Repair",
