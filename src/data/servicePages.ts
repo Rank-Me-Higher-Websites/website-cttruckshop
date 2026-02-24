@@ -267,6 +267,7 @@ export const servicePages: Record<string, ServicePageData> = {
     metaTitle: "Semi Trailer Electrical Repair Phoenix, AZ | CT Truck & Trailer Shop",
     metaDescription: "Professional semi trailer electrical repair services in Phoenix, AZ. Expert diagnostics, wiring repair, lighting systems. CT Shop.",
     heroHeadline: "Trailer Electrical Repair",
+    introHeading: "Semi Trailer Electrical Repair & Diagnostics in Phoenix",
     introParagraphs: [
       "Similar to the circuitry and wires running to the correct terminals in your home, your truck's electrical system comprises interconnected components that ensure smooth operation. However, if the battery powering your engine encounters any issues, it can bring your truck to a halt. Therefore, it's essential to pay attention to potential signs of electrical system trouble, such as flickering truck lights, problems starting the truck, uneven or dim lighting, sudden decrease in fuel efficiency, etc.",
       "Don't let electrical issues compromise your truck's performance. Contact CT Truck and Trailer Repair Shop today to schedule an appointment and experience our exceptional semi-trailer electrical repair services.",
