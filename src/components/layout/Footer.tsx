@@ -63,7 +63,7 @@ const Footer = () => {
             <Link to="/" className="inline-block mb-4">
               <img src={logo} alt="CT Shop" className="h-12 md:h-14 brightness-0 invert" />
             </Link>
-            <p className="text-primary-foreground/60 text-sm leading-relaxed max-w-sm">
+            <p className="text-primary-foreground text-sm leading-relaxed max-w-sm">
               Expert fleet maintenance and repair services for heavy-duty trucks and trailers 
               in Phoenix, AZ. From routine maintenance to emergency roadside assistance, 
               we keep your business moving.
@@ -75,26 +75,26 @@ const Footer = () => {
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
               <a
                 href="tel:6028303232"
-                className="flex items-center gap-3 text-primary-foreground/80 hover:text-accent transition-colors group"
+                className="flex items-center gap-3 text-primary-foreground hover:text-accent transition-colors group"
               >
                 <span className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center group-hover:bg-accent/20 transition-colors flex-shrink-0">
                   <Phone className="h-4 w-4 text-accent" />
                 </span>
                 <div>
-                  <span className="text-[11px] uppercase tracking-wider text-primary-foreground/40 block">Phone</span>
+                  <span className="text-[11px] uppercase tracking-wider text-primary-foreground/70 block">Phone</span>
                   <span className="text-sm font-medium">(602) 830-3232</span>
                 </div>
               </a>
 
               <a
                 href="mailto:service@clevertranscoshop.com"
-                className="flex items-center gap-3 text-primary-foreground/80 hover:text-accent transition-colors group"
+                className="flex items-center gap-3 text-primary-foreground hover:text-accent transition-colors group"
               >
                 <span className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center group-hover:bg-accent/20 transition-colors flex-shrink-0">
                   <Mail className="h-4 w-4 text-accent" />
                 </span>
                 <div>
-                  <span className="text-[11px] uppercase tracking-wider text-primary-foreground/40 block">Email</span>
+                  <span className="text-[11px] uppercase tracking-wider text-primary-foreground/70 block">Email</span>
                   <span className="text-sm font-medium break-all">service@clevertranscoshop.com</span>
                 </div>
               </a>
@@ -103,23 +103,23 @@ const Footer = () => {
                 href="https://maps.app.goo.gl/XFyDXt5avVXvvDPr5"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 text-primary-foreground/80 hover:text-accent transition-colors group"
+                className="flex items-center gap-3 text-primary-foreground hover:text-accent transition-colors group"
               >
                 <span className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center group-hover:bg-accent/20 transition-colors flex-shrink-0">
                   <MapPin className="h-4 w-4 text-accent" />
                 </span>
                 <div>
-                  <span className="text-[11px] uppercase tracking-wider text-primary-foreground/40 block">Address</span>
+                  <span className="text-[11px] uppercase tracking-wider text-primary-foreground/70 block">Address</span>
                   <span className="text-sm font-medium">3883 N 36th Ave, Phoenix, AZ 85019</span>
                 </div>
               </a>
 
-              <div className="flex items-center gap-3 text-primary-foreground/80">
+              <div className="flex items-center gap-3 text-primary-foreground">
                 <span className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center flex-shrink-0">
                   <Clock className="h-4 w-4 text-accent" />
                 </span>
                 <div>
-                  <span className="text-[11px] uppercase tracking-wider text-primary-foreground/40 block">Hours</span>
+                  <span className="text-[11px] uppercase tracking-wider text-primary-foreground/70 block">Hours</span>
                   <span className="text-sm font-medium">Mon–Sat · Emergency Available</span>
                 </div>
               </div>
@@ -136,7 +136,7 @@ const Footer = () => {
             <ul className="space-y-2.5">
               {truckServices.map((s) => (
                 <li key={s.href}>
-                  <Link to={s.href} className="text-primary-foreground/60 hover:text-accent transition-colors text-sm">
+                  <Link to={s.href} className="text-primary-foreground hover:text-accent transition-colors text-sm">
                     {s.name}
                   </Link>
                 </li>
@@ -151,7 +151,7 @@ const Footer = () => {
             <ul className="space-y-2.5">
               {trailerServices.map((s) => (
                 <li key={s.href}>
-                  <Link to={s.href} className="text-primary-foreground/60 hover:text-accent transition-colors text-sm">
+                  <Link to={s.href} className="text-primary-foreground hover:text-accent transition-colors text-sm">
                     {s.name}
                   </Link>
                 </li>
@@ -166,7 +166,7 @@ const Footer = () => {
             <ul className="space-y-2.5">
               {quickLinks.map((l) => (
                 <li key={l.href}>
-                  <Link to={l.href} className="text-primary-foreground/60 hover:text-accent transition-colors text-sm">
+                  <Link to={l.href} className="text-primary-foreground hover:text-accent transition-colors text-sm">
                     {l.name}
                   </Link>
                 </li>
@@ -200,7 +200,7 @@ const Footer = () => {
         </div>
 
         {/* Bottom Bar */}
-        <div className="flex flex-col sm:flex-row items-center justify-between gap-3 pt-6 pb-16 md:pb-0 text-xs text-primary-foreground/40">
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-3 pt-6 pb-16 md:pb-0 text-xs text-primary-foreground/70">
           <p>© {currentYear} CT Truck & Trailer Shop. All rights reserved.</p>
           <div className="flex items-center gap-4">
             <Link to="/privacy" className="hover:text-accent transition-colors">
