@@ -151,10 +151,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="font-semibold text-primary-foreground">Location</p>
-                    <p className="text-primary-foreground">Phoenix, AZ</p>
-                    <p className="text-sm text-primary-foreground/60">
-                      Serving the entire Phoenix Metro Area
-                    </p>
+                    <p className="text-primary-foreground">3883 N 36th Ave</p>
+                    <p className="text-primary-foreground">Phoenix, AZ 85019</p>
                   </div>
                 </div>
 
