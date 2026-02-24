@@ -65,7 +65,7 @@ const HeroSection = () => {
             
             {/* Trust Indicators */}
             <div className="mt-10 pt-6 border-t border-primary-foreground/10 animate-fade-in delay-500">
-              <div className="grid grid-cols-3 gap-4 md:gap-8">
+              <div className="grid grid-cols-3 gap-3 md:gap-8">
                 <div className="flex items-center gap-2">
                   <div className="icon-container-outline">
                     <Clock className="h-5 w-5 text-accent" />
