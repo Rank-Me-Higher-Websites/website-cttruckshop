@@ -1,8 +1,8 @@
 import { useEffect, useRef, useState } from "react";
-import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Phone, ArrowRight } from "lucide-react";
 import { ScrollReveal } from "@/hooks/useScrollAnimation";
+import { useQuoteModal } from "@/contexts/QuoteModalContext";
 import shopInterior from "@/assets/shop-interior.jpg";
 import truckYard from "@/assets/truck-yard.png";
 import craneLift from "@/assets/crane-lift.png";
@@ -33,6 +33,7 @@ const duplicatedImages = [...images, ...images];
 const GallerySection = () => {
   const scrollRef = useRef<HTMLDivElement>(null);
   const [isPaused, setIsPaused] = useState(false);
+  const { open } = useQuoteModal();
 
   useEffect(() => {
     const scrollContainer = scrollRef.current;
@@ -106,12 +107,12 @@ const GallerySection = () => {
                 Call (602) 830-3232
               </Button>
             </a>
-            <Link to="/contact">
+            <button onClick={open}>
               <Button variant="hero-outline" size="lg">
                 Request a Quote
                 <ArrowRight className="h-5 w-5 ml-2" />
               </Button>
-            </Link>
+            </button>
           </div>
         </div>
       </ScrollReveal>
