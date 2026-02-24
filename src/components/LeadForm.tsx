@@ -33,6 +33,7 @@ const LeadForm = ({
     name: "",
     email: "",
     phone: "",
+    truckModel: "",
     service: "",
   });
 
@@ -40,7 +41,7 @@ const LeadForm = ({
     e.preventDefault();
     const subject = encodeURIComponent(`Service Request: ${formData.service}`);
     const body = encodeURIComponent(
-      `Name: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nService Needed: ${formData.service}`
+      `Name: ${formData.name}\nEmail: ${formData.email}\nPhone: ${formData.phone}\nTruck Model: ${formData.truckModel}\nService Needed: ${formData.service}`
     );
     window.location.href = `mailto:info@cttruckshop.com?subject=${subject}&body=${body}`;
   };
@@ -90,6 +91,15 @@ const LeadForm = ({
               onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
               required
               maxLength={20}
+              className="bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/40 focus:border-accent"
+            />
+          </div>
+          <div>
+            <Input
+              placeholder="Truck Model (e.g. Freightliner Cascadia)"
+              value={formData.truckModel}
+              onChange={(e) => setFormData({ ...formData, truckModel: e.target.value })}
+              maxLength={100}
               className="bg-primary-foreground/10 border-primary-foreground/20 text-primary-foreground placeholder:text-primary-foreground/40 focus:border-accent"
             />
           </div>
