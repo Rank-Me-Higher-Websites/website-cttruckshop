@@ -62,9 +62,9 @@ const defaultLocation = {
   hours: "Mon-Sat: 7AM-6PM",
   emergency: true,
   services: ["Engine Repair", "Brake Service", "Electrical", "Transmission", "DOT Inspections"],
-  features: ["Full-service repairs", "Mobile service", "24/7 emergency"],
+  features: ["Full-service repairs", "Mobile service", "Emergency available"],
   description: "CT Truck & Trailer Shop provides professional truck and trailer repair services throughout the Phoenix metro area.",
-  metaDescription: "CT Truck & Trailer Shop - Professional truck and trailer repair in Phoenix, AZ. 24/7 emergency service available.",
+  metaDescription: "CT Truck & Trailer Shop - Professional truck and trailer repair in Phoenix, AZ. Emergency service available.",
 };
 
 // Pricing plans
