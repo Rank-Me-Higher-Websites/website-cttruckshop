@@ -110,7 +110,7 @@ export const servicePages: Record<string, ServicePageData> = {
       },
     ],
     highlights: [
-      { title: "24/7 Service", description: "Day or night, our mobile technicians are always ready to respond." },
+      { title: "Fast Response", description: "Our mobile technicians are always ready to respond quickly." },
       { title: "Fast Response", description: "In most cases, our technicians arrive within the hour." },
       { title: "Full-Service", description: "From roadside repairs to complete shop diagnostics." },
     ],
