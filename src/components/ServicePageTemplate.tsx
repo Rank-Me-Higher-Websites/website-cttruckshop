@@ -294,7 +294,7 @@ const ServicePageTemplate = ({ slug }: ServicePageTemplateProps) => {
       </section>
 
       {/* Request Service */}
-      <section className="py-12 bg-accent">
+      <section className="py-12 pb-20 md:pb-12 bg-accent">
         <div className="container-custom text-center">
           <h2 className="font-heading text-2xl md:text-3xl font-bold text-accent-foreground mb-4">
             Request Service
