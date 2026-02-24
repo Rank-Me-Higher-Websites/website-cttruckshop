@@ -61,6 +61,7 @@ const LeadForm = ({
       if (!res.ok) throw new Error("Failed to submit");
       setSubmitted(true);
       setFormData({ name: "", email: "", phone: "", truckModel: "", service: "" });
+      setTimeout(() => setSubmitted(false), 3000);
     } catch (err) {
       console.error("Quote form submission error:", err);
       alert("Something went wrong. Please call us at (602) 830-3232.");
