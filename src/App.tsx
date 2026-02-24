@@ -6,7 +6,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import Index from "./pages/Index";
 import Services from "./pages/Services";
-import ServicePage from "./pages/ServicePage";
 import RealServicePage from "./pages/RealServicePage";
 import Locations from "./pages/Locations";
 import LocationPage from "./pages/LocationPage";
@@ -28,7 +27,6 @@ const App = () => (
           <Routes>
             <Route path="/" element={<Index />} />
             <Route path="/services" element={<Services />} />
-            <Route path="/services/:serviceSlug" element={<ServicePage />} />
             {/* Real service pages with old URLs */}
             <Route path="/emergency-truck-repair-phoenix" element={<RealServicePage />} />
             <Route path="/truck-breakdown-service-phoenix" element={<RealServicePage />} />
