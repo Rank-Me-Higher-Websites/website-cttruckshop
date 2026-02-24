@@ -74,15 +74,15 @@ export default {
           800: "hsl(var(--navy-800))",
           900: "hsl(var(--navy-900))",
         },
-        amber: {
-          50: "hsl(var(--amber-50))",
-          100: "hsl(var(--amber-100))",
-          200: "hsl(var(--amber-200))",
-          300: "hsl(var(--amber-300))",
-          400: "hsl(var(--amber-400))",
-          500: "hsl(var(--amber-500))",
-          600: "hsl(var(--amber-600))",
-          700: "hsl(var(--amber-700))",
+        sky: {
+          50: "hsl(var(--sky-50))",
+          100: "hsl(var(--sky-100))",
+          200: "hsl(var(--sky-200))",
+          300: "hsl(var(--sky-300))",
+          400: "hsl(var(--sky-400))",
+          500: "hsl(var(--sky-500))",
+          600: "hsl(var(--sky-600))",
+          700: "hsl(var(--sky-700))",
         },
         success: {
           DEFAULT: "hsl(var(--success))",
@@ -140,8 +140,8 @@ export default {
           "50%": { transform: "translateY(-10px)" },
         },
         "pulse-glow": {
-          "0%, 100%": { boxShadow: "0 0 20px hsla(40, 95%, 50%, 0.3)" },
-          "50%": { boxShadow: "0 0 40px hsla(40, 95%, 50%, 0.5)" },
+          "0%, 100%": { boxShadow: "0 0 20px hsla(200, 85%, 55%, 0.3)" },
+          "50%": { boxShadow: "0 0 40px hsla(200, 85%, 55%, 0.5)" },
         },
       },
       animation: {

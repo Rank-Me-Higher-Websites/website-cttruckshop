@@ -16,10 +16,10 @@ const buttonVariants = cva(
         ghost: "hover:bg-accent/10 hover:text-accent",
         link: "text-primary underline-offset-4 hover:underline",
         // Custom variants for CT Truck Shop
-        accent: "bg-accent text-accent-foreground hover:bg-amber-600 shadow-md hover:shadow-glow",
-        hero: "bg-accent text-accent-foreground font-bold shadow-glow hover:bg-amber-600 hover:shadow-xl uppercase tracking-wide",
+        accent: "bg-accent text-accent-foreground hover:bg-accent/85 shadow-md hover:shadow-glow",
+        hero: "bg-accent text-accent-foreground font-bold shadow-glow hover:bg-accent/85 hover:shadow-xl uppercase tracking-wide",
         "hero-outline": "border-2 border-primary-foreground bg-transparent text-primary-foreground hover:bg-primary-foreground/10 uppercase tracking-wide",
-        "nav-cta": "bg-accent text-accent-foreground hover:bg-amber-600 shadow-sm",
+        "nav-cta": "bg-accent text-accent-foreground hover:bg-accent/85 shadow-sm",
       },
       size: {
         default: "h-10 px-5 py-2 text-sm",

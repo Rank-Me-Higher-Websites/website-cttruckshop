@@ -21,7 +21,7 @@ const TrustSection = () => {
           >
             <div className="flex items-center gap-0.5 sm:gap-1">
               {[...Array(5)].map((_, i) => (
-                <Star key={i} className={`h-3 w-3 sm:h-5 sm:w-5 ${i < 4 ? 'text-amber-500 fill-amber-500' : 'text-amber-500 fill-amber-500/50'}`} />
+                <Star key={i} className={`h-3 w-3 sm:h-5 sm:w-5 ${i < 4 ? 'text-sky-500 fill-sky-500' : 'text-sky-500 fill-sky-500/50'}`} />
               ))}
             </div>
             <div className="text-left">
