@@ -93,7 +93,7 @@ const Header = () => {
       </div>
 
       {/* Top Bar */}
-      <div className="hidden lg:block bg-primary text-primary-foreground py-2">
+      <div className={cn("hidden lg:block bg-primary text-primary-foreground transition-all duration-300", isScrolled ? "max-h-0 overflow-hidden py-0" : "max-h-10 py-2")}>
         <div className="container-custom flex items-center justify-between text-sm">
           <div className="flex items-center gap-6">
             <a href="tel:6028303232" className="flex items-center gap-2 hover:text-accent transition-colors">
