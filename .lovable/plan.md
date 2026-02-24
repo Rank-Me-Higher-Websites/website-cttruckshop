@@ -1,71 +1,28 @@
 
-Goal
-- Fix the mobile cutoff and button-centering issue in the “Request Service” section (current route: /truck-breakdown-service-phoenix), and prevent the same overflow pattern on Contact/footer CTAs.
 
-What I found
-- The problematic button is in `src/components/ServicePageTemplate.tsx`:
-  - `Button variant="default" size="xl"` with long label: `Call For Service: (602) 830-3232`
-- The shared `Button` base in `src/components/ui/button.tsx` enforces `whitespace-nowrap`.
-- `size="xl"` currently uses large desktop spacing globally:
-  - `h-14 rounded-lg px-10 text-lg`
-- On narrow mobile widths (especially 320px), the long no-wrap label + large horizontal padding can exceed available width, causing visual cutoff and off-center appearance.
-- Contact page complaints are likely from footer CTA behavior on mobile (`src/components/layout/Footer.tsx`) where a long “Call Now: (602) 830-3232” button is rendered without mobile-width constraints.
+## Problem
 
-Implementation plan
+The contact page's contact information section (Phone, Email, Location, Hours cards) is partially cut off on mobile. The floating "Call Now" button overlaps the bottom of the Hours card, and the overall section feels cramped at the bottom on narrow screens.
 
-1) Make XL buttons mobile-safe globally (small-screen first)
-- File: `src/components/ui/button.tsx`
-- Update `size.xl` to be responsive instead of desktop-sized at all breakpoints:
-  - from: `h-14 rounded-lg px-10 text-lg`
-  - to: mobile-first values (smaller text/padding), then upscale on `sm+` (e.g. `h-12 sm:h-14 px-4 sm:px-10 text-sm sm:text-lg`).
-- Why:
-  - Prevents overflow on all existing `size="xl"` usages (Service pages, Services page hero CTA, Location page hero CTA, etc.) without duplicating one-off fixes everywhere.
+## Root Cause
 
-2) Fix the specific Request Service section layout so button is centered and constrained on mobile
-- File: `src/components/ServicePageTemplate.tsx`
-- In the “Request Service” section:
-  - Make the `<a>` wrapper block-level and full-width on mobile (`block w-full`) so centering is deterministic.
-  - Add button classes to force mobile fit and centering (`w-full`, controlled max width + `mx-auto`, smaller mobile typography/padding if needed).
-  - Keep desktop look unchanged via `sm:` overrides.
-- Optional copy tweak (only if needed after testing):
-  - Shorten label to `Call (602) 830-3232` to guarantee clean one-line fit on very narrow widths.
+1. The contact info cards section (`div.space-y-4.mb-10`, lines 112-172 in Contact.tsx) does not account for the sticky floating "Call Now" button at `bottom-6 right-4` on mobile.
+2. The floating button sits over the last card (Hours) because there is no extra bottom clearance in that column before the "Need Immediate Help?" CTA box.
+3. The "Call Now" floating button is right-aligned (`right-4`), not centered on mobile, which looks off-balance relative to the full-width card layout.
 
-3) Fix Contact-page-related long CTA overflow in footer banner
-- File: `src/components/layout/Footer.tsx`
-- Emergency CTA banner button:
-  - Make anchor responsive (`w-full sm:w-auto`)
-  - Make button responsive (`w-full sm:w-auto`, smaller mobile text/padding)
-- Why:
-  - Addresses prior “contact page mobile cut off” reports without relying only on bottom padding hacks.
+## Plan
 
-4) Quick hardening pass for same pattern
-- Verify other long CTA buttons with `size="xl"` and/or long labels still align cleanly after step 1:
-  - `src/pages/Services.tsx`
-  - `src/pages/MobileRepair.tsx`
-  - `src/pages/LocationPage.tsx`
-- Only apply targeted class adjustments if any remaining overflow is observed.
+### 1. Center the mobile floating "Call Now" button
+**File:** `src/components/StickyContactBar.tsx`
+- Change the mobile button container positioning from `right-4` to `right-1/2 translate-x-1/2` (or use `left-1/2 -translate-x-1/2`) to center it horizontally on mobile screens.
+- This makes it visually balanced with the full-width content cards above.
 
-Validation plan (must pass)
-- Test on mobile viewports: 320x568, 375x812, 390x844.
-- Check these routes:
-  - `/truck-breakdown-service-phoenix` (Request Service section)
-  - `/contact` (footer emergency CTA)
-  - `/services`, `/mobile-repair`, and one location page (XL CTA sanity)
-- Confirm:
-  - No horizontal clipping
-  - No horizontal page scroll introduced by CTAs
-  - CTA buttons are visually centered
-  - Sticky mobile call button no longer visually collides with section CTAs
+### 2. Add bottom spacing to the contact info column on mobile
+**File:** `src/pages/Contact.tsx`
+- Add `pb-20 md:pb-0` to the contact info column wrapper (`<div>` at line 107) so the Hours card and "Need Immediate Help?" box are not hidden behind the floating button on mobile.
 
-Technical details
-- Root cause is not just page padding; it is CTA intrinsic width pressure from:
-  - global `whitespace-nowrap` in Button base
-  - large `xl` padding/text on mobile
-  - long phone labels
-- The robust fix is responsive sizing + width constraints on long CTA instances, instead of repeatedly increasing page bottom padding.
-- Existing sticky/footer spacing changes (`pb-24`) can remain; they solve overlap, but not horizontal clipping.
+### Technical Details
+- The floating button is `fixed bottom-6 right-4 z-40 md:hidden` — centering it requires switching from `right-4` to a centered approach using `left-1/2 -translate-x-1/2`.
+- The contact info grid is `lg:grid-cols-2`, so on mobile it stacks vertically. The left column's last visible element before the fold can collide with the sticky button.
+- Both changes are CSS-only and scoped, no structural or behavioral changes needed.
 
-Expected result
-- The Request Service button will stay centered and fully visible on mobile.
-- Contact/footer CTA will no longer appear cut off on narrow devices.
-- Similar CTA regressions across other pages are reduced by updating `size="xl"` behavior globally.
