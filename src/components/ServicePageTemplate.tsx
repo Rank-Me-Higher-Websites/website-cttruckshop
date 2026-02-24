@@ -251,7 +251,7 @@ const ServicePageTemplate = ({ slug }: ServicePageTemplateProps) => {
 
             {/* Sidebar */}
             <div className="lg:col-span-1 self-start">
-              <div className="space-y-6">
+              <div className="sticky top-28 space-y-6">
                 {/* Quick Info */}
                 <div className="bg-primary-foreground/5 rounded-2xl p-6 border border-accent/20">
                   <h4 className="font-heading font-bold text-primary-foreground mb-4">Quick Info</h4>
