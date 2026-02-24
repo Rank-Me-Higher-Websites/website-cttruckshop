@@ -145,6 +145,11 @@
   * {
     @apply border-border;
   }
+
+  /* Force Radix portal wrappers below the sticky header (z-[60]) */
+  [data-radix-popper-content-wrapper] {
+    z-index: 50 !important;
+  }
   
   html {
     scroll-behavior: smooth;
