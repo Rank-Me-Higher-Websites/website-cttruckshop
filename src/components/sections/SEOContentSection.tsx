@@ -36,8 +36,8 @@ const SEOContentSection = () => {
       <div className="container-custom relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Content Side */}
-          <div>
-            <span className="inline-flex items-center gap-2 bg-accent/20 border border-accent/30 rounded-full px-4 py-2 mb-6">
+          <div className="text-center lg:text-left">
+            <span className="inline-flex items-center gap-2 bg-accent/20 border border-accent/30 rounded-full px-4 py-2 mb-6 mx-auto lg:mx-0">
               <Wrench className="h-4 w-4 text-accent" />
               <span className="text-sm font-medium text-primary-foreground">
                 Phoenix's Trusted Fleet Partner
