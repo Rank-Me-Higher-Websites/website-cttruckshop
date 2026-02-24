@@ -28,7 +28,7 @@ export const servicePages: Record<string, ServicePageData> = {
     slug: "emergency-truck-repair-phoenix",
     title: "Emergency Truck Repair Phoenix, AZ",
     metaTitle: "Emergency Truck Repair Phoenix, AZ | CT Truck & Trailer Shop",
-    metaDescription: "24/7 Emergency truck repair in Phoenix, AZ. Fast response, certified mechanics, roadside assistance. CT Truck & Trailer Shop gets you back on the road quickly.",
+    metaDescription: "Emergency truck repair in Phoenix, AZ. Fast response, certified mechanics, roadside assistance. CT Truck & Trailer Shop gets you back on the road quickly.",
     heroHeadline: "#1 Emergency Truck Repair Phoenix, AZ",
     introHeading: "Fast 24/7 Emergency Truck Repair in Phoenix, AZ",
     introParagraphs: [
