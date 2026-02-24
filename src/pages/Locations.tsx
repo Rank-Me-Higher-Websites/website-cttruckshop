@@ -121,7 +121,7 @@ const Locations = () => {
                   <h2 className="font-heading text-2xl font-bold text-primary-foreground mb-2">
                     {location.name}
                   </h2>
-                  <p className="text-primary-foreground/70 mb-4">{location.address}</p>
+                  <a href="https://maps.app.goo.gl/XFyDXt5avVXvvDPr5" target="_blank" rel="noopener noreferrer" className="text-primary-foreground/70 mb-4 hover:text-accent transition-colors block">{location.address}</a>
                   
                   <div className="space-y-2 mb-6">
                     <a
@@ -147,13 +147,20 @@ const Locations = () => {
                       </span>
                     ))}
                   </div>
-                  
-                  <Link to={`/locations/${location.slug}`}>
-                    <Button variant="hero-outline" className="w-full">
-                      View Location Details
-                      <ArrowRight className="h-4 w-4 ml-2" />
-                    </Button>
-                  </Link>
+                  <div className="flex flex-col sm:flex-row gap-2">
+                    <a href="https://maps.app.goo.gl/XFyDXt5avVXvvDPr5" target="_blank" rel="noopener noreferrer" className="flex-1">
+                      <Button variant="accent" className="w-full">
+                        <MapPin className="h-4 w-4 mr-2" />
+                        Get Directions
+                      </Button>
+                    </a>
+                    <Link to={`/locations/${location.slug}`} className="flex-1">
+                      <Button variant="hero-outline" className="w-full">
+                        View Details
+                        <ArrowRight className="h-4 w-4 ml-2" />
+                      </Button>
+                    </Link>
+                  </div>
                 </div>
               </div>
             ))}
