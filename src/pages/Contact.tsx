@@ -141,7 +141,7 @@ const Contact = () => {
                     <p className="font-semibold text-primary-foreground group-hover:text-accent transition-colors">
                       Email
                     </p>
-                    <p className="text-primary-foreground">
+                    <p className="text-primary-foreground break-all">
                       service@clevertranscoshop.com
                     </p>
                   </div>
