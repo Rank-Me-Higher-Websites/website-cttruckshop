@@ -112,7 +112,7 @@ const Contact = () => {
               <div className="space-y-4 mb-10 overflow-hidden">
                 <a
                   href="tel:6028303232"
-                  className="flex items-start gap-4 p-4 rounded-xl bg-primary-foreground/5 border border-accent/20 hover:border-accent/50 transition-all group"
+                  className="flex items-start gap-3 sm:gap-4 p-3 sm:p-4 rounded-xl bg-primary-foreground/5 border border-accent/20 hover:border-accent/50 transition-all group overflow-hidden"
                 >
                   <div className="w-12 h-12 rounded-xl bg-accent/20 border border-accent/30 flex items-center justify-center flex-shrink-0">
                     <Phone className="h-6 w-6 text-accent" />
