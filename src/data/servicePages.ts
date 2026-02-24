@@ -5,6 +5,7 @@ export interface ServicePageData {
   metaDescription: string;
   heroHeadline: string;
   heroSubheadline?: string;
+  introHeading: string;
   introParagraphs: string[];
   sections: {
     heading: string;

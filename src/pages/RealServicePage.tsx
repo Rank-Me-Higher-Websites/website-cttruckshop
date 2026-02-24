@@ -133,7 +133,7 @@ const RealServicePage = () => {
               {service.introParagraphs.length > 0 && (
                 <div>
                   <h2 className="font-heading text-3xl font-bold text-primary-foreground mb-6">
-                    About This <span className="text-gradient">Service</span>
+                    {service.introHeading}
                   </h2>
                   {service.introParagraphs.map((p, i) => (
                     <p key={i} className="text-primary-foreground/80 text-lg mb-4 leading-relaxed">
