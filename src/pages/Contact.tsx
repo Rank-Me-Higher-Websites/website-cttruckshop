@@ -325,15 +325,15 @@ const Contact = () => {
               Whether you need a scheduled PM service, a complex engine repair, or emergency roadside help at 2 AM, we are ready. Our Phoenix shop is fully equipped with modern diagnostic tools, and our mobile units are dispatched around the clock to get you back on the road. No shortcuts, no surprises on the bill, just reliable work from a team that understands the trucking business.
             </p>
             <div className="grid sm:grid-cols-3 gap-6">
-              <div className="p-6 rounded-xl bg-card border border-border">
+              <div className="p-6 rounded-xl bg-card border border-border max-w-sm mx-auto w-full sm:max-w-none">
                 <p className="font-heading text-3xl font-bold text-accent mb-1">24/7</p>
                 <p className="text-muted-foreground text-sm">Emergency response any time of day or night</p>
               </div>
-              <div className="p-6 rounded-xl bg-card border border-border">
+              <div className="p-6 rounded-xl bg-card border border-border max-w-sm mx-auto w-full sm:max-w-none">
                 <p className="font-heading text-3xl font-bold text-accent mb-1">2,500+</p>
                 <p className="text-muted-foreground text-sm">Repairs completed for Phoenix-area fleets</p>
               </div>
-              <div className="p-6 rounded-xl bg-card border border-border">
+              <div className="p-6 rounded-xl bg-card border border-border max-w-sm mx-auto w-full sm:max-w-none">
                 <p className="font-heading text-3xl font-bold text-accent mb-1">4.4★</p>
                 <p className="text-muted-foreground text-sm">Rated on Google by real customers</p>
               </div>
