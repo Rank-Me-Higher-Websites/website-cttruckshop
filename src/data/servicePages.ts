@@ -105,7 +105,7 @@ export const servicePages: Record<string, ServicePageData> = {
           "Skilled & certified technicians",
           "Competitive pricing with no hidden fees",
           "Complete diagnostics and repair solutions",
-          "24/7 mobile repair & roadside assistance",
+          "Mobile repair & roadside assistance",
         ],
       },
     ],
