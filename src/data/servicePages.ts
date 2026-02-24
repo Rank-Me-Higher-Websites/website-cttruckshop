@@ -87,13 +87,13 @@ export const servicePages: Record<string, ServicePageData> = {
   "truck-breakdown-service-phoenix": {
     slug: "truck-breakdown-service-phoenix",
     title: "Truck Breakdown Service Phoenix",
-    metaTitle: "24/7 Truck Breakdown Service Phoenix | CT Truck & Trailer Shop",
-    metaDescription: "24/7 truck breakdown service and repair in Phoenix, AZ. Fast mobile response, certified technicians, roadside assistance. CT Truck and Trailer Shop.",
-    heroHeadline: "24/7 Truck Breakdown Service and Repair",
+    metaTitle: "Truck Breakdown Service Phoenix | CT Truck & Trailer Shop",
+    metaDescription: "Fast truck breakdown service and repair in Phoenix, AZ. Quick mobile response, certified technicians, roadside assistance. CT Truck and Trailer Shop.",
+    heroHeadline: "Truck Breakdown Service and Repair",
     introHeading: "Reliable Truck Breakdown Service & Roadside Repair in Phoenix",
     introParagraphs: [
-      "When your rig breaks down on the road, every minute counts. That's why CT Truck and Trailer Shop provides 24/7 truck breakdown service and repair throughout Phoenix and nearby areas. Our certified mobile technicians are always ready to respond — day or night — to get you back on the road fast. Whether it's an engine issue, electrical failure, tire blowout, or brake problem, we bring the tools and expertise directly to you.",
-      "From emergency roadside repairs to full-service shop diagnostics, we ensure your downtime stays minimal and your truck stays reliable. When you need 24/7 truck repair you can trust, call CT Truck and Trailer Shop — where help is always just a phone call away.",
+      "When your rig breaks down on the road, every minute counts. That's why CT Truck and Trailer Shop provides fast truck breakdown service and repair throughout Phoenix and nearby areas. Our certified mobile technicians are always ready to respond to get you back on the road fast. Whether it's an engine issue, electrical failure, tire blowout, or brake problem, we bring the tools and expertise directly to you.",
+      "From emergency roadside repairs to full-service shop diagnostics, we ensure your downtime stays minimal and your truck stays reliable. When you need truck repair you can trust, call CT Truck and Trailer Shop — where help is always just a phone call away.",
     ],
     sections: [
       {
