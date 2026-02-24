@@ -19,7 +19,7 @@ const CTASection = () => {
       
       <div className="container-custom relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <ScrollReveal direction="left">
+          <ScrollReveal direction="left" className="text-center lg:text-left">
             <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-primary-foreground mb-6">
               Keep Your Business Moving — Contact Us Today
             </h2>
