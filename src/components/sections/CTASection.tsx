@@ -37,7 +37,7 @@ const CTASection = () => {
                 </Button>
               </a>
               <a href="mailto:service@clevertranscoshop.com">
-                <Button variant="hero-outline" size="lg" className="w-full sm:w-auto">
+                <Button variant="hero-outline" size="xl" className="w-full sm:w-auto">
                   Request a Quote
                   <ArrowRight className="h-5 w-5 ml-2" />
                 </Button>
