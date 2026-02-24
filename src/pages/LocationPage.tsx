@@ -106,7 +106,7 @@ const pricingPlans = [
       "Volume discounts",
       "PM reminders",
       "Dedicated account manager",
-      "24/7 emergency priority",
+      "Emergency priority",
     ],
     popular: false,
   },
