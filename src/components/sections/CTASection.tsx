@@ -1,10 +1,11 @@
-import { Link } from "react-router-dom";
 import { Phone, ArrowRight, Clock, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ScrollReveal } from "@/hooks/useScrollAnimation";
+import { useQuoteModal } from "@/contexts/QuoteModalContext";
 import towingRecovery from "@/assets/towing-recovery.jpg";
 
 const CTASection = () => {
+  const { open } = useQuoteModal();
   return (
     <section className="relative py-20 md:py-28 overflow-hidden">
       {/* Background */}
@@ -36,12 +37,12 @@ const CTASection = () => {
                   Call (602) 830-3232
                 </Button>
               </a>
-              <a href="mailto:service@clevertranscoshop.com">
+              <button onClick={open}>
                 <Button variant="hero-outline" size="lg" className="w-full sm:w-auto">
                   Request a Quote
                   <ArrowRight className="h-4 w-4 ml-2" />
                 </Button>
-              </a>
+              </button>
             </div>
           </ScrollReveal>
           

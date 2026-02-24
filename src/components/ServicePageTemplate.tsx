@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import LeadForm from "@/components/LeadForm";
+import { useQuoteModal } from "@/contexts/QuoteModalContext";
 import Layout from "@/components/layout/Layout";
 import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
@@ -50,6 +51,7 @@ interface ServicePageTemplateProps {
 
 const ServicePageTemplate = ({ slug }: ServicePageTemplateProps) => {
   const service = getServicePage(slug);
+  const { open: openQuote } = useQuoteModal();
   if (!service) return null;
 
   const heroImage = imageMap[service.slug] || truckDiagnostics;
@@ -104,12 +106,12 @@ const ServicePageTemplate = ({ slug }: ServicePageTemplateProps) => {
                     Call (602) 830-3232
                   </Button>
                 </a>
-                <Link to="/contact" className="w-full sm:w-auto">
+                <button onClick={openQuote} className="w-full sm:w-auto">
                   <Button variant="hero-outline" size="lg" className="w-full sm:w-auto">
                     Request a Quote
                     <ArrowRight className="h-4 w-4 ml-2" />
                   </Button>
-                </Link>
+                </button>
               </div>
             </div>
 
