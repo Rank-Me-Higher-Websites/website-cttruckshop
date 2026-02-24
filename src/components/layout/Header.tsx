@@ -1,35 +1,85 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { Menu, X, Phone, MapPin, Clock, ChevronDown } from "lucide-react";
+import { Menu, Phone, Clock, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-} from "@/components/ui/navigation-menu";
 import { cn } from "@/lib/utils";
 import logo from "@/assets/ct-logo.webp";
 import xxiiLogo from "@/assets/xxii-logo.webp";
 import paddockLogo from "@/assets/paddock-logo.webp";
+
+const mobileRepairServices = [
+  { title: "Emergency Truck Repair", href: "/emergency-truck-repair-phoenix" },
+  { title: "Truck Breakdown Service Phoenix", href: "/truck-breakdown-service-phoenix" },
+];
+
 const truckServices = [
-  { title: "Emergency Truck Repair", href: "/emergency-truck-repair-phoenix", description: "24/7 emergency roadside truck repair" },
-  { title: "Truck Breakdown Service", href: "/truck-breakdown-service-phoenix", description: "Fast mobile breakdown service" },
-  { title: "Engine Repairs", href: "/semi-truck-engine-repairs-in-phoenix-az", description: "Diesel engine diagnostics & repair" },
-  { title: "AC Repair", href: "/semi-truck-ac-repair-services", description: "Semi truck AC system service" },
-  { title: "Truck Diagnostics", href: "/semi-truck-diagnostics-in-phoenix-az", description: "Advanced dealer-level diagnostics" },
-  { title: "Tire & Brake Repair", href: "/semi-truck-tire-and-brake-repair-services-phoenix-az", description: "Semi truck tire and brake service" },
+  { title: "AC Service for Semi Trucks", href: "/semi-truck-ac-repair-services" },
+  { title: "Semi Truck Brake and Tire Service", href: "/semi-truck-tire-and-brake-repair-services-phoenix-az" },
+  { title: "Semi Truck Full Diagnostics", href: "/semi-truck-diagnostics-in-phoenix-az" },
+  { title: "Semi Truck Engine Repairs", href: "/semi-truck-engine-repairs-in-phoenix-az" },
 ];
 
 const trailerServices = [
-  { title: "Trailer Electrical Repair", href: "/semi-trailer-electrical-repair-services-phoenix-az", description: "Electrical system diagnostics & repair" },
-  { title: "Trailer Brake & Tire", href: "/semi-trailer-brake-and-tire-repair-services-in-phoenix-az", description: "Brake and tire service for trailers" },
-  { title: "Trailer Suspension", href: "/semi-trailer-suspension-repair-services-phoenix-az", description: "Air suspension & leaf spring repair" },
-  { title: "Full Body Trailer Repair", href: "/full-body-semi-trailer-repair-in-phoenix-az", description: "Body repair, welding & restoration" },
+  { title: "Semi Trailer Electrical Repair", href: "/semi-trailer-electrical-repair-services-phoenix-az" },
+  { title: "Trailer Brake and Tire Service", href: "/semi-trailer-brake-and-tire-repair-services-in-phoenix-az" },
+  { title: "Semi Trailer Suspension Service", href: "/semi-trailer-suspension-repair-services-phoenix-az" },
+  { title: "Semi Trailer Full Body Repairs", href: "/full-body-semi-trailer-repair-in-phoenix-az" },
 ];
+
+const aboutLinks = [
+  { title: "News and Publications", href: "/blog" },
+];
+
+interface NavDropdownProps {
+  label: string;
+  items: { title: string; href: string }[];
+  isActive: boolean;
+}
+
+const NavDropdown = ({ label, items, isActive }: NavDropdownProps) => {
+  const [open, setOpen] = useState(false);
+
+  return (
+    <div
+      className="relative"
+      onMouseEnter={() => setOpen(true)}
+      onMouseLeave={() => setOpen(false)}
+    >
+      <button
+        className={cn(
+          "flex items-center gap-1.5 px-4 py-3 text-[15px] font-semibold tracking-wide transition-colors",
+          isActive ? "text-accent" : "text-foreground hover:text-accent"
+        )}
+      >
+        {label}
+        <ChevronDown className={cn("h-4 w-4 transition-transform", open && "rotate-180")} />
+      </button>
+
+      {/* Active underline */}
+      {(isActive || open) && (
+        <div className="absolute bottom-0 left-4 right-4 h-[3px] bg-accent rounded-full" />
+      )}
+
+      {/* Dropdown */}
+      {open && (
+        <div className="absolute top-full left-0 pt-1 z-50">
+          <div className="bg-background border border-border rounded-lg shadow-xl min-w-[280px] py-2">
+            {items.map((item) => (
+              <Link
+                key={item.href}
+                to={item.href}
+                className="block px-5 py-3 text-[15px] text-foreground hover:text-accent hover:bg-accent/5 transition-colors"
+              >
+                {item.title}
+              </Link>
+            ))}
+          </div>
+        </div>
+      )}
+    </div>
+  );
+};
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -48,69 +98,28 @@ const Header = () => {
     setMobileMenuOpen(false);
   }, [location]);
 
+  const isMobileRepairActive = location.pathname === "/mobile-repair" ||
+    mobileRepairServices.some((s) => location.pathname === s.href);
+  const isTruckActive = truckServices.some((s) => location.pathname === s.href);
+  const isTrailerActive = trailerServices.some((s) => location.pathname === s.href);
+  const isAboutActive = location.pathname === "/about" || location.pathname.includes("/blog");
+
   return (
     <div className="sticky top-0 z-50">
       {/* Partner Logos Bar */}
       <div className={cn("hidden lg:block bg-background border-b border-border transition-all duration-300", isScrolled ? "max-h-0 overflow-hidden py-0" : "max-h-20 py-3")}>
         <div className="container-custom flex items-center justify-center gap-0">
-          {/* XXII Century Logo */}
-          <a 
-            href="https://goxxii.com" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="flex items-center justify-center px-8 group"
-          >
-            <img 
-              src={xxiiLogo} 
-              alt="XXII Century" 
-              className="h-10 w-auto opacity-60 group-hover:opacity-100 transition-opacity filter grayscale group-hover:grayscale-0" 
-            />
+          <a href="https://goxxii.com" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center px-8 group">
+            <img src={xxiiLogo} alt="XXII Century" className="h-10 w-auto opacity-60 group-hover:opacity-100 transition-opacity filter grayscale group-hover:grayscale-0" />
           </a>
-          
-          {/* Divider */}
           <div className="h-10 w-px bg-border mx-8" />
-          
-          {/* CT Shop Logo (center) */}
           <Link to="/" className="flex items-center justify-center px-8">
             <img src={logo} alt="CT Shop Logo" className="h-10 w-auto" />
           </Link>
-          
-          {/* Divider */}
           <div className="h-10 w-px bg-border mx-8" />
-          
-          {/* Paddock Parking Logo */}
-          <a 
-            href="https://paddockparking.com" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="flex items-center justify-center px-8 group"
-          >
-            <img 
-              src={paddockLogo} 
-              alt="Paddock Parking" 
-              className="h-8 w-auto opacity-60 group-hover:opacity-100 transition-opacity filter grayscale group-hover:grayscale-0" 
-            />
+          <a href="https://paddockparking.com" target="_blank" rel="noopener noreferrer" className="flex items-center justify-center px-8 group">
+            <img src={paddockLogo} alt="Paddock Parking" className="h-8 w-auto opacity-60 group-hover:opacity-100 transition-opacity filter grayscale group-hover:grayscale-0" />
           </a>
-        </div>
-      </div>
-
-      {/* Top Bar */}
-      <div className={cn("hidden lg:block bg-primary text-primary-foreground transition-all duration-300", isScrolled ? "max-h-0 overflow-hidden py-0" : "max-h-10 py-2")}>
-        <div className="container-custom flex items-center justify-between text-sm">
-          <div className="flex items-center gap-6">
-            <a href="tel:6028303232" className="flex items-center gap-2 hover:text-accent transition-colors">
-              <Phone className="h-4 w-4" />
-              <span>(602) 830-3232</span>
-            </a>
-            <span className="flex items-center gap-2">
-              <MapPin className="h-4 w-4" />
-              <span>3883 N 36th Ave, Phoenix, AZ 85019</span>
-            </span>
-          </div>
-          <div className="flex items-center gap-2">
-            <Clock className="h-4 w-4 text-accent" />
-            <span>24/7 Emergency Service Available</span>
-          </div>
         </div>
       </div>
 
@@ -120,149 +129,52 @@ const Header = () => {
           "w-full transition-all duration-300 relative",
           isScrolled
             ? "bg-background/95 backdrop-blur-md shadow-md py-2"
-            : "bg-background py-4"
+            : "bg-background py-3"
         )}
       >
-        {/* Futuristic accent line at bottom */}
-        <div className="absolute bottom-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-accent to-transparent" />
+        <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-accent/40 to-transparent" />
         <div className="container-custom">
           <nav className="flex items-center justify-between">
             {/* Logo */}
-            <Link to="/" className="flex items-center gap-3">
+            <Link to="/" className="flex items-center gap-3 flex-shrink-0">
               <img src={logo} alt="CT Shop Logo" className="h-12 md:h-14 w-auto" />
             </Link>
 
             {/* Desktop Navigation */}
-            <div className="hidden lg:flex items-center gap-1">
-              <NavigationMenu>
-                <NavigationMenuList>
-                  <NavigationMenuItem>
-                    <Link
-                      to="/"
-                      className={cn(
-                        "px-4 py-2 text-sm font-medium transition-colors hover:text-accent",
-                        location.pathname === "/" ? "text-accent" : "text-foreground"
-                      )}
-                    >
-                      Home
-                    </Link>
-                  </NavigationMenuItem>
-
-                  <NavigationMenuItem>
-                    <NavigationMenuTrigger className="text-sm font-medium">
-                      Truck Services
-                    </NavigationMenuTrigger>
-                    <NavigationMenuContent>
-                      <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2">
-                        {truckServices.map((service) => (
-                          <li key={service.href}>
-                            <NavigationMenuLink asChild>
-                              <Link
-                                to={service.href}
-                                className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent/10 hover:text-accent focus:bg-accent/10"
-                              >
-                                <div className="text-sm font-medium leading-none">{service.title}</div>
-                                <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                                  {service.description}
-                                </p>
-                              </Link>
-                            </NavigationMenuLink>
-                          </li>
-                        ))}
-                      </ul>
-                    </NavigationMenuContent>
-                  </NavigationMenuItem>
-
-                  <NavigationMenuItem>
-                    <NavigationMenuTrigger className="text-sm font-medium">
-                      Trailer Services
-                    </NavigationMenuTrigger>
-                    <NavigationMenuContent>
-                      <ul className="grid w-[400px] gap-3 p-4 md:w-[500px] md:grid-cols-2">
-                        {trailerServices.map((service) => (
-                          <li key={service.href}>
-                            <NavigationMenuLink asChild>
-                              <Link
-                                to={service.href}
-                                className="block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors hover:bg-accent/10 hover:text-accent focus:bg-accent/10"
-                              >
-                                <div className="text-sm font-medium leading-none">{service.title}</div>
-                                <p className="line-clamp-2 text-sm leading-snug text-muted-foreground">
-                                  {service.description}
-                                </p>
-                              </Link>
-                            </NavigationMenuLink>
-                          </li>
-                        ))}
-                      </ul>
-                    </NavigationMenuContent>
-                  </NavigationMenuItem>
-
-                  <NavigationMenuItem>
-                    <Link
-                      to="/mobile-repair"
-                      className={cn(
-                        "px-4 py-2 text-sm font-medium transition-colors hover:text-accent",
-                        location.pathname === "/mobile-repair" ? "text-accent" : "text-foreground"
-                      )}
-                    >
-                      Mobile Repair
-                    </Link>
-                  </NavigationMenuItem>
-
-                  <NavigationMenuItem>
-                    <Link
-                      to="/locations"
-                      className={cn(
-                        "px-4 py-2 text-sm font-medium transition-colors hover:text-accent",
-                        location.pathname.includes("/locations") ? "text-accent" : "text-foreground"
-                      )}
-                    >
-                      Locations
-                    </Link>
-                  </NavigationMenuItem>
-
-                  <NavigationMenuItem>
-                    <Link
-                      to="/about"
-                      className={cn(
-                        "px-4 py-2 text-sm font-medium transition-colors hover:text-accent",
-                        location.pathname === "/about" ? "text-accent" : "text-foreground"
-                      )}
-                    >
-                      About
-                    </Link>
-                  </NavigationMenuItem>
-
-                  <NavigationMenuItem>
-                    <Link
-                      to="/contact"
-                      className={cn(
-                        "px-4 py-2 text-sm font-medium transition-colors hover:text-accent",
-                        location.pathname === "/contact" ? "text-accent" : "text-foreground"
-                      )}
-                    >
-                      Contact
-                    </Link>
-                  </NavigationMenuItem>
-
-                  <NavigationMenuItem>
-                    <Link
-                      to="/blog"
-                      className={cn(
-                        "px-4 py-2 text-sm font-medium transition-colors hover:text-accent",
-                        location.pathname.includes("/blog") ? "text-accent" : "text-foreground"
-                      )}
-                    >
-                      Blog
-                    </Link>
-                  </NavigationMenuItem>
-                </NavigationMenuList>
-              </NavigationMenu>
+            <div className="hidden lg:flex items-center">
+              <NavDropdown
+                label="Mobile Repair Service Arizona"
+                items={mobileRepairServices}
+                isActive={isMobileRepairActive}
+              />
+              <NavDropdown
+                label="Truck Repair Services"
+                items={truckServices}
+                isActive={isTruckActive}
+              />
+              <NavDropdown
+                label="Trailer Repair Services"
+                items={trailerServices}
+                isActive={isTrailerActive}
+              />
+              <NavDropdown
+                label="About Us"
+                items={aboutLinks}
+                isActive={isAboutActive}
+              />
+              <Link
+                to="/contact"
+                className={cn(
+                  "px-4 py-3 text-[15px] font-semibold tracking-wide transition-colors",
+                  location.pathname === "/contact" ? "text-accent" : "text-foreground hover:text-accent"
+                )}
+              >
+                Contact
+              </Link>
             </div>
 
             {/* CTA Button */}
-            <div className="hidden lg:flex items-center gap-4">
+            <div className="hidden lg:flex items-center gap-4 flex-shrink-0">
               <a href="tel:6028303232">
                 <Button variant="nav-cta" size="default">
                   <Phone className="h-4 w-4 mr-2" />
@@ -286,23 +198,27 @@ const Header = () => {
                   </div>
                   <nav className="flex-1 overflow-y-auto py-6">
                     <div className="space-y-1 px-4">
-                      <Link
-                        to="/"
-                        className="block px-4 py-3 rounded-lg font-medium hover:bg-accent/10 transition-colors"
-                      >
+                      <Link to="/" className="block px-4 py-3 rounded-lg font-medium hover:bg-accent/10 transition-colors">
                         Home
                       </Link>
-                      
+
                       <div className="py-2">
                         <p className="px-4 text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-2">
-                          Truck Services
+                          Mobile Repair Service
+                        </p>
+                        {mobileRepairServices.map((service) => (
+                          <Link key={service.href} to={service.href} className="block px-4 py-2 text-sm hover:bg-accent/10 rounded-lg transition-colors">
+                            {service.title}
+                          </Link>
+                        ))}
+                      </div>
+
+                      <div className="py-2">
+                        <p className="px-4 text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-2">
+                          Truck Repair Services
                         </p>
                         {truckServices.map((service) => (
-                          <Link
-                            key={service.href}
-                            to={service.href}
-                            className="block px-4 py-2 text-sm hover:bg-accent/10 rounded-lg transition-colors"
-                          >
+                          <Link key={service.href} to={service.href} className="block px-4 py-2 text-sm hover:bg-accent/10 rounded-lg transition-colors">
                             {service.title}
                           </Link>
                         ))}
@@ -310,48 +226,23 @@ const Header = () => {
 
                       <div className="py-2">
                         <p className="px-4 text-sm font-semibold text-muted-foreground uppercase tracking-wider mb-2">
-                          Trailer Services
+                          Trailer Repair Services
                         </p>
                         {trailerServices.map((service) => (
-                          <Link
-                            key={service.href}
-                            to={service.href}
-                            className="block px-4 py-2 text-sm hover:bg-accent/10 rounded-lg transition-colors"
-                          >
+                          <Link key={service.href} to={service.href} className="block px-4 py-2 text-sm hover:bg-accent/10 rounded-lg transition-colors">
                             {service.title}
                           </Link>
                         ))}
                       </div>
 
-                      <Link
-                        to="/mobile-repair"
-                        className="block px-4 py-3 rounded-lg font-medium hover:bg-accent/10 transition-colors"
-                      >
-                        Mobile Repair
-                      </Link>
-                      <Link
-                        to="/locations"
-                        className="block px-4 py-3 rounded-lg font-medium hover:bg-accent/10 transition-colors"
-                      >
-                        Locations
-                      </Link>
-                      <Link
-                        to="/about"
-                        className="block px-4 py-3 rounded-lg font-medium hover:bg-accent/10 transition-colors"
-                      >
+                      <Link to="/about" className="block px-4 py-3 rounded-lg font-medium hover:bg-accent/10 transition-colors">
                         About Us
                       </Link>
-                      <Link
-                        to="/contact"
-                        className="block px-4 py-3 rounded-lg font-medium hover:bg-accent/10 transition-colors"
-                      >
-                        Contact
+                      <Link to="/blog" className="block px-4 py-2 text-sm pl-8 hover:bg-accent/10 rounded-lg transition-colors">
+                        News and Publications
                       </Link>
-                      <Link
-                        to="/blog"
-                        className="block px-4 py-3 rounded-lg font-medium hover:bg-accent/10 transition-colors"
-                      >
-                        Blog
+                      <Link to="/contact" className="block px-4 py-3 rounded-lg font-medium hover:bg-accent/10 transition-colors">
+                        Contact
                       </Link>
                     </div>
                   </nav>

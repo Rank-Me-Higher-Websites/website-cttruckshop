@@ -6,7 +6,6 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from "react-helmet-async";
 import Index from "./pages/Index";
 import Services from "./pages/Services";
-import ServicePage from "./pages/ServicePage";
 import RealServicePage from "./pages/RealServicePage";
 import Locations from "./pages/Locations";
 import LocationPage from "./pages/LocationPage";
