@@ -340,6 +340,12 @@ const Header = () => {
                         About Us
                       </Link>
                       <Link
+                        to="/contact"
+                        className="block px-4 py-3 rounded-lg font-medium hover:bg-accent/10 transition-colors"
+                      >
+                        Contact
+                      </Link>
+                      <Link
                         to="/blog"
                         className="block px-4 py-3 rounded-lg font-medium hover:bg-accent/10 transition-colors"
                       >
