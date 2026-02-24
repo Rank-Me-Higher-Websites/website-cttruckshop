@@ -98,14 +98,14 @@ const ServicePageTemplate = ({ slug }: ServicePageTemplateProps) => {
                 {service.heroHeadline}
               </h1>
               <div className="flex flex-col sm:flex-row gap-3">
-                <a href="tel:6028303232">
-                  <Button variant="hero" size="lg">
+                <a href="tel:6028303232" className="w-full sm:w-auto">
+                  <Button variant="hero" size="lg" className="w-full sm:w-auto">
                     <Phone className="h-4 w-4 mr-2" />
                     Call (602) 830-3232
                   </Button>
                 </a>
-                <Link to="/contact">
-                  <Button variant="hero-outline" size="lg">
+                <Link to="/contact" className="w-full sm:w-auto">
+                  <Button variant="hero-outline" size="lg" className="w-full sm:w-auto">
                     Request a Quote
                     <ArrowRight className="h-4 w-4 ml-2" />
                   </Button>
