@@ -113,7 +113,7 @@ const Locations = () => {
                     </div>
                     {location.emergency && (
                       <span className="bg-accent/20 text-accent px-3 py-1 rounded-full text-sm font-medium border border-accent/30">
-                        24/7 Emergency
+                        Emergency Available
                       </span>
                     )}
                   </div>

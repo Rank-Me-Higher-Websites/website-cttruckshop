@@ -15,7 +15,7 @@ const locations = [
     name: "Mobile Repair Unit",
     address: "Serving Greater Phoenix Metro",
     phone: "(602) 830-3232",
-    hours: "24/7 Availability",
+    hours: "Fast Availability",
     emergency: "On-Site Repairs",
     href: "/mobile-repair",
   },

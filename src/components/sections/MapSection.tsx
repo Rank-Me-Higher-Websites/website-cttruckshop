@@ -64,7 +64,7 @@ const MapSection = () => {
                       <Clock className="h-5 w-5 text-accent" />
                     </div>
                     <div>
-                      <p className="text-white font-medium">24/7 Emergency</p>
+                      <p className="text-white font-medium">Emergency Available</p>
                       <p className="text-gray-400 text-sm">Mon-Sat: 7AM-6PM</p>
                     </div>
                   </div>

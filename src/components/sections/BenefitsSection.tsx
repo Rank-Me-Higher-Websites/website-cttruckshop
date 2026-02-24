@@ -6,8 +6,8 @@ import expertTechnician from "@/assets/expert-technician.png";
 const benefits = [
   {
     icon: Clock,
-    title: "24/7 Emergency Service",
-    description: "Round-the-clock roadside assistance to minimize your downtime",
+    title: "Fast Emergency Response",
+    description: "Quick roadside assistance to minimize your downtime",
   },
   {
     icon: Shield,
