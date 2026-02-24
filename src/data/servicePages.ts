@@ -352,6 +352,7 @@ export const servicePages: Record<string, ServicePageData> = {
     metaTitle: "Full Body Semi Trailer Repair Phoenix, AZ | CT Truck & Trailer Shop",
     metaDescription: "Professional full body semi trailer repair and restoration in Phoenix, AZ. Welding, panel replacement, paint, refinishing. CT Shop.",
     heroHeadline: "Trailer Body Repair & Restoration",
+    introHeading: "Full Body Semi Trailer Repair & Restoration in Phoenix, AZ",
     introParagraphs: [
       "Restore your semi-trailer's strength and appearance with professional trailer body repair and restoration services. From aluminum and steel welding and patching to full panel replacements and frame straightening, our technicians handle every detail with precision. We specialize in fixing sidewalls, doors and floors to keep your trailer safe, durable and road-ready for long hauls.",
       "Bring your equipment back to life with expert trailer paint, polishing, and refinishing services. Our restoration team removes rust, repairs damage, and applies high-quality coatings that protect against corrosion and weathering. Whether you need minor touch-ups or complete semi-trailer body restoration, we deliver lasting results that enhance your trailer's look and performance. Get a quote today!",
