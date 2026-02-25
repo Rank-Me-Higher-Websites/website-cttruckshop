@@ -1,11 +1,35 @@
-import { Link } from "react-router-dom";
+import { useState, useMemo } from "react";
+import { Link, useSearchParams } from "react-router-dom";
 import Layout from "@/components/layout/Layout";
 import SEO from "@/components/SEO";
-import { ArrowRight, Calendar, Tag } from "lucide-react";
+import { ArrowRight, Calendar, Tag, ChevronLeft, ChevronRight } from "lucide-react";
 import { blogPosts } from "@/data/blogPosts";
 import towingRecovery from "@/assets/towing-recovery.jpg";
 
+const POSTS_PER_PAGE = 6;
+
+const parseDate = (dateStr: string) => new Date(dateStr);
+
 const Blog = () => {
+  const [searchParams, setSearchParams] = useSearchParams();
+  const currentPage = Number(searchParams.get("page") || "1");
+
+  const sortedPosts = useMemo(
+    () => [...blogPosts].sort((a, b) => parseDate(b.date).getTime() - parseDate(a.date).getTime()),
+    []
+  );
+
+  const totalPages = Math.ceil(sortedPosts.length / POSTS_PER_PAGE);
+  const paginatedPosts = sortedPosts.slice(
+    (currentPage - 1) * POSTS_PER_PAGE,
+    currentPage * POSTS_PER_PAGE
+  );
+
+  const goToPage = (page: number) => {
+    setSearchParams(page === 1 ? {} : { page: String(page) });
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <Layout>
       <SEO
@@ -14,12 +38,9 @@ const Blog = () => {
         keywords="truck repair blog, semi truck maintenance tips, fleet management, Phoenix trucking news"
       />
 
-      {/* Hero with futuristic styling */}
+      {/* Hero */}
       <section className="relative min-h-[60vh] flex items-center text-primary-foreground overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${towingRecovery})` }}
-        />
+        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${towingRecovery})` }} />
         <div className="absolute inset-0 hero-overlay" />
         <div className="absolute top-20 right-10 w-72 h-72 bg-accent/10 rounded-full blur-3xl" />
         <div className="absolute bottom-20 left-10 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
@@ -59,7 +80,7 @@ const Blog = () => {
         </div>
         <div className="container-custom relative z-10">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {blogPosts.map((post) => (
+            {paginatedPosts.map((post) => (
               <article key={post.slug} className="group">
                 <Link to={`/blog/${post.slug}`} className="block">
                   <div className="relative bg-primary-foreground/5 border border-accent/20 rounded-2xl overflow-hidden h-full flex flex-col hover:border-accent/50 transition-all duration-300">
@@ -102,6 +123,43 @@ const Blog = () => {
               </article>
             ))}
           </div>
+
+          {/* Pagination */}
+          {totalPages > 1 && (
+            <div className="flex items-center justify-center gap-2 mt-12">
+              <button
+                onClick={() => goToPage(currentPage - 1)}
+                disabled={currentPage === 1}
+                className="flex items-center gap-1 px-4 py-2 text-sm font-medium text-primary-foreground border border-accent/20 rounded-lg hover:border-accent/50 hover:text-accent transition-all disabled:opacity-30 disabled:cursor-not-allowed"
+              >
+                <ChevronLeft className="h-4 w-4" />
+                Previous
+              </button>
+
+              {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+                <button
+                  key={page}
+                  onClick={() => goToPage(page)}
+                  className={`w-10 h-10 rounded-lg text-sm font-medium transition-all ${
+                    page === currentPage
+                      ? "bg-accent text-accent-foreground"
+                      : "text-primary-foreground border border-accent/20 hover:border-accent/50 hover:text-accent"
+                  }`}
+                >
+                  {page}
+                </button>
+              ))}
+
+              <button
+                onClick={() => goToPage(currentPage + 1)}
+                disabled={currentPage === totalPages}
+                className="flex items-center gap-1 px-4 py-2 text-sm font-medium text-primary-foreground border border-accent/20 rounded-lg hover:border-accent/50 hover:text-accent transition-all disabled:opacity-30 disabled:cursor-not-allowed"
+              >
+                Next
+                <ChevronRight className="h-4 w-4" />
+              </button>
+            </div>
+          )}
         </div>
       </section>
     </Layout>
