@@ -1,74 +1,40 @@
 
 
-## Findings: Major Issues with Current Blog Implementation
+## Blog Content Audit: 2025-2026 Posts
 
-### Problem 1: Blog Grid Not Rendering
-The `/blog` page shows the hero section but the blog card grid is invisible -- it goes straight to the footer. The `blogPosts.ts` file has 17 entries and the code maps over them, but they are not appearing. This is likely caused by a runtime error in the data file (possibly an unescaped character in the HTML template literals) that silently prevents the array from loading.
+After comparing every 2025-2026 blog post in `blogPosts.ts` against the live WordPress site, nearly all of them are **severely truncated** -- most contain only 20-40% of the original content.
 
-### Problem 2: Only 17 Posts Exist -- Should Be 30+
-The WordPress XML contains significantly more published posts than the 17 currently in `blogPosts.ts`. The following posts from the XML are **completely missing**:
+### Posts with Missing Content (2025-2026)
 
-1. Semi AC Repair and Cost (Jul 27, 2023)
-2. Semi Trailer Tire Types (Jul 27, 2023)
-3. Common Semi-Trailer Issues (Aug 10, 2023)
-4. Semi-Trailer Maintenance (Aug 24, 2023)
-5. Semi Towing Frequently Asked Questions (Sep 21, 2023)
-6. Semi Truck Towing Arizona (Oct 5, 2023)
-7. Tow Truck Near Me: Arizona (Oct 19, 2023)
-8. Towing of Open Deck (Nov 9, 2023)
-9. Essential Tips for Truck Drivers (Nov 23, 2023)
-10. How to Choose the Right Diesel Mechanic (Nov 30, 2023)
-11. Clever Trans Towing Partnership (Dec 7, 2023)
-12. Semi-Truck Prices in 2023 (Dec 2023)
-13. Trailer Repair and Maintenance (Dec 28, 2023)
-14. Heavy-Duty Towing Arizona (Feb/Mar 2024)
-15. The Art of Decking: Day in the Life (Mar 13, 2024)
-16. Regular PM Service Guide (Jul 2024)
-17. Trailer Air System Issues (Jul 26, 2024)
-18. Trailer Lights (Jul 29, 2024)
-19. Reliable Local Truck Repair (Oct 15, 2025)
-20. Fast Truck Repair (Dec 2, 2025)
-21. Mobile Truck Repair (Dec 10, 2025)
-22. Truck Mechanic Near Me Phoenix (Dec 15, 2025)
-23. Semi Truck Repair That Keeps You Moving (Dec 23, 2025)
-24. Commercial Truck Repair (Jan 22, 2026)
-25. Trailer Repair Near Me (this one IS there but may have wrong date)
+| # | Post (Date) | Current State | Missing Content |
+|---|---|---|---|
+| 1 | **truck-and-trailer-repair-near-me-shop-tips** (Feb 24, 2026) | Complete | None -- this one is good |
+| 2 | **commercial-truck-repair** (Jan 22, 2026) | ~30% of original | Missing: detail paragraphs under "Commercial Truck Repair Near Me", "Reliable Commercial Truck Repair Service" section, entire FAQ section (6 Q&As) |
+| 3 | **trailer-repair-near-me-in-phoenix-fast-reliable** (Jan 13, 2026) | ~40% of original | Missing: "Quick Tip" callout, "Uneven Tire Wear" section, "Full Body Trailer Repairs" detail, "How to Choose the Right Shop" section, "Ask This One Question" section |
+| 4 | **local-truck-repair-phoenix-complete-guide** (Dec 30, 2025) | ~15% of original | Missing: "When quick becomes expensive", "What Good Local Truck Repair Looks Like" (process list, communication, documentation), "Most Common Local Truck Repairs" (brakes, diagnostics, electrical, cooling), "Local Trailer Repair" section, "Why Drivers Choose CT Shop", 3 images |
+| 5 | **semi-truck-repair-fast-and-reliable** (Dec 23, 2025) | ~25% of original | Missing: "At CT Truck & Trailer Shop" intro paragraph, "Engine Diagnostics" detail with common repairs list, "Brake Repair & Safety Inspections" section, "Electrical & Computer System Repairs" section, "Why Truck Drivers Trust CT Shop" (4 subsections), images |
+| 6 | **truck-mechanic-near-me-phoeniz-az** (Dec 15, 2025) | ~20% of original | Missing: "Emergency Roadside From a Trusted Truck Mechanic" (full paragraph), "Why a Phoenix Truck Mechanic Near Me Is Your Smartest Choice" section, "Your Trusted Truck Mechanic" closing section, additional image |
+| 7 | **mobile-truck-repair** (Dec 10, 2025) | ~10% of original | **Most severely truncated.** Original is 206 lines. Missing: "How Mobile Service Differs" comparison details, "Minimizing Downtime" section, "Safety and Compliance" section, entire "Common Mobile Truck Repair Services" (Engine/Aftertreatment, Brake/Air, Electrical/Battery, Tire/Wheel/Suspension subsections), "Emergency Roadside Truck Repair" section, "Keeping Trucks Moving" conclusion, 3 images |
+| 8 | **fast-truck-repair-near-me** (Dec 2, 2025) | ~20% of original | Missing: "Quick Accurate Diagnostics" detail (engine codes, aftertreatment, electrical, ABS), "Same-Day Repairs" with service list, "Emergency & Roadside Assistance" section, "Transparent Communication" section, "Common Fast Truck Repair Services" paragraph, "Why Drivers Trust CT Shop" with 4 points, "Get Fast Truck Repair in Phoenix" closing, 2 images |
+| 9 | **emergency-truck-repair** (Nov 24, 2025) | ~70% of original | Missing: "If the issue can't be fixed roadside" paragraph, "If you're hauling through I-10..." paragraph, night-towing image |
+| 10 | **reliable-trailer-repair-service** (Nov 19, 2025) | ~30% of original | Missing: out-of-service citations/rapid tire wear/freight damage list, second image (local-truck-repair-shop), full PM checklist (DOT, brake, tire, suspension, electrical), "A Trailer Breakdown Costs More Than a Repair" closing section |
+| 11 | **reliable-semi-truck-service-for-your-fleet** (Nov 13, 2025) | ~30% of original | Missing: full service descriptions (not just bullet items), second image (phoenix-semi-shop), "Choosing the Right Provider" section with 5 tips, "Keep Your Truck Running Strong" closing paragraph |
+| 12 | **emergency-truck-repair-solutions** (Nov 5, 2025) | ~40% of original | Missing: "We understand that downtime costs money" intro, mobile units paragraph, "Fast Response" detail, "Stay Safe - What to Do Before Help Arrives" section (4-step list), closing paragraph, closing image |
+| 13 | **truck-diagnostics-guide** (Oct 28, 2025) | ~25% of original | Missing: "Why Every Owner-Operator Should Care" (4 bullet points with descriptions), second diagnostic image, "Common Diagnostic Checks" (4 detailed system descriptions: Engine, Aftertreatment, Electrical, Transmission/ABS), "Keep Your Truck Running Strong" closing |
+| 14 | **emergency-truck-repair-phoenix-arizona** (Oct 21, 2025) | ~50% of original | Missing: "Always Ready -- Always Reliable" paragraph, "Contact CT" closing paragraph |
+| 15 | **local-truck-repair-partner-phoenix** (Oct 15, 2025) | ~25% of original | Missing: full service descriptions (not just bullets), second image (local-truck-repair-phoenix), third image (semi-truck-mechanics), "Why Choose CT" section (5 detailed points), "Your Local Truck Repair Partner" closing section, 24/7 mobile repair mention |
+| 16 | **reliable-semi-truck-service-in-phoenix-arizona** (Oct 10, 2025) | ~30% of original | Missing: service descriptions (not just bullets), "Why Choose" descriptions (not just bullets), "Best Semi Truck Service in Arizona" section, second image, "Keep Your Fleet Running Strong" section, "Regular Maintenance Saves You Time" paragraph |
 
-### Problem 3: Fabricated/Modified Titles and Slugs
-Several existing posts have titles and slugs that don't match the WordPress XML:
+### Summary
 
-| Current in blogPosts.ts | Actual from XML |
-|---|---|
-| slug: `semi-truck-fuel-efficiency` | Should be: `fuel-efficiency-tips-for-semi-truck-operators` |
-| slug: `semi-trailer-electrical-repair` | Should be: `semi-trailer-electrical-repair-services` |
-| title: "No More Downtime: Fast and Effective Semi-Trailer Suspension Fix Tips" | Fabricated -- real XML title is different |
-| title: "Maximizing Fuel Efficiency: Tips for Semi Truck Operators" | Real XML title may differ |
-| Some `featuredImage` URLs may not match actual WordPress thumbnails | Need verification |
-
-### Problem 4: Featured Images May Be Wrong
-Some posts use `featuredImage` URLs that appear to be the first image from content rather than the actual WordPress `_thumbnail_id` featured image. The XML has specific attachment/thumbnail mappings that were not properly followed.
-
----
+- **16 posts** from Oct 2025 - Jan 2026 need content restoration
+- **1 post** (Feb 2026 - newest) is complete
+- The most severely truncated is **mobile-truck-repair** (~10% of original content)
+- Most posts are missing 50-80% of their original text
 
 ### Implementation Plan
 
-**Step 1: Completely rewrite `src/data/blogPosts.ts`**
-- Re-extract ALL published posts from the XML (expected 30+ posts)
-- Use exact titles, slugs, dates, and categories from the XML
-- Use correct featured image URLs from WordPress `_thumbnail_id` metadata
-- Use exact HTML content stripped of WordPress block comments only
-- Use meta descriptions from `rank_math_description` fields
-- Zero fabricated content -- strictly XML data
+**Step 1**: Update all 16 posts in `src/data/blogPosts.ts` with full HTML content from the WordPress originals. Each post's `content` field will be replaced with the complete article text, preserving all headings, lists, images, links, tables, and paragraphs exactly as they appear on the live site.
 
-**Step 2: Debug the rendering issue**
-- Ensure no unescaped backticks or `${` expressions exist in template literal content
-- Verify the array exports correctly and renders in the blog grid
-- Test that all blog cards show with proper images and titles
-
-**Step 3: Verify individual blog post pages work**
-- Confirm `/blog/:slug` routes resolve correctly for all posts
-- Check content renders with proper formatting
-
-### Technical Note
-The `blogPosts.ts` file will be large (30+ posts with full HTML content). Each post needs: slug, title, date, category, excerpt, featuredImage, metaDescription, and content -- all extracted verbatim from the XML.
+The file is large (523 lines), so this will require careful line-by-line replacement of each post's `content` field. Posts will be updated in reverse chronological order starting from Jan 2026 back to Oct 2025.
 
