@@ -1,5 +1,7 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
+import { Checkbox } from "@/components/ui/checkbox";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Send } from "lucide-react";
@@ -36,6 +38,7 @@ const LeadForm = ({
     truckModel: "",
     service: "",
   });
+  const [consentChecked, setConsentChecked] = useState(false);
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
@@ -61,6 +64,7 @@ const LeadForm = ({
       if (!res.ok) throw new Error("Failed to submit");
       setSubmitted(true);
       setFormData({ name: "", email: "", phone: "", truckModel: "", service: "" });
+      setConsentChecked(false);
       setTimeout(() => setSubmitted(false), 3000);
     } catch (err) {
       console.error("Quote form submission error:", err);
@@ -145,7 +149,18 @@ const LeadForm = ({
               </SelectContent>
             </Select>
           </div>
-          <Button type="submit" variant="hero" size="lg" className="w-full" disabled={isSubmitting || submitted}>
+          <div className="flex items-start gap-3">
+            <Checkbox
+              id="consent"
+              checked={consentChecked}
+              onCheckedChange={(checked) => setConsentChecked(checked === true)}
+              className="mt-0.5 border-primary-foreground/30 data-[state=checked]:bg-accent data-[state=checked]:border-accent"
+            />
+            <label htmlFor="consent" className="text-xs text-primary-foreground/60 leading-relaxed cursor-pointer select-none">
+              I agree to share my details with CT Truck & Trailer Shop. Your information is kept confidential and will never be shared with third parties. See our <Link to="/privacy" className="text-accent hover:underline">Privacy Policy</Link>.
+            </label>
+          </div>
+          <Button type="submit" variant="hero" size="lg" className="w-full" disabled={isSubmitting || submitted || !consentChecked}>
             {submitted ? (
               "✓ Quote Request Sent!"
             ) : isSubmitting ? (
