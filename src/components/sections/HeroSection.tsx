@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Phone, ArrowRight, Shield, Clock, Wrench } from "lucide-react";
-import nightTowing from "@/assets/night-towing.jpg";
+import heroBg from "@/assets/hero-bg.jpg";
 import LeadForm from "@/components/LeadForm";
 
 const HeroSection = () => {
@@ -10,7 +10,7 @@ const HeroSection = () => {
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${nightTowing})` }}
+        style={{ backgroundImage: `url(${heroBg})` }}
       />
       
       {/* Overlay */}
