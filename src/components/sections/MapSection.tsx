@@ -28,7 +28,7 @@ const MapSection = () => {
             ✦ Our Shop
           </span>
           <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
-            Wherever Your Jobs Are, <span className="text-accent">We're Close</span>
+            Conveniently Located in <span className="text-accent">Phoenix</span>
           </h2>
           <p className="text-gray-400 text-lg">
             Phoenix Metro Area. Easy access from I-10, I-17, and Loop 101.
