@@ -143,19 +143,12 @@ const About = () => {
         <div className="container-custom relative z-10">
           <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
             {/* Team Photo */}
-            <div className="relative order-2 lg:order-1">
-              <div className="absolute -inset-1 bg-gradient-to-r from-accent/50 via-accent/20 to-accent/50 rounded-2xl blur-sm" />
-              <div className="relative rounded-2xl overflow-hidden border border-accent/30">
-                <img
-                  src={aboutTeam}
-                  alt="CT Truck & Trailer Shop team in Phoenix, AZ"
-                  className="w-full h-auto"
-                />
-              </div>
-              <div className="absolute -top-2 -left-2 w-8 h-8 border-l-2 border-t-2 border-accent rounded-tl-lg hidden sm:block" />
-              <div className="absolute -top-2 -right-2 w-8 h-8 border-r-2 border-t-2 border-accent rounded-tr-lg hidden sm:block" />
-              <div className="absolute -bottom-2 -left-2 w-8 h-8 border-l-2 border-b-2 border-accent rounded-bl-lg hidden sm:block" />
-              <div className="absolute -bottom-2 -right-2 w-8 h-8 border-r-2 border-b-2 border-accent rounded-br-lg hidden sm:block" />
+            <div className="order-2 lg:order-1">
+              <img
+                src={aboutTeam}
+                alt="CT Truck & Trailer Shop team in Phoenix, AZ"
+                className="w-full h-auto rounded-2xl object-cover"
+              />
             </div>
 
             {/* Content */}
