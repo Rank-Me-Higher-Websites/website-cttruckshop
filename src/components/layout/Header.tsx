@@ -28,6 +28,7 @@ const trailerServices = [
 ];
 
 const aboutLinks = [
+  { title: "About Us", href: "/about" },
   { title: "News and Publications", href: "/blog" },
 ];
 
