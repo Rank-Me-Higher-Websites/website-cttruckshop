@@ -2,13 +2,13 @@ import { Link } from "react-router-dom";
 import Layout from "@/components/layout/Layout";
 import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
-import { Phone, Clock, Shield, Users, Award, Wrench, Heart, Truck, MapPin, BadgeDollarSign } from "lucide-react";
+import { Phone, Users, Award, Truck, MapPin, BadgeDollarSign } from "lucide-react";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import CTASection from "@/components/sections/CTASection";
 import aboutTowTruck from "@/assets/about-tow-truck.jpg";
 import aboutEngineRepair from "@/assets/about-engine-repair.png";
 import aboutRepairShop from "@/assets/about-repair-shop.jpg";
-import aboutFleetReview from "@/assets/about-fleet-review.jpg";
+import aboutTeam from "@/assets/about-team.png";
 import shopInterior from "@/assets/shop-interior.jpg";
 
 const aboutCards = [
@@ -86,20 +86,11 @@ const About = () => {
 
       {/* Hero */}
       <section className="relative min-h-[60vh] flex items-center text-primary-foreground overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${shopInterior})` }}
-        />
+        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${shopInterior})` }} />
         <div className="absolute inset-0 hero-overlay" />
         <div className="absolute top-20 right-10 w-72 h-72 bg-accent/10 rounded-full blur-3xl" />
         <div className="absolute bottom-20 left-10 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
-        <div
-          className="absolute inset-0 opacity-5"
-          style={{
-            backgroundImage: `linear-gradient(hsl(var(--accent)) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--accent)) 1px, transparent 1px)`,
-            backgroundSize: '50px 50px'
-          }}
-        />
+        <div className="absolute inset-0 opacity-5" style={{ backgroundImage: `linear-gradient(hsl(var(--accent)) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--accent)) 1px, transparent 1px)`, backgroundSize: '50px 50px' }} />
         <div className="container-custom relative z-10">
           <div className="max-w-3xl text-center md:text-left">
             <span className="inline-flex items-center gap-2 bg-accent/20 border border-accent/30 rounded-full px-4 py-2 mb-6 mx-auto md:mx-0">
@@ -120,7 +111,7 @@ const About = () => {
         <div className="absolute bottom-4 right-4 w-16 h-16 border-r-2 border-b-2 border-accent/30 rounded-br-lg hidden sm:block" />
       </section>
 
-      {/* Best Truck Shop Near Me - 3 Cards */}
+      {/* 3 Cards - Services / Values / Mission */}
       <section className="section-padding bg-primary relative overflow-hidden">
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute top-1/4 left-0 w-64 h-64 bg-accent/5 rounded-full blur-3xl" />
@@ -136,20 +127,10 @@ const About = () => {
             {aboutCards.map((card) => (
               <div key={card.label} className="relative bg-primary-foreground/5 rounded-xl border border-accent/20 overflow-hidden group hover:border-accent/50 transition-all">
                 <div className="absolute inset-0 bg-gradient-to-br from-accent/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                <div className="relative">
-                  <img
-                    src={card.image}
-                    alt={card.alt}
-                    className="w-full h-56 object-cover"
-                  />
-                </div>
+                <img src={card.image} alt={card.alt} className="w-full h-56 object-cover" />
                 <div className="relative z-10 p-6">
-                  <span className="inline-block text-xs font-semibold uppercase tracking-wider text-accent mb-3">
-                    {card.label}
-                  </span>
-                  <p className="text-primary-foreground/80 text-sm leading-relaxed">
-                    {card.description}
-                  </p>
+                  <span className="inline-block text-xs font-semibold uppercase tracking-wider text-accent mb-3">{card.label}</span>
+                  <p className="text-primary-foreground/80 text-sm leading-relaxed">{card.description}</p>
                 </div>
               </div>
             ))}
@@ -157,51 +138,51 @@ const About = () => {
         </div>
       </section>
 
-      {/* What Makes Us Different */}
+      {/* Meet the Team + What Makes Us Different */}
       <section className="section-padding bg-primary relative overflow-hidden border-t border-accent/10">
         <div className="container-custom relative z-10">
-          <div className="text-center max-w-3xl mx-auto mb-4">
-            <p className="text-primary-foreground/60 uppercase tracking-widest text-sm mb-2">What Makes Us Different</p>
-            <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
-              Top Reasons Truckers Trust <span className="text-gradient">CT Shop</span> in Phoenix, AZ
-            </h2>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8 mt-12">
-            {differentiators.map((item, index) => (
-              <div key={item.title} className="flex gap-5 relative bg-primary-foreground/5 rounded-xl p-6 border border-accent/20 hover:border-accent/50 transition-all group">
-                <div className="absolute inset-0 bg-gradient-to-br from-accent/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl" />
-                <div className="relative z-10 flex-shrink-0">
-                  <div className="w-14 h-14 rounded-xl bg-accent/20 border border-accent/30 flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <item.icon className="h-7 w-7 text-accent" />
-                  </div>
-                </div>
-                <div className="relative z-10">
-                  <h3 className="font-heading text-xl font-bold text-primary-foreground mb-2">
-                    {item.href ? (
-                      <Link to={item.href} className="hover:text-accent transition-colors">{item.title}</Link>
-                    ) : (
-                      item.title
-                    )}
-                  </h3>
-                  <p className="text-primary-foreground/70 text-sm leading-relaxed">
-                    {item.description}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-
-          {/* Fleet review image */}
-          <div className="mt-12 flex justify-center">
-            <div className="relative max-w-md">
+          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+            {/* Team Photo */}
+            <div className="relative order-2 lg:order-1">
               <div className="absolute -inset-1 bg-gradient-to-r from-accent/50 via-accent/20 to-accent/50 rounded-2xl blur-sm" />
               <div className="relative rounded-2xl overflow-hidden border border-accent/30">
                 <img
-                  src={aboutFleetReview}
-                  alt="CT Shop Phoenix fleet review and savings"
+                  src={aboutTeam}
+                  alt="CT Truck & Trailer Shop team in Phoenix, AZ"
                   className="w-full h-auto"
                 />
+              </div>
+              <div className="absolute -top-2 -left-2 w-8 h-8 border-l-2 border-t-2 border-accent rounded-tl-lg hidden sm:block" />
+              <div className="absolute -top-2 -right-2 w-8 h-8 border-r-2 border-t-2 border-accent rounded-tr-lg hidden sm:block" />
+              <div className="absolute -bottom-2 -left-2 w-8 h-8 border-l-2 border-b-2 border-accent rounded-bl-lg hidden sm:block" />
+              <div className="absolute -bottom-2 -right-2 w-8 h-8 border-r-2 border-b-2 border-accent rounded-br-lg hidden sm:block" />
+            </div>
+
+            {/* Content */}
+            <div className="order-1 lg:order-2 text-center lg:text-left">
+              <p className="text-primary-foreground/60 uppercase tracking-widest text-sm mb-2">What Makes Us Different</p>
+              <h2 className="font-heading text-3xl md:text-4xl font-bold text-primary-foreground mb-4">
+                Top Reasons Truckers Trust <span className="text-gradient">CT Shop</span> in Phoenix, AZ
+              </h2>
+              <p className="text-primary-foreground/70 mb-8">
+                Our experienced team is committed to keeping your fleet on the road with fast, professional service you can count on.
+              </p>
+              <div className="space-y-5">
+                {differentiators.map((item) => (
+                  <div key={item.title} className="flex gap-4 text-left">
+                    <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-accent/20 border border-accent/30 flex items-center justify-center">
+                      <item.icon className="h-6 w-6 text-accent" />
+                    </div>
+                    <div>
+                      <h3 className="font-heading text-lg font-bold text-primary-foreground mb-1">
+                        {item.href ? (
+                          <Link to={item.href} className="hover:text-accent transition-colors">{item.title}</Link>
+                        ) : item.title}
+                      </h3>
+                      <p className="text-primary-foreground/60 text-sm leading-relaxed">{item.description}</p>
+                    </div>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
@@ -220,11 +201,7 @@ const About = () => {
               <div className="relative">
                 <div className="absolute -inset-1 bg-gradient-to-r from-accent/50 via-accent/20 to-accent/50 rounded-2xl blur-sm" />
                 <div className="relative rounded-2xl overflow-hidden border border-accent/30">
-                  <img
-                    src={aboutTowTruck}
-                    alt="CT Shop tow truck Phoenix AZ"
-                    className="w-full h-auto"
-                  />
+                  <img src={aboutTowTruck} alt="CT Shop tow truck Phoenix AZ" className="w-full h-auto" />
                 </div>
               </div>
             </div>
