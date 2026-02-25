@@ -2,7 +2,8 @@ import { Link } from "react-router-dom";
 import Layout from "@/components/layout/Layout";
 import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
-import { Phone, Users, Award, Truck, MapPin, BadgeDollarSign } from "lucide-react";
+import { Phone, Users, Award, Truck, MapPin, BadgeDollarSign, MessageSquare } from "lucide-react";
+import { useQuoteModal } from "@/contexts/QuoteModalContext";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import CTASection from "@/components/sections/CTASection";
 import aboutTowTruck from "@/assets/about-tow-truck.jpg";
@@ -76,6 +77,7 @@ const faqs = [
 ];
 
 const About = () => {
+  const { open: openQuote } = useQuoteModal();
   return (
     <Layout>
       <SEO
@@ -100,9 +102,21 @@ const About = () => {
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
               Truck Repair Shop <span className="text-gradient">Phoenix</span>
             </h1>
-            <p className="text-xl text-primary-foreground/80">
+            <p className="text-xl text-primary-foreground/80 mb-8">
               Expert fleet maintenance and repair for heavy-duty & semi-trucks in Phoenix, AZ. 24/7 emergency roadside service in Phoenix & surroundings.
             </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+              <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground font-bold" onClick={openQuote}>
+                <MessageSquare className="mr-2 h-5 w-5" />
+                Get a Free Quote
+              </Button>
+              <Button size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10" asChild>
+                <a href="tel:+16234653737">
+                  <Phone className="mr-2 h-5 w-5" />
+                  (623) 465-3737
+                </a>
+              </Button>
+            </div>
           </div>
         </div>
         <div className="absolute top-4 left-4 w-16 h-16 border-l-2 border-t-2 border-accent/30 rounded-tl-lg hidden sm:block" />
@@ -176,6 +190,17 @@ const About = () => {
                     </div>
                   </div>
                 ))}
+              </div>
+              <div className="flex flex-col sm:flex-row gap-4 mt-8 justify-center lg:justify-start">
+                <Button size="lg" className="bg-accent hover:bg-accent/90 text-accent-foreground font-bold" onClick={openQuote}>
+                  <MessageSquare className="mr-2 h-5 w-5" />
+                  Request a Quote
+                </Button>
+                <Button size="lg" variant="outline" className="border-accent/30 text-primary-foreground hover:bg-accent/10" asChild>
+                  <Link to="/services">
+                    View All Services
+                  </Link>
+                </Button>
               </div>
             </div>
           </div>
