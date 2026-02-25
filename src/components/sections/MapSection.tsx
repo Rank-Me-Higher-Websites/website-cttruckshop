@@ -25,7 +25,7 @@ const MapSection = () => {
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-12">
           <span className="inline-block bg-accent/20 text-accent font-semibold text-sm uppercase tracking-wider px-4 py-2 rounded-full mb-4">
-            ✦ Find Us
+            ✦ Our Shop
           </span>
           <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
             Wherever Your Jobs Are, <span className="text-accent">We're Close</span>
