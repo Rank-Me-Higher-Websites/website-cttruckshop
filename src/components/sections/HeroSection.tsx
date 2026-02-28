@@ -6,7 +6,7 @@ import LeadForm from "@/components/LeadForm";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-[90vh] flex items-center overflow-hidden">
+    <section className="relative min-h-[auto] lg:min-h-[90vh] flex items-center overflow-hidden py-6 lg:py-16">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -26,22 +26,22 @@ const HeroSection = () => {
           {/* Left Content */}
           <div className="text-center lg:text-left">
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 bg-accent/20 border border-accent/30 rounded-full px-4 py-2 mb-6 animate-fade-in mx-auto lg:mx-0">
-              <Shield className="h-4 w-4 text-accent" />
-              <span className="text-sm xl:text-base font-medium text-primary-foreground">
+            <div className="inline-flex items-center gap-2 bg-accent/20 border border-accent/30 rounded-full px-3 py-1.5 mb-3 lg:mb-6 animate-fade-in mx-auto lg:mx-0">
+              <Shield className="h-3 w-3 lg:h-4 lg:w-4 text-accent" />
+              <span className="text-xs lg:text-sm xl:text-base font-medium text-primary-foreground">
                 Trusted Fleet Maintenance Since 2015
               </span>
             </div>
             
             {/* Headline - smaller sizes */}
-            <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold text-primary-foreground leading-tight mb-5 animate-fade-in-up">
+            <h1 className="font-heading text-2xl md:text-3xl lg:text-5xl xl:text-6xl 2xl:text-7xl font-bold text-primary-foreground leading-tight mb-3 lg:mb-5 animate-fade-in-up">
               Phoenix's Premier{" "}
               <span className="text-gradient">Truck & Trailer</span>{" "}
               Repair Shop
             </h1>
             
             {/* Subheadline */}
-            <p className="text-base md:text-lg xl:text-xl text-primary-foreground mb-7 max-w-xl xl:max-w-2xl mx-auto lg:mx-0 animate-fade-in-up delay-200">
+            <p className="text-sm md:text-base lg:text-lg xl:text-xl text-primary-foreground mb-4 lg:mb-7 max-w-xl xl:max-w-2xl mx-auto lg:mx-0 animate-fade-in-up delay-200">
               From routine <Link to="/services" className="text-accent hover:underline">maintenance</Link> to complex{" "}
               <Link to="/services/engine-repair" className="text-accent hover:underline">engine repairs</Link>, our expert technicians ensure 
               minimal downtime and maximum efficiency for your commercial fleet. 
@@ -65,7 +65,7 @@ const HeroSection = () => {
             </div>
             
             {/* Trust Indicators */}
-            <div className="mt-10 pt-6 border-t border-primary-foreground/20 animate-fade-in delay-500">
+            <div className="mt-6 lg:mt-10 pt-4 lg:pt-6 border-t border-primary-foreground/20 animate-fade-in delay-500 hidden md:block">
               <div className="grid grid-cols-3 gap-3 md:gap-8">
                 <div className="flex items-center gap-2">
                   <div className="icon-container-outline w-10 h-10 sm:w-14 sm:h-14">
@@ -99,7 +99,7 @@ const HeroSection = () => {
           </div>
 
           {/* Right Side - Contact Form */}
-          <div className="animate-fade-in-up delay-300 hidden lg:block">
+          <div className="animate-fade-in-up delay-300">
             <LeadForm />
           </div>
         </div>

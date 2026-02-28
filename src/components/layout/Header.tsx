@@ -129,8 +129,8 @@ const Header = () => {
         className={cn(
           "w-full transition-all duration-300 relative",
           isScrolled
-            ? "bg-background/95 backdrop-blur-md shadow-md py-2"
-            : "bg-background py-3"
+            ? "bg-background/95 backdrop-blur-md shadow-md py-1"
+            : "bg-background py-1.5 lg:py-2"
         )}
       >
         <div className="absolute bottom-0 left-0 right-0 h-[2px] bg-gradient-to-r from-transparent via-accent/40 to-transparent" />
@@ -138,7 +138,7 @@ const Header = () => {
           <nav className="flex items-center justify-between">
             {/* Logo */}
             <Link to="/" className="flex items-center gap-3 flex-shrink-0">
-              <img src={logo} alt="CT Shop Logo" className="h-12 md:h-14 w-auto" />
+              <img src={logo} alt="CT Shop Logo" className="h-8 md:h-10 lg:h-12 w-auto" />
             </Link>
 
             {/* Desktop Navigation */}
