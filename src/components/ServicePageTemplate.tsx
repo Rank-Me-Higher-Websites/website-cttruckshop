@@ -9,19 +9,19 @@ import CTASection from "@/components/sections/CTASection";
 import { getServicePage } from "@/data/servicePages";
 import truckDiagnostics from "@/assets/truck-diagnostics.jpg";
 import mechanicsWork from "@/assets/mechanics-work.jpeg";
-import expertTechnician from "@/assets/expert-technician.png";
+
 import { useState } from "react";
 
 const imageMap: Record<string, string> = {
   "emergency-truck-repair-phoenix": mechanicsWork,
   "truck-breakdown-service-phoenix": truckDiagnostics,
-  "semi-truck-ac-repair-services": expertTechnician,
+  "semi-truck-ac-repair-services": truckDiagnostics,
   "semi-truck-tire-and-brake-repair-services-phoenix-az": mechanicsWork,
   "semi-truck-diagnostics-in-phoenix-az": truckDiagnostics,
-  "semi-truck-engine-repairs-in-phoenix-az": expertTechnician,
-  "semi-trailer-electrical-repair-services-phoenix-az": mechanicsWork,
-  "semi-trailer-brake-and-tire-repair-services-in-phoenix-az": truckDiagnostics,
-  "semi-trailer-suspension-repair-services-phoenix-az": expertTechnician,
+  "semi-truck-engine-repairs-in-phoenix-az": mechanicsWork,
+  "semi-trailer-electrical-repair-services-phoenix-az": truckDiagnostics,
+  "semi-trailer-brake-and-tire-repair-services-in-phoenix-az": mechanicsWork,
+  "semi-trailer-suspension-repair-services-phoenix-az": truckDiagnostics,
   "full-body-semi-trailer-repair-in-phoenix-az": mechanicsWork,
 };
 

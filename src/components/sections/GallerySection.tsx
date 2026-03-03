@@ -10,7 +10,7 @@ import towService from "@/assets/tow-service.png";
 import towingRecovery from "@/assets/towing-recovery.jpg";
 import nightTowing from "@/assets/night-towing.jpg";
 import mechanicsWork from "@/assets/mechanics-work.jpeg";
-import expertTechnician from "@/assets/expert-technician.png";
+import shopInterior from "@/assets/shop-interior.jpg";
 import truckDiagnostics from "@/assets/truck-diagnostics.jpg";
 import teamWork from "@/assets/team-work.jpeg";
 
@@ -22,7 +22,7 @@ const images = [
   { src: towingRecovery, alt: "Towing and recovery service" },
   { src: nightTowing, alt: "Night towing operation" },
   { src: mechanicsWork, alt: "Mechanics working under truck" },
-  { src: expertTechnician, alt: "Expert technician at work" },
+  { src: shopInterior, alt: "Inside our repair shop" },
   { src: truckDiagnostics, alt: "Truck computer diagnostics" },
   { src: teamWork, alt: "Team working together" },
 ];
