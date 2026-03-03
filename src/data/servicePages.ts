@@ -11,8 +11,6 @@ export interface ServicePageData {
     heading: string;
     content: string[];
     listItems?: string[];
-    image?: string;
-    imageAlt?: string;
   }[];
   highlights: {
     title: string;
