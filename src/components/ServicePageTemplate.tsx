@@ -19,6 +19,14 @@ import engineBrakeRepair from "@/assets/engine-brake-repair.jpg";
 import truckEngineWide from "@/assets/truck-engine-wide.jpg";
 import towingRecovery from "@/assets/towing-recovery.jpg";
 import nightTowing from "@/assets/night-towing.jpg";
+import mechanicsWork from "@/assets/mechanics-work.jpeg";
+import dieselEngine from "@/assets/diesel-engine-repair.png";
+import shopInterior from "@/assets/shop-interior.jpg";
+import mobileRepair from "@/assets/mobile-repair.jpg";
+import facility from "@/assets/facility.jpg";
+import craneLift from "@/assets/crane-lift.png";
+import teamWork from "@/assets/team-work.jpeg";
+import tireTechThumbsup from "@/assets/tire-tech-thumbsup.jpg";
 
 import { useState } from "react";
 
@@ -38,6 +46,14 @@ const imageMap: Record<string, string> = {
 const contentImageMap: Record<string, string> = {
   "emergency-truck-repair-phoenix": nightTowing,
   "truck-breakdown-service-phoenix": mechanicHubRepair,
+  "semi-truck-ac-repair-services": mechanicsWork,
+  "semi-truck-tire-and-brake-repair-services-phoenix-az": facility,
+  "semi-truck-diagnostics-in-phoenix-az": dieselEngine,
+  "semi-truck-engine-repairs-in-phoenix-az": shopInterior,
+  "semi-trailer-electrical-repair-services-phoenix-az": craneLift,
+  "semi-trailer-brake-and-tire-repair-services-in-phoenix-az": teamWork,
+  "semi-trailer-suspension-repair-services-phoenix-az": mobileRepair,
+  "full-body-semi-trailer-repair-in-phoenix-az": tireTechThumbsup,
 };
 
 const FAQItem = ({ question, answer }: { question: string; answer: string }) => {
