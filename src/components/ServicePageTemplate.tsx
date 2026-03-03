@@ -35,9 +35,8 @@ const imageMap: Record<string, string> = {
   "full-body-semi-trailer-repair-in-phoenix-az": truckEngineWide,
 };
 
-const sectionImageMap: Record<string, string> = {
-  "towing-recovery": towingRecovery,
-  "night-towing": nightTowing,
+const contentImageMap: Record<string, string> = {
+  "emergency-truck-repair-phoenix": nightTowing,
 };
 
 const FAQItem = ({ question, answer }: { question: string; answer: string }) => {
