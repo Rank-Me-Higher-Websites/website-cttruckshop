@@ -10,7 +10,7 @@ import aboutTowTruck from "@/assets/about-tow-truck.jpg";
 import aboutEngineRepair from "@/assets/about-engine-repair.png";
 import aboutRepairShop from "@/assets/about-repair-shop.jpg";
 import aboutTeam from "@/assets/about-team.png";
-import tireTechThumbsup from "@/assets/tire-tech-thumbsup.jpg";
+import ctShopTeam from "@/assets/ct-shop-team.jpg";
 
 const aboutCards = [
   {
