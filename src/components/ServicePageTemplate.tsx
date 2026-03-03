@@ -124,9 +124,14 @@ const ServicePageTemplate = ({ slug }: ServicePageTemplateProps) => {
                 <Wrench className="h-3.5 w-3.5 text-accent" />
                 <span className="text-xs font-medium text-primary-foreground">CT Truck & Trailer Shop</span>
               </span>
-              <h1 className="font-heading text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
+              <h1 className="font-heading text-2xl md:text-3xl lg:text-4xl font-bold mb-2">
                 {service.heroHeadline}
               </h1>
+              {service.heroSubheadline && (
+                <p className="text-xs md:text-sm text-primary-foreground/70 mb-4 max-w-lg mx-auto lg:mx-0">
+                  {service.heroSubheadline}
+                </p>
+              )}
               <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
                 <a href="tel:6028303232" className="w-full sm:w-auto">
                   <Button variant="hero" size="default" className="w-full sm:w-auto">
