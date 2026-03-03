@@ -23,7 +23,7 @@ import nightTowing from "@/assets/night-towing.jpg";
 import { useState } from "react";
 
 const imageMap: Record<string, string> = {
-  "emergency-truck-repair-phoenix": shopBayOverview,
+  "emergency-truck-repair-phoenix": towingRecovery,
   "truck-breakdown-service-phoenix": truckLaptopDiag,
   "semi-truck-ac-repair-services": blueCascadiaRepair,
   "semi-truck-tire-and-brake-repair-services-phoenix-az": mechanicHubRepair,
