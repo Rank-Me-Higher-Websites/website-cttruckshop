@@ -36,11 +36,11 @@ const App = () => (
   <HelmetProvider>
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
-        <QuoteModalProvider>
-          <Toaster />
-          <Sonner />
-          <QuoteModal />
-          <BrowserRouter>
+        <BrowserRouter>
+          <QuoteModalProvider>
+            <Toaster />
+            <Sonner />
+            <QuoteModal />
             <ScrollToTop />
             <Routes>
               <Route path="/" element={<Index />} />
@@ -66,8 +66,8 @@ const App = () => (
               <Route path="/terms" element={<TermsOfService />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
-          </BrowserRouter>
-        </QuoteModalProvider>
+          </QuoteModalProvider>
+        </BrowserRouter>
       </TooltipProvider>
     </QueryClientProvider>
   </HelmetProvider>
