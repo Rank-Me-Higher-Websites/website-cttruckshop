@@ -47,7 +47,7 @@ const BlogPost = () => {
         />
         <div className="absolute inset-0 hero-overlay" />
         <div className="absolute inset-0 bg-black/50" />
-        <div className="container-custom relative z-10 py-20 md:py-28">
+        <div className="container-custom relative z-10 py-12 md:py-16">
           <Link to="/blog" className="inline-flex items-center gap-2 text-accent hover:underline mb-6">
             <ArrowLeft className="h-4 w-4" /> Back to Blog
           </Link>
