@@ -10,7 +10,7 @@ import aboutTowTruck from "@/assets/about-tow-truck.jpg";
 import aboutEngineRepair from "@/assets/about-engine-repair.png";
 import aboutRepairShop from "@/assets/about-repair-shop.jpg";
 import aboutTeam from "@/assets/about-team.png";
-import ctShopTeam from "@/assets/ct-shop-team.jpg";
+import teamWork from "@/assets/team-work.jpeg";
 
 const aboutCards = [
   {
@@ -88,7 +88,7 @@ const About = () => {
 
       {/* Hero */}
       <section className="relative min-h-[auto] flex items-center text-primary-foreground overflow-hidden py-16 md:py-24">
-        <div className="absolute inset-0 bg-cover bg-[center_30%] bg-no-repeat" style={{ backgroundImage: `url(${ctShopTeam})` }} />
+        <div className="absolute inset-0 bg-cover bg-[center_30%] bg-no-repeat" style={{ backgroundImage: `url(${teamWork})` }} />
         <div className="absolute inset-0 hero-overlay" />
         <div className="absolute inset-0 bg-black/40" />
         <div className="absolute top-20 right-10 w-72 h-72 bg-accent/10 rounded-full blur-3xl hidden sm:block" />
