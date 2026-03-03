@@ -204,7 +204,7 @@ const Contact = () => {
                 <p className="text-muted-foreground text-sm">Repairs completed for Phoenix-area fleets</p>
               </div>
               <div className="p-6 rounded-xl bg-card border border-border max-w-sm mx-auto w-full sm:max-w-none">
-                <p className="font-heading text-3xl font-bold text-accent mb-1">4.4★</p>
+                <p className="font-heading text-3xl font-bold text-accent mb-1">4.5★</p>
                 <p className="text-muted-foreground text-sm">Rated on Google by real customers</p>
               </div>
             </div>

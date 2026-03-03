@@ -3,7 +3,7 @@ import { Shield, Star, Award, Users, CheckCircle } from "lucide-react";
 const TrustSection = () => {
   const stats = [
     { number: "2,500+", label: "Trucks Repaired", icon: Shield },
-    { number: "4.4★", label: "Google Rating", icon: Star },
+    { number: "4.5★", label: "Google Rating", icon: Star },
     { number: "8+", label: "Years Experience", icon: Award },
     { number: "500+", label: "Fleet Customers", icon: Users },
   ];
@@ -25,7 +25,7 @@ const TrustSection = () => {
               ))}
             </div>
             <div className="text-left">
-              <p className="font-bold text-foreground text-xs sm:text-base">4.4 Rating</p>
+              <p className="font-bold text-foreground text-xs sm:text-base">4.5 Rating</p>
               <p className="text-[10px] sm:text-sm text-muted-foreground">61 Google Reviews</p>
             </div>
           </a>
