@@ -77,19 +77,19 @@ const LeadForm = ({
   return (
     <div className={`relative ${className}`}>
       <div className="absolute -inset-1 bg-gradient-to-br from-accent/40 via-accent/10 to-accent/40 rounded-2xl blur-sm" />
-      <div className="relative bg-primary/90 backdrop-blur-md rounded-2xl p-6 border border-accent/30">
-        <h3 className="font-heading text-xl font-bold text-primary-foreground mb-1">
+      <div className="relative bg-primary/90 backdrop-blur-md rounded-2xl p-4 lg:p-5 border border-accent/30">
+        <h3 className="font-heading text-lg font-bold text-primary-foreground mb-0.5">
           {title.includes("Free Quote") ? (
             <>Request a <span className="text-accent">Free Quote</span></>
           ) : (
             <span>{title}</span>
           )}
         </h3>
-        <p className="text-sm text-primary-foreground/60 mb-5">
+        <p className="text-xs text-primary-foreground/60 mb-3">
           {subtitle}
         </p>
 
-        <form onSubmit={handleSubmit} className="space-y-4">
+        <form onSubmit={handleSubmit} className="space-y-2.5">
           <div>
             <Input
               placeholder="Full Name"
@@ -160,7 +160,7 @@ const LeadForm = ({
               I agree to share my details with CT Truck & Trailer Shop. Your information is kept confidential and will never be shared with third parties. See our <Link to="/privacy" className="text-accent hover:underline">Privacy Policy</Link>.
             </label>
           </div>
-          <Button type="submit" variant="hero" size="lg" className="w-full" disabled={isSubmitting || submitted || !consentChecked}>
+          <Button type="submit" variant="hero" size="default" className="w-full" disabled={isSubmitting || submitted || !consentChecked}>
             {submitted ? (
               "✓ Quote Request Sent!"
             ) : isSubmitting ? (
@@ -171,7 +171,7 @@ const LeadForm = ({
           </Button>
         </form>
 
-        <p className="text-xs text-primary-foreground/40 mt-3 text-center">
+        <p className="text-xs text-primary-foreground/40 mt-2 text-center">
           Or call us directly at{" "}
           <a href="tel:6028303232" className="text-accent hover:underline">
             (602) 830-3232
