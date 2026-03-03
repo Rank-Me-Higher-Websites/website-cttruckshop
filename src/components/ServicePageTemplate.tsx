@@ -37,7 +37,7 @@ const imageMap: Record<string, string> = {
 
 const contentImageMap: Record<string, string> = {
   "emergency-truck-repair-phoenix": nightTowing,
-  "truck-breakdown-service-phoenix": shopBayOverview,
+  "truck-breakdown-service-phoenix": mechanicHubRepair,
 };
 
 const FAQItem = ({ question, answer }: { question: string; answer: string }) => {
