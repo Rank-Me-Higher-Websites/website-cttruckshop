@@ -26,7 +26,7 @@ const imageMap: Record<string, string> = {
   "semi-truck-diagnostics-in-phoenix-az": truckDiagLaptop,
   "semi-truck-engine-repairs-in-phoenix-az": dieselEngine,
   "semi-trailer-electrical-repair-services-phoenix-az": truckDiagnostics,
-  "semi-trailer-brake-and-tire-repair-services-in-phoenix-az": engineRepair,
+  "semi-trailer-brake-and-tire-repair-services-in-phoenix-az": truckDiagLaptop,
   "semi-trailer-suspension-repair-services-phoenix-az": mechanicsWork,
   "full-body-semi-trailer-repair-in-phoenix-az": shopInterior,
 };
