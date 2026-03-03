@@ -178,19 +178,27 @@ const ServicePageTemplate = ({ slug }: ServicePageTemplateProps) => {
               )}
 
               {/* Image */}
-              <div className="relative max-h-96 overflow-hidden">
-                <div className="absolute -inset-1 bg-gradient-to-r from-accent/50 via-accent/20 to-accent/50 rounded-2xl blur-sm" />
+              <div className="relative group">
+                {/* Glow border effect */}
+                <div className="absolute -inset-1 bg-gradient-to-r from-accent/60 via-accent/20 to-accent/60 rounded-2xl blur-md opacity-75 group-hover:opacity-100 transition-opacity duration-500" />
+                
+                {/* Image container */}
                 <div className="relative rounded-2xl overflow-hidden border border-accent/30">
                   <img
                     src={contentImage}
                     alt={service.title}
-                    className="w-full h-96 object-cover"
+                    className="w-full h-80 md:h-96 object-cover group-hover:scale-[1.02] transition-transform duration-700"
                   />
+                  
+                  {/* Bottom gradient overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent" />
+                  
+                  {/* Service badge on image */}
+                  <div className="absolute bottom-4 left-4 flex items-center gap-2 bg-primary/80 backdrop-blur-sm border border-accent/30 rounded-full px-4 py-2">
+                    <Wrench className="h-4 w-4 text-accent" />
+                    <span className="text-sm font-medium text-primary-foreground">CT Truck & Trailer Shop</span>
+                  </div>
                 </div>
-                <div className="absolute -top-2 -left-2 w-8 h-8 border-l-2 border-t-2 border-accent rounded-tl-lg hidden sm:block" />
-                <div className="absolute -top-2 -right-2 w-8 h-8 border-r-2 border-t-2 border-accent rounded-tr-lg hidden sm:block" />
-                <div className="absolute -bottom-2 -left-2 w-8 h-8 border-l-2 border-b-2 border-accent rounded-bl-lg hidden sm:block" />
-                <div className="absolute -bottom-2 -right-2 w-8 h-8 border-r-2 border-b-2 border-accent rounded-br-lg hidden sm:block" />
               </div>
 
               {/* Additional Sections */}
