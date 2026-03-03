@@ -174,7 +174,7 @@ const ServicePageTemplate = ({ slug }: ServicePageTemplateProps) => {
                 <div className="absolute -inset-1 bg-gradient-to-r from-accent/50 via-accent/20 to-accent/50 rounded-2xl blur-sm" />
                 <div className="relative rounded-2xl overflow-hidden border border-accent/30">
                   <img
-                    src={heroImage}
+                    src={contentImage}
                     alt={service.title}
                     className="w-full h-auto object-cover"
                   />
@@ -205,18 +205,6 @@ const ServicePageTemplate = ({ slug }: ServicePageTemplateProps) => {
                         </li>
                       ))}
                     </ul>
-                  )}
-                  {section.image && sectionImageMap[section.image] && (
-                    <div className="relative mt-6">
-                      <div className="absolute -inset-1 bg-gradient-to-r from-accent/50 via-accent/20 to-accent/50 rounded-2xl blur-sm" />
-                      <div className="relative rounded-2xl overflow-hidden border border-accent/30">
-                        <img
-                          src={sectionImageMap[section.image]}
-                          alt={section.imageAlt || service.title}
-                          className="w-full h-auto object-cover"
-                        />
-                      </div>
-                    </div>
                   )}
                 </div>
               ))}
