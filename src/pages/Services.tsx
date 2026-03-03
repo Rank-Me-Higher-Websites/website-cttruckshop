@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Phone, Wrench, Zap, Settings, Gauge, Truck, Shield, Cog, Hammer } from "lucide-react";
 import CTASection from "@/components/sections/CTASection";
 import FAQSection from "@/components/sections/FAQSection";
-import mechanicsWork from "@/assets/mechanics-work.jpeg";
+import shopBayOverview from "@/assets/shop-bay-overview.jpg";
 
 const truckServices = [
   { icon: Settings, title: "Emergency Truck Repair", description: "Fast emergency roadside truck repair services in Phoenix and surrounding areas.", href: "/emergency-truck-repair-phoenix" },
@@ -37,7 +37,7 @@ const Services = () => {
         {/* Background Image */}
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${mechanicsWork})` }}
+          style={{ backgroundImage: `url(${shopBayOverview})` }}
         />
         
         {/* Overlay */}

@@ -11,8 +11,11 @@ import towingRecovery from "@/assets/towing-recovery.jpg";
 import nightTowing from "@/assets/night-towing.jpg";
 import mechanicsWork from "@/assets/mechanics-work.jpeg";
 import dieselEngine from "@/assets/diesel-engine-repair.png";
-import truckDiagnostics from "@/assets/truck-diagnostics.jpg";
-import teamWork from "@/assets/team-work.jpeg";
+import shopBayOverview from "@/assets/shop-bay-overview.jpg";
+import blueCascadiaRepair from "@/assets/blue-cascadia-repair.jpg";
+import fleetElectricalWork from "@/assets/fleet-electrical-work.jpg";
+import tireTechThumbsup from "@/assets/tire-tech-thumbsup.jpg";
+import transmissionRebuild from "@/assets/transmission-rebuild.jpg";
 
 const images = [
   { src: shopInterior, alt: "CT Truck Shop interior with truck" },
@@ -23,8 +26,11 @@ const images = [
   { src: nightTowing, alt: "Night towing operation" },
   { src: mechanicsWork, alt: "Mechanics working under truck" },
   { src: dieselEngine, alt: "Diesel engine repair service" },
-  { src: truckDiagnostics, alt: "Truck computer diagnostics" },
-  { src: teamWork, alt: "Team working together" },
+  { src: shopBayOverview, alt: "Shop bay with trucks being serviced" },
+  { src: blueCascadiaRepair, alt: "Technician repairing Freightliner Cascadia" },
+  { src: fleetElectricalWork, alt: "Fleet electrical repair work" },
+  { src: tireTechThumbsup, alt: "Mechanic giving thumbs up by tire" },
+  { src: transmissionRebuild, alt: "Transmission rebuild in progress" },
 ];
 
 // Duplicate for infinite scroll effect
