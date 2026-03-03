@@ -16,21 +16,31 @@ import blueCascadiaRepair from "@/assets/blue-cascadia-repair.jpg";
 import fleetElectricalWork from "@/assets/fleet-electrical-work.jpg";
 import tireTechThumbsup from "@/assets/tire-tech-thumbsup.jpg";
 import transmissionRebuild from "@/assets/transmission-rebuild.jpg";
+import trailerWeldingRepair from "@/assets/trailer-welding-repair.jpg";
+import trailerBrakeShop from "@/assets/trailer-brake-shop.jpg";
+import mechanicHubRepair from "@/assets/mechanic-hub-repair.jpg";
+import truckEngineWide from "@/assets/truck-engine-wide.jpg";
+import trailerAxleRepair from "@/assets/trailer-axle-repair.jpg";
 
 const images = [
-  { src: shopInterior, alt: "CT Truck Shop interior with truck" },
-  { src: truckYard, alt: "Truck yard at sunset" },
-  { src: craneLift, alt: "Crane lifting truck for repair" },
-  { src: towService, alt: "Tow service in action" },
-  { src: towingRecovery, alt: "Towing and recovery service" },
-  { src: nightTowing, alt: "Night towing operation" },
-  { src: mechanicsWork, alt: "Mechanics working under truck" },
-  { src: dieselEngine, alt: "Diesel engine repair service" },
-  { src: shopBayOverview, alt: "Shop bay with trucks being serviced" },
   { src: blueCascadiaRepair, alt: "Technician repairing Freightliner Cascadia" },
+  { src: craneLift, alt: "Crane lifting truck for repair" },
+  { src: trailerBrakeShop, alt: "Trailer brake repair in shop" },
+  { src: towingRecovery, alt: "Towing and recovery service" },
+  { src: mechanicHubRepair, alt: "Mechanic working on hub assembly" },
+  { src: shopInterior, alt: "CT Truck Shop interior with truck" },
+  { src: truckEngineWide, alt: "Technician under truck hood" },
+  { src: nightTowing, alt: "Night towing operation" },
   { src: fleetElectricalWork, alt: "Fleet electrical repair work" },
-  { src: tireTechThumbsup, alt: "Mechanic giving thumbs up by tire" },
+  { src: truckYard, alt: "Truck yard at sunset" },
+  { src: trailerWeldingRepair, alt: "Welding repair on trailer frame" },
+  { src: towService, alt: "Tow service in action" },
   { src: transmissionRebuild, alt: "Transmission rebuild in progress" },
+  { src: mechanicsWork, alt: "Mechanics working under truck" },
+  { src: shopBayOverview, alt: "Shop bay with trucks being serviced" },
+  { src: trailerAxleRepair, alt: "Trailer axle repair" },
+  { src: tireTechThumbsup, alt: "Mechanic giving thumbs up" },
+  { src: dieselEngine, alt: "Diesel engine repair service" },
 ];
 
 // Duplicate for infinite scroll effect
