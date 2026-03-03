@@ -10,7 +10,7 @@ import { getServicePage } from "@/data/servicePages";
 import truckDiagnostics from "@/assets/truck-diagnostics.jpg";
 import mechanicsWork from "@/assets/mechanics-work.jpeg";
 import dieselEngine from "@/assets/diesel-engine-repair.png";
-import engineRepair from "@/assets/engine-repair.jpg";
+import aboutEngineRepair from "@/assets/about-engine-repair.png";
 import shopInterior from "@/assets/shop-interior.jpg";
 import truckDiagLaptop from "@/assets/truck-diagnostics-laptop.png";
 import towingRecovery from "@/assets/towing-recovery.jpg";
@@ -26,7 +26,7 @@ const imageMap: Record<string, string> = {
   "semi-truck-diagnostics-in-phoenix-az": truckDiagLaptop,
   "semi-truck-engine-repairs-in-phoenix-az": dieselEngine,
   "semi-trailer-electrical-repair-services-phoenix-az": truckDiagnostics,
-  "semi-trailer-brake-and-tire-repair-services-in-phoenix-az": engineRepair,
+  "semi-trailer-brake-and-tire-repair-services-in-phoenix-az": aboutEngineRepair,
   "semi-trailer-suspension-repair-services-phoenix-az": mechanicsWork,
   "full-body-semi-trailer-repair-in-phoenix-az": shopInterior,
 };
