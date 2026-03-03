@@ -24,7 +24,7 @@ const Contact = () => {
       />
 
       {/* Hero with futuristic styling */}
-      <section className="relative min-h-[60vh] flex items-center text-primary-foreground overflow-hidden">
+      <section className="relative min-h-[auto] flex items-center text-primary-foreground overflow-hidden">
         {/* Background Image */}
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -39,7 +39,7 @@ const Contact = () => {
         <div className="absolute top-20 right-10 w-72 h-72 bg-accent/10 rounded-full blur-3xl hidden sm:block" />
         <div className="absolute bottom-20 left-10 w-96 h-96 bg-accent/5 rounded-full blur-3xl hidden sm:block" />
         
-        <div className="container-custom relative z-10 py-20 md:py-28">
+        <div className="container-custom relative z-10 py-12 md:py-16">
           <div className="max-w-3xl text-center md:text-left">
             <span className="inline-flex items-center gap-2 bg-accent/20 border border-accent/30 rounded-full px-4 py-2 mb-6 mx-auto md:mx-0">
               <Phone className="h-4 w-4 text-accent" />

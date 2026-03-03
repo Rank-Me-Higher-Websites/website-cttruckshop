@@ -30,7 +30,7 @@ const MobileRepair = () => {
       />
 
       {/* Hero with futuristic styling */}
-      <section className="relative min-h-[70vh] flex items-center overflow-hidden">
+      <section className="relative min-h-[auto] flex items-center overflow-hidden py-12 md:py-16">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{ backgroundImage: `url(${nightTowing})` }}
