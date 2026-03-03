@@ -108,34 +108,34 @@ const ServicePageTemplate = ({ slug }: ServicePageTemplateProps) => {
         <div className="absolute top-20 right-10 w-72 h-72 bg-accent/10 rounded-full blur-3xl hidden sm:block" />
         <div className="absolute bottom-20 left-10 w-96 h-96 bg-accent/5 rounded-full blur-3xl hidden sm:block" />
 
-        <div className="container-custom relative z-10 py-12 md:py-16">
+        <div className="container-custom relative z-10 py-6 md:py-10">
           <Link
             to="/services"
-            className="inline-flex items-center gap-2 text-primary-foreground/70 hover:text-accent transition-colors mb-6"
+            className="inline-flex items-center gap-2 text-primary-foreground/70 hover:text-accent transition-colors mb-3"
           >
             <ArrowLeft className="h-4 w-4" />
             Back to Services
           </Link>
 
-          <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-6 lg:gap-10 items-center">
             {/* Left Content */}
             <div className="text-center lg:text-left">
-              <span className="inline-flex items-center gap-2 bg-accent/20 border border-accent/30 rounded-full px-4 py-2 mb-6 mx-auto lg:mx-0">
-                <Wrench className="h-4 w-4 text-accent" />
-                <span className="text-sm font-medium text-primary-foreground">CT Truck & Trailer Shop</span>
+              <span className="inline-flex items-center gap-2 bg-accent/20 border border-accent/30 rounded-full px-3 py-1.5 mb-3 mx-auto lg:mx-0">
+                <Wrench className="h-3.5 w-3.5 text-accent" />
+                <span className="text-xs font-medium text-primary-foreground">CT Truck & Trailer Shop</span>
               </span>
-              <h1 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold mb-6">
+              <h1 className="font-heading text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
                 {service.heroHeadline}
               </h1>
               <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
                 <a href="tel:6028303232" className="w-full sm:w-auto">
-                  <Button variant="hero" size="lg" className="w-full sm:w-auto">
+                  <Button variant="hero" size="default" className="w-full sm:w-auto">
                     <Phone className="h-4 w-4 mr-2" />
                     Call (602) 830-3232
                   </Button>
                 </a>
                 <button onClick={openQuote} className="w-full sm:w-auto">
-                  <Button variant="hero-outline" size="lg" className="w-full sm:w-auto">
+                  <Button variant="hero-outline" size="default" className="w-full sm:w-auto">
                     Request a Quote
                     <ArrowRight className="h-4 w-4 ml-2" />
                   </Button>
