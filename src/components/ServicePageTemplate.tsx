@@ -193,11 +193,6 @@ const ServicePageTemplate = ({ slug }: ServicePageTemplateProps) => {
                   {/* Bottom gradient overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent" />
                   
-                  {/* Service badge on image */}
-                  <div className="absolute bottom-4 left-4 flex items-center gap-2 bg-primary/80 backdrop-blur-sm border border-accent/30 rounded-full px-4 py-2">
-                    <Wrench className="h-4 w-4 text-accent" />
-                    <span className="text-sm font-medium text-primary-foreground">CT Truck & Trailer Shop</span>
-                  </div>
                 </div>
               </div>
 
