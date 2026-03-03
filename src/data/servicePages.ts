@@ -11,8 +11,6 @@ export interface ServicePageData {
     heading: string;
     content: string[];
     listItems?: string[];
-    image?: string;
-    imageAlt?: string;
   }[];
   highlights: {
     title: string;
@@ -50,17 +48,6 @@ export const servicePages: Record<string, ServicePageData> = {
           "Roadside assistance anywhere in the Phoenix area",
           "Heavy-duty service trucks equipped for fast response",
         ],
-        image: "towing-recovery",
-        imageAlt: "Emergency towing and recovery service for semi trucks in Phoenix",
-      },
-      {
-        heading: "24/7 Roadside Assistance — Day or Night",
-        content: [
-          "Breakdowns don't follow a schedule, and neither do we. Our emergency repair team is available around the clock to handle urgent roadside situations across the Phoenix metro area. From late-night engine failures on I-10 to early-morning brake issues on I-17, our certified technicians arrive equipped and ready to work.",
-          "We carry the tools, parts, and diagnostic equipment needed to resolve most issues on-site — saving you the cost and delay of a full tow to the shop.",
-        ],
-        image: "night-towing",
-        imageAlt: "Night emergency truck repair and towing service on Arizona highway",
       },
     ],
     highlights: [
