@@ -7,32 +7,30 @@ import { Button } from "@/components/ui/button";
 import { Phone, ArrowRight, ArrowLeft, Wrench, Clock, Shield, Award, Check, ChevronDown } from "lucide-react";
 import CTASection from "@/components/sections/CTASection";
 import { getServicePage } from "@/data/servicePages";
-import truckDiagnostics from "@/assets/truck-diagnostics.jpg";
-import mechanicsWork from "@/assets/mechanics-work.jpeg";
-import dieselEngine from "@/assets/diesel-engine-repair.png";
-import aboutEngineRepair from "@/assets/about-engine-repair.png";
-import shopInterior from "@/assets/shop-interior.jpg";
 import truckDiagLaptop from "@/assets/truck-diagnostics-laptop.png";
-import towingRecovery from "@/assets/towing-recovery.jpg";
-import mobileRepair from "@/assets/mobile-repair.jpg";
-import nightTowing from "@/assets/night-towing.jpg";
-import facility from "@/assets/facility.jpg";
-import craneLift from "@/assets/crane-lift.png";
-import teamWork from "@/assets/team-work.jpeg";
+import shopBayOverview from "@/assets/shop-bay-overview.jpg";
+import truckLaptopDiag from "@/assets/truck-laptop-diagnostics.jpg";
+import blueCascadiaRepair from "@/assets/blue-cascadia-repair.jpg";
+import mechanicHubRepair from "@/assets/mechanic-hub-repair.jpg";
+import transmissionRebuild from "@/assets/transmission-rebuild.jpg";
+import fleetElectricalWork from "@/assets/fleet-electrical-work.jpg";
+import trailerAxleRepair from "@/assets/trailer-axle-repair.jpg";
+import engineBrakeRepair from "@/assets/engine-brake-repair.jpg";
+import truckEngineWide from "@/assets/truck-engine-wide.jpg";
 
 import { useState } from "react";
 
 const imageMap: Record<string, string> = {
-  "emergency-truck-repair-phoenix": towingRecovery,
-  "truck-breakdown-service-phoenix": mobileRepair,
-  "semi-truck-ac-repair-services": mechanicsWork,
-  "semi-truck-tire-and-brake-repair-services-phoenix-az": facility,
+  "emergency-truck-repair-phoenix": shopBayOverview,
+  "truck-breakdown-service-phoenix": truckLaptopDiag,
+  "semi-truck-ac-repair-services": blueCascadiaRepair,
+  "semi-truck-tire-and-brake-repair-services-phoenix-az": mechanicHubRepair,
   "semi-truck-diagnostics-in-phoenix-az": truckDiagLaptop,
-  "semi-truck-engine-repairs-in-phoenix-az": dieselEngine,
-  "semi-trailer-electrical-repair-services-phoenix-az": craneLift,
-  "semi-trailer-brake-and-tire-repair-services-in-phoenix-az": teamWork,
-  "semi-trailer-suspension-repair-services-phoenix-az": nightTowing,
-  "full-body-semi-trailer-repair-in-phoenix-az": shopInterior,
+  "semi-truck-engine-repairs-in-phoenix-az": transmissionRebuild,
+  "semi-trailer-electrical-repair-services-phoenix-az": fleetElectricalWork,
+  "semi-trailer-brake-and-tire-repair-services-in-phoenix-az": trailerAxleRepair,
+  "semi-trailer-suspension-repair-services-phoenix-az": engineBrakeRepair,
+  "full-body-semi-trailer-repair-in-phoenix-az": truckEngineWide,
 };
 
 const FAQItem = ({ question, answer }: { question: string; answer: string }) => {

@@ -10,7 +10,7 @@ import aboutTowTruck from "@/assets/about-tow-truck.jpg";
 import aboutEngineRepair from "@/assets/about-engine-repair.png";
 import aboutRepairShop from "@/assets/about-repair-shop.jpg";
 import aboutTeam from "@/assets/about-team.png";
-import shopInterior from "@/assets/shop-interior.jpg";
+import tireTechThumbsup from "@/assets/tire-tech-thumbsup.jpg";
 
 const aboutCards = [
   {
@@ -88,7 +88,7 @@ const About = () => {
 
       {/* Hero */}
       <section className="relative min-h-[60vh] flex items-center text-primary-foreground overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${shopInterior})` }} />
+        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${tireTechThumbsup})` }} />
         <div className="absolute inset-0 hero-overlay" />
         <div className="absolute top-20 right-10 w-72 h-72 bg-accent/10 rounded-full blur-3xl" />
         <div className="absolute bottom-20 left-10 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
