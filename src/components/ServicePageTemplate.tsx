@@ -17,6 +17,8 @@ import fleetElectricalWork from "@/assets/fleet-electrical-work.jpg";
 import trailerAxleRepair from "@/assets/trailer-axle-repair.jpg";
 import engineBrakeRepair from "@/assets/engine-brake-repair.jpg";
 import truckEngineWide from "@/assets/truck-engine-wide.jpg";
+import towingRecovery from "@/assets/towing-recovery.jpg";
+import nightTowing from "@/assets/night-towing.jpg";
 
 import { useState } from "react";
 
@@ -31,6 +33,11 @@ const imageMap: Record<string, string> = {
   "semi-trailer-brake-and-tire-repair-services-in-phoenix-az": trailerAxleRepair,
   "semi-trailer-suspension-repair-services-phoenix-az": engineBrakeRepair,
   "full-body-semi-trailer-repair-in-phoenix-az": truckEngineWide,
+};
+
+const sectionImageMap: Record<string, string> = {
+  "towing-recovery": towingRecovery,
+  "night-towing": nightTowing,
 };
 
 const FAQItem = ({ question, answer }: { question: string; answer: string }) => {
@@ -198,6 +205,18 @@ const ServicePageTemplate = ({ slug }: ServicePageTemplateProps) => {
                         </li>
                       ))}
                     </ul>
+                  )}
+                  {section.image && sectionImageMap[section.image] && (
+                    <div className="relative mt-6">
+                      <div className="absolute -inset-1 bg-gradient-to-r from-accent/50 via-accent/20 to-accent/50 rounded-2xl blur-sm" />
+                      <div className="relative rounded-2xl overflow-hidden border border-accent/30">
+                        <img
+                          src={sectionImageMap[section.image]}
+                          alt={section.imageAlt || service.title}
+                          className="w-full h-auto object-cover"
+                        />
+                      </div>
+                    </div>
                   )}
                 </div>
               ))}
