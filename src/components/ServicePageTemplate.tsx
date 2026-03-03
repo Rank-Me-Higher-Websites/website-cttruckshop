@@ -17,6 +17,8 @@ import towingRecovery from "@/assets/towing-recovery.jpg";
 import mobileRepair from "@/assets/mobile-repair.jpg";
 import nightTowing from "@/assets/night-towing.jpg";
 import facility from "@/assets/facility.jpg";
+import craneLift from "@/assets/crane-lift.png";
+import teamWork from "@/assets/team-work.jpeg";
 
 import { useState } from "react";
 
@@ -27,8 +29,8 @@ const imageMap: Record<string, string> = {
   "semi-truck-tire-and-brake-repair-services-phoenix-az": facility,
   "semi-truck-diagnostics-in-phoenix-az": truckDiagLaptop,
   "semi-truck-engine-repairs-in-phoenix-az": dieselEngine,
-  "semi-trailer-electrical-repair-services-phoenix-az": truckDiagnostics,
-  "semi-trailer-brake-and-tire-repair-services-in-phoenix-az": aboutEngineRepair,
+  "semi-trailer-electrical-repair-services-phoenix-az": craneLift,
+  "semi-trailer-brake-and-tire-repair-services-in-phoenix-az": teamWork,
   "semi-trailer-suspension-repair-services-phoenix-az": nightTowing,
   "full-body-semi-trailer-repair-in-phoenix-az": shopInterior,
 };
