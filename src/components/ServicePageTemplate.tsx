@@ -62,7 +62,7 @@ const ServicePageTemplate = ({ slug }: ServicePageTemplateProps) => {
   const { open: openQuote } = useQuoteModal();
   if (!service) return null;
 
-  const heroImage = imageMap[service.slug] || truckDiagnostics;
+  const heroImage = imageMap[service.slug] || shopBayOverview;
 
   return (
     <Layout>
