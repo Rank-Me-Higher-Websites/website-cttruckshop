@@ -171,13 +171,13 @@ const ServicePageTemplate = ({ slug }: ServicePageTemplateProps) => {
               )}
 
               {/* Image */}
-              <div className="relative">
+              <div className="relative max-h-80 overflow-hidden">
                 <div className="absolute -inset-1 bg-gradient-to-r from-accent/50 via-accent/20 to-accent/50 rounded-2xl blur-sm" />
                 <div className="relative rounded-2xl overflow-hidden border border-accent/30">
                   <img
                     src={contentImage}
                     alt={service.title}
-                    className="w-full h-auto object-cover"
+                    className="w-full h-80 object-cover"
                   />
                 </div>
                 <div className="absolute -top-2 -left-2 w-8 h-8 border-l-2 border-t-2 border-accent rounded-tl-lg hidden sm:block" />
