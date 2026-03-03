@@ -98,7 +98,7 @@ const ServicePageTemplate = ({ slug }: ServicePageTemplateProps) => {
       />
 
       {/* Hero Section */}
-      <section className="relative min-h-[auto] lg:min-h-[55vh] flex items-center text-primary-foreground overflow-hidden">
+      <section className="relative min-h-[auto] lg:min-h-[auto] flex items-center text-primary-foreground overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url(${heroImage})` }}
@@ -108,7 +108,7 @@ const ServicePageTemplate = ({ slug }: ServicePageTemplateProps) => {
         <div className="absolute top-20 right-10 w-72 h-72 bg-accent/10 rounded-full blur-3xl hidden sm:block" />
         <div className="absolute bottom-20 left-10 w-96 h-96 bg-accent/5 rounded-full blur-3xl hidden sm:block" />
 
-        <div className="container-custom relative z-10 py-20 md:py-28">
+        <div className="container-custom relative z-10 py-12 md:py-16">
           <Link
             to="/services"
             className="inline-flex items-center gap-2 text-primary-foreground/70 hover:text-accent transition-colors mb-6"

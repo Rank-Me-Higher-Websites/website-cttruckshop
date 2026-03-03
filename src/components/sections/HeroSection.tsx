@@ -6,7 +6,7 @@ import LeadForm from "@/components/LeadForm";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-[auto] lg:min-h-[90vh] flex items-center overflow-hidden py-6 lg:py-16">
+    <section className="relative min-h-[auto] lg:min-h-[75vh] flex items-center overflow-hidden py-6 lg:py-12">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"

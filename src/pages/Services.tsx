@@ -33,7 +33,7 @@ const Services = () => {
       />
 
       {/* Hero with futuristic styling */}
-      <section className="relative min-h-[60vh] flex items-center text-primary-foreground overflow-hidden">
+      <section className="relative min-h-[auto] flex items-center text-primary-foreground overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url(${shopBayOverview})` }}
