@@ -36,19 +36,9 @@ const MobileRepair = () => {
           style={{ backgroundImage: `url(${nightTowing})` }}
         />
         <div className="absolute inset-0 hero-overlay" />
-        
-        {/* Grid pattern overlay */}
-        <div 
-          className="absolute inset-0 opacity-5"
-          style={{
-            backgroundImage: `linear-gradient(hsl(var(--accent)) 1px, transparent 1px), linear-gradient(90deg, hsl(var(--accent)) 1px, transparent 1px)`,
-            backgroundSize: '50px 50px'
-          }}
-        />
-        
-        {/* Glow effects */}
-        <div className="absolute top-20 right-10 w-72 h-72 bg-accent/10 rounded-full blur-3xl" />
-        <div className="absolute bottom-20 left-10 w-96 h-96 bg-accent/5 rounded-full blur-3xl" />
+        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute top-20 right-10 w-72 h-72 bg-accent/10 rounded-full blur-3xl hidden sm:block" />
+        <div className="absolute bottom-20 left-10 w-96 h-96 bg-accent/5 rounded-full blur-3xl hidden sm:block" />
         
         <div className="container-custom relative z-10">
           <div className="max-w-3xl text-center md:text-left">
