@@ -9,20 +9,26 @@ import CTASection from "@/components/sections/CTASection";
 import { getServicePage } from "@/data/servicePages";
 import truckDiagnostics from "@/assets/truck-diagnostics.jpg";
 import mechanicsWork from "@/assets/mechanics-work.jpeg";
+import dieselEngine from "@/assets/diesel-engine-repair.png";
+import engineRepair from "@/assets/engine-repair.jpg";
+import shopInterior from "@/assets/shop-interior.jpg";
+import truckDiagLaptop from "@/assets/truck-diagnostics-laptop.png";
+import towingRecovery from "@/assets/towing-recovery.jpg";
+import mobileRepair from "@/assets/mobile-repair.jpg";
 
 import { useState } from "react";
 
 const imageMap: Record<string, string> = {
-  "emergency-truck-repair-phoenix": mechanicsWork,
-  "truck-breakdown-service-phoenix": truckDiagnostics,
-  "semi-truck-ac-repair-services": truckDiagnostics,
-  "semi-truck-tire-and-brake-repair-services-phoenix-az": mechanicsWork,
-  "semi-truck-diagnostics-in-phoenix-az": truckDiagnostics,
-  "semi-truck-engine-repairs-in-phoenix-az": mechanicsWork,
+  "emergency-truck-repair-phoenix": towingRecovery,
+  "truck-breakdown-service-phoenix": mobileRepair,
+  "semi-truck-ac-repair-services": mechanicsWork,
+  "semi-truck-tire-and-brake-repair-services-phoenix-az": shopInterior,
+  "semi-truck-diagnostics-in-phoenix-az": truckDiagLaptop,
+  "semi-truck-engine-repairs-in-phoenix-az": engineRepair,
   "semi-trailer-electrical-repair-services-phoenix-az": truckDiagnostics,
-  "semi-trailer-brake-and-tire-repair-services-in-phoenix-az": mechanicsWork,
-  "semi-trailer-suspension-repair-services-phoenix-az": truckDiagnostics,
-  "full-body-semi-trailer-repair-in-phoenix-az": mechanicsWork,
+  "semi-trailer-brake-and-tire-repair-services-in-phoenix-az": dieselEngine,
+  "semi-trailer-suspension-repair-services-phoenix-az": mechanicsWork,
+  "full-body-semi-trailer-repair-in-phoenix-az": shopInterior,
 };
 
 const FAQItem = ({ question, answer }: { question: string; answer: string }) => {
