@@ -69,6 +69,7 @@ const ServicePageTemplate = ({ slug }: ServicePageTemplateProps) => {
   if (!service) return null;
 
   const heroImage = imageMap[service.slug] || shopBayOverview;
+  const contentImage = contentImageMap[service.slug] || heroImage;
 
   return (
     <Layout>
