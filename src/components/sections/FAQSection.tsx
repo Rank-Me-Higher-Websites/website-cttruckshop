@@ -62,12 +62,19 @@ const FAQSection = () => {
                 Got questions about our truck and trailer repair services? 
                 Find answers to common questions below, or contact us directly for personalized assistance.
               </p>
-              <a href="tel:6028303232" className="inline-block">
+              <a href="tel:6028303232" className="inline-block mb-8">
                 <Button variant="accent" size="lg">
                   <Phone className="h-5 w-5 mr-2" />
                   Call (602) 830-3232
                 </Button>
               </a>
+              <div className="rounded-2xl overflow-hidden border border-border shadow-lg">
+                <img
+                  src={ctShopTeam}
+                  alt="CT Truck & Trailer Shop team"
+                  className="w-full h-auto object-cover"
+                />
+              </div>
             </ScrollReveal>
           </div>
 
