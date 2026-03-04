@@ -206,7 +206,7 @@ const ServicePageTemplate = ({ slug }: ServicePageTemplateProps) => {
                     <img
                       src={contentImage}
                       alt={service.title}
-                      className="w-full h-80 md:h-96 object-cover group-hover:scale-[1.02] transition-transform duration-700"
+                      className="w-full h-64 md:h-80 object-cover object-[center_55%] group-hover:scale-[1.02] transition-transform duration-700"
                     />
                   
                   {/* Bottom gradient overlay */}
