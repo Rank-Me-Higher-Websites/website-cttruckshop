@@ -32,13 +32,13 @@ const CTASection = () => {
             
             <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
               <a href="tel:6028303232">
-                <Button variant="hero" size="lg" className="w-full sm:w-auto">
+                <Button variant="hero" size="lg">
                   <Phone className="h-4 w-4 mr-2" />
                   Call (602) 830-3232
                 </Button>
               </a>
               <button onClick={open}>
-                <Button variant="hero-outline" size="lg" className="w-full sm:w-auto">
+                <Button variant="hero-outline" size="lg">
                   Request a Quote
                   <ArrowRight className="h-4 w-4 ml-2" />
                 </Button>
