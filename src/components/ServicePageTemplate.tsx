@@ -190,13 +190,11 @@ const ServicePageTemplate = ({ slug }: ServicePageTemplateProps) => {
                 
                 {/* Image container */}
                 <div className="relative rounded-2xl overflow-hidden border border-accent/30">
-                  <div className="w-1/2 overflow-hidden">
                     <img
                       src={contentImage}
                       alt={service.title}
-                      className="w-full h-auto object-contain group-hover:scale-[1.02] transition-transform duration-700"
+                      className="w-full h-80 md:h-96 object-cover group-hover:scale-[1.02] transition-transform duration-700"
                     />
-                  </div>
                   
                   {/* Bottom gradient overlay */}
                   <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent" />
