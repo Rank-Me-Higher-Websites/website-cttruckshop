@@ -49,7 +49,7 @@ const imageMap: Record<string, string> = {
 
 const contentImageMap: Record<string, string> = {
   "emergency-truck-repair-phoenix": nightTowing,
-  "truck-breakdown-service-phoenix": mechanicHubRepair,
+  "truck-breakdown-service-phoenix": towingRecovery,
   "semi-truck-ac-repair-services": mechanicsWork,
   "semi-truck-tire-and-brake-repair-services-phoenix-az": facility,
   "semi-truck-diagnostics-in-phoenix-az": dieselEngine,
