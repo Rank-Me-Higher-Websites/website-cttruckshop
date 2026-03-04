@@ -50,10 +50,24 @@ const Contact = () => {
             <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
               Contact <span className="text-gradient">Us</span>
             </h1>
-            <p className="text-xl text-primary-foreground/80">
+            <p className="text-xl text-primary-foreground/80 mb-8">
               Have a question or need service? Reach out by phone, email, or the form below. 
               For emergencies, call us directly for fastest response.
             </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+              <a href="tel:6028303232" className="w-full sm:w-auto">
+                <Button variant="hero" size="lg" className="w-full sm:w-auto">
+                  <Phone className="h-5 w-5 mr-2" />
+                  Call (602) 830-3232
+                </Button>
+              </a>
+              <a href="mailto:service@clevertranscoshop.com" className="w-full sm:w-auto">
+                <Button variant="hero-outline" size="lg" className="w-full sm:w-auto">
+                  <Mail className="h-5 w-5 mr-2" />
+                  Email Us
+                </Button>
+              </a>
+            </div>
           </div>
         </div>
       </section>
