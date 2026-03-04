@@ -25,6 +25,7 @@ import shopInterior from "@/assets/shop-interior.jpg";
 import mobileRepair from "@/assets/mobile-repair.jpg";
 import facility from "@/assets/facility.jpg";
 import craneLift from "@/assets/crane-lift.png";
+import aboutTowTruck from "@/assets/about-tow-truck.jpg";
 import teamWork from "@/assets/team-work.jpeg";
 import tireTechThumbsup from "@/assets/tire-tech-thumbsup.jpg";
 import trailerWeldingRepair from "@/assets/trailer-welding-repair.jpg";
