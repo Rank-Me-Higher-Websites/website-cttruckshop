@@ -1,337 +1,411 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Core Pages -->
   <url>
     <loc>https://cttruckshop.com</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://cttruckshop.com/services</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://cttruckshop.com/about</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cttruckshop.com/contact</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cttruckshop.com/locations</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cttruckshop.com/locations/phoenix</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://cttruckshop.com/mobile-repair</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cttruckshop.com/blog</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
+
+  <!-- Service Pages -->
   <url>
     <loc>https://cttruckshop.com/emergency-truck-repair-phoenix</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cttruckshop.com/truck-breakdown-service-phoenix</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://cttruckshop.com/semi-truck-ac-repair-services</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cttruckshop.com/semi-truck-tire-and-brake-repair-services-phoenix-az</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cttruckshop.com/semi-truck-diagnostics-in-phoenix-az</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cttruckshop.com/semi-truck-engine-repairs-in-phoenix-az</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cttruckshop.com/semi-trailer-electrical-repair-services-phoenix-az</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cttruckshop.com/semi-trailer-brake-and-tire-repair-services-in-phoenix-az</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cttruckshop.com/semi-trailer-suspension-repair-services-phoenix-az</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
     <loc>https://cttruckshop.com/full-body-semi-trailer-repair-in-phoenix-az</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+
+  <!-- Legal Pages -->
   <url>
     <loc>https://cttruckshop.com/privacy</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
   <url>
     <loc>https://cttruckshop.com/terms</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
+
+  <!-- Blog Posts -->
   <url>
     <loc>https://cttruckshop.com/blog/truck-and-trailer-repair-partner</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cttruckshop.com/blog/emergency-repair-services</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cttruckshop.com/blog/preventative-brake-maintenance</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cttruckshop.com/blog/semi-towing-sevice-tips</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cttruckshop.com/blog/semi-trailer-mechanic-services</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cttruckshop.com/blog/semi-ac-repair-and-cost</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cttruckshop.com/blog/semi-trailer-tires-types</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cttruckshop.com/blog/common-semi-truck-problems</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cttruckshop.com/blog/semi-truck-fuel-efficiency</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cttruckshop.com/blog/semi-trailer-maintenance-tips</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cttruckshop.com/blog/24h-towing-services-benefits</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cttruckshop.com/blog/heavy-duty-towing-phoenix</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cttruckshop.com/blog/semi-trailer-electrical-repair</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cttruckshop.com/blog/semi-towing-frequently-asked-questions</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cttruckshop.com/blog/rollover-recovery-understanding</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cttruckshop.com/blog/semi-trailer-suspension-fix-tips</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cttruckshop.com/blog/semi-truck-towing-arizona</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cttruckshop.com/blog/tow-truck-near-me-arizona</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cttruckshop.com/blog/heavy-duty-truck-diagnostic-tips</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cttruckshop.com/blog/semi-truck-transmission-repair-guide</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cttruckshop.com/blog/open-deck-trailers-towing</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cttruckshop.com/blog/semi-trailer-suspension-repair-arizona</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cttruckshop.com/blog/tips-for-heavy-duty-drivers</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cttruckshop.com/blog/diesel-engine-mechanics</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cttruckshop.com/blog/clever-trans-towing-partnership</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cttruckshop.com/blog/semi-truck-full-diagnostics-tips</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cttruckshop.com/blog/semi-truck-prices-2023-guide</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cttruckshop.com/blog/trailer-repair-and-maintenance</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cttruckshop.com/blog/heavy-duty-and-medium-duty-towing-services</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cttruckshop.com/blog/synchronized-symphony-semi-towing</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cttruckshop.com/blog/overnight-heavy-duty-towing-challenges</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cttruckshop.com/blog/day-in-the-life-of-a-tow-truck-driver</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cttruckshop.com/blog/regular-pm-service-arizona</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cttruckshop.com/blog/trailer-air-system-issues</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cttruckshop.com/blog/trailer-lights-repairs</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cttruckshop.com/blog/reliable-semi-truck-service-in-phoenix-arizona</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cttruckshop.com/blog/local-truck-repair-partner-phoenix</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cttruckshop.com/blog/emergency-truck-repair-phoenix-arizona</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cttruckshop.com/blog/truck-diagnostics-guide-for-owner-operators</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cttruckshop.com/blog/emergency-truck-repair-solutions</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cttruckshop.com/blog/reliable-semi-truck-service-for-your-fleet</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cttruckshop.com/blog/reliable-trailer-repair-service-for-truck-drivers</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cttruckshop.com/blog/emergency-truck-repair</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cttruckshop.com/blog/fast-truck-repair-near-me</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cttruckshop.com/blog/mobile-truck-repair-keeping-your-rig-rolling-when-the-shop-comes-to-you</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cttruckshop.com/blog/truck-mechanic-near-me-phoeniz-az</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://cttruckshop.com/blog/truck-and-trailer-repair-near-me-shop-tips</loc>
+    <lastmod>2026-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
