@@ -7,6 +7,7 @@ import {
 import { Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ScrollReveal } from "@/hooks/useScrollAnimation";
+import ctShopTeam from "@/assets/ct-shop-team.jpg";
 
 const faqs = [
   {
