@@ -190,7 +190,7 @@ const ServicePageTemplate = ({ slug }: ServicePageTemplateProps) => {
                 
                 {/* Image container */}
                 <div className="relative rounded-2xl overflow-hidden border border-accent/30">
-                  <div className="aspect-square w-full overflow-hidden">
+                  <div className="aspect-square w-1/2 overflow-hidden">
                     <img
                       src={contentImage}
                       alt={service.title}
