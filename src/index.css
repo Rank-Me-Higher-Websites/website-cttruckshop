@@ -482,8 +482,11 @@
 }
 
 .blog-content img {
-  max-width: 100%;
+  width: 100%;
+  max-width: 1024px;
   height: auto;
+  aspect-ratio: 1024 / 683;
+  object-fit: cover;
   border-radius: 0.75rem;
   margin: 1.5rem 0;
 }
