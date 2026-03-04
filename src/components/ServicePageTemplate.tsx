@@ -124,7 +124,7 @@ const ServicePageTemplate = ({ slug }: ServicePageTemplateProps) => {
         <div className="absolute top-20 right-10 w-72 h-72 bg-accent/10 rounded-full blur-3xl hidden sm:block" />
         <div className="absolute bottom-20 left-10 w-96 h-96 bg-accent/5 rounded-full blur-3xl hidden sm:block" />
 
-        <div className="container-custom relative z-10 py-6 md:py-10">
+        <div className="container-custom relative z-10 py-10 md:py-10">
           <Link
             to="/services"
             className="inline-flex items-center gap-2 text-primary-foreground/70 hover:text-accent transition-colors mb-3"
@@ -149,14 +149,14 @@ const ServicePageTemplate = ({ slug }: ServicePageTemplateProps) => {
                 </p>
               )}
               <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
-                <a href="tel:6028303232" className="w-full sm:w-auto">
-                  <Button variant="hero" size="default" className="w-full sm:w-auto">
+                <a href="tel:6028303232">
+                  <Button variant="hero" size="default">
                     <Phone className="h-4 w-4 mr-2" />
                     Call (602) 830-3232
                   </Button>
                 </a>
-                <button onClick={openQuote} className="w-full sm:w-auto">
-                  <Button variant="hero-outline" size="default" className="w-full sm:w-auto">
+                <button onClick={openQuote}>
+                  <Button variant="hero-outline" size="default">
                     Request a Quote
                     <ArrowRight className="h-4 w-4 ml-2" />
                   </Button>

@@ -32,7 +32,7 @@ const Contact = () => {
       />
 
       {/* Hero with futuristic styling */}
-      <section className="relative min-h-[auto] flex items-center text-primary-foreground overflow-hidden py-16 md:py-24">
+      <section className="relative min-h-[auto] flex items-center text-primary-foreground overflow-hidden py-20 md:py-24">
         {/* Background Image */}
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -63,14 +63,14 @@ const Contact = () => {
               For emergencies, call us directly for fastest response.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-              <a href="tel:6028303232" className="w-full sm:w-auto">
-                <Button variant="hero" size="lg" className="w-full sm:w-auto">
+              <a href="tel:6028303232">
+                <Button variant="hero" size="lg">
                   <Phone className="h-5 w-5 mr-2" />
                   Call (602) 830-3232
                 </Button>
               </a>
-              <a href="mailto:service@clevertranscoshop.com" className="w-full sm:w-auto">
-                <Button variant="hero-outline" size="lg" className="w-full sm:w-auto">
+              <a href="mailto:service@clevertranscoshop.com">
+                <Button variant="hero-outline" size="lg">
                   <Mail className="h-5 w-5 mr-2" />
                   Email Us
                 </Button>

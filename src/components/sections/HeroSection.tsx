@@ -6,7 +6,7 @@ import LeadForm from "@/components/LeadForm";
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-[auto] lg:min-h-[75vh] flex items-center overflow-hidden py-6 lg:py-12">
+    <section className="relative min-h-[auto] lg:min-h-[75vh] flex items-center overflow-hidden py-12 lg:py-12">
       {/* Background Image */}
       <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -50,14 +50,14 @@ const HeroSection = () => {
             
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 animate-fade-in-up delay-300 justify-center lg:justify-start">
-              <a href="tel:6028303232" className="w-full sm:w-auto">
-                <Button variant="hero" size="lg" className="w-full sm:w-auto">
+              <a href="tel:6028303232">
+                <Button variant="hero" size="lg">
                   <Phone className="h-5 w-5 mr-2" />
                   Call (602) 830-3232
                 </Button>
               </a>
-              <Link to="/services" className="w-full sm:w-auto">
-                <Button variant="hero-outline" size="lg" className="w-full sm:w-auto">
+              <Link to="/services">
+                <Button variant="hero-outline" size="lg">
                   View Our Services
                   <ArrowRight className="h-5 w-5 ml-2" />
                 </Button>
