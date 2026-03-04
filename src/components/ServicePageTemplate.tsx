@@ -208,7 +208,7 @@ const ServicePageTemplate = ({ slug }: ServicePageTemplateProps) => {
                     <img
                       src={contentImage}
                       alt={service.title}
-                      className={`w-full h-80 md:h-[22rem] object-cover group-hover:scale-[1.02] transition-transform duration-700 ${slug === "full-body-semi-trailer-repair-in-phoenix-az" ? "object-[center_25%]" : "object-center"}`}
+                      className={`w-full h-[21rem] md:h-[23rem] object-cover group-hover:scale-[1.02] transition-transform duration-700 ${slug === "full-body-semi-trailer-repair-in-phoenix-az" ? "object-[center_25%]" : "object-center"}`}
                     />
                   
                   {/* Bottom gradient overlay */}
