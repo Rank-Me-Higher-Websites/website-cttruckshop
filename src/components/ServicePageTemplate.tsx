@@ -31,6 +31,7 @@ import teamWork from "@/assets/team-work.jpeg";
 import tireTechThumbsup from "@/assets/tire-tech-thumbsup.jpg";
 import trailerWeldingRepair from "@/assets/trailer-welding-repair.jpg";
 import trailerBrakeShop from "@/assets/trailer-brake-shop.jpg";
+import kenworthShopFront from "@/assets/kenworth-shop-front.jpg";
 
 import { useState } from "react";
 
@@ -50,7 +51,7 @@ const imageMap: Record<string, string> = {
 const contentImageMap: Record<string, string> = {
   "emergency-truck-repair-phoenix": nightTowing,
   "truck-breakdown-service-phoenix": towingRecovery,
-  "semi-truck-ac-repair-services": mechanicsWork,
+  "semi-truck-ac-repair-services": kenworthShopFront,
   "semi-truck-tire-and-brake-repair-services-phoenix-az": facility,
   "semi-truck-diagnostics-in-phoenix-az": dieselEngine,
   "semi-truck-engine-repairs-in-phoenix-az": shopInterior,
