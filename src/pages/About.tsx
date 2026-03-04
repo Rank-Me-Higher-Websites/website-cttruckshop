@@ -216,7 +216,7 @@ const About = () => {
               <div className="relative">
                 <div className="absolute -inset-1 bg-gradient-to-r from-accent/50 via-accent/20 to-accent/50 rounded-2xl blur-sm" />
                 <div className="relative rounded-2xl overflow-hidden border border-accent/30">
-                  <img src={ctShopTeam} alt="CT Truck & Trailer Shop team" className="w-full h-auto" />
+                  <img src={ctShopTeam} alt="CT Truck & Trailer Shop team" className="w-full h-72 md:h-80 object-cover object-bottom" />
                 </div>
               </div>
             </div>
