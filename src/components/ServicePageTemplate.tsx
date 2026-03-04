@@ -124,7 +124,7 @@ const ServicePageTemplate = ({ slug }: ServicePageTemplateProps) => {
         <div className="absolute top-20 right-10 w-72 h-72 bg-accent/10 rounded-full blur-3xl hidden sm:block" />
         <div className="absolute bottom-20 left-10 w-96 h-96 bg-accent/5 rounded-full blur-3xl hidden sm:block" />
 
-        <div className="container-custom relative z-10 py-10 md:py-10">
+        <div className="container-custom relative z-10 py-14 md:py-10">
           <Link
             to="/services"
             className="inline-flex items-center gap-2 text-primary-foreground/70 hover:text-accent transition-colors mb-3"
@@ -144,7 +144,7 @@ const ServicePageTemplate = ({ slug }: ServicePageTemplateProps) => {
                 {service.heroHeadline}
               </h1>
               {service.heroSubheadline && (
-                <p className="text-xs md:text-sm text-primary-foreground/70 mb-4 max-w-lg mx-auto lg:mx-0">
+                <p className="text-sm md:text-sm text-primary-foreground/70 mb-4 max-w-lg mx-auto lg:mx-0">
                   {service.heroSubheadline}
                 </p>
               )}
