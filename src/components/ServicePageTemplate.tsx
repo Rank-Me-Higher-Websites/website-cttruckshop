@@ -54,7 +54,7 @@ const contentImageMap: Record<string, string> = {
   "semi-truck-diagnostics-in-phoenix-az": dieselEngine,
   "semi-truck-engine-repairs-in-phoenix-az": shopInterior,
   "semi-trailer-electrical-repair-services-phoenix-az": trailerBrakeShop,
-  "semi-trailer-brake-and-tire-repair-services-in-phoenix-az": teamWork,
+  "semi-trailer-brake-and-tire-repair-services-in-phoenix-az": craneLift,
   "semi-trailer-suspension-repair-services-phoenix-az": mobileRepair,
   "full-body-semi-trailer-repair-in-phoenix-az": tireTechThumbsup,
 };
