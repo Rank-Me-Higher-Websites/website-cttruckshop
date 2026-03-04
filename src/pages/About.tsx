@@ -6,6 +6,7 @@ import { Phone, Users, Award, Truck, MapPin, BadgeDollarSign, MessageSquare } fr
 import { useQuoteModal } from "@/contexts/QuoteModalContext";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import CTASection from "@/components/sections/CTASection";
+import { createBreadcrumbSchema, createOrganizationSchema, createFAQSchema, BASE_URL } from "@/lib/schema";
 import aboutTowTruck from "@/assets/about-tow-truck.jpg";
 import aboutEngineRepair from "@/assets/about-engine-repair.png";
 import aboutRepairShop from "@/assets/about-repair-shop.jpg";
@@ -85,6 +86,14 @@ const About = () => {
         title="About Us | Truck Repair Shop Phoenix"
         description="Expert fleet maintenance and repair for heavy-duty & semi-trucks in Phoenix, AZ. 24/7 emergency roadside service. ASE-certified mechanics. Learn about CT Truck and Trailer Shop."
         keywords="about CT Truck Shop, Phoenix truck repair company, commercial fleet service, truck repair shop phoenix"
+        structuredData={[
+          createBreadcrumbSchema([
+            { name: "Home", url: BASE_URL },
+            { name: "About", url: `${BASE_URL}/about` },
+          ]),
+          createOrganizationSchema(),
+          createFAQSchema(faqs),
+        ]}
       />
 
       {/* Hero */}

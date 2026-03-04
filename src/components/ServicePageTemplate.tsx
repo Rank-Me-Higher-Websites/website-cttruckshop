@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { Phone, ArrowRight, ArrowLeft, Wrench, Clock, Shield, Award, Check, ChevronDown } from "lucide-react";
 import CTASection from "@/components/sections/CTASection";
 import { getServicePage } from "@/data/servicePages";
+import { createBreadcrumbSchema, createServiceSchema, createFAQSchema, createLocalBusinessSchema, BASE_URL } from "@/lib/schema";
 import truckDiagLaptop from "@/assets/truck-diagnostics-laptop.png";
 import shopBayOverview from "@/assets/shop-bay-overview.jpg";
 import truckLaptopDiag from "@/assets/truck-laptop-diagnostics.jpg";
@@ -96,6 +97,16 @@ const ServicePageTemplate = ({ slug }: ServicePageTemplateProps) => {
       <SEO
         title={service.metaTitle}
         description={service.metaDescription}
+        structuredData={[
+          createBreadcrumbSchema([
+            { name: "Home", url: BASE_URL },
+            { name: "Services", url: `${BASE_URL}/services` },
+            { name: service.title, url: `${BASE_URL}/${service.slug}` },
+          ]),
+          createServiceSchema(service.title, service.metaDescription, `${BASE_URL}/${service.slug}`),
+          createLocalBusinessSchema(),
+          ...(service.faqs.length > 0 ? [createFAQSchema(service.faqs)] : []),
+        ]}
       />
 
       {/* Hero Section */}

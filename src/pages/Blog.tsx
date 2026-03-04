@@ -5,6 +5,7 @@ import SEO from "@/components/SEO";
 import { ArrowRight, Calendar, Tag, ChevronLeft, ChevronRight } from "lucide-react";
 import { blogPosts } from "@/data/blogPosts";
 import towingRecovery from "@/assets/towing-recovery.jpg";
+import { createBreadcrumbSchema, createCollectionPageSchema, BASE_URL } from "@/lib/schema";
 
 const POSTS_PER_PAGE = 6;
 
@@ -36,6 +37,17 @@ const Blog = () => {
         title="News & Blog"
         description="Read the latest news, tips, and insights from CT Truck & Trailer Shop. Expert advice on truck maintenance, emergency repairs, and fleet management in Phoenix, AZ."
         keywords="truck repair blog, semi truck maintenance tips, fleet management, Phoenix trucking news"
+        structuredData={[
+          createBreadcrumbSchema([
+            { name: "Home", url: BASE_URL },
+            { name: "Blog", url: `${BASE_URL}/blog` },
+          ]),
+          createCollectionPageSchema(
+            "CT Truck & Trailer Shop Blog",
+            "Expert tips, industry insights, and the latest news from CT Truck & Trailer Shop.",
+            `${BASE_URL}/blog`
+          ),
+        ]}
       />
 
       {/* Hero */}

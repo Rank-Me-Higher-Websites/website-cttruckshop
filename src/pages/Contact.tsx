@@ -5,6 +5,7 @@ import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import GoogleMap from "@/components/GoogleMap";
 import LeadForm from "@/components/LeadForm";
 import facility from "@/assets/facility.jpg";
+import { createBreadcrumbSchema, createLocalBusinessSchema, BASE_URL } from "@/lib/schema";
 
 const serviceOptions = [
   "Truck Repair",
@@ -21,6 +22,13 @@ const Contact = () => {
         title="Contact Us"
         description="Contact CT Truck & Trailer Shop in Phoenix, AZ. Call (602) 830-3232 for truck and trailer repair, emergency roadside assistance, or to request a quote."
         keywords="contact truck repair, Phoenix truck shop phone, commercial fleet service contact"
+        structuredData={[
+          createBreadcrumbSchema([
+            { name: "Home", url: BASE_URL },
+            { name: "Contact", url: `${BASE_URL}/contact` },
+          ]),
+          createLocalBusinessSchema(),
+        ]}
       />
 
       {/* Hero with futuristic styling */}

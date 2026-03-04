@@ -6,6 +6,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Phone, MapPin, Clock, ArrowLeft, Check, Wrench, Shield, Zap } from "lucide-react";
 import CTASection from "@/components/sections/CTASection";
 import FAQSection from "@/components/sections/FAQSection";
+import { createBreadcrumbSchema, createLocalBusinessSchema, BASE_URL } from "@/lib/schema";
 
 const locationsData: Record<string, {
   name: string;
@@ -122,6 +123,14 @@ const LocationPage = () => {
         title={`${location.name} - Truck Repair`}
         description={location.metaDescription}
         keywords={`truck repair ${location.city}, trailer repair ${location.city}, semi truck service ${location.state}`}
+        structuredData={[
+          createBreadcrumbSchema([
+            { name: "Home", url: BASE_URL },
+            { name: "Locations", url: `${BASE_URL}/locations` },
+            { name: location.name, url: `${BASE_URL}/locations/${locationSlug || "phoenix"}` },
+          ]),
+          createLocalBusinessSchema(),
+        ]}
       />
 
       {/* Hero Section */}

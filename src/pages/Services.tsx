@@ -6,6 +6,7 @@ import { ArrowRight, Phone, Wrench, Zap, Settings, Gauge, Truck, Shield, Cog, Ha
 import CTASection from "@/components/sections/CTASection";
 import FAQSection from "@/components/sections/FAQSection";
 import shopBayOverview from "@/assets/shop-bay-overview.jpg";
+import { createBreadcrumbSchema, createServiceSchema, createLocalBusinessSchema, BASE_URL } from "@/lib/schema";
 
 const truckServices = [
   { icon: Settings, title: "Emergency Truck Repair", description: "Fast emergency roadside truck repair services in Phoenix and surrounding areas.", href: "/emergency-truck-repair-phoenix" },
@@ -30,6 +31,16 @@ const Services = () => {
         title="Services"
         description="Complete truck and trailer repair services in Phoenix. Engine repair, brake service, DOT inspections, transmission, electrical, welding, and emergency roadside assistance."
         keywords="truck repair services, trailer repair, DOT inspection, engine repair, brake service, Phoenix truck shop"
+        structuredData={[
+          createBreadcrumbSchema([
+            { name: "Home", url: BASE_URL },
+            { name: "Services", url: `${BASE_URL}/services` },
+          ]),
+          createLocalBusinessSchema(),
+          ...[...truckServices, ...trailerServices].map((s) =>
+            createServiceSchema(s.title, s.description, `${BASE_URL}${s.href}`)
+          ),
+        ]}
       />
 
       {/* Hero with futuristic styling */}

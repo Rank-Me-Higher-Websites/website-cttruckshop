@@ -6,6 +6,7 @@ import { Phone, Clock, MapPin, Truck, Wrench, Zap, CheckCircle } from "lucide-re
 import CTASection from "@/components/sections/CTASection";
 import FAQSection from "@/components/sections/FAQSection";
 import nightTowing from "@/assets/night-towing.jpg";
+import { createBreadcrumbSchema, createServiceSchema, BASE_URL } from "@/lib/schema";
 
 const mobileServices = [
   "Battery & charging system issues",
@@ -27,6 +28,17 @@ const MobileRepair = () => {
         title="Mobile Truck Repair"
         description="Emergency roadside assistance for semi-trucks in Phoenix, AZ. Fast mobile repair service throughout the Phoenix metro area. Call (602) 830-3232 for quick response."
         keywords="mobile truck repair, roadside assistance, emergency truck repair, fast truck service, Phoenix mobile mechanic"
+        structuredData={[
+          createBreadcrumbSchema([
+            { name: "Home", url: BASE_URL },
+            { name: "Mobile Repair", url: `${BASE_URL}/mobile-repair` },
+          ]),
+          createServiceSchema(
+            "Mobile Truck Repair Service",
+            "Emergency roadside assistance and mobile truck repair throughout the Phoenix metro area.",
+            `${BASE_URL}/mobile-repair`
+          ),
+        ]}
       />
 
       {/* Hero with futuristic styling */}

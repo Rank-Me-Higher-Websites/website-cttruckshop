@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Phone, MapPin, Clock, Truck } from "lucide-react";
 import CTASection from "@/components/sections/CTASection";
 import truckYard from "@/assets/truck-yard.png";
+import { createBreadcrumbSchema, createLocalBusinessSchema, BASE_URL } from "@/lib/schema";
 
 const locations = [
   {
@@ -40,6 +41,13 @@ const Locations = () => {
         title="Locations"
         description="Find CT Truck & Trailer Shop locations in Phoenix, AZ. Full-service truck and trailer repair, emergency roadside assistance throughout the Phoenix metro area."
         keywords="truck repair near me, Phoenix truck shop, trailer repair Arizona, commercial truck service locations"
+        structuredData={[
+          createBreadcrumbSchema([
+            { name: "Home", url: BASE_URL },
+            { name: "Locations", url: `${BASE_URL}/locations` },
+          ]),
+          createLocalBusinessSchema(),
+        ]}
       />
 
       {/* Hero with futuristic styling */}
