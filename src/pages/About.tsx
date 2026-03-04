@@ -83,9 +83,9 @@ const About = () => {
   return (
     <Layout>
       <SEO
-        title="About Us | Truck Repair Shop Phoenix"
-        description="Expert fleet maintenance and repair for heavy-duty & semi-trucks in Phoenix, AZ. 24/7 emergency roadside service. ASE-certified mechanics. Learn about CT Truck and Trailer Shop."
-        keywords="about CT Truck Shop, Phoenix truck repair company, commercial fleet service, truck repair shop phoenix"
+        title="About Us – Phoenix Truck & Trailer Repair Experts"
+        description="Meet CT Truck & Trailer Shop — Phoenix's experienced commercial truck repair team. Certified mechanics, 24/7 mobile service, fleet maintenance programs. Serving the Phoenix metro since day one."
+        keywords="about CT Truck Shop, Phoenix truck repair company, commercial fleet service, certified truck mechanics phoenix, truck repair team phoenix az"
         structuredData={[
           createBreadcrumbSchema([
             { name: "Home", url: BASE_URL },

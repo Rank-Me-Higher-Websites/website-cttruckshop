@@ -6,7 +6,8 @@ const PrivacyPolicy = () => {
     <Layout>
       <SEO
         title="Privacy Policy"
-        description="Privacy Policy for CT Shop. Learn how we collect, use, and protect your personal information."
+        description="Privacy Policy for CT Truck & Trailer Shop. Learn how we collect, use, and protect your personal information."
+        keywords="privacy policy, data protection, CT Truck Shop"
         canonical="https://cttruckshop.com/privacy"
       />
 

@@ -95,8 +95,9 @@ const ServicePageTemplate = ({ slug }: ServicePageTemplateProps) => {
   return (
     <Layout>
       <SEO
-        title={service.metaTitle}
+        title={service.title}
         description={service.metaDescription}
+        keywords={`${service.title.toLowerCase()}, ${service.title.toLowerCase()} phoenix, truck repair phoenix az, semi truck service, CT Truck Shop`}
         structuredData={[
           createBreadcrumbSchema([
             { name: "Home", url: BASE_URL },

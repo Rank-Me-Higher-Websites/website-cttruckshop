@@ -19,9 +19,9 @@ const Contact = () => {
   return (
     <Layout>
       <SEO
-        title="Contact Us"
-        description="Contact CT Truck & Trailer Shop in Phoenix, AZ. Call (602) 830-3232 for truck and trailer repair, emergency roadside assistance, or to request a quote."
-        keywords="contact truck repair, Phoenix truck shop phone, commercial fleet service contact"
+        title="Contact CT Truck & Trailer Shop – Phoenix, AZ"
+        description="Get in touch with CT Truck & Trailer Shop at (602) 830-3232. Located at 3883 N 36th Ave, Phoenix, AZ 85019. Request a quote for truck repair, trailer service, or emergency roadside help."
+        keywords="contact truck repair phoenix, truck repair quote phoenix, truck shop near me, schedule truck repair, Phoenix truck shop phone, commercial fleet service contact"
         structuredData={[
           createBreadcrumbSchema([
             { name: "Home", url: BASE_URL },

@@ -120,9 +120,9 @@ const LocationPage = () => {
   return (
     <Layout>
       <SEO
-        title={`${location.name} - Truck Repair`}
+        title={`${location.name} – CT Truck & Trailer Repair`}
         description={location.metaDescription}
-        keywords={`truck repair ${location.city}, trailer repair ${location.city}, semi truck service ${location.state}`}
+        keywords={`truck repair ${location.city}, trailer repair ${location.city}, semi truck service ${location.city} ${location.state}, diesel mechanic ${location.city}, fleet repair ${location.city}`}
         structuredData={[
           createBreadcrumbSchema([
             { name: "Home", url: BASE_URL },

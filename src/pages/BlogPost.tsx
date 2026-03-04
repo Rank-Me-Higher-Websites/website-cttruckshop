@@ -36,6 +36,7 @@ const BlogPost = () => {
       <SEO
         title={post.title}
         description={post.metaDescription}
+        keywords={`${post.category.toLowerCase()}, ${post.title.toLowerCase().split(' ').slice(0, 5).join(' ')}, truck repair blog, phoenix az`}
         ogType="article"
         ogImage={post.featuredImage}
         structuredData={[
