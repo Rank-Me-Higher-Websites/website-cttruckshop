@@ -51,7 +51,7 @@ const Blog = () => {
       />
 
       {/* Hero */}
-      <section className="relative min-h-[auto] flex items-center text-primary-foreground overflow-hidden py-20 md:py-24">
+      <section className="relative min-h-[auto] flex items-center text-primary-foreground overflow-hidden py-24 md:py-24">
         <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: `url(${towingRecovery})` }} />
         <div className="absolute inset-0 hero-overlay" />
         <div className="absolute inset-0 bg-black/40" />
