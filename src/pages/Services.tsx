@@ -28,9 +28,9 @@ const Services = () => {
   return (
     <Layout>
       <SEO
-        title="Services"
-        description="Complete truck and trailer repair services in Phoenix. Engine repair, brake service, DOT inspections, transmission, electrical, welding, and emergency roadside assistance."
-        keywords="truck repair services, trailer repair, DOT inspection, engine repair, brake service, Phoenix truck shop"
+        title="Truck & Trailer Repair Services in Phoenix, AZ"
+        description="Full-service semi truck & trailer repair in Phoenix. Engine, brake, electrical, transmission, suspension, DOT inspections, and 24/7 emergency roadside assistance. Call CT Shop today."
+        keywords="semi truck repair services phoenix, trailer repair services phoenix, DOT inspection phoenix, engine repair, brake service, truck shop phoenix az, diesel truck repair, fleet repair services"
         structuredData={[
           createBreadcrumbSchema([
             { name: "Home", url: BASE_URL },

@@ -25,9 +25,9 @@ const MobileRepair = () => {
   return (
     <Layout>
       <SEO
-        title="Mobile Truck Repair"
-        description="Emergency roadside assistance for semi-trucks in Phoenix, AZ. Fast mobile repair service throughout the Phoenix metro area. Call (602) 830-3232 for quick response."
-        keywords="mobile truck repair, roadside assistance, emergency truck repair, fast truck service, Phoenix mobile mechanic"
+        title="24/7 Mobile Truck Repair & Roadside Assistance – Phoenix"
+        description="Stuck on the road? CT Shop's mobile truck repair team comes to you anywhere in the Phoenix metro. Battery, brakes, tires, electrical & more. Call (602) 830-3232 now."
+        keywords="mobile truck repair phoenix, roadside assistance phoenix, emergency mobile mechanic phoenix, roadside truck service, 24/7 truck repair, Phoenix mobile mechanic"
         structuredData={[
           createBreadcrumbSchema([
             { name: "Home", url: BASE_URL },

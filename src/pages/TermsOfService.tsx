@@ -6,7 +6,8 @@ const TermsOfService = () => {
     <Layout>
       <SEO
         title="Terms of Service"
-        description="Terms of Service for CT Shop. Read the terms and conditions governing your use of our website and services."
+        description="Terms of Service for CT Truck & Trailer Shop. Read the terms and conditions governing your use of our website and services."
+        keywords="terms of service, terms and conditions, CT Truck Shop"
         canonical="https://cttruckshop.com/terms"
       />
 

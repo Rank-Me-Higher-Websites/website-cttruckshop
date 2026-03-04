@@ -38,9 +38,9 @@ const Locations = () => {
   return (
     <Layout>
       <SEO
-        title="Locations"
-        description="Find CT Truck & Trailer Shop locations in Phoenix, AZ. Full-service truck and trailer repair, emergency roadside assistance throughout the Phoenix metro area."
-        keywords="truck repair near me, Phoenix truck shop, trailer repair Arizona, commercial truck service locations"
+        title="Our Location – Phoenix Truck & Trailer Repair Shop"
+        description="Visit CT Truck & Trailer Shop at 3883 N 36th Ave, Phoenix, AZ 85019. Full-service truck repair, mobile dispatch, and emergency roadside assistance across the Phoenix metro area."
+        keywords="truck shop phoenix location, truck repair near me phoenix, Phoenix truck shop, trailer repair Arizona, commercial truck service locations"
         structuredData={[
           createBreadcrumbSchema([
             { name: "Home", url: BASE_URL },

@@ -34,9 +34,9 @@ const Blog = () => {
   return (
     <Layout>
       <SEO
-        title="News & Blog"
-        description="Read the latest news, tips, and insights from CT Truck & Trailer Shop. Expert advice on truck maintenance, emergency repairs, and fleet management in Phoenix, AZ."
-        keywords="truck repair blog, semi truck maintenance tips, fleet management, Phoenix trucking news"
+        title="Truck Repair Tips & Industry News – Phoenix, AZ"
+        description="Expert truck maintenance tips, diesel repair guides, and industry news from CT Truck & Trailer Shop in Phoenix. Stay informed about fleet management and semi truck care."
+        keywords="truck maintenance blog, diesel repair tips, fleet management phoenix, semi truck maintenance tips, trucking industry news, truck repair guides"
         structuredData={[
           createBreadcrumbSchema([
             { name: "Home", url: BASE_URL },

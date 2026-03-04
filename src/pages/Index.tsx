@@ -43,9 +43,9 @@ const Index = () => {
   return (
     <Layout>
       <SEO
-        title="Truck & Trailer Repair Phoenix"
-        description="CT Truck & Trailer Shop offers expert fleet maintenance, semi-truck repair, and emergency roadside assistance in Phoenix, AZ. DOT inspections, brake service, engine repair & more."
-        keywords="truck repair phoenix, trailer repair, semi truck repair, fleet maintenance, DOT inspection, roadside assistance, commercial truck service"
+        title="#1 Truck & Trailer Repair in Phoenix, AZ"
+        description="CT Truck & Trailer Shop — Phoenix's trusted semi truck & trailer repair shop. Engine repair, brake service, DOT inspections, 24/7 emergency roadside assistance. Call (602) 830-3232."
+        keywords="truck repair phoenix, trailer repair phoenix az, semi truck repair, fleet maintenance phoenix, DOT inspection phoenix, roadside assistance phoenix, commercial truck service, semi truck service phoenix, heavy duty truck repair, diesel mechanic phoenix"
         structuredData={structuredData}
       />
       <HeroSection />
