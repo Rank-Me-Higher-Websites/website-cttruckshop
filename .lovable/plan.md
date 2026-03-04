@@ -1,70 +1,77 @@
 
 
-## Complete Blog Content Audit: All Posts
+## SEO Meta Optimization Plan
 
-After cross-referencing every blog post in `blogPosts.ts` against the WordPress REST API originals, **15 additional posts** still have missing content. The Oct-Nov-Dec 2025 and Jan 2026 posts restored in previous sessions are complete and match their originals. However, many 2023 posts, two 2024 posts, and one 2026 post still have truncated content.
+### Current Issues Found
 
-### Posts Still Missing Content
+1. **Double branding bug**: The `SEO` component appends `" | CT Truck & Trailer Shop"` to every title. But service pages pass `metaTitle` which already includes `"| CT Truck & Trailer Shop"` — resulting in titles like *"Semi Truck AC Repair Services Phoenix, AZ | CT Truck & Trailer Shop | CT Truck & Trailer Shop"*. Same issue on the About page.
 
-| # | Slug | Date | % Complete | What is Missing |
-|---|---|---|---|---|
-| 1 | `semi-towing-sevice-tips` | Jul 13, 2023 | ~40% | Safety protocols paragraph, "Semi towing and wrecker service" section (local expertise, response times detail), urgency paragraph, expanded conclusion |
-| 2 | `semi-trailer-maintenance-tips` | Aug 24, 2023 | ~30% | "Roof Resilience" detail, "Secure Door Seals" detail, entire "Semi Trailer Repair Shop: Your Maintenance Partner" section (3 detailed points: Expertise, Preventive Care, Holistic Solutions), expanded conclusion |
-| 3 | `24h-towing-services-benefits` | Aug 31, 2023 | ~30% | Expanded intro paragraphs, full "Semi-Truck Road Service Near Me" scenario, expanded "Semi-Truck Wrecker Phoenix" desert heat detail, "Benefits" section with 4 sub-points (Immediate Response, Expertise, Safety First, Peace of Mind), closing paragraph |
-| 4 | `heavy-duty-towing-phoenix` | Sep 7, 2023 | ~40% | Expanded "24-Hour Heavy Duty Towing" section, "CT Shop Towing Service" section (response times, pricing, dedication), closing call-to-action paragraph |
-| 5 | `semi-trailer-suspension-fix-tips` | Oct 5, 2023 | ~50% | "Essential Tools and Equipment" section, expanded "Leaf Spring" and "Air Suspension" detail, "Shock Absorber: The Unsung Hero" section, "Alignment: Cornerstone" section, expanded conclusion |
-| 6 | `semi-trailer-suspension-repair-arizona` | Nov 16, 2023 | ~25% | Services list (Spring, Shock, Alignment, Air Suspension details), 2 extra "Why Choose" points (Competitive Pricing, Customer Satisfaction), "Importance of Regular Maintenance" section with 3 bullets, "Don't Wait" scheduling section, full closing |
-| 7 | `tips-for-heavy-duty-drivers` | Nov 23, 2023 | ~50% | "Manage Stress Effectively" tip, "Secure Your Load" tip, "Stay Professional and Courteous" tip, expanded detail on existing tips (2-3 sentences each instead of 1), full closing paragraph |
-| 8 | `diesel-engine-mechanics` | Nov 30, 2023 | ~40% | Expanded "Understanding the Difference" (2 full paragraphs), "Semi-Truck Engine Repairs: Challenges" with 4 detailed items (Size/Complexity, Heavy Loads, Specialized Systems, Regulatory Compliance), "CT Shop Diesel Mechanics" section (track record, technology), expanded closing CTA |
-| 9 | `clever-trans-towing-partnership` | Dec 7, 2023 | ~40% | Expanded "Why Choose Clever Trans" with 4 detailed sub-items, "CT Shop Offers" with 4 detailed sub-items (Comprehensive Repairs, Skilled Technicians, Efficiency, Quality Parts), "Wrecker Services" section, full closing paragraph |
-| 10 | `common-semi-truck-problems` | Aug 10, 2023 | ~70% | Expanded descriptions for all 6 issues (2-3 sentences each vs 1), "Engine failure" full detail, "Semi truck breakdowns" section, closing CTA paragraph |
-| 11 | `open-deck-trailers-towing` | Nov 9, 2023 | ~30% | "Local Knowledge" paragraph, 3 service types (Local/Long-Distance, Emergency, Specialized) with descriptions, "Why Choose" section with 4 detailed points (Reliability, Customer-Centric, Competitive Pricing, Licensed/Insured), expanded closing |
-| 12 | `semi-truck-transmission-repair-guide` | Nov 2, 2023 | ~80% | Expanded conclusion paragraph about "securing your operation's future" |
-| 13 | `regular-pm-service-arizona` | Jul 24, 2024 | ~30% | Expanded PM description (oil, filters, greasing detail), critical checks list (brakes, fluids, tires), "Average Price for PM Service" section ($250-$600 range with factors), "CT Shop Regular PM Service" section (detailed case study), closing CTA |
-| 14 | `trailer-air-system-issues` | Jul 26, 2024 | ~50% | Expanded diagnostic approach (soapy water method, filter cleaning), compressor testing detail, "Ensuring Reliable Trailer Performance" section, 2-item closing CTA list, final closing paragraph |
-| 15 | `truck-and-trailer-repair-near-me-shop-tips` | Jan 28, 2026 | ~95% | Missing final closing paragraph: "If you're searching Truck And Trailer Repair Near Me, the goal isn't just 'getting it fixed.' The goal is getting it fixed right, so you're not back in the same situation next week." |
+2. **Missing keywords**: Service pages (via `ServicePageTemplate`), blog posts, Privacy Policy, and Terms of Service have no `keywords` meta tag.
 
-### Posts Confirmed Complete (no changes needed)
+3. **Generic/weak titles**: "Services", "Contact Us", "Locations", "News & Blog" are too generic — they waste valuable title tag real estate.
 
-The following 19 posts match their WordPress originals:
+4. **Descriptions need sharpening**: Some are decent but several lack geo-targeting, CTAs, or unique selling points.
 
-- `truck-and-trailer-repair-partner` (Jun 2023) -- complete
-- `emergency-repair-services` (Jun 2023) -- complete
-- `preventative-brake-maintenance` (Jul 2023) -- complete
-- `semi-trailer-mechanic-services` (Jul 2023) -- complete
-- `semi-ac-repair-and-cost` (Jul 2023) -- complete
-- `semi-trailer-tires-types` (Jul 2023) -- complete
-- `semi-truck-fuel-efficiency` (Aug 2023) -- complete
-- `semi-trailer-electrical-repair` (Sep 2023) -- complete
-- `semi-towing-frequently-asked-questions` (Sep 2023) -- complete
-- `rollover-recovery-understanding` (Sep 2023) -- complete
-- `semi-truck-towing-arizona` (Oct 2023) -- complete
-- `tow-truck-near-me-arizona` (Oct 2023) -- complete
-- `heavy-duty-truck-diagnostic-tips` (Oct 2023) -- complete
-- `semi-truck-full-diagnostics-tips` (Dec 2023) -- complete
-- `semi-truck-prices-2023-guide` (Dec 2023) -- complete
-- `trailer-repair-and-maintenance` (Dec 2023) -- complete
-- `heavy-duty-and-medium-duty-towing-services` (Feb 2024) -- complete
-- `synchronized-symphony-semi-towing` (Feb 2024) -- complete
-- `overnight-heavy-duty-towing-challenges` (Mar 2024) -- complete
-- `day-in-the-life-of-a-tow-truck-driver` (Mar 2024) -- complete
-- `trailer-lights-repairs` (Jul 2024) -- complete
+---
 
-All 16 previously restored posts (Oct 2025 -- Jan 2026) are also confirmed complete.
+### Changes
 
-### Implementation Plan
+#### Fix 1: ServicePageTemplate — use `title` instead of `metaTitle` to avoid double branding, add keywords
 
-Update the `content` field for all 15 posts in `src/data/blogPosts.ts` with full HTML from the WordPress REST API originals. Each post's content will be fetched, cleaned of Elementor markup, and converted to semantic HTML preserving all headings, paragraphs, lists, images, links, and tables.
+```
+title: service.title  (not service.metaTitle)
+keywords: unique per service (constructed from slug context)
+```
 
-Due to the volume (15 posts), this will be done in batches:
-- **Batch 1**: Posts 1-5 (Jul-Oct 2023)
-- **Batch 2**: Posts 6-11 (Nov-Dec 2023)
-- **Batch 3**: Posts 12-15 (Nov 2023, 2024, 2026)
+#### Fix 2: About page — clean title
 
-### Technical Details
+```
+title: "About Us – Phoenix Truck & Trailer Repair Experts"
+```
 
-- File: `src/data/blogPosts.ts` (523 lines)
-- Posts span lines 44 (semi-towing-sevice-tips) through 512 (truck-and-trailer-repair-near-me-shop-tips)
-- Each post's `content` string will be replaced with the complete article HTML
-- No structural changes to the data format
+#### Fix 3: Optimize all page titles, descriptions & keywords
+
+| Page | New Title | New Description | Keywords |
+|------|-----------|-----------------|----------|
+| **Home** | `#1 Truck & Trailer Repair in Phoenix, AZ` | `CT Truck & Trailer Shop — Phoenix's trusted semi truck & trailer repair shop. Engine repair, brake service, DOT inspections, 24/7 emergency roadside assistance. Call (602) 830-3232.` | keep + add "semi truck service phoenix, heavy duty truck repair, diesel mechanic phoenix" |
+| **Services** | `Truck & Trailer Repair Services in Phoenix, AZ` | `Full-service semi truck & trailer repair in Phoenix. Engine, brake, electrical, transmission, suspension, DOT inspections, and 24/7 emergency roadside assistance. Call CT Shop today.` | add "semi truck repair services, trailer repair services phoenix, DOT inspection phoenix" |
+| **About** | `About Us – Phoenix Truck & Trailer Repair Experts` | `Meet CT Truck & Trailer Shop — Phoenix's experienced commercial truck repair team. Certified mechanics, 24/7 mobile service, fleet maintenance programs. Serving the Phoenix metro since day one.` | add relevant keywords |
+| **Contact** | `Contact CT Truck & Trailer Shop – Phoenix, AZ` | `Get in touch with CT Truck & Trailer Shop at (602) 830-3232. Located at 3883 N 36th Ave, Phoenix, AZ 85019. Request a quote for truck repair, trailer service, or emergency roadside help.` | add "truck repair quote phoenix, truck shop near me, schedule truck repair" |
+| **Blog** | `Truck Repair Tips & Industry News – Phoenix, AZ` | `Expert truck maintenance tips, diesel repair guides, and industry news from CT Truck & Trailer Shop in Phoenix. Stay informed about fleet management and semi truck care.` | add "truck maintenance blog, diesel repair tips, fleet management phoenix" |
+| **Locations** | `Our Location – Phoenix Truck & Trailer Repair Shop` | `Visit CT Truck & Trailer Shop at 3883 N 36th Ave, Phoenix, AZ 85019. Full-service truck repair, mobile dispatch, and emergency roadside assistance across the Phoenix metro area.` | add "truck shop phoenix location, truck repair near me phoenix" |
+| **LocationPage (Phoenix)** | `Phoenix Main Shop – CT Truck & Trailer Repair` | keep existing | enrich keywords |
+| **Mobile Repair** | `24/7 Mobile Truck Repair & Roadside Assistance – Phoenix` | `Stuck on the road? CT Shop's mobile truck repair team comes to you anywhere in the Phoenix metro. Battery, brakes, tires, electrical & more. Call (602) 830-3232 now.` | add "emergency mobile mechanic phoenix, roadside truck service" |
+| **Privacy** | `Privacy Policy` | keep (fine as-is) | add "privacy policy, data protection, CT Truck Shop" |
+| **Terms** | `Terms of Service` | keep (fine as-is) | add "terms of service, terms and conditions, CT Truck Shop" |
+
+#### Fix 4: Service pages — add keywords via `ServicePageTemplate`
+
+Add a `keywords` field to each service in `servicePages.ts` data, or construct them dynamically in the template based on the service title and slug. Dynamic approach is cleaner:
+
+```ts
+keywords={`${service.title.toLowerCase()}, ${service.title.toLowerCase()} phoenix, truck repair phoenix az, CT Truck Shop`}
+```
+
+#### Fix 5: Blog posts — add keywords from post category + title
+
+```ts
+keywords={`${post.category.toLowerCase()}, ${post.title.toLowerCase().split(' ').slice(0,5).join(' ')}, truck repair blog, phoenix az`}
+```
+
+---
+
+### Files to modify
+
+- `src/pages/Index.tsx` — title, description, keywords
+- `src/pages/Services.tsx` — title, description, keywords
+- `src/pages/About.tsx` — title, description, keywords
+- `src/pages/Contact.tsx` — title, description, keywords
+- `src/pages/Blog.tsx` — title, description, keywords
+- `src/pages/BlogPost.tsx` — add keywords
+- `src/pages/Locations.tsx` — title, description, keywords
+- `src/pages/LocationPage.tsx` — title, keywords
+- `src/pages/MobileRepair.tsx` — title, description, keywords
+- `src/pages/PrivacyPolicy.tsx` — add keywords
+- `src/pages/TermsOfService.tsx` — add keywords
+- `src/components/ServicePageTemplate.tsx` — use `service.title` instead of `service.metaTitle`, add keywords
 
