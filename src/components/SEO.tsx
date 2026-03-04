@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+import { useLocation } from "react-router-dom";
 
 interface SEOProps {
   title: string;
@@ -22,6 +23,8 @@ const SEO = ({
   const siteName = "CT Truck & Trailer Shop";
   const fullTitle = `${title} | ${siteName}`;
   const defaultImage = "/og-image.jpg";
+  const { pathname } = useLocation();
+  const canonicalUrl = canonical || `https://cttruckshop.com${pathname === "/" ? "" : pathname}`;
 
   return (
     <Helmet>
@@ -32,7 +35,7 @@ const SEO = ({
       {keywords && <meta name="keywords" content={keywords} />}
       
       {/* Canonical URL */}
-      {canonical && <link rel="canonical" href={canonical} />}
+      <link rel="canonical" href={canonicalUrl} />
       
       {/* Open Graph / Facebook */}
       <meta property="og:type" content={ogType} />
@@ -40,6 +43,7 @@ const SEO = ({
       <meta property="og:description" content={description} />
       <meta property="og:image" content={ogImage || defaultImage} />
       <meta property="og:site_name" content={siteName} />
+      <meta property="og:url" content={canonicalUrl} />
       
       {/* Twitter */}
       <meta property="twitter:card" content="summary_large_image" />
