@@ -1,102 +1,70 @@
 
 
-## Competition Analysis: Phoenix Truck Repair Market
+## Complete Blog Content Audit: All Posts
 
-**Key competitors identified:**
+After cross-referencing every blog post in `blogPosts.ts` against the WordPress REST API originals, **15 additional posts** still have missing content. The Oct-Nov-Dec 2025 and Jan 2026 posts restored in previous sessions are complete and match their originals. However, many 2023 posts, two 2024 posts, and one 2026 post still have truncated content.
 
-1. **Complete HTR** (completehtr.com) — Off I-17, fleet-focused, Mon-Fri 7-5, phone 623-745-5896. Webflow site, basic structure, no visible advanced schema.
-2. **Emergency Roadside Truck & Trailer Repair** (emergencyroadsidetruckphoenix.com) — 3241 W Yuma St, 480-932-4860, Mon-Sat 7-7 + 24/7 emergency. Direct competitor in emergency/mobile space.
-3. **Phoenix Heavy Towing and Repair** (phoenixheavytowingandrepair.com) — Two locations (Phoenix + Laveen), 24/7 roadside + towing + repair. Strong SEO with service area pages.
-4. **Jesse's Truck Repair** (jessestruckrepair.com) — 602-296-9526, 24/7, 200-mile radius, basic DudaMobile site with no structured data.
-5. **3A Automotive & Diesel Repair** (3aautorepair.com) — Diesel specialist in Phoenix area.
+### Posts Still Missing Content
 
-**Competitive advantage opportunity:** None of these competitors appear to have comprehensive structured data (multiple schema types per page). Implementing full schema markup across all pages will give CT Truck Shop a significant edge in rich snippets, AI answers, and local pack results.
+| # | Slug | Date | % Complete | What is Missing |
+|---|---|---|---|---|
+| 1 | `semi-towing-sevice-tips` | Jul 13, 2023 | ~40% | Safety protocols paragraph, "Semi towing and wrecker service" section (local expertise, response times detail), urgency paragraph, expanded conclusion |
+| 2 | `semi-trailer-maintenance-tips` | Aug 24, 2023 | ~30% | "Roof Resilience" detail, "Secure Door Seals" detail, entire "Semi Trailer Repair Shop: Your Maintenance Partner" section (3 detailed points: Expertise, Preventive Care, Holistic Solutions), expanded conclusion |
+| 3 | `24h-towing-services-benefits` | Aug 31, 2023 | ~30% | Expanded intro paragraphs, full "Semi-Truck Road Service Near Me" scenario, expanded "Semi-Truck Wrecker Phoenix" desert heat detail, "Benefits" section with 4 sub-points (Immediate Response, Expertise, Safety First, Peace of Mind), closing paragraph |
+| 4 | `heavy-duty-towing-phoenix` | Sep 7, 2023 | ~40% | Expanded "24-Hour Heavy Duty Towing" section, "CT Shop Towing Service" section (response times, pricing, dedication), closing call-to-action paragraph |
+| 5 | `semi-trailer-suspension-fix-tips` | Oct 5, 2023 | ~50% | "Essential Tools and Equipment" section, expanded "Leaf Spring" and "Air Suspension" detail, "Shock Absorber: The Unsung Hero" section, "Alignment: Cornerstone" section, expanded conclusion |
+| 6 | `semi-trailer-suspension-repair-arizona` | Nov 16, 2023 | ~25% | Services list (Spring, Shock, Alignment, Air Suspension details), 2 extra "Why Choose" points (Competitive Pricing, Customer Satisfaction), "Importance of Regular Maintenance" section with 3 bullets, "Don't Wait" scheduling section, full closing |
+| 7 | `tips-for-heavy-duty-drivers` | Nov 23, 2023 | ~50% | "Manage Stress Effectively" tip, "Secure Your Load" tip, "Stay Professional and Courteous" tip, expanded detail on existing tips (2-3 sentences each instead of 1), full closing paragraph |
+| 8 | `diesel-engine-mechanics` | Nov 30, 2023 | ~40% | Expanded "Understanding the Difference" (2 full paragraphs), "Semi-Truck Engine Repairs: Challenges" with 4 detailed items (Size/Complexity, Heavy Loads, Specialized Systems, Regulatory Compliance), "CT Shop Diesel Mechanics" section (track record, technology), expanded closing CTA |
+| 9 | `clever-trans-towing-partnership` | Dec 7, 2023 | ~40% | Expanded "Why Choose Clever Trans" with 4 detailed sub-items, "CT Shop Offers" with 4 detailed sub-items (Comprehensive Repairs, Skilled Technicians, Efficiency, Quality Parts), "Wrecker Services" section, full closing paragraph |
+| 10 | `common-semi-truck-problems` | Aug 10, 2023 | ~70% | Expanded descriptions for all 6 issues (2-3 sentences each vs 1), "Engine failure" full detail, "Semi truck breakdowns" section, closing CTA paragraph |
+| 11 | `open-deck-trailers-towing` | Nov 9, 2023 | ~30% | "Local Knowledge" paragraph, 3 service types (Local/Long-Distance, Emergency, Specialized) with descriptions, "Why Choose" section with 4 detailed points (Reliability, Customer-Centric, Competitive Pricing, Licensed/Insured), expanded closing |
+| 12 | `semi-truck-transmission-repair-guide` | Nov 2, 2023 | ~80% | Expanded conclusion paragraph about "securing your operation's future" |
+| 13 | `regular-pm-service-arizona` | Jul 24, 2024 | ~30% | Expanded PM description (oil, filters, greasing detail), critical checks list (brakes, fluids, tires), "Average Price for PM Service" section ($250-$600 range with factors), "CT Shop Regular PM Service" section (detailed case study), closing CTA |
+| 14 | `trailer-air-system-issues` | Jul 26, 2024 | ~50% | Expanded diagnostic approach (soapy water method, filter cleaning), compressor testing detail, "Ensuring Reliable Trailer Performance" section, 2-item closing CTA list, final closing paragraph |
+| 15 | `truck-and-trailer-repair-near-me-shop-tips` | Jan 28, 2026 | ~95% | Missing final closing paragraph: "If you're searching Truck And Trailer Repair Near Me, the goal isn't just 'getting it fixed.' The goal is getting it fixed right, so you're not back in the same situation next week." |
 
----
+### Posts Confirmed Complete (no changes needed)
 
-## Schema Implementation Plan
+The following 19 posts match their WordPress originals:
 
-### Current State
-- Only the homepage (`Index.tsx`) has an `AutoRepair` schema
-- No BreadcrumbList, FAQPage, Service, or Organization schema on any page
-- The `SEO` component supports a single `structuredData` prop (object)
+- `truck-and-trailer-repair-partner` (Jun 2023) -- complete
+- `emergency-repair-services` (Jun 2023) -- complete
+- `preventative-brake-maintenance` (Jul 2023) -- complete
+- `semi-trailer-mechanic-services` (Jul 2023) -- complete
+- `semi-ac-repair-and-cost` (Jul 2023) -- complete
+- `semi-trailer-tires-types` (Jul 2023) -- complete
+- `semi-truck-fuel-efficiency` (Aug 2023) -- complete
+- `semi-trailer-electrical-repair` (Sep 2023) -- complete
+- `semi-towing-frequently-asked-questions` (Sep 2023) -- complete
+- `rollover-recovery-understanding` (Sep 2023) -- complete
+- `semi-truck-towing-arizona` (Oct 2023) -- complete
+- `tow-truck-near-me-arizona` (Oct 2023) -- complete
+- `heavy-duty-truck-diagnostic-tips` (Oct 2023) -- complete
+- `semi-truck-full-diagnostics-tips` (Dec 2023) -- complete
+- `semi-truck-prices-2023-guide` (Dec 2023) -- complete
+- `trailer-repair-and-maintenance` (Dec 2023) -- complete
+- `heavy-duty-and-medium-duty-towing-services` (Feb 2024) -- complete
+- `synchronized-symphony-semi-towing` (Feb 2024) -- complete
+- `overnight-heavy-duty-towing-challenges` (Mar 2024) -- complete
+- `day-in-the-life-of-a-tow-truck-driver` (Mar 2024) -- complete
+- `trailer-lights-repairs` (Jul 2024) -- complete
 
-### Changes Required
+All 16 previously restored posts (Oct 2025 -- Jan 2026) are also confirmed complete.
 
-#### 1. Update SEO component to support multiple schemas
-Change `structuredData?: object` to `structuredData?: object | object[]` and render as an array of `<script>` tags (or a single `@graph` wrapper).
+### Implementation Plan
 
-#### 2. Homepage (`Index.tsx`)
-- Keep existing `AutoRepair` schema, enhance with full address (3883 N 36th Ave, Phoenix, AZ 85019)
-- Add `Organization` schema with sameAs links (Facebook, Instagram, LinkedIn)
-- Add `FAQPage` schema using the same Q&A from `FAQSection`
-- Add `BreadcrumbList` (Home only)
+Update the `content` field for all 15 posts in `src/data/blogPosts.ts` with full HTML from the WordPress REST API originals. Each post's content will be fetched, cleaned of Elementor markup, and converted to semantic HTML preserving all headings, paragraphs, lists, images, links, and tables.
 
-#### 3. Services page (`Services.tsx`)
-- `BreadcrumbList`: Home > Services
-- `Service` schema array for all truck + trailer services listed
-- `LocalBusiness` reference
+Due to the volume (15 posts), this will be done in batches:
+- **Batch 1**: Posts 1-5 (Jul-Oct 2023)
+- **Batch 2**: Posts 6-11 (Nov-Dec 2023)
+- **Batch 3**: Posts 12-15 (Nov 2023, 2024, 2026)
 
-#### 4. Each Service Page (`ServicePageTemplate.tsx`)
-- `BreadcrumbList`: Home > Services > [Service Name]
-- `Service` schema with name, description, provider (CT Shop), areaServed
-- `FAQPage` schema from `service.faqs` data
-- `LocalBusiness` reference
+### Technical Details
 
-#### 5. About page (`About.tsx`)
-- `BreadcrumbList`: Home > About
-- `Organization` schema
-- `FAQPage` schema from the about page FAQs
-
-#### 6. Contact page (`Contact.tsx`)
-- `BreadcrumbList`: Home > Contact
-- `LocalBusiness` with full contact details, geo, hours
-
-#### 7. Blog listing (`Blog.tsx`)
-- `BreadcrumbList`: Home > Blog
-- `CollectionPage` schema
-
-#### 8. Blog posts (`BlogPost.tsx`)
-- `BreadcrumbList`: Home > Blog > [Post Title]
-- `Article` schema with datePublished, author, publisher, image
-
-#### 9. Locations page (`Locations.tsx`)
-- `BreadcrumbList`: Home > Locations
-- `LocalBusiness` schema
-
-#### 10. Location detail (`LocationPage.tsx`)
-- `BreadcrumbList`: Home > Locations > Phoenix
-- `AutoRepair` schema with full address, services, hours
-
-#### 11. Mobile Repair (`MobileRepair.tsx`)
-- `BreadcrumbList`: Home > Mobile Repair
-- `Service` schema for mobile/roadside service
-
-### Implementation Approach
-
-1. **Create a shared schema helper** (`src/lib/schema.ts`) with reusable builder functions:
-   - `createLocalBusinessSchema()` — base business info reused everywhere
-   - `createOrganizationSchema()`
-   - `createBreadcrumbSchema(items: {name, url}[])`
-   - `createFAQSchema(faqs: {question, answer}[])`
-   - `createServiceSchema(name, description)`
-   - `createArticleSchema(post)`
-
-2. **Update `SEO.tsx`** to accept `structuredData` as `object | object[]` and render multiple `<script type="application/ld+json">` tags.
-
-3. **Update each page** to pass the appropriate schemas via the `structuredData` prop.
-
-### Files to create/modify
-- **New:** `src/lib/schema.ts` — schema builder helpers
-- **Modify:** `src/components/SEO.tsx` — support array of schemas
-- **Modify:** `src/pages/Index.tsx` — enhanced schema
-- **Modify:** `src/pages/Services.tsx` — add schemas
-- **Modify:** `src/components/ServicePageTemplate.tsx` — add schemas
-- **Modify:** `src/pages/About.tsx` — add schemas
-- **Modify:** `src/pages/Contact.tsx` — add schemas
-- **Modify:** `src/pages/Blog.tsx` — add schemas
-- **Modify:** `src/pages/BlogPost.tsx` — add schemas
-- **Modify:** `src/pages/Locations.tsx` — add schemas
-- **Modify:** `src/pages/LocationPage.tsx` — add schemas
-- **Modify:** `src/pages/MobileRepair.tsx` — add schemas
+- File: `src/data/blogPosts.ts` (523 lines)
+- Posts span lines 44 (semi-towing-sevice-tips) through 512 (truck-and-trailer-repair-near-me-shop-tips)
+- Each post's `content` string will be replaced with the complete article HTML
+- No structural changes to the data format
 

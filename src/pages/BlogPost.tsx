@@ -4,6 +4,7 @@ import SEO from "@/components/SEO";
 import BlogContent from "@/components/BlogContent";
 import { blogPosts } from "@/data/blogPosts";
 import { ArrowLeft, ArrowRight, Calendar, Tag } from "lucide-react";
+import { createBreadcrumbSchema, createArticleSchema, BASE_URL } from "@/lib/schema";
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -37,6 +38,14 @@ const BlogPost = () => {
         description={post.metaDescription}
         ogType="article"
         ogImage={post.featuredImage}
+        structuredData={[
+          createBreadcrumbSchema([
+            { name: "Home", url: BASE_URL },
+            { name: "Blog", url: `${BASE_URL}/blog` },
+            { name: post.title, url: `${BASE_URL}/blog/${post.slug}` },
+          ]),
+          createArticleSchema(post),
+        ]}
       />
 
       {/* Hero */}
