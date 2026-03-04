@@ -11,6 +11,7 @@ import aboutEngineRepair from "@/assets/about-engine-repair.png";
 import aboutRepairShop from "@/assets/about-repair-shop.jpg";
 import aboutTeam from "@/assets/about-team.png";
 import teamWork from "@/assets/team-work.jpeg";
+import ctShopTeam from "@/assets/ct-shop-team.jpg";
 
 const aboutCards = [
   {
@@ -215,7 +216,7 @@ const About = () => {
               <div className="relative">
                 <div className="absolute -inset-1 bg-gradient-to-r from-accent/50 via-accent/20 to-accent/50 rounded-2xl blur-sm" />
                 <div className="relative rounded-2xl overflow-hidden border border-accent/30">
-                  <img src={aboutTowTruck} alt="CT Shop tow truck Phoenix AZ" className="w-full h-auto" />
+                  <img src={ctShopTeam} alt="CT Truck & Trailer Shop team" className="w-full h-auto" />
                 </div>
               </div>
             </div>
