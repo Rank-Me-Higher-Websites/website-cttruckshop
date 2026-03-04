@@ -56,7 +56,7 @@ const contentImageMap: Record<string, string> = {
   "semi-truck-ac-repair-services": twoMechanicsPeterbilt,
   "semi-truck-tire-and-brake-repair-services-phoenix-az": facility,
   "semi-truck-diagnostics-in-phoenix-az": dieselEngine,
-  "semi-truck-engine-repairs-in-phoenix-az": shopInterior,
+  "semi-truck-engine-repairs-in-phoenix-az": truckEngineWide,
   "semi-trailer-electrical-repair-services-phoenix-az": trailerBrakeShop,
   "semi-trailer-brake-and-tire-repair-services-in-phoenix-az": craneLift,
   "semi-trailer-suspension-repair-services-phoenix-az": mobileRepair,
