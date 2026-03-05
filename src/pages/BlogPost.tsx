@@ -3,6 +3,7 @@ import Layout from "@/components/layout/Layout";
 import SEO from "@/components/SEO";
 import BlogContent from "@/components/BlogContent";
 import { blogPosts } from "@/data/blogPosts";
+import { getFeaturedImage } from "@/lib/blogImageMap";
 import { ArrowLeft, ArrowRight, Calendar, Tag } from "lucide-react";
 import { createBreadcrumbSchema, createArticleSchema, BASE_URL } from "@/lib/schema";
 
@@ -53,7 +54,7 @@ const BlogPost = () => {
       <section className="relative min-h-[50vh] flex items-center text-primary-foreground overflow-hidden">
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${post.featuredImage})` }}
+          style={{ backgroundImage: `url(${getFeaturedImage(post.slug)})` }}
         />
         <div className="absolute inset-0 hero-overlay" />
         <div className="absolute inset-0 bg-black/50" />
