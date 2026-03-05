@@ -162,6 +162,7 @@ const ServicePageTemplate = ({ slug }: ServicePageTemplateProps) => {
                   </Button>
                 </button>
               </div>
+              <HeroTrustBadges />
             </div>
 
             {/* Right Side - Lead Form */}

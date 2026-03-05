@@ -76,6 +76,7 @@ const Contact = () => {
                 </Button>
               </a>
             </div>
+            <HeroTrustBadges />
           </div>
         </div>
       </section>

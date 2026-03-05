@@ -127,6 +127,7 @@ const About = () => {
                 </a>
               </Button>
             </div>
+            <HeroTrustBadges />
           </div>
         </div>
       </section>

@@ -75,6 +75,7 @@ const Services = () => {
                 Call (602) 830-3232
               </Button>
             </a>
+            <HeroTrustBadges />
           </div>
         </div>
       </section>

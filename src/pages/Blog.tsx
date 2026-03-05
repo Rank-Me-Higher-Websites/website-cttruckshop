@@ -70,6 +70,7 @@ const Blog = () => {
               Expert tips, industry insights, and the latest news from CT Truck & Trailer Shop.
               Stay informed about truck maintenance and fleet management.
             </p>
+            <HeroTrustBadges />
           </div>
         </div>
       </section>

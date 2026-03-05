@@ -79,6 +79,7 @@ const MobileRepair = () => {
                 </Button>
               </a>
             </div>
+            <HeroTrustBadges />
           </div>
         </div>
       </section>
