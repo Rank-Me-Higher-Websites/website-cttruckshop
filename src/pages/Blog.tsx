@@ -1,4 +1,5 @@
 import { useState, useMemo } from "react";
+import HeroTrustBadges from "@/components/HeroTrustBadges";
 import { Link, useSearchParams } from "react-router-dom";
 import Layout from "@/components/layout/Layout";
 import SEO from "@/components/SEO";

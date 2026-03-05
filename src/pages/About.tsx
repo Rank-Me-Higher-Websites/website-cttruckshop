@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import HeroTrustBadges from "@/components/HeroTrustBadges";
 import Layout from "@/components/layout/Layout";
 import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";

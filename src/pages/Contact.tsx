@@ -1,4 +1,5 @@
 import Layout from "@/components/layout/Layout";
+import HeroTrustBadges from "@/components/HeroTrustBadges";
 import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
