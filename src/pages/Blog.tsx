@@ -1,4 +1,5 @@
 import { useState, useMemo } from "react";
+import HeroTrustBadges from "@/components/HeroTrustBadges";
 import { Link, useSearchParams } from "react-router-dom";
 import Layout from "@/components/layout/Layout";
 import SEO from "@/components/SEO";
@@ -70,6 +71,7 @@ const Blog = () => {
               Expert tips, industry insights, and the latest news from CT Truck & Trailer Shop.
               Stay informed about truck maintenance and fleet management.
             </p>
+            <HeroTrustBadges />
           </div>
         </div>
       </section>

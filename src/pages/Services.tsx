@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import HeroTrustBadges from "@/components/HeroTrustBadges";
 import Layout from "@/components/layout/Layout";
 import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
@@ -75,6 +76,7 @@ const Services = () => {
                 Call (602) 830-3232
               </Button>
             </a>
+            <HeroTrustBadges />
           </div>
         </div>
       </section>

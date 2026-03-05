@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import HeroTrustBadges from "@/components/HeroTrustBadges";
 import LeadForm from "@/components/LeadForm";
 import { useQuoteModal } from "@/contexts/QuoteModalContext";
 import Layout from "@/components/layout/Layout";
@@ -162,6 +163,7 @@ const ServicePageTemplate = ({ slug }: ServicePageTemplateProps) => {
                   </Button>
                 </button>
               </div>
+              <HeroTrustBadges />
             </div>
 
             {/* Right Side - Lead Form */}
