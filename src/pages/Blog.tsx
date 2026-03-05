@@ -5,6 +5,7 @@ import Layout from "@/components/layout/Layout";
 import SEO from "@/components/SEO";
 import { ArrowRight, Calendar, Tag, ChevronLeft, ChevronRight } from "lucide-react";
 import { blogPosts } from "@/data/blogPosts";
+import { getFeaturedImage } from "@/lib/blogImageMap";
 import towingRecovery from "@/assets/towing-recovery.jpg";
 import { createBreadcrumbSchema, createCollectionPageSchema, BASE_URL } from "@/lib/schema";
 
@@ -91,7 +92,7 @@ const Blog = () => {
                     <div className="absolute inset-0 bg-gradient-to-b from-accent/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                     <div className="aspect-video overflow-hidden relative">
                       <img
-                        src={post.featuredImage}
+                        src={getFeaturedImage(post.slug)}
                         alt={post.title}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                         loading="lazy"
