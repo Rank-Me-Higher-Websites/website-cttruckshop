@@ -32,7 +32,7 @@ const Contact = () => {
       />
 
       {/* Hero with futuristic styling */}
-      <section className="relative min-h-[auto] flex items-center text-primary-foreground overflow-hidden py-24 md:py-24">
+      <section className="relative min-h-[50vh] md:min-h-[auto] flex items-center text-primary-foreground overflow-hidden py-24 md:py-24">
         {/* Background Image */}
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
