@@ -37,12 +37,10 @@ const CTASection = () => {
                   Call (602) 830-3232
                 </Button>
               </a>
-              <button onClick={open}>
-                <Button variant="hero-outline" size="lg">
-                  Request a Quote
-                  <ArrowRight className="h-4 w-4 ml-2" />
-                </Button>
-              </button>
+              <Button variant="hero-outline" size="lg" onClick={open}>
+                Request a Quote
+                <ArrowRight className="h-4 w-4 ml-2" />
+              </Button>
             </div>
           </ScrollReveal>
           

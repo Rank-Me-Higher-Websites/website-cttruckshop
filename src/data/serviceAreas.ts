@@ -4,6 +4,7 @@ export interface ServiceArea {
   county: string;
   distance: string;
   population: string;
+  description: string;
   highways: string[];
   heroImage: string;
   contentImage: string;
@@ -29,6 +30,7 @@ export const serviceAreas: ServiceArea[] = [
     county: "Maricopa County",
     distance: "Home base",
     population: "1.6M+",
+    description: "Our home base — 8-bay full-service shop right off I-17 near the I-10 interchange.",
     highways: ["I-10", "I-17", "Loop 101", "Loop 202", "SR-51"],
     heroImage: "shop-bay-overview",
     contentImage: "kenworth-shop-front",
@@ -75,6 +77,7 @@ export const serviceAreas: ServiceArea[] = [
     county: "Maricopa County",
     distance: "~10 min from shop",
     population: "250K+",
+    description: "10 minutes away along the Grand Ave corridor. Mobile dispatch to Glendale industrial zones.",
     highways: ["Loop 101", "US-60", "Grand Ave"],
     heroImage: "truck-yard",
     contentImage: "mobile-repair",
@@ -120,6 +123,7 @@ export const serviceAreas: ServiceArea[] = [
     county: "Maricopa County",
     distance: "~20 min from shop",
     population: "185K+",
+    description: "Fast response at the I-10/Loop 202 interchange — one of Arizona's busiest freight junctions.",
     highways: ["I-10", "Loop 101", "Loop 202", "US-60"],
     heroImage: "towing-recovery",
     contentImage: "truck-diagnostics-laptop",
@@ -165,6 +169,7 @@ export const serviceAreas: ServiceArea[] = [
     county: "Maricopa County",
     distance: "~25 min from shop",
     population: "515K+",
+    description: "Arizona's third-largest city. In-shop and mobile repair for East Valley fleets and owner-operators.",
     highways: ["US-60", "Loop 101", "Loop 202"],
     heroImage: "mechanic-engine-work",
     contentImage: "diesel-engine-repair",
@@ -210,6 +215,7 @@ export const serviceAreas: ServiceArea[] = [
     county: "Maricopa County",
     distance: "~30 min from shop",
     population: "280K+",
+    description: "Mobile dispatch to Chandler's tech corridor and Southeast Valley distribution centers.",
     highways: ["Loop 101", "Loop 202", "I-10"],
     heroImage: "fleet-electrical-work",
     contentImage: "truck-diagnostics",
@@ -255,6 +261,7 @@ export const serviceAreas: ServiceArea[] = [
     county: "Maricopa County",
     distance: "~30 min from shop",
     population: "275K+",
+    description: "Serving Gilbert's expanding Loop 202 corridor with shop and mobile repair options.",
     highways: ["Loop 202", "US-60", "Loop 101"],
     heroImage: "two-mechanics-peterbilt",
     contentImage: "facility",
@@ -300,6 +307,7 @@ export const serviceAreas: ServiceArea[] = [
     county: "Maricopa County",
     distance: "~20 min from shop",
     population: "240K+",
+    description: "Professional diesel repair for Scottsdale's hospitality and construction supply chains.",
     highways: ["Loop 101", "Loop 202", "SR-51"],
     heroImage: "expert-technician",
     contentImage: "shop-interior",
@@ -345,6 +353,7 @@ export const serviceAreas: ServiceArea[] = [
     county: "Maricopa County",
     distance: "~15 min from shop",
     population: "195K+",
+    description: "One of our closest service areas — quick turnaround on any repair from our Phoenix shop.",
     highways: ["Loop 101", "Grand Ave", "SR-74"],
     heroImage: "team-work",
     contentImage: "engine-repair",
@@ -390,6 +399,7 @@ export const serviceAreas: ServiceArea[] = [
     county: "Maricopa County",
     distance: "~25 min from shop",
     population: "150K+",
+    description: "Serving the West Valley's fast-growing Loop 303 logistics corridor.",
     highways: ["Loop 303", "Grand Ave", "US-60"],
     heroImage: "crane-lift",
     contentImage: "transmission-rebuild",
@@ -435,6 +445,7 @@ export const serviceAreas: ServiceArea[] = [
     county: "Maricopa County",
     distance: "~15 min from shop",
     population: "90K+",
+    description: "Right on the I-10 corridor — priority response for one of America's busiest freight routes.",
     highways: ["I-10", "Loop 101", "MC-85"],
     heroImage: "night-towing",
     contentImage: "mechanic-hub-repair",
@@ -480,6 +491,7 @@ export const serviceAreas: ServiceArea[] = [
     county: "Maricopa County",
     distance: "~20 min from shop",
     population: "110K+",
+    description: "Home to Amazon, UPS, and dozens of logistics operations. Mobile dispatch to distribution centers.",
     highways: ["I-10", "Loop 303", "MC-85"],
     heroImage: "blue-cascadia-repair",
     contentImage: "trailer-axle-repair",
@@ -525,6 +537,7 @@ export const serviceAreas: ServiceArea[] = [
     county: "Maricopa County",
     distance: "~30 min from shop",
     population: "100K+",
+    description: "Gateway between the desert and the metro — I-10 corridor service and construction fleet repair.",
     highways: ["I-10", "SR-85", "MC-85"],
     heroImage: "about-tow-truck",
     contentImage: "engine-brake-repair",
