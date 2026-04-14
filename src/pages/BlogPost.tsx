@@ -5,7 +5,18 @@ import BlogContent from "@/components/BlogContent";
 import { blogPosts } from "@/data/blogPosts";
 import { getFeaturedImage } from "@/lib/blogImageMap";
 import { ArrowLeft, ArrowRight, Calendar, Tag } from "lucide-react";
-import { createBreadcrumbSchema, createArticleSchema, BASE_URL } from "@/lib/schema";
+import { createBreadcrumbSchema, createArticleSchema, createFAQSchema, BASE_URL } from "@/lib/schema";
+
+const blogFAQs: Record<string, { question: string; answer: string }[]> = {
+  "mobile-truck-repair-phoenix-az-guide": [
+    { question: "How much does mobile truck repair cost in Phoenix?", answer: "Mobile truck repair costs vary depending on the type of repair, parts needed, and time of service. Simple roadside fixes like tire changes or air leak repairs typically cost less than major engine or transmission work. CT Truck & Trailer Shop provides upfront estimates before starting any repair so there are no surprises. Call (602) 830-3232 for a quote." },
+    { question: "How fast can a mobile mechanic get to my truck in Phoenix?", answer: "Our average response time in the Phoenix metro area is typically under an hour, depending on your location and current demand. We prioritize emergency breakdowns to get you back on the road as quickly as possible." },
+    { question: "What types of trucks do you repair?", answer: "We service all major semi truck and commercial vehicle brands including Freightliner, Peterbilt, Kenworth, Volvo, International, Mack, and Western Star. We also repair all trailer types — dry vans, flatbeds, reefers, and tankers." },
+    { question: "Do you offer DOT inspections on-site?", answer: "Yes. We offer DOT inspections both at our shop and through our mobile service. Our inspectors are certified and can complete annual inspections, pre-trip inspections, and help you address any issues found during a roadside inspection." },
+    { question: "What areas does your mobile truck repair service cover?", answer: "Our mobile repair service covers the entire Phoenix metropolitan area including Glendale, Tempe, Mesa, Chandler, Goodyear, Avondale, Tolleson, and surrounding areas along the I-10 and I-17 corridors." },
+    { question: "Can you do engine repairs on the roadside?", answer: "We can diagnose most engine problems on-site and perform many common engine repairs roadside, including fuel system repairs, sensor replacements, turbo repairs, and cooling system fixes. For major engine work like full overhauls, we may recommend towing to our shop for a more thorough repair." },
+  ],
+};
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
@@ -47,6 +58,7 @@ const BlogPost = () => {
             { name: post.title, url: `${BASE_URL}/blog/${post.slug}` },
           ]),
           createArticleSchema(post),
+          ...(blogFAQs[post.slug] ? [createFAQSchema(blogFAQs[post.slug])] : []),
         ]}
       />
 
