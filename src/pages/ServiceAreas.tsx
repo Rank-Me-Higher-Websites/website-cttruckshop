@@ -23,7 +23,7 @@ const ServiceAreas = () => {
         ]}
       />
 
-      <section className="bg-primary text-primary-foreground py-8 md:py-10">
+      <section className="bg-primary text-primary-foreground py-6 md:py-8">
         <div className="container-custom">
           <div className="max-w-2xl">
             <span className="inline-flex items-center gap-1.5 bg-accent/20 border border-accent/30 rounded-full px-3 py-1 mb-3">
@@ -47,7 +47,7 @@ const ServiceAreas = () => {
         </div>
       </section>
 
-      <section className="py-6 md:py-8 bg-primary border-t border-accent/10">
+      <section className="py-5 md:py-6 bg-primary border-t border-accent/10">
         <div className="container-custom">
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-2.5">
             {serviceAreas.map((area) => (

@@ -179,7 +179,7 @@ const ServiceAreaPage = () => {
         </div>
       </section>
 
-      <section className="py-8 md:py-10 bg-primary">
+      <section className="py-5 md:py-6 bg-primary">
         <div className="container-custom">
           <div className="grid lg:grid-cols-5 gap-6 items-start">
             <div className="lg:col-span-3">
@@ -201,7 +201,7 @@ const ServiceAreaPage = () => {
         </div>
       </section>
 
-      <section className="py-8 md:py-10 bg-primary border-t border-accent/10">
+      <section className="py-5 md:py-6 bg-primary border-t border-accent/10">
         <div className="container-custom">
           <div className="grid lg:grid-cols-2 gap-6 items-start">
             <div>
@@ -255,7 +255,7 @@ const ServiceAreaPage = () => {
         </div>
       </section>
 
-      <section className="py-8 md:py-10 bg-primary border-t border-accent/10">
+      <section className="py-5 md:py-6 bg-primary border-t border-accent/10">
         <div className="container-custom">
           <span className="text-accent font-semibold text-xs uppercase tracking-wider">Local Context</span>
           <h2 className="font-heading text-xl md:text-2xl font-bold text-primary-foreground mt-1 mb-4">
@@ -271,7 +271,7 @@ const ServiceAreaPage = () => {
         </div>
       </section>
 
-      <section className="py-8 md:py-10 bg-primary border-t border-accent/10">
+      <section className="py-5 md:py-6 bg-primary border-t border-accent/10">
         <div className="container-custom">
           <span className="text-accent font-semibold text-xs uppercase tracking-wider">Common Repairs</span>
           <h2 className="font-heading text-xl md:text-2xl font-bold text-primary-foreground mt-1 mb-4">
@@ -288,7 +288,7 @@ const ServiceAreaPage = () => {
         </div>
       </section>
 
-      <section className="py-8 md:py-10 bg-primary border-t border-accent/10">
+      <section className="py-5 md:py-6 bg-primary border-t border-accent/10">
         <div className="container-custom">
           <div className="grid lg:grid-cols-2 gap-6">
             <div className="bg-primary-foreground/5 border border-accent/15 rounded-lg p-5">
@@ -346,7 +346,7 @@ const ServiceAreaPage = () => {
         </div>
       </section>
 
-      <section className="py-6 md:py-8 bg-primary border-t border-accent/10">
+      <section className="py-5 md:py-6 bg-primary border-t border-accent/10">
         <div className="container-custom">
           <h2 className="font-heading text-lg font-bold text-primary-foreground mb-3">
             Other Areas We Serve
