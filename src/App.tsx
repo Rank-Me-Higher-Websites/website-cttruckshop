@@ -30,6 +30,8 @@ const Blog = lazy(() => import("./pages/Blog"));
 const PrivacyPolicy = lazy(() => import("./pages/PrivacyPolicy"));
 const TermsOfService = lazy(() => import("./pages/TermsOfService"));
 const BlogPost = lazy(() => import("./pages/BlogPost"));
+const ServiceAreas = lazy(() => import("./pages/ServiceAreas"));
+const ServiceAreaPage = lazy(() => import("./pages/ServiceAreaPage"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 function PageFallback() {
@@ -73,6 +75,8 @@ const App = () => (
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/blog" element={<Blog />} />
                 <Route path="/blog/:slug" element={<BlogPost />} />
+                <Route path="/service-areas" element={<ServiceAreas />} />
+                <Route path="/service-areas/:areaSlug" element={<ServiceAreaPage />} />
                 <Route path="/privacy" element={<PrivacyPolicy />} />
                 <Route path="/terms" element={<TermsOfService />} />
                 <Route path="*" element={<NotFound />} />
