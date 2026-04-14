@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { ScrollReveal } from "@/hooks/useScrollAnimation";
-import shopInterior from "@/assets/shop-interior.jpg";
+import shopInterior from "@/assets/shop-interior.webp";
 
 const StorySection = () => {
   return (

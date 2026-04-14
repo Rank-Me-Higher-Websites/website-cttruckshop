@@ -8,12 +8,12 @@ import { useQuoteModal } from "@/contexts/QuoteModalContext";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import CTASection from "@/components/sections/CTASection";
 import { createBreadcrumbSchema, createOrganizationSchema, createFAQSchema, BASE_URL } from "@/lib/schema";
-import aboutTowTruck from "@/assets/about-tow-truck.jpg";
-import aboutEngineRepair from "@/assets/about-engine-repair.png";
-import aboutRepairShop from "@/assets/about-repair-shop.jpg";
-import aboutTeam from "@/assets/about-team.png";
-import teamWork from "@/assets/team-work.jpeg";
-import ctShopTeam from "@/assets/ct-shop-team.jpg";
+import aboutTowTruck from "@/assets/about-tow-truck.webp";
+import aboutEngineRepair from "@/assets/about-engine-repair.webp";
+import aboutRepairShop from "@/assets/about-repair-shop.webp";
+import aboutTeam from "@/assets/about-team.webp";
+import teamWork from "@/assets/team-work.webp";
+import ctShopTeam from "@/assets/ct-shop-team.webp";
 
 const aboutCards = [
   {
@@ -149,7 +149,7 @@ const About = () => {
             {aboutCards.map((card) => (
               <div key={card.label} className="relative bg-primary-foreground/5 rounded-xl border border-accent/20 overflow-hidden group hover:border-accent/50 transition-all">
                 <div className="absolute inset-0 bg-gradient-to-br from-accent/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                <img src={card.image} alt={card.alt} className="w-full h-56 object-cover" />
+                <img src={card.image} alt={card.alt} className="w-full h-56 object-cover" loading="lazy" />
                 <div className="relative z-10 p-6">
                   <span className="inline-block text-xs font-semibold uppercase tracking-wider text-accent mb-3">{card.label}</span>
                   <p className="text-primary-foreground/80 text-sm leading-relaxed">{card.description}</p>
@@ -227,7 +227,7 @@ const About = () => {
               <div className="relative">
                 <div className="absolute -inset-1 bg-gradient-to-r from-accent/50 via-accent/20 to-accent/50 rounded-2xl blur-sm" />
                 <div className="relative rounded-2xl overflow-hidden border border-accent/30">
-                  <img src={ctShopTeam} alt="CT Truck & Trailer Shop team" className="w-full h-72 md:h-80 object-cover object-bottom" />
+                  <img src={ctShopTeam} alt="CT Truck & Trailer Shop team" className="w-full h-72 md:h-80 object-cover object-bottom" loading="lazy" />
                 </div>
               </div>
             </div>

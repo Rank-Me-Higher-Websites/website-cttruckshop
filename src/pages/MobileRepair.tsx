@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Phone, Clock, MapPin, Truck, Wrench, Zap, CheckCircle } from "lucide-react";
 import CTASection from "@/components/sections/CTASection";
 import FAQSection from "@/components/sections/FAQSection";
-import nightTowing from "@/assets/night-towing.jpg";
+import nightTowing from "@/assets/night-towing.webp";
 import { createBreadcrumbSchema, createServiceSchema, BASE_URL } from "@/lib/schema";
 
 const mobileServices = [

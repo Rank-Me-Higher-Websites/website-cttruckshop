@@ -2,7 +2,7 @@ import { Phone, ArrowRight, Clock, MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { ScrollReveal } from "@/hooks/useScrollAnimation";
 import { useQuoteModal } from "@/contexts/QuoteModalContext";
-import towingRecovery from "@/assets/towing-recovery.jpg";
+import towingRecovery from "@/assets/towing-recovery.webp";
 
 const CTASection = () => {
   const { open } = useQuoteModal();

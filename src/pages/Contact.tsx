@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
 import GoogleMap from "@/components/GoogleMap";
 import LeadForm from "@/components/LeadForm";
-import facility from "@/assets/facility.jpg";
+import facility from "@/assets/facility.webp";
 import { createBreadcrumbSchema, createLocalBusinessSchema, BASE_URL } from "@/lib/schema";
 
 const serviceOptions = [

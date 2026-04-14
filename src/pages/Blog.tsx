@@ -6,7 +6,7 @@ import SEO from "@/components/SEO";
 import { ArrowRight, Calendar, Tag, ChevronLeft, ChevronRight } from "lucide-react";
 import { blogPosts } from "@/data/blogPosts";
 import { getFeaturedImage } from "@/lib/blogImageMap";
-import towingRecovery from "@/assets/towing-recovery.jpg";
+import towingRecovery from "@/assets/towing-recovery.webp";
 import { createBreadcrumbSchema, createCollectionPageSchema, BASE_URL } from "@/lib/schema";
 
 const POSTS_PER_PAGE = 6;

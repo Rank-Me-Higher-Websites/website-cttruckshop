@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Phone, Wrench, Clock, Shield, Zap, Settings, Gauge, Cog, ThermometerSun, CheckCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import teamWork from "@/assets/team-work.jpeg";
+import teamWork from "@/assets/team-work.webp";
 
 const services = [
   { icon: Settings, name: "Engine Service & Repair" },

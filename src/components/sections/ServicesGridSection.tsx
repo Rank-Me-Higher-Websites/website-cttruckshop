@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import { ArrowRight, Wrench, Zap, Shield, Gauge, Truck, Settings, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import truckYard from "@/assets/truck-yard.png";
-import mechanicsWork from "@/assets/mechanics-work.jpeg";
-import truckDiagnostics from "@/assets/truck-diagnostics.jpg";
-import shopInterior from "@/assets/shop-interior.jpg";
+import truckYard from "@/assets/truck-yard.webp";
+import mechanicsWork from "@/assets/mechanics-work.webp";
+import truckDiagnostics from "@/assets/truck-diagnostics.webp";
+import shopInterior from "@/assets/shop-interior.webp";
 
 const services = [
   {

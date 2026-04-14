@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { CheckCircle, Clock, Shield, Wrench, Users, Award } from "lucide-react";
 import { ScrollReveal } from "@/hooks/useScrollAnimation";
-import expertTechnician from "@/assets/expert-technician.png";
+import expertTechnician from "@/assets/expert-technician.webp";
 
 const benefits = [
   {

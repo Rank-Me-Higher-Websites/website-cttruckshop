@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Phone, Wrench, Zap, Settings, Gauge, Truck, Shield, Cog, Hammer } from "lucide-react";
 import CTASection from "@/components/sections/CTASection";
 import FAQSection from "@/components/sections/FAQSection";
-import shopBayOverview from "@/assets/shop-bay-overview.jpg";
+import shopBayOverview from "@/assets/shop-bay-overview.webp";
 import { createBreadcrumbSchema, createServiceSchema, createLocalBusinessSchema, BASE_URL } from "@/lib/schema";
 
 const truckServices = [

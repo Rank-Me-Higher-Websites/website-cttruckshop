@@ -4,7 +4,7 @@ import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Phone, MapPin, Clock, Truck } from "lucide-react";
 import CTASection from "@/components/sections/CTASection";
-import truckYard from "@/assets/truck-yard.png";
+import truckYard from "@/assets/truck-yard.webp";
 import { createBreadcrumbSchema, createLocalBusinessSchema, BASE_URL } from "@/lib/schema";
 
 const locations = [
