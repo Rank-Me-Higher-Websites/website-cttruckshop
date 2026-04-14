@@ -52,53 +52,83 @@
       "@context": "https://schema.org",
       "@type": "AutoRepair",
       "name": "CT Truck & Trailer Shop",
-      "description": "24/7 semi truck and trailer repair in Phoenix, AZ. Mobile truck repair, DOT inspections, engine diagnostics, and towing.",
-      "url": "https://cttruckshop.com",
-      "logo": "https://cttruckshop.com/logo.png",
       "image": "https://cttruckshop.com/og-image.jpg",
+      "@id": "https://cttruckshop.com",
+      "url": "https://cttruckshop.com",
       "telephone": "+1-602-830-3232",
+      "email": "service@clevertranscoshop.com",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "4645 S 35th St",
+        "streetAddress": "3883 N 36th Ave",
         "addressLocality": "Phoenix",
         "addressRegion": "AZ",
-        "postalCode": "85040",
+        "postalCode": "85019",
         "addressCountry": "US"
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": 33.3943,
-        "longitude": -112.0067
+        "latitude": 33.4734,
+        "longitude": -112.1328
       },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-        "opens": "00:00",
-        "closes": "23:59"
-      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+          "opens": "08:00",
+          "closes": "17:00"
+        }
+      ],
+      "areaServed": [
+        {"@type": "City", "name": "Phoenix"},
+        {"@type": "City", "name": "Glendale"},
+        {"@type": "City", "name": "Tempe"},
+        {"@type": "City", "name": "Mesa"},
+        {"@type": "City", "name": "Chandler"},
+        {"@type": "City", "name": "Gilbert"},
+        {"@type": "City", "name": "Scottsdale"},
+        {"@type": "City", "name": "Peoria"},
+        {"@type": "City", "name": "Surprise"},
+        {"@type": "City", "name": "Avondale"},
+        {"@type": "City", "name": "Goodyear"},
+        {"@type": "City", "name": "Buckeye"}
+      ],
+      "sameAs": [
+        "https://www.facebook.com/cttruckshop",
+        "https://www.instagram.com/cttruckshop",
+        "https://www.linkedin.com/company/cttruckshop"
+      ],
       "priceRange": "$$",
-      "currenciesAccepted": "USD",
-      "paymentAccepted": "Cash, Credit Card, Check",
-      "areaServed": {
-        "@type": "GeoCircle",
-        "geoMidpoint": {
-          "@type": "GeoCoordinates",
-          "latitude": 33.3943,
-          "longitude": -112.0067
-        },
-        "geoRadius": "100000"
-      },
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Truck Repair Services",
-        "itemListElement": [
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Semi Truck Engine Repair"}},
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Mobile Truck Repair"}},
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "DOT Inspection"}},
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Trailer Repair"}},
-          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Towing &amp; Recovery"}}
-        ]
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.5",
+        "reviewCount": "61"
       }
+    }
+    </script>
+
+    <!-- Structured Data — Organization -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "CT Truck & Trailer Shop",
+      "url": "https://cttruckshop.com",
+      "logo": "https://cttruckshop.com/logo.png",
+      "telephone": "+1-602-830-3232",
+      "email": "service@clevertranscoshop.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3883 N 36th Ave",
+        "addressLocality": "Phoenix",
+        "addressRegion": "AZ",
+        "postalCode": "85019",
+        "addressCountry": "US"
+      },
+      "sameAs": [
+        "https://www.facebook.com/cttruckshop",
+        "https://www.instagram.com/cttruckshop",
+        "https://www.linkedin.com/company/cttruckshop"
+      ]
     }
     </script>
   </head>
