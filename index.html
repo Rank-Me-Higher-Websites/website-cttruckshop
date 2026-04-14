@@ -3,34 +3,104 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="/favicon.webp" type="image/webp" />
-    <title>CT Truck & Trailer Shop | Phoenix Semi Truck Repair | 24/7 Service</title>
-    <meta name="description" content="CT Truck & Trailer Shop offers 24/7 semi truck repair, mobile service, and DOT inspections in Phoenix, AZ. Expert diesel mechanics. Call (602) 830-3232." />
-    <meta name="keywords" content="semi truck repair Phoenix, truck repair shop Phoenix AZ, mobile truck repair, emergency truck repair, DOT inspection Phoenix, diesel mechanic Phoenix, trailer repair Phoenix" />
-    <meta name="author" content="CT Truck & Trailer Shop" />
-    <meta name="robots" content="index, follow" />
+
+    <!-- Favicons -->
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <link rel="canonical" href="https://cttruckshop.com/" />
 
-    <!-- Open Graph -->
+    <!-- Primary Meta Tags -->
+    <title>CT Truck &amp; Trailer Shop | Phoenix Semi Truck Repair | 24/7 Service</title>
+    <meta name="title" content="CT Truck &amp; Trailer Shop | Phoenix Semi Truck Repair | 24/7 Service" />
+    <meta name="description" content="CT Truck &amp; Trailer Shop offers 24/7 semi truck repair, mobile service, and DOT inspections in Phoenix, AZ. Expert diesel mechanics. Call (602) 830-3232." />
+    <meta name="keywords" content="semi truck repair Phoenix, truck repair shop Phoenix AZ, mobile truck repair, emergency truck repair, DOT inspection Phoenix, diesel mechanic Phoenix, trailer repair Phoenix, 24/7 truck repair" />
+    <meta name="author" content="CT Truck &amp; Trailer Shop" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#1a1a2e" />
+
+    <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="CT Truck & Trailer Shop" />
-    <meta property="og:title" content="CT Truck & Trailer Shop | Phoenix Semi Truck Repair | 24/7 Service" />
-    <meta property="og:description" content="24/7 semi truck repair, mobile service, and DOT inspections in Phoenix, AZ. Expert diesel mechanics. Call (602) 830-3232." />
     <meta property="og:url" content="https://cttruckshop.com/" />
+    <meta property="og:site_name" content="CT Truck &amp; Trailer Shop" />
+    <meta property="og:title" content="CT Truck &amp; Trailer Shop | Phoenix Semi Truck Repair | 24/7 Service" />
+    <meta property="og:description" content="24/7 semi truck repair, mobile service, and DOT inspections in Phoenix, AZ. Expert diesel mechanics. Call (602) 830-3232." />
     <meta property="og:image" content="https://cttruckshop.com/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="CT Truck &amp; Trailer Shop — Phoenix Semi Truck Repair" />
     <meta property="og:locale" content="en_US" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://cttruckshop.com/" />
     <meta name="twitter:site" content="@CTTruckShop" />
-    <meta name="twitter:title" content="CT Truck & Trailer Shop | Phoenix Semi Truck Repair" />
+    <meta name="twitter:title" content="CT Truck &amp; Trailer Shop | Phoenix Semi Truck Repair" />
     <meta name="twitter:description" content="24/7 semi truck repair, mobile service, and DOT inspections in Phoenix, AZ. Call (602) 830-3232." />
     <meta name="twitter:image" content="https://cttruckshop.com/og-image.jpg" />
+    <meta name="twitter:image:alt" content="CT Truck &amp; Trailer Shop — Phoenix Semi Truck Repair" />
 
-    <!-- Additional SEO -->
+    <!-- Geo / Local SEO -->
     <meta name="geo.region" content="US-AZ" />
-    <meta name="geo.placename" content="Phoenix" />
-    <meta name="theme-color" content="#1a1a2e" />
+    <meta name="geo.placename" content="Phoenix, Arizona" />
+
+    <!-- Structured Data — LocalBusiness -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AutoRepair",
+      "name": "CT Truck & Trailer Shop",
+      "description": "24/7 semi truck and trailer repair in Phoenix, AZ. Mobile truck repair, DOT inspections, engine diagnostics, and towing.",
+      "url": "https://cttruckshop.com",
+      "logo": "https://cttruckshop.com/logo.png",
+      "image": "https://cttruckshop.com/og-image.jpg",
+      "telephone": "+1-602-830-3232",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "4645 S 35th St",
+        "addressLocality": "Phoenix",
+        "addressRegion": "AZ",
+        "postalCode": "85040",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 33.3943,
+        "longitude": -112.0067
+      },
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+        "opens": "00:00",
+        "closes": "23:59"
+      },
+      "priceRange": "$$",
+      "currenciesAccepted": "USD",
+      "paymentAccepted": "Cash, Credit Card, Check",
+      "areaServed": {
+        "@type": "GeoCircle",
+        "geoMidpoint": {
+          "@type": "GeoCoordinates",
+          "latitude": 33.3943,
+          "longitude": -112.0067
+        },
+        "geoRadius": "100000"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Truck Repair Services",
+        "itemListElement": [
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Semi Truck Engine Repair"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Mobile Truck Repair"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "DOT Inspection"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Trailer Repair"}},
+          {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Towing &amp; Recovery"}}
+        ]
+      }
+    }
+    </script>
   </head>
 
   <body>
