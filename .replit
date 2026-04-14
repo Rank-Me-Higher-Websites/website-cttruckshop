@@ -3,8 +3,8 @@ modules = ["nodejs-20"]
 expertMode = true
 
 [deployment]
-deploymentTarget = "autoscale"
-run = ["node", "serve.js"]
+deploymentTarget = "static"
+run = ["node", "dist/server.js"]
 build = ["npm", "run", "build"]
 publicDir = "dist"
 
