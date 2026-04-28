@@ -1,4 +1,5 @@
-// Maps WordPress image URLs to local assets for blog posts
+// Maps blog slugs to unique local featured images.
+// Goal: every blog post gets its own thumbnail (no duplicates).
 import towingRecovery from "@/assets/towing-recovery.webp";
 import nightTowing from "@/assets/night-towing.webp";
 import towService from "@/assets/tow-service.webp";
@@ -21,6 +22,7 @@ import fleetElectricalWork from "@/assets/fleet-electrical-work.webp";
 import truckEngineWide from "@/assets/truck-engine-wide.webp";
 import transmissionRebuild from "@/assets/transmission-rebuild.webp";
 import truckLaptopDiagnostics from "@/assets/truck-laptop-diagnostics.webp";
+import truckDiagnosticsLaptop from "@/assets/truck-diagnostics-laptop.webp";
 import mechanicHubRepair from "@/assets/mechanic-hub-repair.webp";
 import blueCascadiaRepair from "@/assets/blue-cascadia-repair.webp";
 import twoMechanicsPeterbilt from "@/assets/two-mechanics-peterbilt.webp";
@@ -32,6 +34,9 @@ import truckYard from "@/assets/truck-yard.webp";
 import aboutEngineRepair from "@/assets/about-engine-repair.webp";
 import mechanicsWork from "@/assets/mechanics-work.webp";
 import teamWork from "@/assets/team-work.webp";
+import aboutRepairShop from "@/assets/about-repair-shop.webp";
+import aboutTeam from "@/assets/about-team.webp";
+import aboutFleetReview from "@/assets/about-fleet-review.webp";
 
 // Blog-specific images
 import emergencyTruckRepair from "@/assets/blog/emergency-truck-repair.webp";
@@ -41,23 +46,35 @@ import semiTruckDiagnosticsBlog from "@/assets/blog/semi-truck-diagnostics.webp"
 import semiTruckService from "@/assets/blog/semi-truck-service.webp";
 import truckMechanic from "@/assets/blog/truck-mechanic.webp";
 
-// Pool of images by category for round-robin assignment
+// Newly added in-shop photos (April 2026 batch)
+import carHaulerTrailerRepair from "@/assets/blog/car-hauler-trailer-repair.png";
+import mechanicToolCart from "@/assets/blog/mechanic-tool-cart.png";
+import shopFloorMechanic from "@/assets/blog/shop-floor-mechanic.png";
+import detroitEngineService from "@/assets/blog/detroit-engine-service.png";
+import cabEngineBayWork from "@/assets/blog/cab-engine-bay-work.png";
+import transmissionTeamwork from "@/assets/blog/transmission-teamwork.png";
+import cabElectricalRepair from "@/assets/blog/cab-electrical-repair.png";
+
+// Pool of images by category for inline content image replacement
 const categoryPools: Record<string, string[]> = {
-  towing: [towingRecovery, nightTowing, towService, aboutTowTruck, craneLift],
-  engine: [engineRepair, dieselEngineRepair, mechanicEngineWork, truckEngineWide, aboutEngineRepair],
-  diagnostics: [truckDiagnostics, truckLaptopDiagnostics, semiTruckDiagnosticsBlog],
+  towing: [towingRecovery, nightTowing, towService, aboutTowTruck, craneLift, differentialCraneLift],
+  engine: [engineRepair, dieselEngineRepair, mechanicEngineWork, truckEngineWide, aboutEngineRepair, blueCascadiaRepair, detroitEngineService, cabEngineBayWork],
+  diagnostics: [truckDiagnostics, truckLaptopDiagnostics, truckDiagnosticsLaptop, semiTruckDiagnosticsBlog],
   brake: [engineBrakeRepair, trailerBrakeShop, tireTechThumbsup],
-  trailer: [trailerAxleRepair, trailerWeldingRepair, trailerBrakeShop, mechanicHubRepair],
-  shop: [shopInterior, shopBayOverview, facility, ctShopTeam, kenworthShopFront],
-  mobile: [mobileRepair, mobileTruckRepair, emergencyTruckRepair],
-  electrical: [fleetElectricalWork, expertTechnician],
-  general: [blueCascadiaRepair, twoMechanicsPeterbilt, truckYard, mechanicsWork, teamWork, semiTruckService, truckMechanic, fastTruckRepair],
+  trailer: [trailerAxleRepair, trailerWeldingRepair, trailerBrakeShop, mechanicHubRepair, carHaulerTrailerRepair],
+  shop: [shopInterior, shopBayOverview, facility, ctShopTeam, kenworthShopFront, mechanicToolCart, shopFloorMechanic, aboutRepairShop, aboutTeam, aboutFleetReview],
+  mobile: [mobileRepair, mobileTruckRepair, emergencyTruckRepair, fastTruckRepair],
+  electrical: [fleetElectricalWork, expertTechnician, cabElectricalRepair],
+  transmission: [transmissionRebuild, transmissionTeamwork],
+  general: [twoMechanicsPeterbilt, truckYard, mechanicsWork, teamWork, semiTruckService, truckMechanic],
 };
 
-// Slug-to-featured-image mapping
+// Slug-to-featured-image mapping (each slug maps to a unique image where possible).
+// 53 blog posts vs. 50 unique images means 3 posts share with a content-related sibling.
 const slugFeaturedMap: Record<string, string> = {
+  // --- Original blog posts ---
   "truck-and-trailer-repair-partner": shopInterior,
-  "emergency-repair-services": towingRecovery,
+  "emergency-repair-services": fastTruckRepair,
   "preventative-brake-maintenance": engineBrakeRepair,
   "semi-towing-sevice-tips": towService,
   "semi-trailer-mechanic-services": trailerAxleRepair,
@@ -71,40 +88,46 @@ const slugFeaturedMap: Record<string, string> = {
   "semi-trailer-electrical-repair": fleetElectricalWork,
   "semi-towing-frequently-asked-questions": craneLift,
   "rollover-recovery-understanding": towingRecovery,
-  "semi-truck-towing-arizona": towService,
   "semi-trailer-suspension-fix-tips": mechanicHubRepair,
-  "tow-truck-near-me-arizona": nightTowing,
+  "semi-truck-towing-arizona": differentialCraneLift,
+  "tow-truck-near-me-arizona": semiTruckService,
   "heavy-duty-truck-diagnostic-tips": truckDiagnostics,
   "semi-truck-transmission-repair-guide": transmissionRebuild,
-  "open-deck-trailers-towing": craneLift,
-  "semi-trailer-suspension-repair-arizona": differentialCraneLift,
+  "open-deck-trailers-towing": carHaulerTrailerRepair,
+  "semi-trailer-suspension-repair-arizona": trailerBrakeShop,
   "tips-for-heavy-duty-drivers": twoMechanicsPeterbilt,
   "diesel-engine-mechanics": dieselEngineRepair,
-  "clever-trans-towing-partnership": towingRecovery,
+  "clever-trans-towing-partnership": teamWork,
   "semi-truck-full-diagnostics-tips": truckLaptopDiagnostics,
   "semi-truck-prices-2023-guide": blueCascadiaRepair,
-  "trailer-repair-and-maintenance": trailerWeldingRepair,
-  "heavy-duty-and-medium-duty-towing-services": aboutTowTruck,
-  "synchronized-symphony-semi-towing": towService,
-  "overnight-heavy-duty-towing-challenges": nightTowing,
-  "day-in-the-life-of-a-tow-truck-driver": craneLift,
+  "trailer-repair-and-maintenance": mechanicEngineWork,
+  "heavy-duty-and-medium-duty-towing-services": aboutFleetReview,
+  "synchronized-symphony-semi-towing": mechanicsWork,
+  "overnight-heavy-duty-towing-challenges": aboutEngineRepair,
+  "day-in-the-life-of-a-tow-truck-driver": mechanicToolCart,
   "regular-pm-service-arizona": shopBayOverview,
-  "trailer-air-system-issues": trailerAxleRepair,
-  "trailer-lights-repairs": fleetElectricalWork,
-  "reliable-semi-truck-service-in-phoenix-arizona": semiTruckService,
+  "trailer-air-system-issues": cabElectricalRepair,
+  "trailer-lights-repairs": semiTruckDiagnosticsBlog,
+  "reliable-semi-truck-service-in-phoenix-arizona": ctShopTeam,
   "local-truck-repair-partner-phoenix": kenworthShopFront,
   "emergency-truck-repair-phoenix-arizona": emergencyTruckRepair,
-  "truck-diagnostics-guide-for-owner-operators": semiTruckDiagnosticsBlog,
-  "emergency-truck-repair-solutions": fastTruckRepair,
-  "semi-truck-brake-repair-phoenix": engineBrakeRepair,
-  "diesel-truck-repair-phoenix": dieselEngineRepair,
-  "mobile-truck-repair-phoenix": mobileTruckRepair,
-  "semi-truck-engine-repair-cost-guide": truckEngineWide,
-  "fleet-truck-repair-services-phoenix": ctShopTeam,
-  "truck-and-trailer-repair-near-me-shop-tips": truckMechanic,
-  "truck-alignment-service-phoenix": mechanicHubRepair,
-  "mobile-truck-repair-phoenix-az-guide": mobileRepair,
-  "10-common-semi-truck-brake-problems": engineBrakeRepair,
+  "truck-diagnostics-guide-for-owner-operators": truckDiagnosticsLaptop,
+  "emergency-truck-repair-solutions": mobileTruckRepair,
+
+  // --- Newer SEO blog posts ---
+  "reliable-semi-truck-service-for-your-fleet": aboutTeam,
+  "reliable-trailer-repair-service-for-truck-drivers": transmissionTeamwork,
+  "emergency-truck-repair": mobileRepair,
+  "fast-truck-repair-near-me": facility,
+  "mobile-truck-repair-keeping-your-rig-rolling-when-the-shop-comes-to-you": cabEngineBayWork,
+  "truck-mechanic-near-me-phoeniz-az": truckMechanic,
+  "semi-truck-repair-fast-and-reliable": detroitEngineService,
+  "local-truck-repair-phoenix-complete-guide": aboutRepairShop,
+  "trailer-repair-near-me-in-phoenix-fast-reliable": shopFloorMechanic,
+  "truck-and-trailer-repair-near-me-shop-tips": truckEngineWide,
+  "commercial-truck-repair": shopFloorMechanic, // shares with trailer-repair-near-me (both shop floor/general)
+  "mobile-truck-repair-phoenix-az-guide": mobileRepair, // shares with emergency-truck-repair (both mobile)
+  "10-common-semi-truck-brake-problems": engineBrakeRepair, // shares with preventative-brake-maintenance (both brake)
 };
 
 /** Get the correct local featured image for a blog post by slug */
@@ -124,11 +147,11 @@ const allInlineImages = [
   ...categoryPools.brake,
   ...categoryPools.mobile,
   ...categoryPools.electrical,
+  ...categoryPools.transmission,
 ];
 
 /** Replace all WordPress image URLs in HTML content with local assets */
 export function replaceContentImages(html: string): string {
-  // Replace all WordPress image src URLs
   return html.replace(
     /https?:\/\/cttruckshop\.com\/wp-content\/uploads\/[^"'\s)]+/g,
     () => {
