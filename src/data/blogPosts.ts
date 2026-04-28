@@ -529,5 +529,181 @@ export const blogPosts: BlogPost[] = [
     featuredImage: "https://cttruckshop.com/wp-content/uploads/2026/04/mobile-truck-repair-phoenix.jpg",
     metaDescription: "Mobile truck repair in Phoenix, AZ. CT Truck & Trailer Shop offers 24/7 emergency roadside semi truck repair, diesel engine service, brake repair, and DOT inspections. Call (602) 830-3232.",
     content: "<h2>Mobile Truck Repair in Phoenix, AZ — Fast On-Site Service When You Need It Most</h2><p>When your semi truck breaks down in Phoenix, AZ, every minute of downtime costs you money. Whether it is a blown tire on I-10, an engine warning light on the I-17, or a brake failure at a delivery site, the ability to get fast, professional repairs without towing your rig across town is invaluable. That is exactly what <strong>mobile truck repair</strong> delivers — and <a href=\"https://cttruckshop.com/\">CT Truck &amp; Trailer Shop</a> is Phoenix's go-to provider for on-site semi truck repair services.</p><img src=\"https://cttruckshop.com/wp-content/uploads/2026/04/mobile-repair-1.jpg\" alt=\"mobile truck repair service vehicle arriving at breakdown location in Phoenix AZ\" /><h2>What Is Mobile Truck Repair and How Does It Work?</h2><p>Mobile truck repair brings the shop directly to your location. Instead of waiting hours for a tow and then more hours at a repair facility, a fully-equipped service vehicle arrives at your breakdown location with the tools, parts, and expertise to get you rolling again.</p><p>Our mobile units carry diagnostic computers, air tools, welding equipment, and a comprehensive parts inventory, allowing us to handle a wide range of issues right on the shoulder of the highway or at your delivery site. This saves you the cost and delay of a tow, and gets your truck back in service faster.</p><h2>Comprehensive Semi Truck Repair Services in Phoenix</h2><p>Our team of experienced <strong>diesel mechanics in Phoenix</strong> provides a full spectrum of repair and maintenance services tailored to the unique demands of commercial vehicles.</p><h3>24/7 Emergency Roadside Service</h3><p>Breakdowns do not adhere to a 9-to-5 schedule, and neither do we. Our <a href=\"https://cttruckshop.com/semi-truck-repair-services-phoenix-arizona/\">emergency roadside service</a> is available around the clock, every day of the year. Whether you experience an electrical failure in the middle of the night or a brake issue during rush hour, our rapid response team is just a phone call away at <strong><a href=\"tel:6028303232\">(602) 830-3232</a></strong>.</p><img src=\"https://cttruckshop.com/wp-content/uploads/2026/04/emergency-roadside-2.jpg\" alt=\"24/7 emergency roadside semi truck repair service in Phoenix Arizona\" /><h3>Expert Diesel Engine Repair</h3><p>The heart of your semi truck is its diesel engine. Our skilled technicians specialize in <strong>diesel engine repair</strong>, utilizing state-of-the-art diagnostic equipment to pinpoint the root cause of any problem. From fuel injector replacements and turbocharger repairs to full engine overhauls, we ensure your powerplant operates at peak performance.</p><h3>Professional Trailer Repair</h3><p>We offer comprehensive <a href=\"https://cttruckshop.com/trailer-repair-services-phoenix/\">trailer repair services</a>, addressing issues such as damaged suspension systems, malfunctioning lighting, air leaks, and structural wear. A well-maintained trailer is crucial for the safe transport of your goods and for maintaining compliance with DOT regulations.</p><h3>Brake Repair and Replacement</h3><p>Faulty brakes are one of the most dangerous and most common reasons trucks get placed out of service. Our <strong>brake repair and replacement</strong> services cover everything from air leaks and worn brake pads to complete system overhauls. We conduct thorough inspections to ensure your brakes meet all federal safety standards.</p><img src=\"https://cttruckshop.com/wp-content/uploads/2026/04/brake-inspection-3.jpg\" alt=\"semi truck brake repair and inspection service at CT Truck Shop Phoenix\" /><h3>Advanced Electrical Diagnostics</h3><p>Modern semi trucks rely on complex electrical systems for everything from engine management to lighting and ABS. Our technicians are proficient in <strong>electrical diagnostics</strong>, quickly identifying and resolving faults in your truck's ECM, wiring harnesses, and battery networks to restore full functionality.</p><h2>Preventive Maintenance and DOT Inspections</h2><p>Preventive maintenance is the cornerstone of a reliable fleet. Regularly scheduled services — such as oil changes, fluid inspections, filter replacements, and belt checks — significantly extend the lifespan of your vehicle and improve fuel economy.</p><p>We provide thorough <strong>DOT inspections</strong> to ensure your truck and trailer meet all safety requirements set by the Department of Transportation. Staying compliant means avoiding costly fines, out-of-service orders, and CSA score problems that can hurt your business long-term.</p><h2>Why CT Truck &amp; Trailer Shop Is Phoenix's Trusted Diesel Mechanic</h2><p>CT Truck &amp; Trailer Shop has built a strong reputation for excellence throughout the Phoenix, AZ area. Here is what sets us apart:</p><ul><li><strong>Strategic location</strong> — Our shop at 3883 N 36th Ave is positioned to serve drivers on I-10, I-17, US-60, and all major commercial corridors in the Valley.</li><li><strong>Rapid response times</strong> — Our mobile units are dispatched quickly to minimize your downtime, day or night.</li><li><strong>Experienced ASE-level technicians</strong> — Our diesel mechanics have years of hands-on experience with all major truck brands including Freightliner, Peterbilt, Kenworth, Volvo, and International.</li><li><strong>Transparent pricing</strong> — We provide honest estimates before starting work, so you know exactly what to expect.</li><li><strong>One-stop service</strong> — From mobile roadside repair to full in-shop overhauls, we handle everything under one roof.</li></ul><img src=\"https://cttruckshop.com/wp-content/uploads/2026/04/ct-team-4.jpg\" alt=\"CT Truck and Trailer Shop team of diesel mechanics in Phoenix AZ\" /><h2>People Also Ask</h2><h3>How much does mobile truck repair cost in Phoenix?</h3><p>Mobile truck repair costs vary depending on the type of repair, parts needed, and time of service. Simple roadside fixes like tire changes or air leak repairs typically cost less than major engine or transmission work. CT Truck &amp; Trailer Shop provides upfront estimates before starting any repair so there are no surprises. Call <a href=\"tel:6028303232\">(602) 830-3232</a> for a quote.</p><h3>How fast can a mobile mechanic get to my truck in Phoenix?</h3><p>Our average response time in the Phoenix metro area is typically under an hour, depending on your location and current demand. We prioritize emergency breakdowns to get you back on the road as quickly as possible.</p><h3>What types of trucks do you repair?</h3><p>We service all major semi truck and commercial vehicle brands including Freightliner, Peterbilt, Kenworth, Volvo, International, Mack, and Western Star. We also repair all trailer types — dry vans, flatbeds, reefers, and tankers.</p><h3>Do you offer DOT inspections on-site?</h3><p>Yes. We offer DOT inspections both at our shop and through our mobile service. Our inspectors are certified and can complete annual inspections, pre-trip inspections, and help you address any issues found during a roadside inspection.</p><h3>What areas does your mobile truck repair service cover?</h3><p>Our mobile repair service covers the entire Phoenix metropolitan area including <a href=\"https://cttruckshop.com/service-areas/glendale\">Glendale</a>, <a href=\"https://cttruckshop.com/service-areas/tempe\">Tempe</a>, <a href=\"https://cttruckshop.com/service-areas/mesa\">Mesa</a>, <a href=\"https://cttruckshop.com/service-areas/chandler\">Chandler</a>, <a href=\"https://cttruckshop.com/service-areas/goodyear\">Goodyear</a>, <a href=\"https://cttruckshop.com/service-areas/avondale\">Avondale</a>, <a href=\"https://cttruckshop.com/service-areas/tolleson\">Tolleson</a>, and surrounding areas along the I-10 and I-17 corridors.</p><h3>Can you do engine repairs on the roadside?</h3><p>We can diagnose most engine problems on-site and perform many common engine repairs roadside, including fuel system repairs, sensor replacements, turbo repairs, and cooling system fixes. For major engine work like full overhauls, we may recommend towing to our shop for a more thorough repair.</p><h2>Get Back on the Road Today</h2><p>Whether you need immediate <strong>mobile truck repair in Phoenix</strong>, a comprehensive DOT inspection, or want to set up a preventive maintenance plan for your fleet, our team is ready. We understand that your truck is your livelihood — and every hour it sits broken down is money lost.</p><p><strong>Call CT Truck &amp; Trailer Shop now at <a href=\"tel:6028303232\">(602) 830-3232</a></strong> or visit <a href=\"https://cttruckshop.com/\">cttruckshop.com</a> to schedule your service today.</p>"
+  },
+  {
+    slug: "10-common-semi-truck-brake-problems",
+    title: "10 Common Semi Truck Brake Problems (and How to Fix Them)",
+    date: "April 28, 2026",
+    category: "Common Truck and Trailer Repairs",
+    excerpt: "From air pressure loss and worn pads to brake fade, ABS sensor failures, and jackknife-causing imbalance — here are the 10 most common semi truck brake problems and exactly how to fix each one.",
+    featuredImage: "https://cttruckshop.com/wp-content/uploads/2026/04/semi-truck-brake-problems.jpg",
+    metaDescription: "10 most common semi truck brake problems explained — air pressure loss, worn pads, brake fade, ABS failures, and more. Symptoms, causes, and fixes from CT Truck Shop Phoenix.",
+    content: `<h2>10 Common Semi Truck Brake Problems</h2>
+
+<div style="background:rgba(56,189,248,0.08);border:1px solid rgba(56,189,248,0.3);border-radius:10px;padding:1.25rem 1.5rem;margin:1.5rem 0;">
+<div style="font-size:0.85rem;color:#38bdf8;font-weight:700;letter-spacing:1.5px;margin-bottom:0.4rem;">QUICK ANSWER</div>
+<p style="margin:0;">The most common semi truck brake problems include <strong>air pressure loss, worn brake pads/shoes, brake fade, out-of-adjustment slack adjusters, glazed drums, cracked rotors, seized calipers, ABS sensor failures, brake imbalance, and contaminated brake fluid or air lines</strong>. Most are preventable with routine inspection and proper brake service intervals.</p>
+</div>
+
+<h2>What Are Semi Truck Brake Problems?</h2>
+<p>Semi truck brake problems refer to any mechanical, hydraulic, or pneumatic failure that reduces the stopping power of a commercial vehicle weighing up to 80,000 lbs loaded. Because commercial trucks rely on <strong>air brake systems</strong> — not hydraulic systems like passenger cars — the failure modes are distinct and often more dangerous if ignored.</p>
+<p>Federal Motor Carrier Safety Administration (FMCSA) data consistently shows brake-related issues as the leading mechanical cause of large truck crashes. Understanding the ten most common failures is essential for every driver, owner-operator, and fleet safety manager.</p>
+
+<div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem;margin:2rem 0;">
+<div style="text-align:center;padding:1.5rem 1rem;background:rgba(255,255,255,0.04);border:1px solid rgba(56,189,248,0.25);border-radius:10px;">
+<div style="font-size:2.5rem;font-weight:700;color:#38bdf8;line-height:1;margin-bottom:0.5rem;">#1</div>
+<div style="font-size:0.85rem;color:#cbd5e1;">Mechanical cause of truck crashes (FMCSA)</div>
+</div>
+<div style="text-align:center;padding:1.5rem 1rem;background:rgba(255,255,255,0.04);border:1px solid rgba(56,189,248,0.25);border-radius:10px;">
+<div style="font-size:2.5rem;font-weight:700;color:#38bdf8;line-height:1;margin-bottom:0.5rem;">30%</div>
+<div style="font-size:0.85rem;color:#cbd5e1;">OOS violations are brake-related</div>
+</div>
+<div style="text-align:center;padding:1.5rem 1rem;background:rgba(255,255,255,0.04);border:1px solid rgba(56,189,248,0.25);border-radius:10px;">
+<div style="font-size:2.5rem;font-weight:700;color:#38bdf8;line-height:1;margin-bottom:0.5rem;">90 days</div>
+<div style="font-size:0.85rem;color:#cbd5e1;">Typical brake inspection interval</div>
+</div>
+</div>
+
+<h2>The 10 Most Common Semi Truck Brake Problems</h2>
+
+<div style="background:rgba(255,255,255,0.04);border:1px solid rgba(56,189,248,0.25);border-left:4px solid #38bdf8;border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0;">
+<div style="font-size:0.8rem;color:#94a3b8;font-weight:600;letter-spacing:1px;margin-bottom:0.4rem;">PROBLEM 01</div>
+<h3 style="margin-top:0;margin-bottom:0.6rem;font-size:1.4rem;">Low or Lost Air Pressure</h3>
+<div style="margin-bottom:1rem;"><span style="display:inline-block;background:#ef4444;color:#fff;padding:4px 10px;border-radius:4px;font-size:0.75rem;font-weight:600;margin-right:6px;letter-spacing:0.3px;">High Risk</span><span style="display:inline-block;background:#3b82f6;color:#fff;padding:4px 10px;border-radius:4px;font-size:0.75rem;font-weight:600;margin-right:6px;letter-spacing:0.3px;">Air System</span></div>
+<p style="margin-bottom:0.9rem;">Air pressure below 60 PSI triggers the low-pressure warning light. Below 45 PSI, spring brakes automatically apply — a safety mechanism that can lock up a moving truck.</p>
+<p style="margin-bottom:0.5rem;"><strong>Symptoms:</strong> warning buzzer, slow pressure buildup, brakes dragging</p>
+<p style="margin-bottom:0.5rem;"><strong>Causes:</strong> air leaks in lines/fittings, failed compressor, leaking tanks</p>
+<p style="margin-bottom:0;"><strong>Fix:</strong> Soap-test all air lines and fittings. Replace leaking components. Check compressor output — it should build from 50 to 90 PSI in under 3 minutes.</p>
+</div>
+
+<div style="background:rgba(255,255,255,0.04);border:1px solid rgba(56,189,248,0.25);border-left:4px solid #38bdf8;border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0;">
+<div style="font-size:0.8rem;color:#94a3b8;font-weight:600;letter-spacing:1px;margin-bottom:0.4rem;">PROBLEM 02</div>
+<h3 style="margin-top:0;margin-bottom:0.6rem;font-size:1.4rem;">Worn Brake Pads or Brake Shoes</h3>
+<div style="margin-bottom:1rem;"><span style="display:inline-block;background:#ef4444;color:#fff;padding:4px 10px;border-radius:4px;font-size:0.75rem;font-weight:600;margin-right:6px;letter-spacing:0.3px;">Out-of-Service Risk</span><span style="display:inline-block;background:#f59e0b;color:#fff;padding:4px 10px;border-radius:4px;font-size:0.75rem;font-weight:600;margin-right:6px;letter-spacing:0.3px;">Friction Material</span></div>
+<p style="margin-bottom:0.9rem;">FMCSA sets the minimum lining thickness at 1/4 inch for steering axles and 1/16 inch for other axles. Below these thresholds, the truck is placed out of service at any DOT inspection.</p>
+<p style="margin-bottom:0.5rem;"><strong>Symptoms:</strong> grinding noise, longer stopping distance, pulling to one side</p>
+<p style="margin-bottom:0.5rem;"><strong>Causes:</strong> normal wear, improper adjustment, running brakes hot on grades</p>
+<p style="margin-bottom:0;"><strong>Fix:</strong> Replace brake shoes or pads as a complete axle set. Inspect drums and rotors for scoring at the same time — worn linings accelerate drum damage.</p>
+</div>
+
+<div style="background:rgba(255,255,255,0.04);border:1px solid rgba(56,189,248,0.25);border-left:4px solid #38bdf8;border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0;">
+<div style="font-size:0.8rem;color:#94a3b8;font-weight:600;letter-spacing:1px;margin-bottom:0.4rem;">PROBLEM 03</div>
+<h3 style="margin-top:0;margin-bottom:0.6rem;font-size:1.4rem;">Out-of-Adjustment Slack Adjusters</h3>
+<div style="margin-bottom:1rem;"><span style="display:inline-block;background:#ef4444;color:#fff;padding:4px 10px;border-radius:4px;font-size:0.75rem;font-weight:600;margin-right:6px;letter-spacing:0.3px;">Common OOS Violation</span><span style="display:inline-block;background:#8b5cf6;color:#fff;padding:4px 10px;border-radius:4px;font-size:0.75rem;font-weight:600;margin-right:6px;letter-spacing:0.3px;">Adjustment</span></div>
+<p style="margin-bottom:0.9rem;">Slack adjusters control the distance brake shoes travel before contacting the drum. Even automatic slack adjusters (ASAs) fail and must be checked manually — a common misconception is that ASAs never need inspection.</p>
+<p style="margin-bottom:0.5rem;"><strong>Symptoms:</strong> spongy pedal feel, uneven braking, long push-rod stroke</p>
+<p style="margin-bottom:0.5rem;"><strong>Causes:</strong> worn ASA pawl, manual adjusters backed off, improper initial setup</p>
+<p style="margin-bottom:0;"><strong>Fix:</strong> Check push-rod stroke with brakes applied at 90 PSI. Stroke must not exceed limits set in FMCSA §393.47. Replace worn automatic slack adjusters — do not manually re-adjust an ASA repeatedly as a fix.</p>
+</div>
+
+<div style="background:rgba(255,255,255,0.04);border:1px solid rgba(56,189,248,0.25);border-left:4px solid #38bdf8;border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0;">
+<div style="font-size:0.8rem;color:#94a3b8;font-weight:600;letter-spacing:1px;margin-bottom:0.4rem;">PROBLEM 04</div>
+<h3 style="margin-top:0;margin-bottom:0.6rem;font-size:1.4rem;">Brake Fade on Descents</h3>
+<div style="margin-bottom:1rem;"><span style="display:inline-block;background:#f59e0b;color:#fff;padding:4px 10px;border-radius:4px;font-size:0.75rem;font-weight:600;margin-right:6px;letter-spacing:0.3px;">Heat-Related</span><span style="display:inline-block;background:#14b8a6;color:#fff;padding:4px 10px;border-radius:4px;font-size:0.75rem;font-weight:600;margin-right:6px;letter-spacing:0.3px;">Mountain Routes</span></div>
+<p style="margin-bottom:0.9rem;">Brake fade occurs when sustained friction heat vaporizes the brake lining material, creating a gas layer between shoe and drum. The brakes feel normal but produce almost no stopping force — a terrifying and dangerous scenario on mountain grades.</p>
+<p style="margin-bottom:0.5rem;"><strong>Symptoms:</strong> pedal feels firm but stopping power disappears</p>
+<p style="margin-bottom:0.5rem;"><strong>Causes:</strong> riding brakes on long descents, overloaded trailer, wrong gear selection</p>
+<p style="margin-bottom:0;"><strong>Fix:</strong> Downshift before grades — use engine braking as the primary retarder. Apply brakes in short firm applications, not sustained dragging. Allow cooling every 6–8 miles on steep routes.</p>
+</div>
+
+<div style="background:rgba(255,255,255,0.04);border:1px solid rgba(56,189,248,0.25);border-left:4px solid #38bdf8;border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0;">
+<div style="font-size:0.8rem;color:#94a3b8;font-weight:600;letter-spacing:1px;margin-bottom:0.4rem;">PROBLEM 05</div>
+<h3 style="margin-top:0;margin-bottom:0.6rem;font-size:1.4rem;">Glazed Brake Drums or Rotors</h3>
+<div style="margin-bottom:1rem;"><span style="display:inline-block;background:#8b5cf6;color:#fff;padding:4px 10px;border-radius:4px;font-size:0.75rem;font-weight:600;margin-right:6px;letter-spacing:0.3px;">Surface Condition</span></div>
+<p style="margin-bottom:0.9rem;">Glazing creates a hardened, mirror-like surface on the drum or rotor that reduces friction dramatically. It often develops when brakes run too hot repeatedly, or when new linings are installed without properly bedding them in.</p>
+<p style="margin-bottom:0.5rem;"><strong>Symptoms:</strong> reduced stopping power, squeal, hard pedal with little effect</p>
+<p style="margin-bottom:0.5rem;"><strong>Causes:</strong> heat cycling, improper break-in procedure, contamination</p>
+<p style="margin-bottom:0;"><strong>Fix:</strong> Light glazing can be removed by scuffing with sandpaper or turning the drum on a lathe. Severe glazing or heat cracking requires drum/rotor replacement.</p>
+</div>
+
+<div style="background:rgba(255,255,255,0.04);border:1px solid rgba(56,189,248,0.25);border-left:4px solid #38bdf8;border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0;">
+<div style="font-size:0.8rem;color:#94a3b8;font-weight:600;letter-spacing:1px;margin-bottom:0.4rem;">PROBLEM 06</div>
+<h3 style="margin-top:0;margin-bottom:0.6rem;font-size:1.4rem;">Cracked or Warped Brake Drums</h3>
+<div style="margin-bottom:1rem;"><span style="display:inline-block;background:#ef4444;color:#fff;padding:4px 10px;border-radius:4px;font-size:0.75rem;font-weight:600;margin-right:6px;letter-spacing:0.3px;">Replace Immediately</span></div>
+<p style="margin-bottom:0.9rem;">Cracks typically originate at the cooling fins and extend inward. A cracked drum can fracture completely under hard braking — this is a catastrophic failure mode with no warning.</p>
+<p style="margin-bottom:0.5rem;"><strong>Symptoms:</strong> vibration under braking, visible heat discoloration, cracking sound</p>
+<p style="margin-bottom:0.5rem;"><strong>Causes:</strong> repeated thermal shock, oversized linings, improper drum diameter</p>
+<p style="margin-bottom:0;"><strong>Fix:</strong> Any crack visible to the naked eye is grounds for immediate replacement. Do not regrind cracked drums. Measure drum diameter — drums worn beyond maximum allowable diameter (stamped on the drum) must be replaced.</p>
+</div>
+
+<div style="background:rgba(255,255,255,0.04);border:1px solid rgba(56,189,248,0.25);border-left:4px solid #38bdf8;border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0;">
+<div style="font-size:0.8rem;color:#94a3b8;font-weight:600;letter-spacing:1px;margin-bottom:0.4rem;">PROBLEM 07</div>
+<h3 style="margin-top:0;margin-bottom:0.6rem;font-size:1.4rem;">Seized or Sticking Brake Caliper (Disc Brake Equipped Units)</h3>
+<div style="margin-bottom:1rem;"><span style="display:inline-block;background:#3b82f6;color:#fff;padding:4px 10px;border-radius:4px;font-size:0.75rem;font-weight:600;margin-right:6px;letter-spacing:0.3px;">Disc Systems</span><span style="display:inline-block;background:#f59e0b;color:#fff;padding:4px 10px;border-radius:4px;font-size:0.75rem;font-weight:600;margin-right:6px;letter-spacing:0.3px;">Heat</span></div>
+<p style="margin-bottom:0.9rem;">Air disc brakes are increasingly standard on tractors. A seized caliper causes one wheel to brake constantly, generating extreme heat, accelerating tire wear, and creating a pull that fights the steering wheel.</p>
+<p style="margin-bottom:0.5rem;"><strong>Symptoms:</strong> single wheel dramatically hotter than others, truck pulling, burning smell</p>
+<p style="margin-bottom:0.5rem;"><strong>Causes:</strong> corrosion, contaminated slides, brake dust buildup</p>
+<p style="margin-bottom:0;"><strong>Fix:</strong> Use an infrared thermometer after a test drive — a seized caliper wheel runs 200°F+ hotter than its partner. Rebuild or replace caliper. Clean and lubricate guide pins with high-temp brake grease.</p>
+</div>
+
+<div style="background:rgba(255,255,255,0.04);border:1px solid rgba(56,189,248,0.25);border-left:4px solid #38bdf8;border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0;">
+<div style="font-size:0.8rem;color:#94a3b8;font-weight:600;letter-spacing:1px;margin-bottom:0.4rem;">PROBLEM 08</div>
+<h3 style="margin-top:0;margin-bottom:0.6rem;font-size:1.4rem;">ABS Sensor Failure</h3>
+<div style="margin-bottom:1rem;"><span style="display:inline-block;background:#3b82f6;color:#fff;padding:4px 10px;border-radius:4px;font-size:0.75rem;font-weight:600;margin-right:6px;letter-spacing:0.3px;">Electronics</span><span style="display:inline-block;background:#14b8a6;color:#fff;padding:4px 10px;border-radius:4px;font-size:0.75rem;font-weight:600;margin-right:6px;letter-spacing:0.3px;">Inspectable</span></div>
+<p style="margin-bottom:0.9rem;">A failed wheel speed sensor disables ABS on that corner, which can cause wheel lockup and loss of directional control on slick surfaces. The ABS warning lamp illuminates but the truck still has base braking — it's not a complete brake failure.</p>
+<p style="margin-bottom:0.5rem;"><strong>Symptoms:</strong> ABS lamp on dash, possible erratic brake behavior on wet roads</p>
+<p style="margin-bottom:0.5rem;"><strong>Causes:</strong> damaged wiring harness, corroded connector, failed tone ring</p>
+<p style="margin-bottom:0;"><strong>Fix:</strong> Use a diagnostic scan tool to pull fault codes and identify the failed wheel position. Inspect tone ring for missing teeth and wiring for chafing near the axle. Replace sensor if resistance is outside spec (typically 900–2000 ohms).</p>
+</div>
+
+<div style="background:rgba(255,255,255,0.04);border:1px solid rgba(56,189,248,0.25);border-left:4px solid #38bdf8;border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0;">
+<div style="font-size:0.8rem;color:#94a3b8;font-weight:600;letter-spacing:1px;margin-bottom:0.4rem;">PROBLEM 09</div>
+<h3 style="margin-top:0;margin-bottom:0.6rem;font-size:1.4rem;">Brake Imbalance (Truck vs. Trailer)</h3>
+<div style="margin-bottom:1rem;"><span style="display:inline-block;background:#ef4444;color:#fff;padding:4px 10px;border-radius:4px;font-size:0.75rem;font-weight:600;margin-right:6px;letter-spacing:0.3px;">Jackknife Risk</span><span style="display:inline-block;background:#8b5cf6;color:#fff;padding:4px 10px;border-radius:4px;font-size:0.75rem;font-weight:600;margin-right:6px;letter-spacing:0.3px;">Combination Vehicle</span></div>
+<p style="margin-bottom:0.9rem;">Brake timing imbalance between tractor and trailer is one of the leading causes of jackknifing. If trailer brakes apply first or harder than tractor brakes, the trailer pushes the tractor — especially on slippery surfaces.</p>
+<p style="margin-bottom:0.5rem;"><strong>Symptoms:</strong> trailer swings on braking, skid marks only on trailer tires</p>
+<p style="margin-bottom:0.5rem;"><strong>Causes:</strong> trailer relay valve out of spec, mismatched brake chamber sizes, air restriction</p>
+<p style="margin-bottom:0;"><strong>Fix:</strong> Use a brake timing and force meter. The tractor should apply slightly before the trailer. Adjust or replace the trailer relay valve. Verify all brake chambers are the correct type and size for the axle.</p>
+</div>
+
+<div style="background:rgba(255,255,255,0.04);border:1px solid rgba(56,189,248,0.25);border-left:4px solid #38bdf8;border-radius:10px;padding:1.5rem 1.75rem;margin:1.5rem 0;">
+<div style="font-size:0.8rem;color:#94a3b8;font-weight:600;letter-spacing:1px;margin-bottom:0.4rem;">PROBLEM 10</div>
+<h3 style="margin-top:0;margin-bottom:0.6rem;font-size:1.4rem;">Contaminated Air Lines (Water and Oil)</h3>
+<div style="margin-bottom:1rem;"><span style="display:inline-block;background:#14b8a6;color:#fff;padding:4px 10px;border-radius:4px;font-size:0.75rem;font-weight:600;margin-right:6px;letter-spacing:0.3px;">Preventable</span><span style="display:inline-block;background:#3b82f6;color:#fff;padding:4px 10px;border-radius:4px;font-size:0.75rem;font-weight:600;margin-right:6px;letter-spacing:0.3px;">Air System</span></div>
+<p style="margin-bottom:0.9rem;">Water in air lines freezes in winter, blocking valves and rendering brakes inoperative. Compressor oil contamination degrades rubber components including brake chamber diaphragms and valve seals throughout the system.</p>
+<p style="margin-bottom:0.5rem;"><strong>Symptoms:</strong> slow valve response in cold weather, oil residue at drain valves, swollen rubber components</p>
+<p style="margin-bottom:0.5rem;"><strong>Causes:</strong> failed air dryer, skipped drain maintenance, worn compressor rings</p>
+<p style="margin-bottom:0;"><strong>Fix:</strong> Drain air tanks daily in high-humidity or cold conditions. Replace the air dryer desiccant cartridge annually. If oil contamination is found, replace the compressor and all downstream valves and chambers.</p>
+</div>
+
+<div style="background:linear-gradient(135deg,rgba(56,189,248,0.12),rgba(20,184,166,0.08));border:1px solid rgba(56,189,248,0.35);border-radius:10px;padding:1.5rem 1.75rem;margin:2rem 0;">
+<div style="font-size:0.8rem;color:#38bdf8;font-weight:700;letter-spacing:1.5px;margin-bottom:0.5rem;">🌡️ PRO TIP — INFRARED THERMOMETER TEST</div>
+<p style="margin:0;">After a 5-mile test drive with moderate braking, use an IR thermometer on each hub. <strong>All wheels should read within 50°F of each other.</strong> Any outlier indicates a dragging brake, seized caliper, or out-of-adjustment slack adjuster at that position.</p>
+</div>
+
+<h2>When to Seek Professional Semi Truck Brake Service</h2>
+<p>Some brake issues can be handled in the yard with standard tools. But these situations require a qualified brake technician immediately:</p>
+<ul>
+<li>Push-rod stroke exceeds FMCSA limits on any axle</li>
+<li>Visible cracks in drums or rotors</li>
+<li>Oil contamination confirmed in the air system</li>
+<li>Brake imbalance causing trailer sway</li>
+<li>Any brake issue flagged during a DOT inspection</li>
+</ul>
+
+<h2>Semi Brake Repair in Phoenix and Southwest Routes</h2>
+<p>Drivers running I-10, I-17, and US-60 corridors face extreme heat — ambient temps above 110°F and mountain grades on the same run. This combination accelerates brake fade and drum cracking faster than most U.S. routes.</p>
+<p>When choosing a <a href="https://cttruckshop.com/semi-truck-repair-services-phoenix-arizona/">semi truck brake and tire repair shop in the Phoenix area</a>, prioritize facilities with a brake dynamometer or roller brake tester, certified brake technicians, and air system diagnostic capability. A shop that can test brake force at each axle — not just inspect lining thickness — provides far more actionable safety data.</p>
+
+<img src="https://cttruckshop.com/wp-content/uploads/2026/04/brake-shop-phoenix.jpg" alt="semi truck brake repair shop in Phoenix Arizona with certified technicians" />
+
+<h2>Common Brake Inspection Mistakes to Avoid</h2>
+<ul>
+<li>Checking push-rod stroke with the engine off and brakes unapplied — always measure at 90 PSI with brakes applied</li>
+<li>Replacing linings on one side of an axle only — always replace as a complete axle set</li>
+<li>Assuming automatic slack adjusters never need inspection</li>
+<li>Ignoring an illuminated ABS lamp because base braking feels normal</li>
+<li>Draining only the primary tank and skipping the secondary and wet tank</li>
+</ul>
+
+<h2>Stay Proactive — Stay Safe</h2>
+<p>Semi truck brake problems range from minor adjustments to catastrophic structural failures — but virtually all of them follow warning signs if you know what to look for. Regular pre-trip air pressure checks, post-drive wheel temperature scans, and proper inspection intervals catch 90% of issues before they become roadside emergencies or CSA violations.</p>
+<p>For owner-operators and fleets, the math is simple: a proper brake service costs a fraction of a DOT out-of-service order, a cargo delay, or a preventable accident. Stay proactive, document every brake inspection, and work with certified technicians for anything beyond routine adjustment.</p>
+
+<div style="background:rgba(56,189,248,0.1);border:1px solid rgba(56,189,248,0.4);border-radius:10px;padding:1.5rem 1.75rem;margin:2rem 0;text-align:center;">
+<h3 style="margin-top:0;">Need Brake Service in Phoenix?</h3>
+<p style="margin-bottom:1rem;">CT Truck &amp; Trailer Shop offers full brake inspection, repair, and replacement for semi trucks and trailers. ASE-certified technicians, brake dynamometer testing, and 24/7 emergency service.</p>
+<p style="margin:0;font-size:1.2rem;"><strong>Call <a href="tel:6028303232">(602) 830-3232</a></strong></p>
+</div>`
   }
 ];

@@ -104,6 +104,7 @@ const slugFeaturedMap: Record<string, string> = {
   "truck-and-trailer-repair-near-me-shop-tips": truckMechanic,
   "truck-alignment-service-phoenix": mechanicHubRepair,
   "mobile-truck-repair-phoenix-az-guide": mobileRepair,
+  "10-common-semi-truck-brake-problems": engineBrakeRepair,
 };
 
 /** Get the correct local featured image for a blog post by slug */
