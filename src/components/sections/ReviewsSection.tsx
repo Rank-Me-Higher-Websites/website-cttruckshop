@@ -16,7 +16,7 @@ const GoogleG = ({ className = "h-5 w-5" }: { className?: string }) => (
     <path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/>
     <path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.31-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/>
     <path fill="#FBBC05" d="M11.69 28.18c-.44-1.32-.69-2.73-.69-4.18s.25-2.86.69-4.18v-5.7H4.34C2.85 17.09 2 20.45 2 24s.85 6.91 2.34 9.88l7.35-5.7z"/>
-    <path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7c1.73-5.2 6.58-9.07 12.31-9.07z"/>
+    <path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.35 5.7z"/>
   </svg>
 );
 
@@ -26,7 +26,8 @@ const Stars = ({ rating, size = 16 }: { rating: number; size?: number }) => (
       <Star
         key={i}
         size={size}
-        className={i < rating ? "fill-[#fbbc04] text-[#fbbc04]" : "fill-gray-300 text-gray-300"}
+        aria-hidden="true"
+        className={i < rating ? "fill-[#fbbc04] text-[#fbbc04]" : "fill-white/15 text-white/15"}
       />
     ))}
   </div>
@@ -71,47 +72,28 @@ const ReviewsSection = () => {
             <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
               What Our Customers Say
             </h2>
+            <div
+              className="inline-flex items-center gap-3 mt-2"
+              data-testid="reviews-aggregate"
+            >
+              <GoogleG className="h-6 w-6" />
+              <span className="text-base font-semibold text-white">
+                {reviewsAggregate.rating.toFixed(1)}
+              </span>
+              <Stars rating={Math.round(reviewsAggregate.rating)} size={16} />
+              <span className="text-sm text-white/70">
+                Based on{" "}
+                <span className="font-semibold text-white" data-testid="text-review-count">
+                  {reviewsAggregate.count}
+                </span>{" "}
+                Google reviews
+              </span>
+            </div>
           </div>
         </ScrollReveal>
 
         <ScrollReveal>
-          <div className="max-w-5xl mx-auto">
-            {/* Aggregate header card */}
-            <div
-              className="bg-white text-gray-900 rounded-2xl shadow-xl p-6 md:p-8 mb-8 flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-10"
-              data-testid="reviews-aggregate"
-            >
-              <div className="flex items-center gap-3">
-                <GoogleG className="h-9 w-9" />
-                <div className="leading-tight">
-                  <div className="font-semibold text-base text-gray-900">Google Reviews</div>
-                  <div className="text-xs text-gray-500">Verified by Google</div>
-                </div>
-              </div>
-
-              <div className="hidden sm:block w-px h-12 bg-gray-200" aria-hidden="true" />
-
-              <div className="flex flex-col items-center sm:items-start">
-                <div className="flex items-baseline gap-2">
-                  <span
-                    className="text-4xl md:text-5xl font-bold text-gray-900"
-                    data-testid="text-rating"
-                  >
-                    {reviewsAggregate.rating.toFixed(1)}
-                  </span>
-                  <Stars rating={Math.round(reviewsAggregate.rating)} size={20} />
-                </div>
-                <div className="text-sm text-gray-600 mt-1">
-                  Based on{" "}
-                  <span className="font-semibold text-gray-900" data-testid="text-review-count">
-                    {reviewsAggregate.count}
-                  </span>{" "}
-                  reviews
-                </div>
-              </div>
-            </div>
-
-            {/* Reviews carousel */}
+          <div className="max-w-6xl mx-auto">
             <Carousel
               setApi={setApi}
               opts={{ align: "start", loop: true }}
@@ -121,10 +103,10 @@ const ReviewsSection = () => {
                 {customerReviews.map((review) => (
                   <CarouselItem
                     key={review.id}
-                    className="basis-full md:basis-1/2 lg:basis-1/3"
+                    className="basis-full md:basis-1/2 lg:basis-1/3 xl:basis-1/4"
                   >
                     <article
-                      className="h-full bg-white text-gray-900 rounded-xl shadow-lg p-6 flex flex-col"
+                      className="h-full bg-[#0d0d0d] text-white rounded-2xl p-5 flex flex-col border border-white/10 shadow-xl"
                       data-testid={`card-review-${review.id}`}
                     >
                       <div className="flex items-start justify-between gap-3 mb-3">
@@ -138,12 +120,12 @@ const ReviewsSection = () => {
                           </div>
                           <div className="min-w-0">
                             <div
-                              className="font-semibold text-sm text-gray-900 truncate"
+                              className="font-semibold text-sm text-white truncate"
                               data-testid={`text-reviewer-${review.id}`}
                             >
                               {review.name}
                             </div>
-                            <div className="text-xs text-gray-500">{review.date}</div>
+                            <div className="text-xs text-white/60">{review.date}</div>
                           </div>
                         </div>
                         <GoogleG className="h-5 w-5 shrink-0" />
@@ -152,15 +134,11 @@ const ReviewsSection = () => {
                       <Stars rating={review.rating} />
 
                       <p
-                        className="text-sm text-gray-700 leading-relaxed mt-3 flex-1"
+                        className="text-sm text-white/85 leading-relaxed mt-3 flex-1"
                         data-testid={`text-review-${review.id}`}
                       >
                         {review.text}
                       </p>
-
-                      <div className="mt-4 pt-3 border-t border-gray-100 text-xs text-gray-400">
-                        Posted on Google
-                      </div>
                     </article>
                   </CarouselItem>
                 ))}
@@ -176,7 +154,6 @@ const ReviewsSection = () => {
               />
             </Carousel>
 
-            {/* Pagination dots */}
             {count > 1 && (
               <div className="flex justify-center items-center gap-2 mt-6">
                 {Array.from({ length: count }).map((_, i) => (
