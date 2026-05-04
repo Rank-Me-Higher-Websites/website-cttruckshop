@@ -1,0 +1,89 @@
+The PM Checklist Every Fleet Should Run Before Summer Heat Hits
+A semi truck preventive maintenance schedule is a structured, interval-based inspection and service plan designed to catch mechanical failures before they happen — especially critical before summer, when heat accelerates wear on cooling systems, tires, brakes, and fluids.
+If your fleet skips pre-summer PM, you're not saving time. You're betting against the heat — and heat doesn't lose.
+
+Quick Answer: What Should Be on a Pre-Summer Semi Truck PM Checklist?
+Before temperatures climb, every Class 7 or Class 8 truck should be checked across six core systems:
+Cooling system – coolant concentration, hoses, thermostat, radiator cap
+Tires – tread depth, inflation pressure (adjusted for heat), sidewall condition
+Brakes – lining thickness, drum/rotor condition, slack adjuster travel
+Engine oil and filters – viscosity rating, contamination, change interval
+Electrical system – battery load test, alternator output, ground connections
+HVAC/cab comfort – refrigerant charge, blower motor, cab seals
+A proper semi truck PM takes 2–4 hours per unit when done correctly. Skipping it costs far more — the average unplanned roadside breakdown runs $1,500–$3,000 in combined towing, parts, and downtime per incident.
+
+Why Summer Is the Most Punishing Season for Heavy-Duty Trucks
+Summer heat doesn't just make driving uncomfortable. It attacks your drivetrain from multiple angles simultaneously.
+Engine coolant temperature rises faster. Tire pressure spikes with pavement heat. Battery internal resistance increases. Brake fade risk climbs as ambient temps push friction materials closer to their thermal limits.
+For contractors hauling equipment, construction fleets running loaded dump trucks, or companies with vehicles sitting in outdoor storage, the failure risk compounds quickly. A truck that ran fine in April can overheat, blow a tire, or drop a brake chamber by July.
+The goal of a pre-summer semi truck preventive maintenance schedule is to eliminate those failure points before they become field problems.
+
+The Full Pre-Summer PM Checklist
+1. Cooling System — Priority One
+The cooling system is the most heat-sensitive system on any diesel engine. Failure here leads to catastrophic engine damage.
+What to inspect and service:
+Test coolant with a refractometer — freeze protection should be rated to at least -34°F, but boil-over protection matters more in summer (should protect to 265°F+)
+Check coolant pH — it should read between 8.5 and 10.5; low pH means it's corroding your block
+Inspect all upper and lower radiator hoses for soft spots, cracking, or swelling at the clamps
+Pressure-test the radiator cap — a failing cap drops your system's boiling point
+Clean the radiator core and charge air cooler fins — bugs, road grime, and debris reduce airflow by 20–30% in summer conditions
+Verify thermostat operation — a stuck-open thermostat can cause overcooling and DPF issues; stuck-closed is an overheat waiting to happen
+Pro tip: On Cummins ISX and PACCAR MX engines, check the coolant filter if equipped. A clogged filter starves supplemental coolant additive (SCA) circulation and accelerates liner pitting.
+
+2. Tires — Heat Is a Tire's Worst Enemy
+Tire failures are the leading cause of semi truck roadside incidents in summer. Underinflation + heat + load = blowout.
+Checklist:
+Measure cold inflation pressure on every tire — adjust to manufacturer spec (typically 95–110 PSI for drives and trailers, 110–120 PSI for steers)
+Inspect tread depth with a gauge — federal minimum is 4/32" on steers, 2/32" on drives/trailers, but replace at 4/32" across the board in high-heat operations
+Check for irregular wear patterns — cupping, feathering, or one-sided wear signals alignment or suspension issues
+Inspect sidewalls for cracking, bubbling, or impact damage
+Check valve stems and caps — heat accelerates valve stem rubber degradation
+Real-world note: A drive tire sitting at 90 PSI in 45°F weather can read 100–105 PSI when the pavement hits 130°F in July. Check cold. Don't bleed off pressure to compensate for heat gain — that causes underinflation when the tire cools.
+
+3. Brakes — Heat Multiplies Brake Fade Risk
+For construction and industrial fleets running loaded, brakes take a beating. Summer heat reduces the margin between operating temperature and fade threshold.
+PM steps:
+Measure brake lining thickness — replace at 3/16" on drums (5/16" is optimal to maintain)
+Check automatic slack adjusters for proper travel — push-rod stroke should be 1.5"–2" depending on chamber size
+Inspect brake chambers for leaks, cracks, and proper mounting
+Check drum condition — measure for out-of-round and heat cracks
+Verify brake balance across the axle — imbalanced brakes cause trailer sway under hard stops
+
+4. Engine Oil and Lubrication
+Heat thins oil faster and shortens its effective service life. If your fleet runs standard change intervals in summer, you may be running degraded oil longer than you think.
+Checklist:
+Verify oil viscosity spec matches summer operating conditions — most modern diesels run 15W-40 or 10W-30; confirm with your OEM spec sheet
+Check oil level and condition — look for milky appearance (coolant intrusion) or metallic sheen (internal wear)
+Inspect oil cooler lines for seeping or sweating
+Replace oil and filter if within 20% of the recommended interval going into peak heat months
+
+5. Electrical System and Battery
+Heat is harder on batteries than cold is. A battery that tests fine in winter can fail by August.
+What to check:
+Load test every battery — a battery should hold above 9.6V under load; replace anything borderline
+Check alternator output — should be 13.8–14.4V at idle; low output causes the battery to constantly try to recover
+Inspect all ground straps, especially chassis grounds — corrosion here causes phantom electrical problems that are expensive to diagnose
+Check starter draw — high draw indicates a struggling starter that summer heat will finish off
+
+6. HVAC and Cab Environment
+An overheated driver is a dangerous driver. For contractors and fleet operators with drivers running long shifts, cab cooling is a safety issue, not a comfort issue.
+PM steps:
+Have the refrigerant charge tested — low refrigerant means the compressor cycles constantly and eventually burns out
+Inspect the condenser (mounted ahead of the radiator) for debris blocking airflow
+Check the blower motor on all speeds — a failing resistor often kills medium-speed settings first
+Inspect cab door seals — gaps let in heat and increase HVAC load dramatically
+
+Common PM Mistakes Fleets Make Before Summer
+1. Checking fluid levels instead of fluid condition. A full coolant reservoir doesn't mean good coolant. Test concentration and pH every time.
+2. Skipping trailer PM. Your tractor gets all the attention. The trailer's brakes, tires, lights, and landing gear matter just as much when it's loaded at 80,000 lbs.
+3. Not adjusting PM intervals for summer. OEM-standard intervals are designed for average conditions. High-heat, heavy-load operations — like a dump truck running three loads a day in Texas in August — need compressed intervals.
+4. Ignoring DPF and exhaust aftertreatment. Summer idling with A/C running increases DPF loading. If you're not tracking regen frequency, you're flying blind on a $5,000 component.
+
+How CT Truck Shop Approaches Pre-Summer PM
+At CT Truck Shop, pre-summer preventive maintenance isn't a checklist — it's a system. Our technicians run OEM-aligned inspection protocols for Class 6–8 trucks, covering every system listed here and more.
+We work with contractors, construction fleets, and industrial operators who can't afford a truck sitting on the side of the road in July. If your fleet doesn't have a formal semi truck PM schedule in place, that's the first thing we fix.
+Book a pre-summer fleet inspection before the heat hits — not after.
+
+A solid semi truck preventive maintenance schedule before summer isn't optional for serious fleet operators — it's the cheapest insurance you can buy.
+The systems that fail in summer don't usually fail suddenly. They were marginal in spring, ignored through PM gaps, and pushed past their limit by heat and load. Cooling, tires, brakes, electrical — all four can strand a truck and cost thousands.
+Run the checklist. Fix what's marginal. Don't wait for the heat to find it for you.

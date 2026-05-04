@@ -128,6 +128,7 @@ const slugFeaturedMap: Record<string, string> = {
   "commercial-truck-repair": shopFloorMechanic, // shares with trailer-repair-near-me (both shop floor/general)
   "mobile-truck-repair-phoenix-az-guide": mobileRepair, // shares with emergency-truck-repair (both mobile)
   "10-common-semi-truck-brake-problems": engineBrakeRepair, // shares with preventative-brake-maintenance (both brake)
+  "semi-truck-pre-summer-pm-checklist": expertTechnician, // shares with semi-ac-repair-and-cost (both maintenance/inspection)
 };
 
 /** Get the correct local featured image for a blog post by slug */
