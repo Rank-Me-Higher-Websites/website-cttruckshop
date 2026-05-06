@@ -1,11 +1,11 @@
-modules = ["nodejs-20"]
+modules = ["nodejs-20", "postgresql-16"]
 [agent]
 expertMode = true
 
 [deployment]
 deploymentTarget = "autoscale"
-run = ["node", "serve.js"]
-build = ["npm", "run", "build"]
+run = ["bash", "-c", "NODE_ENV=production npx tsx server.ts"]
+build = ["bash", "-c", "npm install --include=dev && npm run build"]
 publicDir = "dist"
 
 [workflows]
@@ -29,13 +29,24 @@ outputType = "webview"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-args = "npm run dev"
+args = "npx tsx server.ts & npx vite"
 waitForPort = 5000
+
+[[ports]]
+localPort = 3001
+externalPort = 3001
 
 [[ports]]
 localPort = 5000
 externalPort = 80
 
-[[ports]]
-localPort = 5001
-externalPort = 3000
+[nix]
+channel = "stable-25_05"
+
+[userenv]
+
+[userenv.shared]
+LEADS_ADMIN_TOKEN = "ff228f4a7f2fe4196b82086445faf692e8b075d2d55c80972e0c7b5f98f2bd3e"
+
+[userenv.production]
+NODE_ENV = "production"

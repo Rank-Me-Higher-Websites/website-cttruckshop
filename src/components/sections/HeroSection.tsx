@@ -100,7 +100,7 @@ const HeroSection = () => {
 
           {/* Right Side - Contact Form */}
           <div className="animate-fade-in-up delay-300">
-            <LeadForm />
+            <LeadForm source="website-hero-form" />
           </div>
         </div>
       </div>

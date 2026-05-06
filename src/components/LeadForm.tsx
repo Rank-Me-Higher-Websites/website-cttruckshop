@@ -24,12 +24,14 @@ interface LeadFormProps {
   title?: string;
   subtitle?: string;
   className?: string;
+  source?: string;
 }
 
 const LeadForm = ({
   title = "Request a Free Quote",
   subtitle = "Fill out the form and we'll get back to you ASAP.",
   className = "",
+  source = "website-quote-form",
 }: LeadFormProps) => {
   const [formData, setFormData] = useState({
     name: "",
@@ -47,21 +49,39 @@ const LeadForm = ({
     e.preventDefault();
     setIsSubmitting(true);
     try {
-      const payload = {
+      const webhookPayload = {
         name: formData.name,
         email: formData.email,
         phone: formData.phone,
         truckModel: formData.truckModel,
         service: formData.service,
         form_type: "quote",
+        source,
         submittedAt: new Date().toISOString(),
       };
-      const res = await fetch("https://cdlagency.app.n8n.cloud/webhook/181c66da-89d6-4fca-9010-078310921f08", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
-      });
-      if (!res.ok) throw new Error("Failed to submit");
+      const backendPayload = {
+        name: formData.name,
+        phone: formData.phone,
+        email: formData.email,
+        vehicle: formData.truckModel,
+        message: formData.service ? `Service requested: ${formData.service}` : "Quote request",
+        source,
+      };
+      const [webhookRes] = await Promise.all([
+        fetch("https://cdlagency.app.n8n.cloud/webhook/181c66da-89d6-4fca-9010-078310921f08", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(webhookPayload),
+        }),
+        fetch("/api/leads", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(backendPayload),
+        }).catch(() => {
+          /* never break the user flow if the backend logger is down */
+        }),
+      ]);
+      if (!webhookRes.ok) throw new Error("Failed to submit");
       setSubmitted(true);
       setFormData({ name: "", email: "", phone: "", truckModel: "", service: "" });
       setConsentChecked(false);
