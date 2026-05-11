@@ -11,7 +11,7 @@ const services = [
     icon: Wrench,
     title: "Commercial Fleet Repair",
     description: "Preventive maintenance and fast turnarounds that keep your fleet on schedule.",
-    href: "/services/fleet-repair",
+    href: "/services",
     image: truckYard,
   },
   {
@@ -25,14 +25,14 @@ const services = [
     icon: Settings,
     title: "Engine Service & Repair",
     description: "Complete diesel engine diagnostics and repair for all major brands.",
-    href: "/services/engine-repair",
+    href: "/semi-truck-engine-repairs-in-phoenix-az",
     image: truckDiagnostics,
   },
   {
     icon: Gauge,
     title: "DOT Inspections",
     description: "Comprehensive DOT compliance inspections to keep your fleet road-legal.",
-    href: "/services/dot-inspections",
+    href: "/services",
     image: shopInterior,
   },
 ];
