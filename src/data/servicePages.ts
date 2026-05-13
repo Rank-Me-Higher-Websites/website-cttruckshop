@@ -380,6 +380,136 @@ export const servicePages: Record<string, ServicePageData> = {
       { title: "Trailer Electrical Repair", href: "/semi-trailer-electrical-repair-services-phoenix-az" },
     ],
   },
+  "commercial-fleet-repair-phoenix-az": {
+    slug: "commercial-fleet-repair-phoenix-az",
+    title: "Commercial Fleet Repair Phoenix, AZ",
+    metaTitle: "Commercial Fleet Repair Phoenix, AZ | CT Truck & Trailer Shop",
+    metaDescription: "Commercial fleet repair in Phoenix, AZ. Preventive maintenance, scheduled service, and rapid turnarounds that keep your trucks on the road and on schedule.",
+    heroHeadline: "Commercial Fleet Repair Phoenix, AZ",
+    heroSubheadline: "Preventive maintenance and fast turnarounds that keep your fleet rolling and your downtime down.",
+    introHeading: "Keep Your Fleet Moving with CT Truck & Trailer Shop",
+    introParagraphs: [
+      "When you run a fleet, every hour off the road costs money. CT Truck & Trailer Shop provides full-service commercial fleet repair in Phoenix, AZ — built around scheduled maintenance, fast diagnostics, and quick parts turnaround so your trucks stay productive. From single owner-operators to multi-truck operations, we tailor service plans to your routes, equipment mix, and budget.",
+      "Our shop and mobile crews handle everything from routine PMs and DOT-ready inspections to engine, brake, electrical, and trailer repair under one roof. You get one trusted partner, transparent pricing, and a team that understands the real cost of downtime in Phoenix's freight corridors.",
+    ],
+    sections: [
+      {
+        heading: "Full-Service Fleet Maintenance & Repair",
+        content: [
+          "We build maintenance schedules around how you actually run — local delivery, regional haul, or long-haul OTR. That means consistent PMs, oil and filter service, fluid analysis, and tire rotations that catch wear before it becomes a roadside breakdown.",
+          "When something does need repair, our certified diesel technicians work fast with quality parts and clear estimates. You'll know what's needed, why, and what it costs before any wrench turns.",
+        ],
+        listItems: [
+          "Scheduled preventive maintenance (PM A/B/C) programs",
+          "DOT-ready inspections and compliance documentation",
+          "Engine, transmission, and drivetrain diagnostics",
+          "Brake, suspension, and steering service",
+          "Electrical, lighting, and battery system repair",
+          "Tire service, alignment, and tracking",
+          "Fleet reporting and service history records",
+        ],
+      },
+      {
+        heading: "Why Phoenix Fleets Choose CT Shop",
+        content: [
+          "We've earned our reputation by treating every truck like it belongs to our own fleet. Honest assessments, fair pricing, and turnarounds that respect your schedule. Whether you bring trucks to our shop on the corridor or need us to come to your yard, we're set up to handle the job.",
+        ],
+      },
+    ],
+    highlights: [
+      { title: "Reduced Downtime", description: "Scheduled PMs and rapid diagnostics catch issues before they take a truck off the road." },
+      { title: "Fleet Pricing", description: "Volume-friendly rates and transparent estimates so you can budget with confidence." },
+      { title: "One-Stop Shop", description: "Engine, brakes, electrical, trailer, and DOT — all handled by one trusted team." },
+    ],
+    faqs: [
+      {
+        question: "Do you offer fleet maintenance contracts?",
+        answer: "Yes. We build custom PM schedules and service agreements based on your fleet size, equipment, and routes. Fleet customers get priority scheduling, consistent technicians, and detailed service records for every truck.",
+      },
+      {
+        question: "Can you service trucks at our yard?",
+        answer: "Absolutely. Our mobile units come to your yard, terminal, or jobsite for PMs, repairs, and DOT inspections — minimizing downtime by skipping the drive-in. Coverage spans the Phoenix metro and major freight corridors.",
+      },
+      {
+        question: "What kinds of trucks and trailers do you work on?",
+        answer: "We service all major Class 6–8 truck makes — Freightliner, Peterbilt, Kenworth, Volvo, Mack, International — plus dry van, reefer, flatbed, and tanker trailers. If it's a commercial vehicle, we can keep it running.",
+      },
+      {
+        question: "Do you handle warranty and insurance work?",
+        answer: "Yes. We work with fleet warranty programs and insurance carriers and provide the documentation, photos, and detailed invoices needed for claims and audits.",
+      },
+    ],
+    relatedServices: [
+      { title: "DOT Inspections", href: "/dot-inspections-phoenix-az" },
+      { title: "Semi Truck Engine Repairs", href: "/semi-truck-engine-repairs-in-phoenix-az" },
+      { title: "Emergency Truck Repair", href: "/emergency-truck-repair-phoenix" },
+    ],
+  },
+
+  "dot-inspections-phoenix-az": {
+    slug: "dot-inspections-phoenix-az",
+    title: "DOT Inspections Phoenix, AZ",
+    metaTitle: "DOT Inspections Phoenix, AZ | CT Truck & Trailer Shop",
+    metaDescription: "Comprehensive DOT inspections in Phoenix, AZ. Annual federal inspections, pre-trip checks, and compliance documentation to keep your fleet road-legal.",
+    heroHeadline: "DOT Inspections Phoenix, AZ",
+    heroSubheadline: "Federal annual inspections and full compliance checks that keep your fleet road-legal and out of trouble at the scales.",
+    introHeading: "Stay Compliant with Certified DOT Inspections",
+    introParagraphs: [
+      "DOT compliance isn't optional, and a bad inspection can park your truck and rack up fines fast. CT Truck & Trailer Shop performs thorough Federal Annual Inspections (FMCSA 49 CFR Part 396) for trucks and trailers in Phoenix, AZ — checking every required system, documenting the results, and issuing your inspection sticker on the spot when you pass.",
+      "Our certified inspectors don't just check boxes. We catch the small issues that lead to roadside violations — worn brake linings, marginal tires, electrical faults, leaking seals — and give you clear, honest recommendations on what to fix now and what can wait.",
+    ],
+    sections: [
+      {
+        heading: "What's Included in a DOT Annual Inspection",
+        content: [
+          "Our Federal Annual Inspection covers every system required by FMCSA Part 396, Appendix G. We inspect, document, and provide you with a signed inspection report and decal for each unit that passes.",
+        ],
+        listItems: [
+          "Brake system — linings, drums, air lines, slack adjusters",
+          "Coupling devices — fifth wheel, pintle hooks, kingpins",
+          "Exhaust system and fuel system integrity",
+          "Lighting — headlights, marker lights, turn signals, brake lights",
+          "Steering, suspension, frame, and tires/wheels",
+          "Windshield, wipers, mirrors, and horn",
+          "Emergency equipment and load securement points",
+        ],
+      },
+      {
+        heading: "Pre-Trip, Re-Inspections & CVSA Prep",
+        content: [
+          "Beyond the annual inspection, we offer pre-trip safety checks, re-inspections after repair, and CVSA roadside-style inspections so you can find and fix issues before a DOT officer does. Fleet operators love this for driver training and pre-audit confidence.",
+        ],
+      },
+    ],
+    highlights: [
+      { title: "Certified Inspectors", description: "FMCSA-qualified technicians who know exactly what officers look for at the scales." },
+      { title: "Same-Day Service", description: "Most inspections completed same day with sticker issued on the spot upon passing." },
+      { title: "Honest Reports", description: "Clear documentation of what passed, what failed, and what we recommend you address." },
+    ],
+    faqs: [
+      {
+        question: "How long does a DOT annual inspection take?",
+        answer: "Most truck or trailer inspections take 60–90 minutes if everything is in good shape. If we find items that need repair, we'll quote them upfront and let you decide whether to fix them now or come back.",
+      },
+      {
+        question: "Can you do the inspection at our yard?",
+        answer: "Yes. Our mobile units are equipped to perform full annual inspections at your yard or terminal, which is especially valuable for fleets that want to keep multiple trucks in service while we work through them on-site.",
+      },
+      {
+        question: "What happens if my truck fails the inspection?",
+        answer: "We'll give you a written list of every failed item and a clear repair estimate. You can authorize the repairs with us and we'll re-inspect at no extra inspection charge, or take the truck elsewhere — your choice.",
+      },
+      {
+        question: "Do you provide inspection records for our DOT audit?",
+        answer: "Absolutely. Every inspection is documented with a signed report you can keep on file or hand directly to an auditor. For fleet customers, we maintain digital records of every inspection across your trucks.",
+      },
+    ],
+    relatedServices: [
+      { title: "Commercial Fleet Repair", href: "/commercial-fleet-repair-phoenix-az" },
+      { title: "Semi Truck Tire & Brake Repair", href: "/semi-truck-tire-and-brake-repair-services-phoenix-az" },
+      { title: "Semi Truck Diagnostics", href: "/semi-truck-diagnostics-in-phoenix-az" },
+    ],
+  },
 };
 
 export const getAllServicePages = () => Object.values(servicePages);

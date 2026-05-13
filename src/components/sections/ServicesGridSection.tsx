@@ -11,7 +11,7 @@ const services = [
     icon: Wrench,
     title: "Commercial Fleet Repair",
     description: "Preventive maintenance and fast turnarounds that keep your fleet on schedule.",
-    href: "/services",
+    href: "/commercial-fleet-repair-phoenix-az",
     image: truckYard,
   },
   {
@@ -32,7 +32,7 @@ const services = [
     icon: Gauge,
     title: "DOT Inspections",
     description: "Comprehensive DOT compliance inspections to keep your fleet road-legal.",
-    href: "/services",
+    href: "/dot-inspections-phoenix-az",
     image: shopInterior,
   },
 ];

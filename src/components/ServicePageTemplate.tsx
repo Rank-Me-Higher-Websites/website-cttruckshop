@@ -49,6 +49,8 @@ const imageMap: Record<string, string> = {
   "semi-trailer-brake-and-tire-repair-services-in-phoenix-az": trailerAxleRepair,
   "semi-trailer-suspension-repair-services-phoenix-az": engineBrakeRepair,
   "full-body-semi-trailer-repair-in-phoenix-az": truckEngineWide,
+  "commercial-fleet-repair-phoenix-az": fleetElectricalWork,
+  "dot-inspections-phoenix-az": shopInterior,
 };
 
 const contentImageMap: Record<string, string> = {
@@ -62,6 +64,8 @@ const contentImageMap: Record<string, string> = {
   "semi-trailer-brake-and-tire-repair-services-in-phoenix-az": craneLift,
   "semi-trailer-suspension-repair-services-phoenix-az": mobileRepair,
   "full-body-semi-trailer-repair-in-phoenix-az": tireTechThumbsup,
+  "commercial-fleet-repair-phoenix-az": teamWork,
+  "dot-inspections-phoenix-az": facility,
 };
 
 const FAQItem = ({ question, answer }: { question: string; answer: string }) => {

@@ -21,6 +21,8 @@ const SemiTrailerElectricalRepair = lazy(() => import("./pages/SemiTrailerElectr
 const SemiTrailerBrakeTireRepair = lazy(() => import("./pages/SemiTrailerBrakeTireRepair"));
 const SemiTrailerSuspensionRepair = lazy(() => import("./pages/SemiTrailerSuspensionRepair"));
 const FullBodySemiTrailerRepair = lazy(() => import("./pages/FullBodySemiTrailerRepair"));
+const CommercialFleetRepair = lazy(() => import("./pages/CommercialFleetRepair"));
+const DotInspections = lazy(() => import("./pages/DotInspections"));
 const Locations = lazy(() => import("./pages/Locations"));
 const LocationPage = lazy(() => import("./pages/LocationPage"));
 const MobileRepair = lazy(() => import("./pages/MobileRepair"));
@@ -68,6 +70,8 @@ const App = () => (
                 <Route path="/semi-trailer-brake-and-tire-repair-services-in-phoenix-az" element={<SemiTrailerBrakeTireRepair />} />
                 <Route path="/semi-trailer-suspension-repair-services-phoenix-az" element={<SemiTrailerSuspensionRepair />} />
                 <Route path="/full-body-semi-trailer-repair-in-phoenix-az" element={<FullBodySemiTrailerRepair />} />
+                <Route path="/commercial-fleet-repair-phoenix-az" element={<CommercialFleetRepair />} />
+                <Route path="/dot-inspections-phoenix-az" element={<DotInspections />} />
                 <Route path="/locations" element={<Locations />} />
                 <Route path="/locations/:locationSlug" element={<LocationPage />} />
                 <Route path="/mobile-repair" element={<MobileRepair />} />
