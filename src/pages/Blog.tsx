@@ -5,6 +5,7 @@ import Layout from "@/components/layout/Layout";
 import SEO from "@/components/SEO";
 import { ArrowRight, Calendar, Tag, ChevronLeft, ChevronRight } from "lucide-react";
 import { blogPosts } from "@/data/blogPosts";
+import { autoBlogPosts } from "@/data/autoBlogPosts";
 import { getFeaturedImage } from "@/lib/blogImageMap";
 import towingRecovery from "@/assets/towing-recovery.webp";
 import { createBreadcrumbSchema, createCollectionPageSchema, BASE_URL } from "@/lib/schema";
@@ -18,7 +19,7 @@ const Blog = () => {
   const currentPage = Number(searchParams.get("page") || "1");
 
   const sortedPosts = useMemo(
-    () => [...blogPosts].sort((a, b) => parseDate(b.date).getTime() - parseDate(a.date).getTime()),
+    () => [...autoBlogPosts, ...blogPosts].sort((a, b) => parseDate(b.date).getTime() - parseDate(a.date).getTime()),
     []
   );
 

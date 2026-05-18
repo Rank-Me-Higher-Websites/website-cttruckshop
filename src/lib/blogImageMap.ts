@@ -1,5 +1,6 @@
 // Maps blog slugs to unique local featured images.
 // Goal: every blog post gets its own thumbnail (no duplicates).
+import { autoFeaturedImages } from "@/data/autoBlogPosts";
 import towingRecovery from "@/assets/towing-recovery.webp";
 import nightTowing from "@/assets/night-towing.webp";
 import towService from "@/assets/tow-service.webp";
@@ -133,7 +134,7 @@ const slugFeaturedMap: Record<string, string> = {
 
 /** Get the correct local featured image for a blog post by slug */
 export function getFeaturedImage(slug: string): string {
-  return slugFeaturedMap[slug] || shopInterior;
+  return autoFeaturedImages[slug] || slugFeaturedMap[slug] || shopInterior;
 }
 
 // Counter for round-robin inline image replacement

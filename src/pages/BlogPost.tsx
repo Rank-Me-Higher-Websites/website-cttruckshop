@@ -3,6 +3,7 @@ import Layout from "@/components/layout/Layout";
 import SEO from "@/components/SEO";
 import BlogContent from "@/components/BlogContent";
 import { blogPosts } from "@/data/blogPosts";
+import { autoBlogPosts } from "@/data/autoBlogPosts";
 import { getFeaturedImage } from "@/lib/blogImageMap";
 import { ArrowLeft, ArrowRight, Calendar, Tag } from "lucide-react";
 import { createBreadcrumbSchema, createArticleSchema, createFAQSchema, BASE_URL } from "@/lib/schema";
@@ -36,8 +37,11 @@ const blogFAQs: Record<string, { question: string; answer: string }[]> = {
 
 const BlogPost = () => {
   const { slug } = useParams<{ slug: string }>();
-  const postIndex = blogPosts.findIndex((p) => p.slug === slug);
-  const post = blogPosts[postIndex];
+  const allPosts = [...autoBlogPosts, ...blogPosts].sort(
+    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
+  );
+  const postIndex = allPosts.findIndex((p) => p.slug === slug);
+  const post = allPosts[postIndex];
 
   if (!post) {
     return (
@@ -56,8 +60,8 @@ const BlogPost = () => {
     );
   }
 
-  const prevPost = postIndex > 0 ? blogPosts[postIndex - 1] : null;
-  const nextPost = postIndex < blogPosts.length - 1 ? blogPosts[postIndex + 1] : null;
+  const prevPost = postIndex > 0 ? allPosts[postIndex - 1] : null;
+  const nextPost = postIndex < allPosts.length - 1 ? allPosts[postIndex + 1] : null;
 
   return (
     <Layout>

@@ -1,0 +1,113 @@
+{
+  "site": "cttruckshop",
+  "brand": "CT Truck & Trailer Shop",
+  "shortBrand": "CT Shop",
+  "domain": "cttruckshop.com",
+  "tagline": "Phoenix-based semi truck and trailer repair, maintenance, and 24/7 emergency towing",
+  "primaryAudience": "Long-haul truck drivers, owner-operators, and fleet managers needing semi truck/trailer repair in Phoenix, AZ and the surrounding Southwest corridor",
+  "secondaryAudience": "Trucking companies evaluating maintenance partners; brokers routing freight through Phoenix",
+
+  "voice": {
+    "tone": "Practical, service-oriented, plain-language. Talks to drivers like a fellow shop pro who has been under the truck — not a marketing copywriter.",
+    "personality": "Solution-focused. Names the problem, walks through the fix, ends with a clear way to get help. Not contrarian or numbers-heavy — directly useful.",
+    "perspective": "Written from the shop's POV — a Phoenix-based truck mechanic team that fixes thousands of issues a year, so the advice is grounded in repeat experience."
+  },
+
+  "doSay": [
+    "Specific symptoms and diagnostic steps (\"if your air pressure drops below 80 psi at idle, check the governor first\")",
+    "Mention Phoenix / Arizona / Southwest corridor naturally where it's geographically relevant",
+    "Service-page internal links woven into the body (not as a footer dump)",
+    "Compliance and safety angle on DOT inspections, brakes, lights, ELD",
+    "Honest cost ranges with the variables that drive them ($200-$1,500 for AC repair, depending on...)",
+    "Practical pre-trip checks drivers can do themselves to avoid roadside breakdowns",
+    "Subtle CT Shop framing — \"a shop that answers the phone 24/7\" / \"a Phoenix shop that handles fleet contracts\"",
+    "Mix of paragraphs and bulleted lists (matches the existing post structure)"
+  ],
+
+  "dontSay": [
+    "Welcome to our blog",
+    "In today's fast-paced world",
+    "Buckle up / let's dive in / let's explore",
+    "Synergy, leverage, ecosystem",
+    "AI tells: \"In conclusion\", \"It's important to note\", \"At the end of the day\"",
+    "Generic safety platitudes without specifics",
+    "Click-baity questions",
+    "Hyperbolic claims (\"the absolute best\", \"unbeatable\", \"world-class\")",
+    "Emojis in body text"
+  ],
+
+  "entities": {
+    "company": "CT Truck & Trailer Shop",
+    "shortName": "CT Shop",
+    "phone": "(602) 815-1100",
+    "primaryHub": "Phoenix, AZ",
+    "regions": ["Phoenix", "Arizona", "Mesa", "Glendale", "Scottsdale", "Tempe", "Chandler", "Southwest"],
+    "yearsInBusiness": "10+",
+    "ownerName": "(client)"
+  },
+
+  "internalLinks": {
+    "/": "homepage with all service overview",
+    "/services": "service catalog landing page",
+    "/contact": "contact / request a quote / 24h emergency",
+    "/about": "about CT Shop and the team",
+    "/locations": "service area map",
+    "/mobile-repair": "mobile / on-site repair",
+    "/emergency-truck-repair-phoenix": "24/7 emergency roadside repair",
+    "/truck-breakdown-service-phoenix": "breakdown towing + recovery",
+    "/semi-truck-ac-repair-services": "A/C repair, refrigerant, compressor",
+    "/semi-truck-tire-and-brake-repair-services-phoenix-az": "tire + brake replacement, alignment",
+    "/semi-truck-diagnostics-in-phoenix-az": "computer diagnostics, fault codes, ECM",
+    "/semi-truck-engine-repairs-in-phoenix-az": "engine repair, EGR, DPF, injector, head gasket",
+    "/semi-trailer-electrical-repair-services-phoenix-az": "trailer wiring, lights, ABS",
+    "/semi-trailer-brake-and-tire-repair-services-in-phoenix-az": "trailer brake, drum, slack adjuster, tire",
+    "/semi-trailer-suspension-repair-services-phoenix-az": "air ride, leaf spring, axle, suspension",
+    "/full-body-semi-trailer-repair-in-phoenix-az": "trailer body, frame, welding, structural",
+    "/commercial-fleet-repair-phoenix-az": "fleet maintenance contracts, scheduled service",
+    "/dot-inspections-phoenix-az": "DOT annual inspections, compliance, paperwork"
+  },
+
+  "categories": [
+    "Truck & Trailer Maintenance Tips",
+    "Emergency Roadside Assistance",
+    "Common Truck and Trailer Repairs",
+    "Fleet Management",
+    "DOT Compliance"
+  ],
+
+  "topicClusters": [
+    {
+      "cluster": "Preventative Maintenance",
+      "examples": ["brake inspection intervals", "DPF cleaning schedule", "PM service checklist", "pre-trip inspection that actually catches things"]
+    },
+    {
+      "cluster": "Emergency / Roadside",
+      "examples": ["what to do when you break down on I-10", "wrecker selection", "minimizing downtime", "after-hours service"]
+    },
+    {
+      "cluster": "Diagnostics & Repair",
+      "examples": ["check engine fault code interpretation", "common Cummins/Detroit/Cat issues", "transmission warning signs", "AC system troubleshooting"]
+    },
+    {
+      "cluster": "Phoenix / Southwest-specific",
+      "examples": ["heat-related failures in AZ summer", "I-10 / I-17 corridor breakdowns", "border-bound freight prep", "summer-vs-winter AZ maintenance"]
+    },
+    {
+      "cluster": "Fleet & Compliance",
+      "examples": ["DOT annual inspection prep", "ELD compliance", "fleet maintenance contracts", "cost-per-mile of in-house vs outsourced repair"]
+    }
+  ],
+
+  "structureRules": {
+    "wordCount": "1200-2000",
+    "format": "HTML body (matches existing posts — rendered via dangerouslySetInnerHTML)",
+    "tags": "Use <h2> for sections, <h3> for sub-sections, <p> for paragraphs, <ul><li> for bullets, <strong>/<em> sparingly, <a href> for internal links",
+    "headings": "H2 title sections + occasional H3 subsections",
+    "openingPattern": "Open with the reader's problem or symptom — not a generic intro",
+    "internalLinkCount": "2-4 service-page links woven into sentences",
+    "ctaPlacement": "End with a CTA paragraph mentioning phone + the relevant service page",
+    "images": "1 hero (Fal-generated, /assets/blog-generated/<slug>.webp); optional 1-2 in-body via <img> tags"
+  },
+
+  "_note": "Read by the n8n blog-automation workflow before drafting. Voice is more practical / less contrarian than goxxii — readers want help fixing a truck, not opinions about the industry."
+}
