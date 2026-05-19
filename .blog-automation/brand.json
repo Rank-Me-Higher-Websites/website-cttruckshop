@@ -6,13 +6,11 @@
   "tagline": "Phoenix-based 24/7 semi truck and trailer repair, mobile service, DOT inspections, and emergency roadside.",
   "primaryAudience": "Long-haul truck drivers, owner-operators, and fleet managers in Phoenix, AZ and the Southwest corridor (I-10/I-17).",
   "secondaryAudience": "Trucking companies evaluating maintenance partners; brokers routing freight through Phoenix.",
-
   "voice": {
     "tone": "Practical, service-oriented, plain-language. Talks to drivers like a fellow shop pro who has been under the truck.",
     "personality": "Solution-focused. Names the symptom, walks through the fix, ends with a clear way to get help.",
-    "perspective": "Written from the shop's POV — a Phoenix-based truck mechanic team that fixes thousands of issues a year."
+    "perspective": "Written from the shop's POV \u2014 a Phoenix-based truck mechanic team that fixes thousands of issues a year."
   },
-
   "doSay": [
     "Specific symptoms and diagnostic steps (\"if air pressure drops below 80 psi at idle, check the governor first\")",
     "Mention Phoenix / Arizona / I-10 / I-17 naturally where geographically relevant",
@@ -20,9 +18,8 @@
     "Compliance and safety angle on DOT inspections, brakes, lights, ELD",
     "Honest cost ranges with the variables that drive them",
     "Pre-trip checks drivers can do themselves",
-    "Subtle CT Shop framing — \"a shop that answers the phone 24/7\""
+    "Subtle CT Shop framing \u2014 \"a shop that answers the phone 24/7\""
   ],
-
   "dontSay": [
     "Welcome to our blog",
     "In today's fast-paced world",
@@ -33,14 +30,13 @@
     "Hyperbolic claims (\"unbeatable\", \"world-class\")",
     "Emojis in body text"
   ],
-
   "groundingRules": [
     "CRITICAL: Use ONLY facts from siteFacts below or entities. Do NOT invent: specific cost ranges not listed, fleet sizes, certification claims, partnerships, or service offerings not in the list.",
-    "Use the EXACT phone number (602) 830-3232 in the closing CTA — do not substitute or modify.",
-    "When referencing services, use the EXACT names from siteFacts.services — these match the service-page URLs.",
-    "If a topic requires information not in siteFacts (e.g., specific certifications, awards, years in business), speak in industry generalities or omit that detail."
+    "Use the EXACT phone number (602) 830-3232 in the closing CTA \u2014 do not substitute or modify.",
+    "When referencing services, use the EXACT names from siteFacts.services \u2014 these match the service-page URLs.",
+    "If a topic requires information not in siteFacts (e.g., specific certifications, awards, years in business), speak in industry generalities or omit that detail.",
+    "When citing facts that aren't about the company itself (fuel prices, regulations, industry trends), link to one of the approved externalLinks domains as the source. Do NOT invent statistics or cite unnamed 'experts/studies'."
   ],
-
   "entities": {
     "company": "CT Truck & Trailer Shop",
     "shortName": "CT Shop",
@@ -48,25 +44,31 @@
     "primaryHub": "Phoenix, AZ",
     "serviceArea": "Phoenix, Avondale, Buckeye, Chandler, Gilbert, Glendale, Goodyear, Mesa, Peoria, Scottsdale"
   },
-
   "siteFacts": {
     "availability": "24/7 emergency truck and trailer repair + mobile service in Phoenix, AZ and surrounding metro.",
     "services": "Emergency truck repair (24/7), mobile repair on-site, semi truck AC repair, tire and brake repair, electrical diagnostics, engine repair, trailer suspension, full-body trailer repair, commercial fleet repair contracts, DOT inspections, breakdown towing/recovery.",
     "serviceArea": "Phoenix metro and surrounding Arizona cities: Avondale, Buckeye, Chandler, Gilbert, Glendale, Goodyear, Mesa, Peoria, Scottsdale. I-10 and I-17 corridor breakdowns covered.",
     "specialty": "Heavy-duty and semi-truck repair. Diesel mechanics with experience across Cummins, Detroit, Cat, Volvo, Mack, International, Freightliner, Peterbilt, Kenworth.",
-    "fleetContracts": "Commercial fleet repair contracts available — scheduled PM service, fleet account management, priority booking.",
+    "fleetContracts": "Commercial fleet repair contracts available \u2014 scheduled PM service, fleet account management, priority booking.",
     "dotCompliance": "DOT annual inspections in Phoenix, AZ. Federal Motor Carrier Safety Administration (FMCSA) compliance support.",
     "emergencyResponse": "Wrecker / towing service plus on-site mobile repair. Available 24 hours."
   },
-
   "siteFAQs": {
     "general": [
-      {"q": "What services does CT Shop offer?", "a": "Heavy-duty truck and trailer repair, emergency roadside service, mobile/on-site repair, semi truck AC repair, brake and tire service, engine repair, trailer electrical, suspension, DOT inspections, and fleet maintenance contracts."},
-      {"q": "Do you service trucks 24/7 in Phoenix?", "a": "Yes — CT Shop runs 24/7 emergency truck repair and roadside service across Phoenix and surrounding cities."},
-      {"q": "Where does CT Shop operate?", "a": "Phoenix metro and surrounding Arizona cities including Avondale, Buckeye, Chandler, Gilbert, Glendale, Goodyear, Mesa, Peoria, and Scottsdale. I-10 and I-17 corridor breakdowns covered."}
+      {
+        "q": "What services does CT Shop offer?",
+        "a": "Heavy-duty truck and trailer repair, emergency roadside service, mobile/on-site repair, semi truck AC repair, brake and tire service, engine repair, trailer electrical, suspension, DOT inspections, and fleet maintenance contracts."
+      },
+      {
+        "q": "Do you service trucks 24/7 in Phoenix?",
+        "a": "Yes \u2014 CT Shop runs 24/7 emergency truck repair and roadside service across Phoenix and surrounding cities."
+      },
+      {
+        "q": "Where does CT Shop operate?",
+        "a": "Phoenix metro and surrounding Arizona cities including Avondale, Buckeye, Chandler, Gilbert, Glendale, Goodyear, Mesa, Peoria, and Scottsdale. I-10 and I-17 corridor breakdowns covered."
+      }
     ]
   },
-
   "internalLinks": {
     "/": "homepage with all service overview",
     "/services": "service catalog landing page",
@@ -88,7 +90,6 @@
     "/commercial-fleet-repair-phoenix-az": "fleet maintenance contracts, scheduled service",
     "/dot-inspections-phoenix-az": "DOT annual inspections, compliance, paperwork"
   },
-
   "categories": [
     "Truck & Trailer Maintenance Tips",
     "Emergency Roadside Assistance",
@@ -96,15 +97,53 @@
     "Fleet Management",
     "DOT Compliance"
   ],
-
   "topicClusters": [
-    {"cluster": "Preventative Maintenance", "examples": ["brake inspection intervals", "DPF cleaning schedule", "PM service checklist", "pre-trip inspection that actually catches things"]},
-    {"cluster": "Emergency / Roadside", "examples": ["what to do when you break down on I-10", "wrecker selection in Phoenix", "minimizing downtime", "after-hours service"]},
-    {"cluster": "Diagnostics & Repair", "examples": ["interpreting check engine fault codes", "common Cummins/Detroit/Cat issues", "transmission warning signs", "AC troubleshooting in AZ heat"]},
-    {"cluster": "Phoenix / Southwest", "examples": ["heat-related failures in AZ summer", "I-10 / I-17 corridor breakdowns", "border-bound freight prep", "summer-vs-winter AZ maintenance"]},
-    {"cluster": "Fleet & Compliance", "examples": ["DOT annual inspection prep", "fleet maintenance contracts", "ELD + compliance", "in-house vs outsourced repair economics"]}
+    {
+      "cluster": "Preventative Maintenance",
+      "examples": [
+        "brake inspection intervals",
+        "DPF cleaning schedule",
+        "PM service checklist",
+        "pre-trip inspection that actually catches things"
+      ]
+    },
+    {
+      "cluster": "Emergency / Roadside",
+      "examples": [
+        "what to do when you break down on I-10",
+        "wrecker selection in Phoenix",
+        "minimizing downtime",
+        "after-hours service"
+      ]
+    },
+    {
+      "cluster": "Diagnostics & Repair",
+      "examples": [
+        "interpreting check engine fault codes",
+        "common Cummins/Detroit/Cat issues",
+        "transmission warning signs",
+        "AC troubleshooting in AZ heat"
+      ]
+    },
+    {
+      "cluster": "Phoenix / Southwest",
+      "examples": [
+        "heat-related failures in AZ summer",
+        "I-10 / I-17 corridor breakdowns",
+        "border-bound freight prep",
+        "summer-vs-winter AZ maintenance"
+      ]
+    },
+    {
+      "cluster": "Fleet & Compliance",
+      "examples": [
+        "DOT annual inspection prep",
+        "fleet maintenance contracts",
+        "ELD + compliance",
+        "in-house vs outsourced repair economics"
+      ]
+    }
   ],
-
   "blogCoverImages": [
     "/blog-images/engine-repair.webp",
     "/blog-images/diesel-engine-repair.webp",
@@ -115,16 +154,47 @@
     "/blog-images/tire-tech-thumbsup.webp",
     "/blog-images/facility.webp"
   ],
-
   "structureRules": {
-    "wordCount": "1200-2000",
+    "wordCount": "800-1200 (do not exceed 1300)",
     "format": "HTML body (rendered via dangerouslySetInnerHTML by BlogPost.tsx)",
     "tags": "<h2>, <h3>, <p>, <ul><li>, <strong>/<em> sparingly, <a href> for internal links",
-    "openingPattern": "Lead with the reader's symptom or pain point — not a generic intro",
-    "internalLinkCount": "2-4 service-page links woven into sentences",
+    "openingPattern": "Start with a 2-sentence TL;DR summary that captures the main takeaway, then a hook addressing the reader's frustration or question.",
+    "internalLinkCount": "2-3 woven into sentences",
     "ctaPlacement": "End with a CTA paragraph mentioning the phone number (602) 830-3232 + relevant service-page link",
-    "images": "Hero image picked from blogCoverImages (workflow picks one). Optional 1-2 in-body via <img>"
+    "images": "Hero image picked from blogCoverImages (workflow picks one). Optional 1-2 in-body via <img>",
+    "externalLinkCount": "1-2 woven into sentences, only from approved externalLinks list"
   },
-
-  "_note": "siteFacts + siteFAQs are derived from the actual cttruckshop.com page content and source files. The LLM uses these for company-specific claims and must NOT invent operational specifics. Update when CT Shop's services, phone, or service area change."
+  "_note": "siteFacts + siteFAQs are derived from the actual cttruckshop.com page content and source files. The LLM uses these for company-specific claims and must NOT invent operational specifics. Update when CT Shop's services, phone, or service area change.",
+  "externalLinks": [
+    {
+      "url": "https://www.fmcsa.dot.gov/regulations/",
+      "name": "FMCSA Regulations",
+      "useFor": "DOT compliance, inspection rules, brake / lights / tire regs"
+    },
+    {
+      "url": "https://www.fmcsa.dot.gov/sites/fmcsa.dot.gov/files/docs/2017-CVSA-OOS-Criteria_Final-1.pdf",
+      "name": "CVSA Out-of-Service Criteria",
+      "useFor": "what triggers DOT roadside inspection failures"
+    },
+    {
+      "url": "https://www.ccjdigital.com/",
+      "name": "Commercial Carrier Journal",
+      "useFor": "fleet maintenance + repair industry trends"
+    },
+    {
+      "url": "https://www.tmcouncil.org/",
+      "name": "TMC (ATA Technology & Maintenance Council)",
+      "useFor": "OEM maintenance best practices"
+    },
+    {
+      "url": "https://azdot.gov/",
+      "name": "Arizona DOT",
+      "useFor": "Arizona road / weight / permit info"
+    },
+    {
+      "url": "https://www.freightwaves.com/",
+      "name": "FreightWaves",
+      "useFor": "freight market context"
+    }
+  ]
 }
