@@ -14,6 +14,22 @@ const faqs = [
     answer: "We service all types of heavy-duty commercial vehicles including semi-trucks, tractor-trailers, box trucks, flatbeds, refrigerated trailers, and full commercial fleets. Our technicians are experienced with all major manufacturers including Freightliner, Peterbilt, Kenworth, Volvo, International, and Mack.",
   },
   {
+    question: "Do you provide diesel truck repair in Phoenix?",
+    answer: "Yes — diesel truck repair is one of our core specialties. We handle diesel engine diagnostics, fuel system service, turbocharger work, EGR and DPF service, cooling system repairs, and full diesel engine rebuilds for all major Class 7 and Class 8 truck brands.",
+  },
+  {
+    question: "Do you handle heavy-duty truck repair?",
+    answer: "Absolutely. CT Truck and Trailer Shop is purpose-built for heavy-duty truck repair. Our shop has the bay clearance, lifting capacity, and diesel diagnostic equipment required for full-size semi-trucks and heavy commercial trailers.",
+  },
+  {
+    question: "Do you offer mobile truck repair in Phoenix?",
+    answer: "Yes. Our mobile truck repair service covers the entire Phoenix metro — Glendale, Tempe, Mesa, Chandler, Goodyear, Avondale, Peoria, and along I-10, I-17, Loop 101 and Loop 202. We bring diagnostic tools, air systems, welding, and common parts directly to your truck.",
+  },
+  {
+    question: "Do you do DOT inspections in Phoenix?",
+    answer: "Yes. We are a certified Federal Annual Inspection station (FMCSA 49 CFR Part 396). We perform full DOT inspections for trucks and trailers at our Phoenix shop, document the results, and issue your inspection sticker on the spot when you pass.",
+  },
+  {
     question: "Do you offer emergency roadside assistance?",
     answer: "Yes! We provide emergency roadside assistance throughout Phoenix, AZ and surrounding areas including Glendale, Tempe, Mesa, and along major routes like I-10, I-17, and Loop 101. Our mobile techs are equipped to handle most common breakdowns on-site.",
   },
@@ -39,7 +55,7 @@ const faqs = [
   },
   {
     question: "Where are you located?",
-    answer: "We're located in Phoenix, AZ and serve the entire Phoenix metro area including Glendale, Tempe, Mesa, Chandler, Gilbert, Scottsdale, and surrounding communities. Our mobile repair service covers major highways and industrial areas throughout the region.",
+    answer: "We're located at 3883 N 36th Ave A, Phoenix, AZ 85019 and serve the entire Phoenix metro area including Glendale, Tempe, Mesa, Chandler, Gilbert, Scottsdale, and surrounding communities. Our mobile repair service covers major highways and industrial areas throughout the region.",
   },
 ];
 

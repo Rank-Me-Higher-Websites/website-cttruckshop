@@ -27,7 +27,7 @@ const locationsData: Record<string, {
     address: "Phoenix",
     city: "Phoenix",
     state: "AZ",
-    zip: "85000",
+    zip: "85019",
     phone: "(602) 830-3232",
     hours: "Mon-Sat: 7AM-6PM",
     emergency: true,
@@ -48,8 +48,8 @@ const locationsData: Record<string, {
       "Extended access for fleet customers",
       "Mobile repair dispatch",
     ],
-    description: "Our Phoenix location serves as the headquarters for CT Truck & Trailer Shop, providing comprehensive repair and maintenance services for the entire Phoenix metro area.",
-    metaDescription: "CT Truck & Trailer Shop in Phoenix, AZ. Full-service truck and trailer repair, DOT inspections, fast emergency service. Call (602) 830-3232.",
+    description: "Our Phoenix location serves as the headquarters for CT Truck and Trailer Shop, providing comprehensive repair and maintenance services for the entire Phoenix metro area.",
+    metaDescription: "CT Truck and Trailer Shop in Phoenix, AZ at 3883 N 36th Ave A. Full-service truck and trailer repair, DOT inspections, fast emergency service. Call (602) 830-3232.",
   },
 };
 

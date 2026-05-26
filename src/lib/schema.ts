@@ -1,5 +1,8 @@
 const BUSINESS = {
-  name: "CT Truck & Trailer Shop",
+  // Canonical name matches the Google Business Profile exactly.
+  // GBP listing: "CT Truck and Trailer Shop". The "&" variant is kept as alternateName.
+  name: "CT Truck and Trailer Shop",
+  alternateName: "CT Truck & Trailer Shop",
   url: "https://cttruckshop.com",
   phone: "+1-602-830-3232",
   email: "service@clevertranscoshop.com",
@@ -7,7 +10,8 @@ const BUSINESS = {
   image: "https://cttruckshop.com/og-image.jpg",
   address: {
     "@type": "PostalAddress" as const,
-    streetAddress: "3883 N 36th Ave",
+    // Unit "A" included to match the GBP-registered address exactly.
+    streetAddress: "3883 N 36th Ave A",
     addressLocality: "Phoenix",
     addressRegion: "AZ",
     postalCode: "85019",
@@ -18,7 +22,10 @@ const BUSINESS = {
     latitude: 33.4734,
     longitude: -112.1328,
   },
-  openingHours: [
+  // Short-form openingHours (Schema.org spec, separate from openingHoursSpecification)
+  // ensures parsers that look for either field find a value.
+  openingHoursShort: ["Mo-Fr 08:00-17:00"],
+  openingHoursSpecification: [
     {
       "@type": "OpeningHoursSpecification" as const,
       dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
@@ -41,6 +48,7 @@ export const createLocalBusinessSchema = () => ({
   "@context": "https://schema.org",
   "@type": "AutoRepair",
   name: BUSINESS.name,
+  alternateName: BUSINESS.alternateName,
   image: BUSINESS.image,
   "@id": BUSINESS.url,
   url: BUSINESS.url,
@@ -48,7 +56,11 @@ export const createLocalBusinessSchema = () => ({
   email: BUSINESS.email,
   address: BUSINESS.address,
   geo: BUSINESS.geo,
-  openingHoursSpecification: BUSINESS.openingHours,
+  hasMap: "https://maps.google.com/?cid=10869076384411790000",
+  openingHours: BUSINESS.openingHoursShort,
+  openingHoursSpecification: BUSINESS.openingHoursSpecification,
+  currenciesAccepted: "USD",
+  paymentAccepted: "Cash, Credit Card, Debit Card",
   areaServed: BUSINESS.areaServed.map((city) => ({
     "@type": "City",
     name: city,
@@ -58,7 +70,7 @@ export const createLocalBusinessSchema = () => ({
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "4.5",
-    reviewCount: "61",
+    reviewCount: "62",
   },
 });
 
@@ -66,6 +78,7 @@ export const createOrganizationSchema = () => ({
   "@context": "https://schema.org",
   "@type": "Organization",
   name: BUSINESS.name,
+  alternateName: BUSINESS.alternateName,
   url: BUSINESS.url,
   logo: BUSINESS.logo,
   telephone: BUSINESS.phone,
