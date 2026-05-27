@@ -21,7 +21,7 @@ const Contact = () => {
     <Layout>
       <SEO
         title="Contact CT Truck & Trailer Shop – Phoenix, AZ"
-        description="Get in touch with CT Truck & Trailer Shop at (602) 830-3232. Located at 3883 N 36th Ave, Phoenix, AZ 85019. Request a quote for truck repair, trailer service, or emergency roadside help."
+        description="Get in touch with CT Truck and Trailer Shop at (602) 830-3232. Located at 3883 N 36th Ave A, Phoenix, AZ 85019. Request a quote for truck repair, trailer service, or emergency roadside help."
         keywords="contact truck repair phoenix, truck repair quote phoenix, truck shop near me, schedule truck repair, Phoenix truck shop phone, commercial fleet service contact"
         structuredData={[
           createBreadcrumbSchema([
@@ -142,7 +142,7 @@ const Contact = () => {
                   </div>
                   <div className="min-w-0">
                     <p className="font-semibold text-primary-foreground">Location</p>
-                    <p className="text-primary-foreground">3883 N 36th Ave</p>
+                    <p className="text-primary-foreground">3883 N 36th Ave A</p>
                     <p className="text-primary-foreground">Phoenix, AZ 85019</p>
                   </div>
                 </a>

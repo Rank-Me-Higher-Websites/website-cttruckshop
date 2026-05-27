@@ -297,7 +297,7 @@ const ServiceAreaPage = () => {
                 <div className="flex items-start gap-2.5">
                   <MapPin className="h-4 w-4 text-accent flex-shrink-0 mt-0.5" />
                   <div>
-                    <p className="font-medium text-sm text-primary-foreground">3883 N 36th Ave, Phoenix, AZ 85019</p>
+                    <p className="font-medium text-sm text-primary-foreground">3883 N 36th Ave A, Phoenix, AZ 85019</p>
                     <p className="text-primary-foreground/50 text-xs">{area.distance} from {area.name}</p>
                   </div>
                 </div>

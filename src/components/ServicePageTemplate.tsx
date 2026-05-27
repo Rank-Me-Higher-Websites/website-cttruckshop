@@ -50,6 +50,8 @@ const imageMap: Record<string, string> = {
   "semi-trailer-suspension-repair-services-phoenix-az": engineBrakeRepair,
   "full-body-semi-trailer-repair-in-phoenix-az": truckEngineWide,
   "commercial-fleet-repair-phoenix-az": fleetElectricalWork,
+  "commercial-truck-repair-phoenix-az": kenworthShopFront,
+  "semi-truck-repair-shop-phoenix-az": shopBayOverview,
   "dot-inspections-phoenix-az": shopInterior,
 };
 
@@ -65,6 +67,8 @@ const contentImageMap: Record<string, string> = {
   "semi-trailer-suspension-repair-services-phoenix-az": mobileRepair,
   "full-body-semi-trailer-repair-in-phoenix-az": tireTechThumbsup,
   "commercial-fleet-repair-phoenix-az": teamWork,
+  "commercial-truck-repair-phoenix-az": mechanicEngineWork,
+  "semi-truck-repair-shop-phoenix-az": kenworthShopFront,
   "dot-inspections-phoenix-az": facility,
 };
 

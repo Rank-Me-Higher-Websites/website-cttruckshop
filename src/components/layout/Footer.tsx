@@ -110,7 +110,7 @@ const Footer = () => {
                 </span>
                 <div>
                   <span className="text-[11px] uppercase tracking-wider text-primary-foreground/70 block">Address</span>
-                  <span className="text-sm font-medium">3883 N 36th Ave, Phoenix, AZ 85019</span>
+                  <span className="text-sm font-medium">3883 N 36th Ave A, Phoenix, AZ 85019</span>
                 </div>
               </a>
 

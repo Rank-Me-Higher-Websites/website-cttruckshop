@@ -51,17 +51,20 @@ const SEOContentSection = () => {
 
             <div className="space-y-4 text-primary-foreground/80 mb-8">
               <p>
-                <strong className="text-primary-foreground">CT Truck & Trailer Shop</strong> keeps 
-                commercial fleets moving throughout{" "}
-                <Link to="/locations" className="text-accent hover:underline">Phoenix, Glendale, Tempe, Mesa</Link>, and the surrounding 
-                Arizona metro area with comprehensive in-shop and{" "}
-                <Link to="/mobile-repair" className="text-accent hover:underline">mobile repair services</Link>.
+                <strong className="text-primary-foreground">CT Truck and Trailer Shop</strong> is your full-service{" "}
+                <strong className="text-primary-foreground">diesel truck repair</strong> and{" "}
+                <strong className="text-primary-foreground">heavy-duty truck repair</strong> shop in Phoenix, AZ — keeping{" "}
+                commercial fleets moving across{" "}
+                <Link to="/locations" className="text-accent hover:underline">Phoenix, Glendale, Tempe, Mesa</Link>{" "}
+                and the surrounding Arizona metro with comprehensive in-shop service and{" "}
+                <Link to="/mobile-repair" className="text-accent hover:underline">mobile truck repair</Link>.
               </p>
               <p>
-                Our experienced technicians handle everything from routine{" "}
-                <Link to="/services" className="text-accent hover:underline font-medium">preventive maintenance</Link> to complex{" "}
-                <Link to="/services/engine-repair" className="text-accent hover:underline font-medium">emergency repairs</Link>, using state-of-the-art 
-                diagnostic tools and high-quality parts. Read our{" "}
+                Our experienced diesel mechanics handle everything from routine{" "}
+                <Link to="/services" className="text-accent hover:underline font-medium">preventive maintenance</Link>{" "}
+                and{" "}
+                <Link to="/dot-inspections-phoenix-az" className="text-accent hover:underline font-medium">DOT inspections in Phoenix</Link>{" "}
+                to complex engine, brake, and electrical work using modern diagnostic tools and quality parts. Read our{" "}
                 <Link to="/blog" className="text-accent hover:underline">latest blog posts</Link> for maintenance tips.
               </p>
             </div>

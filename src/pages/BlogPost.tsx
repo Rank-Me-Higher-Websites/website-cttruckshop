@@ -1,4 +1,5 @@
 import { useParams, Link } from "react-router-dom";
+import { useEffect } from "react";
 import Layout from "@/components/layout/Layout";
 import SEO from "@/components/SEO";
 import BlogContent from "@/components/BlogContent";
@@ -7,6 +8,17 @@ import { autoBlogPosts } from "@/data/autoBlogPosts";
 import { getFeaturedImage } from "@/lib/blogImageMap";
 import { ArrowLeft, ArrowRight, Calendar, Tag } from "lucide-react";
 import { createBreadcrumbSchema, createArticleSchema, createFAQSchema, BASE_URL } from "@/lib/schema";
+
+// Cannibalization consolidation: these slugs should canonicalize to a single keeper
+// to consolidate ranking signals. Server-side 301s in serve.js handle direct hits;
+// this client-side canonical handles any rendered access (e.g., SPA navigation
+// from an external referrer that lands on the route before redirect kicks in).
+// Keep in sync with serve.js REDIRECTS_301 and docs/seo/SEO_EXECUTION_PLAN.md §1.5.
+const BLOG_CANONICAL_OVERRIDE: Record<string, string> = {
+  "emergency-repair-services": "emergency-truck-repair-phoenix-arizona",
+  "emergency-truck-repair": "emergency-truck-repair-phoenix-arizona",
+  "emergency-truck-repair-solutions": "emergency-truck-repair-phoenix-arizona",
+};
 
 const blogFAQs: Record<string, { question: string; answer: string }[]> = {
   "mobile-truck-repair-phoenix-az-guide": [
@@ -43,6 +55,14 @@ const BlogPost = () => {
   const postIndex = allPosts.findIndex((p) => p.slug === slug);
   const post = allPosts[postIndex];
 
+  // Client-side redirect for cannibalized URLs (defense-in-depth alongside server 301s).
+  const canonicalSlug = slug ? BLOG_CANONICAL_OVERRIDE[slug] : undefined;
+  useEffect(() => {
+    if (canonicalSlug && typeof window !== "undefined") {
+      window.location.replace(`/blog/${canonicalSlug}`);
+    }
+  }, [canonicalSlug]);
+
   if (!post) {
     return (
       <Layout>
@@ -71,6 +91,7 @@ const BlogPost = () => {
         keywords={`${post.category.toLowerCase()}, ${post.title.toLowerCase().split(' ').slice(0, 5).join(' ')}, truck repair blog, phoenix az`}
         ogType="article"
         ogImage={getFeaturedImage(post.slug)}
+        canonical={canonicalSlug ? `${BASE_URL}/blog/${canonicalSlug}` : undefined}
         structuredData={[
           createBreadcrumbSchema([
             { name: "Home", url: BASE_URL },

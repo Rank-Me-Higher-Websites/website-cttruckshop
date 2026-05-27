@@ -35,7 +35,7 @@ export const serviceAreas: ServiceArea[] = [
     heroImage: "shop-bay-overview",
     contentImage: "kenworth-shop-front",
     metaTitle: "Semi Truck Repair in Phoenix, AZ – CT Truck & Trailer Shop",
-    metaDescription: "Full-service semi truck and trailer repair at 3883 N 36th Ave, Phoenix AZ. DOT inspections, engine rebuilds, brake service, mobile dispatch. Call (602) 830-3232.",
+    metaDescription: "Full-service semi truck and trailer repair at 3883 N 36th Ave A, Phoenix AZ. DOT inspections, engine rebuilds, brake service, mobile dispatch. Call (602) 830-3232.",
     keywords: "truck repair phoenix, semi truck repair phoenix az, trailer repair phoenix, diesel mechanic phoenix, DOT inspection phoenix, truck shop phoenix",
     heroHeadline: "Phoenix Semi Truck & Trailer Repair",
     heroSub: "Our main shop at 3883 N 36th Ave — full-service diesel repair, DOT inspections, and emergency mobile dispatch across the Valley.",

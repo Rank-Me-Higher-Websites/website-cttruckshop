@@ -35,7 +35,7 @@ const TermsOfService = () => {
                 2. Description of Services
               </h2>
               <p>
-                CT Shop is a truck repair shop located at 3883 N 36th Ave, Phoenix, AZ 85019, United States. We provide a range of truck and trailer repair services including engine repairs, brake and tire service, electrical diagnostics, suspension repair, AC repair, mobile repair, emergency roadside assistance, and other related maintenance and repair services. The information provided on our Site is intended for general informational purposes and does not constitute a binding offer or contract for services. All services are subject to availability and may vary based on the specific needs of each customer.
+                CT Shop is a truck repair shop located at 3883 N 36th Ave A, Phoenix, AZ 85019, United States. We provide a range of truck and trailer repair services including engine repairs, brake and tire service, electrical diagnostics, suspension repair, AC repair, mobile repair, emergency roadside assistance, and other related maintenance and repair services. The information provided on our Site is intended for general informational purposes and does not constitute a binding offer or contract for services. All services are subject to availability and may vary based on the specific needs of each customer.
               </p>
             </section>
 
@@ -125,7 +125,7 @@ const TermsOfService = () => {
                 12. Contact Information
               </h2>
               <p>
-                If you have any questions or concerns about these Terms of Service, please contact us at service@clevertranscoshop.com or by mail at 3883 N 36th Ave, Phoenix, AZ 85019, United States.
+                If you have any questions or concerns about these Terms of Service, please contact us at service@clevertranscoshop.com or by mail at 3883 N 36th Ave A, Phoenix, AZ 85019, United States.
               </p>
             </section>
           </div>

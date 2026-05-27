@@ -11,7 +11,7 @@ const locations = [
   {
     slug: "phoenix",
     name: "Phoenix Main Shop",
-    address: "3883 N 36th Ave, Phoenix, AZ 85019",
+    address: "3883 N 36th Ave A, Phoenix, AZ 85019",
     phone: "(602) 830-3232",
     hours: "Mon-Sat: 7AM-6PM",
     emergency: true,
@@ -39,7 +39,7 @@ const Locations = () => {
     <Layout>
       <SEO
         title="Our Location – Phoenix Truck & Trailer Repair Shop"
-        description="Visit CT Truck & Trailer Shop at 3883 N 36th Ave, Phoenix, AZ 85019. Full-service truck repair, mobile dispatch, and emergency roadside assistance across the Phoenix metro area."
+        description="Visit CT Truck and Trailer Shop at 3883 N 36th Ave A, Phoenix, AZ 85019. Full-service truck repair, mobile dispatch, and emergency roadside assistance across the Phoenix metro area."
         keywords="truck shop phoenix location, truck repair near me phoenix, Phoenix truck shop, trailer repair Arizona, commercial truck service locations"
         structuredData={[
           createBreadcrumbSchema([
