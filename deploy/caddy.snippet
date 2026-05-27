@@ -43,11 +43,16 @@ cttruckshop.com, http://website-cttruckshop-preview {
     # Static file serving (SPA + per-route pre-rendered HTML).
     #
     # Resolution order:
-    #   1. Exact file: /dist/<path>           (assets, sitemap.xml, robots.txt)
-    #   2. Directory:  /dist/<path>/index.html (per-route HTML from inject-meta.ts)
-    #   3. SPA shell:  /dist/index.html        (client-side router catch-all)
+    #   1. Exact file:          /dist/<path>             (assets, sitemap.xml, robots.txt)
+    #   2. Per-route index.html /dist/<path>/index.html  (from scripts/inject-meta.ts)
+    #   3. SPA shell:           /dist/index.html         (client-side router catch-all)
+    #
+    # Note: we use `{path}/index.html` rather than `{path}/` so Caddy serves
+    # the file via internal rewrite — using `{path}/` triggers a 308
+    # "canonical URI" redirect that adds a trailing slash, which we don't
+    # want (our sitemap canonicalizes WITHOUT trailing slashes).
     # ──────────────────────────────────────────────────────────────────────
-    try_files {path} {path}/ /index.html
+    try_files {path} {path}/index.html /index.html
     file_server
     encode gzip
 
