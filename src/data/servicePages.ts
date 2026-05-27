@@ -169,27 +169,90 @@ export const servicePages: Record<string, ServicePageData> = {
 
   "semi-truck-tire-and-brake-repair-services-phoenix-az": {
     slug: "semi-truck-tire-and-brake-repair-services-phoenix-az",
-    title: "Semi Truck Tire and Brake Repair Services Phoenix, AZ",
-    metaTitle: "Semi Truck Tire & Brake Repair Phoenix, AZ | CT Truck & Trailer Shop",
-    metaDescription: "Professional semi truck tire and brake repair services in Phoenix, AZ. Expert technicians, safety-first approach. CT Shop.",
-    heroHeadline: "Brake and Tire Repairs",
-    heroSubheadline: "DOT-compliant brake inspections, tire replacement & safety-first repairs.",
-    introHeading: "Professional Semi Truck Tire & Brake Repair Services in Phoenix",
+    title: "Semi Truck Brake Pads & Tire Repair in Phoenix, Arizona",
+    metaTitle: "Semi Truck Brake Pads in Arizona — Phoenix Brake & Tire Repair Shop",
+    metaDescription: "Semi truck brake pads & full brake repair in Phoenix, Arizona. Same-day brake pad replacement, DOT-compliant inspections, all major brands stocked. Call (602) 830-3232.",
+    heroHeadline: "Semi Truck Brake Pads & Brake Repair in Phoenix, Arizona",
+    heroSubheadline: "Same-day brake pad replacement, DOT-compliant brake inspections, and tire service for Class 8 trucks. Bendix, Meritor, Haldex & more — in stock.",
+    introHeading: "Arizona's Trusted Shop for Semi Truck Brake Pads & Brake Repair",
     introParagraphs: [
-      "Brakes and tires are crucial components of any vehicle, and their proper maintenance is even more critical when it comes to semi trucks. Especially, with their heavy loads and long-distance trips, semi trucks put significant strain on braking systems and tires. Regular brake and tire service is essential to ensure optimal performance, maximize safety, and extend the lifespan of these vital components.",
-      "Here, at CT Shop our professional technicians will provide you with the high-level semi truck brake and tire services to reduce the risk of brake failure which can have catastrophic consequences.",
+      "Looking for semi truck brake pads in Arizona? CT Truck & Trailer Shop stocks brake pads for every major Class 8 truck — Freightliner Cascadia, Peterbilt 579, Kenworth T680, Volvo VNL, International LT and more — and we install them the same day in our Phoenix shop. Whether you need a quick brake pad swap before your next haul or a full S-cam, drum, slack adjuster, ABS sensor and air system inspection, our DOT-certified brake technicians handle it in one stop.",
+      "We're the brake shop that fleets and owner-operators across Arizona send their trucks to when brake failure is not an option. Every brake job starts with a 21-point DOT brake inspection, includes a documented out-of-service inspection report, and comes with a warranty on parts and labor. Same-day brake pad installation, walk-ins welcome, and emergency 24/7 mobile brake service available across Phoenix, Mesa, Tempe, Chandler, Glendale and the wider Valley.",
+      "Need brake pads now? Call (602) 830-3232 — most semi truck brake pad jobs are completed in 2 to 4 hours.",
     ],
-    sections: [],
+    sections: [
+      {
+        heading: "Semi Truck Brake Pads We Stock & Install",
+        content: [
+          "We carry brake pads in our Phoenix warehouse for every major Class 8 application — meaning we can usually install your brake pads the same day you bring the truck in. We stock pads from the brake brands real fleets trust:",
+        ],
+        listItems: [
+          "Bendix MA, MV3, ADB, EX225 air disc brake pads",
+          "Meritor EX+ L, EX225L2, EX225H2 air disc brake pads",
+          "Haldex air disc brake pads (DBT, ModulX series)",
+          "Knorr-Bremse / Bendix replacement pads",
+          "Standard drum brake shoes & linings (4707, 4709, 4515Q)",
+          "Haldex/Bendix slack adjusters & S-cam kits",
+          "ABS sensors, brake chambers, air dryers, governors",
+        ],
+      },
+      {
+        heading: "What's Included With Every Semi Truck Brake Pad Job",
+        content: [
+          "Brake pad replacement at CT Shop is never just \"swap and go.\" Every job includes:",
+        ],
+        listItems: [
+          "21-point DOT brake inspection (drums, rotors, hoses, ABS, air system)",
+          "Brake pad / lining thickness measurement on every axle",
+          "S-cam, slack adjuster and chamber inspection",
+          "Air system leak-down test (1 psi/min max)",
+          "Written inspection report — DOT-ready",
+          "Warranty on parts (12 months) and labor (90 days)",
+          "Optional rotor / drum machining or replacement",
+        ],
+      },
+      {
+        heading: "Mobile Brake Service Across the Phoenix Valley",
+        content: [
+          "Truck won't move because of brake failure? Don't risk towing — we'll come to you. Our mobile brake response unit covers Phoenix, Glendale, Mesa, Tempe, Chandler, Scottsdale, Gilbert, Peoria, Avondale, Goodyear, Buckeye and Surprise. Stocked with brake pads, S-cams, slack adjusters and a portable lift, our mobile techs handle most brake jobs on-site so you don't lose a load.",
+        ],
+      },
+    ],
     highlights: [
-      { title: "Fast Response", description: "We understand the importance of properly functioning brakes and tires in heavy-duty trucks, and our goal is to deliver solutions that meet or exceed customer expectations." },
-      { title: "Expert Knowledge", description: "Our extensive knowledge of various truck models and braking systems equips us to diagnose and resolve issues efficiently. With CT Shop, you can trust that your truck is in capable hands." },
-      { title: "Comprehensive Solutions", description: "From brake pad replacement to complete tire service, our comprehensive approach ensures that your truck operates at peak performance, promoting safety and minimizing downtime." },
+      { title: "Same-Day Brake Pads", description: "Most Class 8 brake pad jobs completed in 2–4 hours. Walk-ins welcome, fleets prioritized. Brake pads in stock for every major truck application." },
+      { title: "DOT-Certified Brake Techs", description: "Every brake repair includes a documented 21-point DOT inspection. Our brake technicians are trained on Bendix, Meritor, Haldex and Knorr-Bremse systems." },
+      { title: "Mobile Brake Response", description: "Brake failure in the yard or on the side of the road? Our mobile brake unit covers the entire Phoenix metro 24/7. Air leaks, frozen S-cams, blown chambers — we come to you." },
     ],
-    faqs: [],
+    faqs: [
+      {
+        question: "How much do semi truck brake pads cost in Arizona?",
+        answer: "Semi truck brake pad pricing in Arizona depends on the brake system. Air disc brake pads (Bendix ADB22X, Meritor EX+ L) typically run $180–$320 per wheel installed. Drum brake shoes run $140–$240 per wheel installed. Full tractor brake job (steer + drives) averages $1,400–$2,800. Trailer-only brake jobs $900–$1,800. Call (602) 830-3232 for a same-day quote on your specific truck.",
+      },
+      {
+        question: "How long does a semi truck brake pad replacement take?",
+        answer: "Most semi truck brake pad replacements at CT Shop take 2–4 hours. Single-axle brake pad jobs are usually done in 90 minutes. Full tractor + trailer brake replacement is typically a same-day job. We give you a written ETA before we start the work.",
+      },
+      {
+        question: "How often should semi truck brake pads be replaced?",
+        answer: "Semi truck brake pads should be replaced when lining thickness drops below 1/4 inch (or per the manufacturer's wear indicator). For most over-the-road Class 8 trucks, that's every 100,000–150,000 miles for steer axle, 200,000–300,000 miles for drive axles. Heavy hauling, mountain driving, or stop-and-go operation shortens that significantly. We measure pad thickness on every visit free of charge.",
+      },
+      {
+        question: "Do you stock brake pads for my truck?",
+        answer: "Almost certainly yes. We stock brake pads in our Phoenix warehouse for Freightliner Cascadia, Peterbilt 579/389/567, Kenworth T680/W900/T880, Volvo VNL/VNR, Mack Anthem/Granite, International LT/HV and Western Star 5700/4900 — covering the vast majority of Class 8 trucks on Arizona roads. If we don't stock it, we can usually source it same-day from local Bendix, Meritor or Haldex distributors.",
+      },
+      {
+        question: "Can you do a DOT brake inspection before my next haul?",
+        answer: "Yes — and it's free with any brake repair. Our DOT-certified inspectors do a full 21-point brake inspection including pad/lining thickness, drums, rotors, slack adjuster travel, brake chamber stroke, air system leak-down (1 psi/min max), ABS warning light operation, parking brake hold, and trailer brake balance. You leave with a signed inspection report. Walk-in DOT brake inspections start at $95.",
+      },
+      {
+        question: "Do you offer mobile brake repair in Phoenix?",
+        answer: "Yes — 24/7 mobile brake repair across the entire Phoenix Valley. Our mobile brake unit is stocked with the most common semi truck brake pads, S-cams, slack adjusters, brake chambers and air system components. If your truck is stuck because of a brake failure in Phoenix, Mesa, Tempe, Chandler, Glendale, Scottsdale, Gilbert, Peoria, Avondale, Goodyear, Buckeye or Surprise — call (602) 830-3232 and we'll come to you.",
+      },
+    ],
     relatedServices: [
       { title: "Trailer Brake & Tire Repair", href: "/semi-trailer-brake-and-tire-repair-services-in-phoenix-az" },
       { title: "Semi Truck Diagnostics", href: "/semi-truck-diagnostics-in-phoenix-az" },
-      { title: "Trailer Suspension Repair", href: "/semi-trailer-suspension-repair-services-phoenix-az" },
+      { title: "Emergency Truck Repair", href: "/emergency-truck-repair-phoenix" },
     ],
   },
 
@@ -508,6 +571,187 @@ export const servicePages: Record<string, ServicePageData> = {
       { title: "Commercial Fleet Repair", href: "/commercial-fleet-repair-phoenix-az" },
       { title: "Semi Truck Tire & Brake Repair", href: "/semi-truck-tire-and-brake-repair-services-phoenix-az" },
       { title: "Semi Truck Diagnostics", href: "/semi-truck-diagnostics-in-phoenix-az" },
+    ],
+  },
+
+  "commercial-truck-repair-phoenix-az": {
+    slug: "commercial-truck-repair-phoenix-az",
+    title: "Commercial Truck Repair in Phoenix, AZ",
+    metaTitle: "Commercial Truck Repair Phoenix, AZ | CT Truck & Trailer Shop",
+    metaDescription: "Commercial truck repair in Phoenix, AZ. Class 6–8 service, fleet contracts, DOT inspections, 24/7 emergency response, parts in stock. Call (602) 830-3232.",
+    heroHeadline: "Commercial Truck Repair in Phoenix, AZ",
+    heroSubheadline: "Class 6–8 commercial truck service for fleets and owner-operators. Engine, transmission, brakes, electrical, DOT inspections. 24/7 emergency response across the Phoenix Valley.",
+    introHeading: "Phoenix's Full-Service Commercial Truck Repair Shop",
+    introParagraphs: [
+      "CT Truck & Trailer Shop is Phoenix's go-to commercial truck repair shop for fleets and independent operators running Class 6 through Class 8 trucks. From routine PM service to engine overhauls, from a quick brake-pad swap to a complete DOT annual inspection, we handle the full lifecycle of commercial vehicle maintenance — in one shop, with documented work and warranties on every repair.",
+      "We service every major OEM — Freightliner, Peterbilt, Kenworth, Volvo, Mack, International, Western Star, Hino, Isuzu — and every major engine — Cummins X15/ISX, Detroit DD15/DD13, PACCAR MX, Volvo D13, Mack MP, CAT C15. Our techs are ASE and OEM-trained, and our diagnostic bay is equipped with dealer-level scan tools (DDDL, Insite, ServiceMaxx, Premium Tech Tool) — so we don't just clear codes, we fix the root cause.",
+      "Need commercial truck repair now? Call (602) 830-3232 — we take walk-ins, we offer 24/7 emergency response, and we negotiate fleet contracts.",
+    ],
+    sections: [
+      {
+        heading: "Commercial Truck Services We Provide",
+        content: [
+          "Our Phoenix shop is a one-stop commercial truck repair operation. We handle every system on Class 6–8 trucks:",
+        ],
+        listItems: [
+          "Engine diagnostics, repair, overhaul & rebuild (Cummins, Detroit, PACCAR, Volvo, Mack, CAT)",
+          "Transmission service & rebuild (Eaton Fuller, Allison, ZF, Volvo I-Shift, Detroit DT12)",
+          "Brake repair, brake pad replacement, S-cam & slack adjuster service",
+          "Tire mounting, balancing, alignment & rotation",
+          "Electrical, wiring harness, alternator, starter & battery service",
+          "Cooling system, radiator, water pump, hose & coolant service",
+          "DPF/DEF aftertreatment cleaning, regen, sensor & module replacement",
+          "Air system, brake chamber, governor, air dryer & valve service",
+          "Suspension, steering, kingpin, U-bolt & airbag service",
+          "DOT annual inspections & out-of-service repairs",
+          "Preventive maintenance contracts (every 25k / 50k / 100k miles)",
+          "24/7 emergency roadside response across the Phoenix Valley",
+        ],
+      },
+      {
+        heading: "Fleet Maintenance Contracts",
+        content: [
+          "Running a fleet? We build custom preventive maintenance contracts that lock in your service intervals, parts pricing and labor rates — and we'll schedule your PM cycles so you never lose a truck to a missed service window. Fleet customers also get priority scheduling, free pickup-and-delivery within the Phoenix Valley, and consolidated monthly invoicing with detailed per-truck reporting.",
+          "We're already trusted by regional fleets running everything from food distribution to construction haulers to long-haul OTR carriers. Bring us your fleet manager and we'll quote a contract that beats your current shop on both cost and turnaround.",
+        ],
+      },
+      {
+        heading: "Emergency Commercial Truck Repair — 24/7",
+        content: [
+          "Broken down? Our 24/7 mobile commercial truck repair team rolls heavy. Fully stocked service trucks with welder, generator, air compressor, jump pack, the most common parts (brake pads, chambers, sensors, hoses, belts, filters, batteries) and a 5-ton portable lift. We work across Phoenix, Glendale, Mesa, Tempe, Chandler, Scottsdale, Gilbert, Peoria, Avondale, Goodyear, Buckeye, Surprise and along the I-10, I-17, US-60, Loop 101 and Loop 202 corridors.",
+          "Most roadside breakdowns we resolve on-site without towing. When a tow is required, we coordinate with our heavy-duty wrecker partners and bring the truck straight to our shop.",
+        ],
+      },
+    ],
+    highlights: [
+      { title: "Class 6–8 Specialists", description: "Every major OEM, every major engine. Dealer-level diagnostic tools, ASE and OEM-trained techs, and a parts warehouse stocked for the trucks running Arizona's roads." },
+      { title: "Fleet Contracts", description: "Custom PM contracts, priority scheduling, free pickup-and-delivery, consolidated invoicing, per-truck reporting. We make running a fleet less painful." },
+      { title: "24/7 Emergency Response", description: "Stocked mobile units across the entire Phoenix Valley. Most roadside repairs done on-site. When you need us, we're already on the way." },
+    ],
+    faqs: [
+      {
+        question: "What classes of commercial trucks do you service?",
+        answer: "We service Class 6 through Class 8 commercial trucks — that covers most heavy-duty straight trucks, regional and OTR tractors, dump trucks, vocational trucks, refuse trucks, fuel trucks and any GVWR over 19,500 lbs. We don't currently service Class 1–5 (light/medium) — for those you'll want a standard automotive shop.",
+        },
+      {
+        question: "Do you offer fleet maintenance contracts?",
+        answer: "Yes. We build custom preventive maintenance contracts for fleets of any size — 3 trucks or 300. Contracts lock in PM intervals, parts pricing, labor rates and turnaround SLAs. Fleet customers also get priority scheduling, free pickup-and-delivery, consolidated monthly invoicing and detailed per-truck reporting. Talk to us about a fleet quote — most fleets save 15–25% versus their current shop.",
+      },
+      {
+        question: "Can you handle emergency commercial truck repair after hours?",
+        answer: "Yes — 24/7. Our mobile commercial truck repair team works nights, weekends and holidays. Stocked service trucks cover Phoenix, Mesa, Tempe, Chandler, Glendale, Scottsdale, Gilbert, Peoria, Avondale, Goodyear, Buckeye and Surprise, plus the major freeway corridors (I-10, I-17, US-60, Loop 101, Loop 202). Call (602) 830-3232 anytime.",
+      },
+      {
+        question: "What engines and transmissions do you work on?",
+        answer: "Every major commercial truck engine — Cummins (X15, ISX, ISL, ISB), Detroit Diesel (DD15, DD13, DD16, Series 60), PACCAR (MX-11, MX-13), Volvo (D11, D13, D16), Mack (MP7, MP8, MP10), CAT (C13, C15) — and every major transmission — Eaton Fuller (manual + automated), Allison (automatic), ZF, Volvo I-Shift, Detroit DT12, Mack mDRIVE. We have the dealer-level diagnostic software for all of them.",
+      },
+      {
+        question: "Do you do DOT annual inspections?",
+        answer: "Yes. We're a DOT-certified inspection facility. Most DOT annual inspections take 60–90 minutes if the truck passes everything. If we find out-of-service items, we'll quote the repairs upfront and re-inspect at no extra inspection charge once the repairs are complete. We can also do annual inspections at your yard with our mobile unit.",
+      },
+      {
+        question: "How quickly can you turn around a commercial truck repair?",
+        answer: "It depends on the repair, parts availability and our current shop load. Routine PM, brake pads, tire service, oil changes — usually same-day. Engine diagnostics & most electrical work — 1–2 days. Major repairs (transmission rebuild, engine overhaul, frame work) — 3–10 days with a firm written estimate. Fleet customers get priority scheduling. We'll give you a firm written ETA before we start.",
+      },
+    ],
+    relatedServices: [
+      { title: "Commercial Fleet Repair", href: "/commercial-fleet-repair-phoenix-az" },
+      { title: "Semi Truck Repair Shop", href: "/semi-truck-repair-shop-phoenix-az" },
+      { title: "Emergency Truck Repair", href: "/emergency-truck-repair-phoenix" },
+    ],
+  },
+
+  "semi-truck-repair-shop-phoenix-az": {
+    slug: "semi-truck-repair-shop-phoenix-az",
+    title: "Semi Truck Repair Shop in Phoenix, AZ",
+    metaTitle: "Semi Truck Repair Shop Phoenix, AZ | CT Truck & Trailer Shop",
+    metaDescription: "Trusted semi truck repair shop in Phoenix, AZ. Drive-in bays, walk-ins welcome, ASE/OEM-trained techs, Cummins/Detroit/PACCAR specialists. Call (602) 830-3232.",
+    heroHeadline: "Phoenix Semi Truck Repair Shop — Walk-Ins Welcome",
+    heroSubheadline: "Drive in, get diagnosed, get fixed. Class 8 specialists, dealer-level diagnostics, parts in stock, warranty on every repair.",
+    introHeading: "The Semi Truck Repair Shop Drivers Trust in Phoenix",
+    introParagraphs: [
+      "When your semi needs work, you need a shop that knows Class 8 trucks — not a generic garage. CT Truck & Trailer Shop is Phoenix's dedicated semi truck repair shop, built specifically around the engines, transmissions, brake systems and aftertreatment systems that run modern over-the-road tractors.",
+      "Our shop bays are sized for 53-foot tractor-trailers, our lifts handle 100k+ GVW, our techs are ASE and OEM-certified, and our parts warehouse is stocked with what semi trucks actually break — brake pads, S-cams, slack adjusters, ABS sensors, DEF doser valves, NOx sensors, DPF sensors, turbo actuators, EGR coolers, water pumps, alternators, starters, batteries, air dryers, brake chambers, and the dozens of other parts that strand a semi on the side of the road.",
+      "Need a semi truck repair shop you can drive into right now? We're at our Phoenix location during shop hours and walk-ins are welcome. Call (602) 830-3232 to confirm wait time before you head over.",
+    ],
+    sections: [
+      {
+        heading: "What We Fix at Our Phoenix Semi Truck Shop",
+        content: [
+          "Our shop handles the full spectrum of semi truck repair — daily PM, major overhauls and everything in between:",
+        ],
+        listItems: [
+          "Engine repair & overhaul — Cummins X15/ISX, Detroit DD15/DD13, PACCAR MX, Volvo D13, Mack MP",
+          "Transmission service — Eaton Fuller, Detroit DT12, Volvo I-Shift, Allison, ZF",
+          "Brake pads, drums, rotors, S-cams, slack adjusters & full air-system service",
+          "Tire service, mounting, balancing, rotation, alignment",
+          "DPF & DEF aftertreatment — regen, sensor replacement, doser cleaning, NOx sensors",
+          "Electrical — alternators, starters, batteries, wiring harness, lighting",
+          "Suspension, kingpins, U-bolts, airbags, steering",
+          "Cooling system, radiators, water pumps, EGR coolers",
+          "DOT inspections & out-of-service repairs",
+          "Diagnostics with dealer-level scan tools (DDDL, Insite, ServiceMaxx, PTT)",
+        ],
+      },
+      {
+        heading: "Why Drivers Choose Our Phoenix Semi Truck Shop",
+        content: [
+          "We're not the cheapest shop in Phoenix, and we don't try to be. What we are is the shop that fixes it right the first time, documents the work, warranties parts and labor, and tells you the truth about what your truck needs.",
+          "Owner-operators send their own trucks here. Fleet managers trust us with their primary maintenance contracts. Other shops refer their tough diagnostic cases to us. That's the bar we maintain.",
+        ],
+      },
+      {
+        heading: "Shop Amenities & Logistics",
+        content: [
+          "We respect that you've got a load to deliver. Our shop is set up so you don't lose a day:",
+        ],
+        listItems: [
+          "Drive-in bays sized for 53-ft tractor-trailers",
+          "Walk-ins welcome — call ahead to confirm wait time",
+          "Driver lounge with coffee, Wi-Fi & restrooms",
+          "Yard parking for overnight repairs",
+          "Free pickup-and-delivery for fleet customers",
+          "After-hours drop-off available",
+          "Written estimates before work begins",
+          "12-month parts warranty, 90-day labor warranty",
+        ],
+      },
+    ],
+    highlights: [
+      { title: "Class 8 Specialists", description: "Every major OEM, every major engine, every major transmission. This is all we do, every day. The diagnostic tools and the parts inventory reflect it." },
+      { title: "Drive-In Bays", description: "53-ft tractor-trailer-sized bays, 100k+ GVW lifts, walk-ins welcome. Drive in, get diagnosed, get a written estimate, get fixed." },
+      { title: "Real Warranty", description: "12 months on parts, 90 days on labor. We document the work, we stand behind it, and we don't disappear if something goes wrong." },
+    ],
+    faqs: [
+      {
+        question: "Where is your semi truck repair shop located in Phoenix?",
+        answer: "Our Phoenix semi truck repair shop is located in the heart of the Phoenix Valley with easy access to I-10, I-17, US-60 and the Loop 101/202 freeways. Call (602) 830-3232 for current address, shop hours and walk-in availability.",
+      },
+      {
+        question: "Do you take walk-ins or do I need an appointment?",
+        answer: "Walk-ins are welcome at our semi truck repair shop. We recommend a quick call ahead — (602) 830-3232 — to confirm current wait time. Most diagnostic work starts within 30–60 minutes of arrival. Appointments are available for major scheduled repairs (engine overhaul, transmission rebuild, full PM) so we can pre-order parts.",
+      },
+      {
+        question: "What hours is your semi truck shop open?",
+        answer: "Our drive-in shop is open standard business hours — call (602) 830-3232 for current shop hours. Emergency mobile semi truck repair is available 24/7, including nights, weekends and holidays. After-hours drop-off is available at our shop yard.",
+      },
+      {
+        question: "Can I drop my truck off overnight or for multiple days?",
+        answer: "Yes. We have secure yard parking for overnight repairs and multi-day jobs (engine overhauls, transmission rebuilds). Driver amenities include lounge, coffee, Wi-Fi and restrooms. For longer repairs we can arrange a hotel shuttle for out-of-town drivers.",
+      },
+      {
+        question: "Do you offer warranty on semi truck repairs?",
+        answer: "Yes — 12 months on parts and 90 days on labor for every repair. If something fails within the warranty period that's related to our work, we fix it at no charge. We document every repair so warranty claims are simple and quick.",
+      },
+      {
+        question: "What semi truck brands do you specialize in?",
+        answer: "We service every Class 8 brand on US roads — Freightliner (Cascadia, Coronado, M2), Peterbilt (579, 389, 567, 365), Kenworth (T680, W900, T880, T800), Volvo (VNL, VNR, VAH), Mack (Anthem, Granite, Pinnacle), International (LT, HV, HX, LoneStar), Western Star (5700, 4900, 49X) and Sterling. We're not brand-loyal — we're trained on all of them.",
+      },
+    ],
+    relatedServices: [
+      { title: "Commercial Truck Repair", href: "/commercial-truck-repair-phoenix-az" },
+      { title: "Semi Truck Diagnostics", href: "/semi-truck-diagnostics-in-phoenix-az" },
+      { title: "Semi Truck Engine Repairs", href: "/semi-truck-engine-repairs-in-phoenix-az" },
     ],
   },
 };
