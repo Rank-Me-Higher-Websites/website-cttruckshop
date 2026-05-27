@@ -1,3 +1,13 @@
+// LOCAL PREVIEW SERVER ONLY.
+//
+// Production cttruckshop.com is served by Caddy on the rankmehigher VPS
+// (see deploy/caddy.snippet — that's the real source of truth for 301s
+// and headers in prod). This file exists for `npm run preview`-style local
+// development and parity testing.
+//
+// If you change a production redirect, change deploy/caddy.snippet, NOT
+// this file. Keep the REDIRECTS_301 map below in sync for local-preview
+// fidelity, but understand it does NOT affect production behavior.
 import { createServer } from "http";
 import { readFile } from "fs/promises";
 import { join, extname } from "path";
@@ -8,7 +18,7 @@ const DIST = join(process.cwd(), "dist");
 
 // 301 redirects for indexed orphan URLs + cannibalized content.
 // These flow link equity to current canonical pages.
-// Keep in sync with docs/seo/SEO_EXECUTION_PLAN.md §1.3 and §1.5.
+// Keep in sync with deploy/caddy.snippet (prod) and docs/seo/SEO_EXECUTION_PLAN.md.
 const REDIRECTS_301 = {
   // Cannibalized emergency-repair blog posts -> single keeper.
   // Keeper has "phoenix-arizona" suffix (best metadata, location-qualified).

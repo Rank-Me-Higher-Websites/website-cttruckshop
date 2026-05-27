@@ -1,0 +1,71 @@
+# Caddy config for cttruckshop.com — VERSION CONTROLLED COPY.
+#
+# This file is the SOURCE OF TRUTH for the cttruckshop.com Caddy
+# configuration. The autopull / deploy step copies it to:
+#   /opt/n8n/sites.d/website-cttruckshop.caddy
+# on the rankmehigher VPS, then runs `caddy reload`. Any change to how
+# the site is served (redirects, headers, caching, host bindings) goes
+# here first and gets PR-reviewed before deploy.
+#
+# Apply manually with:
+#   scp deploy/caddy.snippet root@vps:/opt/n8n/sites.d/website-cttruckshop.caddy
+#   ssh root@vps "docker exec n8n-caddy-1 caddy reload --config /etc/caddy/Caddyfile"
+
+# www → apex 301 redirect (SEO: one canonical URL).
+www.cttruckshop.com {
+    redir https://cttruckshop.com{uri} 301
+}
+
+# Apex = canonical. Also handles preview hostname for staged deploys.
+cttruckshop.com, http://website-cttruckshop-preview {
+    root * /srv/sites/website-cttruckshop/dist
+
+    # ──────────────────────────────────────────────────────────────────────
+    # 301 redirects — orphan URLs Google indexed + cannibalized blog posts.
+    # Keep in sync with docs/seo/SEO_EXECUTION_PLAN.md §1.3 and §1.5.
+    # ──────────────────────────────────────────────────────────────────────
+
+    # Cannibalized emergency-repair blog posts -> single keeper.
+    redir /blog/emergency-repair-services       /blog/emergency-truck-repair-phoenix-arizona 301
+    redir /blog/emergency-truck-repair          /blog/emergency-truck-repair-phoenix-arizona 301
+    redir /blog/emergency-truck-repair-solutions /blog/emergency-truck-repair-phoenix-arizona 301
+
+    # Orphan URLs Google has indexed that aren't in our sitemap.
+    # Source: GSC indexation report 2026-05-27.
+    redir /blog/commercial-truck-repair                                                              /commercial-truck-repair-phoenix-az 301
+    redir /blog/semi-truck-repair-fast-and-reliable                                                  /semi-truck-repair-shop-phoenix-az 301
+    redir /mobile-truck-repair-keeping-your-rig-rolling-when-the-shop-comes-to-you                   /blog/mobile-truck-repair-keeping-your-rig-rolling-when-the-shop-comes-to-you 301
+    redir /privacy-policy-terms-and-conditions                                                       /privacy 301
+    redir /reliable-semi-truck-service-for-your-fleet                                                /blog/reliable-semi-truck-service-for-your-fleet 301
+    redir /reliable-semi-truck-service-in-phoenix-arizona                                            /blog/reliable-semi-truck-service-in-phoenix-arizona 301
+
+    # ──────────────────────────────────────────────────────────────────────
+    # Static file serving (SPA + per-route pre-rendered HTML).
+    #
+    # Resolution order:
+    #   1. Exact file: /dist/<path>           (assets, sitemap.xml, robots.txt)
+    #   2. Directory:  /dist/<path>/index.html (per-route HTML from inject-meta.ts)
+    #   3. SPA shell:  /dist/index.html        (client-side router catch-all)
+    # ──────────────────────────────────────────────────────────────────────
+    try_files {path} {path}/ /index.html
+    file_server
+    encode gzip
+
+    # SEO/security headers.
+    header {
+        Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+        X-Content-Type-Options "nosniff"
+        Referrer-Policy "strict-origin-when-cross-origin"
+        Permissions-Policy "interest-cohort=()"
+    }
+
+    # Cache aggressively for hashed assets; revalidate HTML.
+    @hashed_assets path /assets/*
+    header @hashed_assets Cache-Control "public, max-age=31536000, immutable"
+
+    @html_files {
+        path *.html
+        path /
+    }
+    header @html_files Cache-Control "public, max-age=300, must-revalidate"
+}
