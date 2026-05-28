@@ -21,6 +21,15 @@ cttruckshop.com, http://website-cttruckshop-preview {
     root * /srv/sites/website-cttruckshop/dist
 
     # ──────────────────────────────────────────────────────────────────────
+    # Trailing-slash canonicalization (301 strip).
+    # GSC shows both /foo and /foo/ indexed for several routes —
+    # splits authority. Canonical = no trailing slash (matches sitemap.xml).
+    # MUST come before the orphan redirects so e.g. /about-us/ -> /about-us -> /about.
+    # ──────────────────────────────────────────────────────────────────────
+    @trailingSlash path_regexp ts ^/(.+)/$
+    redir @trailingSlash /{re.ts.1} 301
+
+    # ──────────────────────────────────────────────────────────────────────
     # 301 redirects — orphan URLs Google indexed + cannibalized blog posts.
     # Keep in sync with docs/seo/SEO_EXECUTION_PLAN.md §1.3 and §1.5.
     # ──────────────────────────────────────────────────────────────────────
@@ -38,6 +47,24 @@ cttruckshop.com, http://website-cttruckshop-preview {
     redir /privacy-policy-terms-and-conditions                                                       /privacy 301
     redir /reliable-semi-truck-service-for-your-fleet                                                /blog/reliable-semi-truck-service-for-your-fleet 301
     redir /reliable-semi-truck-service-in-phoenix-arizona                                            /blog/reliable-semi-truck-service-in-phoenix-arizona 301
+
+    # Legacy WordPress page paths (still indexed and getting impressions per
+    # GSC pull on 2026-05-28). Map each to the closest current canonical.
+    redir /about-us                                                                                  /about 301
+    redir /news                                                                                      /blog 301
+    redir /24h-towing-services-benefits                                                              /blog/24h-towing-services-benefits 301
+    redir /semi-truck-repair-services                                                                /services 301
+    redir /semi-trailer-repair-services                                                              /services 301
+    redir /semi-truck-tire-brake-repair                                                              /semi-truck-tire-and-brake-repair-services-phoenix-az 301
+    redir /mobile-repair-service-arizona                                                             /mobile-repair 301
+    redir /semi-truck-engine-repair                                                                  /semi-truck-engine-repairs-in-phoenix-az 301
+    redir /commercial-truck-repair                                                                   /commercial-truck-repair-phoenix-az 301
+    redir /semi-truck-diagnostics                                                                    /semi-truck-diagnostics-in-phoenix-az 301
+    redir /truck-diagnostics                                                                         /semi-truck-diagnostics-in-phoenix-az 301
+    redir /semi-truck-transmission-repair-guide                                                      /blog/semi-truck-transmission-repair-guide 301
+
+    # WordPress author archives — no longer relevant. Send to blog index.
+    redir /author/* /blog 301
 
     # ──────────────────────────────────────────────────────────────────────
     # Static file serving (SPA + per-route pre-rendered HTML).

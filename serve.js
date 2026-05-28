@@ -13,7 +13,7 @@ import { readFile } from "fs/promises";
 import { join, extname } from "path";
 import { existsSync } from "fs";
 
-const PORT = 5000;
+const PORT = Number(process.env.PORT) || 5000;
 const DIST = join(process.cwd(), "dist");
 
 // 301 redirects for indexed orphan URLs + cannibalized content.
@@ -38,12 +38,24 @@ const REDIRECTS_301 = {
   "/reliable-semi-truck-service-in-phoenix-arizona":
     "/blog/reliable-semi-truck-service-in-phoenix-arizona",
 
-  // Common typo / legacy URL fixes (from GSC orphan crawl).
-  "/blog/truck-mechanic-near-me-phoeniz-az": "/blog/truck-mechanic-near-me-phoeniz-az",
-  // ^ same slug; legacy WordPress URLs that may surface in external links can map here later.
+  // Legacy WordPress page paths (still indexed per GSC 2026-05-28).
+  // Map each to the closest current canonical.
+  "/about-us": "/about",
+  "/news": "/blog",
+  "/24h-towing-services-benefits": "/blog/24h-towing-services-benefits",
+  "/semi-truck-repair-services": "/services",
+  "/semi-trailer-repair-services": "/services",
+  "/semi-truck-tire-brake-repair": "/semi-truck-tire-and-brake-repair-services-phoenix-az",
+  "/mobile-repair-service-arizona": "/mobile-repair",
+  "/semi-truck-engine-repair": "/semi-truck-engine-repairs-in-phoenix-az",
+  "/commercial-truck-repair": "/commercial-truck-repair-phoenix-az",
+  "/semi-truck-diagnostics": "/semi-truck-diagnostics-in-phoenix-az",
+  "/truck-diagnostics": "/semi-truck-diagnostics-in-phoenix-az",
+  "/semi-truck-transmission-repair-guide": "/blog/semi-truck-transmission-repair-guide",
 
   // Trailing slashes -> canonical (no trailing slash, matches sitemap).
   // Handled below via dynamic logic, not in this map.
+  // WordPress /author/* archives also handled below as a prefix match.
 };
 
 const MIME = {
@@ -75,6 +87,16 @@ const server = createServer(async (req, res) => {
   if (target && target !== pathname) {
     res.writeHead(301, {
       Location: target,
+      "Cache-Control": "public, max-age=86400",
+    });
+    res.end();
+    return;
+  }
+
+  // 1b) WordPress author archives -> blog index.
+  if (pathname.startsWith("/author/")) {
+    res.writeHead(301, {
+      Location: "/blog",
       "Cache-Control": "public, max-age=86400",
     });
     res.end();
