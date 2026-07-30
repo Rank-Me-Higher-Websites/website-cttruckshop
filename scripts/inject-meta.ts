@@ -62,10 +62,16 @@ const servicePages = servicePagesMod.servicePages as Record<
     faqs?: { question: string; answer: string }[];
   }
 >;
-const serviceAreas =
-  (serviceAreasMod.serviceAreas as Record<string, unknown>) ||
-  (serviceAreasMod.default as Record<string, unknown>) ||
-  {};
+// serviceAreas is exported as an ARRAY (ServiceArea[]). It must be iterated as
+// one: a previous version called Object.keys() on it, which yields the array
+// INDICES ("0".."11"). That built junk /service-areas/0..11/index.html pages and
+// left the 12 real city routes (/service-areas/mesa, ...) with no pre-rendered
+// HTML, so they fell through to the SPA shell and served the homepage's <title>.
+const serviceAreas = (
+  (serviceAreasMod.serviceAreas as Array<Record<string, unknown>>) ||
+  (serviceAreasMod.default as Array<Record<string, unknown>>) ||
+  []
+).filter((sa) => sa && typeof sa.slug === "string");
 const blogPosts = (blogPostsMod.blogPosts as Array<{
   slug: string;
   title: string;
@@ -254,14 +260,15 @@ for (const slug of Object.keys(servicePages)) {
 }
 
 // Service area pages (auto-discovered)
-for (const slug of Object.keys(serviceAreas)) {
-  const sa = serviceAreas[slug] as {
+for (const area of serviceAreas) {
+  const sa = area as {
+    slug: string;
     name?: string;
     metaTitle?: string;
     metaDescription?: string;
     title?: string;
   };
-  if (!sa) continue;
+  const slug = sa.slug;
   const cityName = sa.name || slug.charAt(0).toUpperCase() + slug.slice(1);
   pages.push({
     path: `/service-areas/${slug}`,
