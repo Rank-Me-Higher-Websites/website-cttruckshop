@@ -1,4 +1,5 @@
 import { Star, CheckCircle, Shield } from "lucide-react";
+import { reviewsAggregate } from "@/data/reviews";
 
 const HeroTrustBadges = () => {
   return (
@@ -21,8 +22,8 @@ const HeroTrustBadges = () => {
           ))}
         </div>
         <div className="text-left">
-          <p className="font-bold text-primary-foreground text-[10px] sm:text-xs leading-tight">4.5 Rating</p>
-          <p className="text-[8px] sm:text-[10px] text-primary-foreground/60 leading-tight">61 Reviews</p>
+          <p className="font-bold text-primary-foreground text-[10px] sm:text-xs leading-tight">{reviewsAggregate.rating.toFixed(1)} Rating</p>
+          <p className="text-[8px] sm:text-[10px] text-primary-foreground/60 leading-tight">{reviewsAggregate.count} Reviews</p>
         </div>
       </a>
 

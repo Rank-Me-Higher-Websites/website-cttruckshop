@@ -70,7 +70,7 @@ export const createLocalBusinessSchema = () => ({
   aggregateRating: {
     "@type": "AggregateRating",
     ratingValue: "4.5",
-    reviewCount: "62",
+    reviewCount: "67",
   },
 });
 

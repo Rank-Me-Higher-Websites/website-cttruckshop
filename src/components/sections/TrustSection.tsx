@@ -1,4 +1,5 @@
 import { Shield, Star, Award, Users, CheckCircle } from "lucide-react";
+import { reviewsAggregate } from "@/data/reviews";
 
 const TrustSection = () => {
   const stats = [
@@ -25,8 +26,8 @@ const TrustSection = () => {
               ))}
             </div>
             <div className="text-left">
-              <p className="font-bold text-foreground text-xs sm:text-base">4.5 Rating</p>
-              <p className="text-[10px] sm:text-sm text-muted-foreground">61 Google Reviews</p>
+              <p className="font-bold text-foreground text-xs sm:text-base">{reviewsAggregate.rating.toFixed(1)} Rating</p>
+              <p className="text-[10px] sm:text-sm text-muted-foreground">{reviewsAggregate.count} Google Reviews</p>
             </div>
           </a>
 

@@ -1,6 +1,7 @@
 import Layout from "@/components/layout/Layout";
 import SEO from "@/components/SEO";
 import HeroSection from "@/components/sections/HeroSection";
+import AwardSection from "@/components/sections/AwardSection";
 import TrustSection from "@/components/sections/TrustSection";
 import ServicesGridSection from "@/components/sections/ServicesGridSection";
 import BenefitsSection from "@/components/sections/BenefitsSection";
@@ -53,6 +54,7 @@ const Index = () => {
         structuredData={structuredData}
       />
       <HeroSection />
+      <AwardSection />
       <TrustSection />
       <ServicesGridSection />
       <BenefitsSection />
