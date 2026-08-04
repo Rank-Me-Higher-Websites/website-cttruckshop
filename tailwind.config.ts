@@ -2,7 +2,16 @@ import type { Config } from "tailwindcss";
 
 export default {
   darkMode: ["class"],
-  content: ["./pages/**/*.{ts,tsx}", "./components/**/*.{ts,tsx}", "./app/**/*.{ts,tsx}", "./src/**/*.{ts,tsx}"],
+  // Auto-generated blog posts are raw HTML inside src/content/blog/*.md — without
+  // that glob their utility classes (bg-amber-50, text-amber-800, …) are never
+  // generated and the markup renders unstyled/invisible.
+  content: [
+    "./pages/**/*.{ts,tsx}",
+    "./components/**/*.{ts,tsx}",
+    "./app/**/*.{ts,tsx}",
+    "./src/**/*.{ts,tsx}",
+    "./src/content/**/*.md",
+  ],
   prefix: "",
   theme: {
     container: {

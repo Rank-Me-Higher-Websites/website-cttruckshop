@@ -443,10 +443,53 @@
 }
 
 /* Blog Content Styles */
+/* Post bodies render on the dark navy page, but auto-generated posts ship
+   light-surface cards (bg-white, bg-amber-50, …) inside that dark article.
+   So ink colour is driven by --blog-ink, which every light surface below
+   re-declares for its own subtree — dark text on light cards, light text on
+   the dark page, without hard-coding a colour per post. */
 .blog-content {
-  color: hsl(var(--primary-foreground));
+  --blog-ink: hsl(var(--primary-foreground));
+  --blog-ink-muted: hsl(var(--primary-foreground) / 0.72);
+  color: var(--blog-ink);
   line-height: 1.8;
   font-size: 1.05rem;
+}
+
+/* Light surfaces flip the ink back to dark for everything inside them.
+   :not(a) keeps white pill buttons on their own accent colour. */
+.blog-content .bg-white:not(a),
+.blog-content [class*="bg-white/"]:not(a),
+.blog-content .bg-card:not(a),
+.blog-content .bg-background:not(a),
+.blog-content .bg-secondary:not(a),
+.blog-content .bg-muted:not(a),
+.blog-content [class*="bg-gray-50"]:not(a),
+.blog-content [class*="bg-gray-100"]:not(a),
+.blog-content [class*="bg-slate-50"]:not(a),
+.blog-content [class*="bg-slate-100"]:not(a),
+.blog-content [class*="bg-neutral-50"]:not(a),
+.blog-content [class*="bg-amber-50"]:not(a),
+.blog-content [class*="bg-yellow-50"]:not(a),
+.blog-content [class*="bg-orange-50"]:not(a),
+.blog-content [class*="bg-red-50"]:not(a),
+.blog-content [class*="bg-blue-50"]:not(a),
+.blog-content [class*="bg-green-50"]:not(a),
+.blog-content [class*="bg-emerald-50"]:not(a) {
+  --blog-ink: hsl(var(--foreground));
+  --blog-ink-muted: hsl(var(--muted-foreground));
+  color: var(--blog-ink);
+}
+
+/* Theme tokens used by generated markup assume a light page — remap them
+   to the surface-aware ink so they never land dark-on-dark. */
+.blog-content .text-foreground,
+.blog-content .text-card-foreground {
+  color: var(--blog-ink);
+}
+
+.blog-content .text-muted-foreground {
+  color: var(--blog-ink-muted);
 }
 
 .blog-content h1,
@@ -456,7 +499,7 @@
 .blog-content h5,
 .blog-content h6 {
   font-family: 'Oswald', system-ui, sans-serif;
-  color: hsl(var(--primary-foreground));
+  color: var(--blog-ink);
   margin-top: 2rem;
   margin-bottom: 1rem;
   font-weight: 600;

@@ -42,7 +42,7 @@ metaDescription: "Quick answer — what you need to know"
     <p class="text-xs text-muted-foreground leading-snug">Parts and labor for a full DPF replacement on a Class 8 truck at current pricing</p>
   </div>
   <div class="rounded-xl border border-gray-200 bg-white p-4">
-    <p class="text-2xl md:text-3xl font-bold mb-1" style="color: #FCA5A5;">1 in 3</p>
+    <p class="text-2xl md:text-3xl font-bold mb-1" style="color: #B91C1C;">1 in 3</p>
     <p class="text-sm font-semibold text-foreground leading-tight mb-1">Replacements Were Avoidable</p>
     <p class="text-xs text-muted-foreground leading-snug">Industry estimates suggest roughly one-third of DPF replacements could have been resolved with cleaning or minor repair</p>
   </div>

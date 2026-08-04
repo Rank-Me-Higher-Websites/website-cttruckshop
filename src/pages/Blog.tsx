@@ -87,8 +87,8 @@ const Blog = () => {
         <div className="container-custom relative z-10">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {paginatedPosts.map((post) => (
-              <article key={post.slug} className="group">
-                <Link to={`/blog/${post.slug}`} className="block">
+              <article key={post.slug} className="group h-full">
+                <Link to={`/blog/${post.slug}`} className="block h-full">
                   <div className="relative bg-primary-foreground/5 border border-accent/20 rounded-2xl overflow-hidden h-full flex flex-col hover:border-accent/50 transition-all duration-300">
                     <div className="absolute inset-0 bg-gradient-to-b from-accent/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                     <div className="aspect-video overflow-hidden relative">
