@@ -28,7 +28,7 @@ const AwardSection = () => {
               <p className="text-muted-foreground mb-5 max-w-xl">
                 CT Truck and Trailer Shop was named a <strong className="text-foreground font-semibold">BusinessRate
                 Best of 2026 Award Winner</strong> in the Truck Repair Shop category for Maryvale Village, Phoenix,
-                AZ — an award powered by verified Google Reviews from the drivers, owner-operators, and fleets we
+                AZ — an award powered by verified Google Reviews from the drivers, owner-operators, and <a href="https://cdlagency.com/" className="underline underline-offset-2 hover:text-foreground">fleets</a> we
                 keep on the road.
               </p>
 
