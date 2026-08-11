@@ -56,6 +56,11 @@ import cabEngineBayWork from "@/assets/blog/cab-engine-bay-work.png";
 import transmissionTeamwork from "@/assets/blog/transmission-teamwork.png";
 import cabElectricalRepair from "@/assets/blog/cab-electrical-repair.png";
 
+// Newly added in-shop photos (August 2026 batch)
+import trailerFrameWelding from "@/assets/blog/trailer-frame-welding.webp";
+import shopBayToolStation from "@/assets/blog/shop-bay-tool-station.webp";
+import trailerDeckRepairYard from "@/assets/blog/trailer-deck-repair-yard.webp";
+
 // Pool of images by category for inline content image replacement
 const categoryPools: Record<string, string[]> = {
   towing: [towingRecovery, nightTowing, towService, aboutTowTruck, craneLift, differentialCraneLift],
@@ -71,7 +76,11 @@ const categoryPools: Record<string, string[]> = {
 };
 
 // Slug-to-featured-image mapping (each slug maps to a unique image where possible).
-// 53 blog posts vs. 50 unique images means 3 posts share with a content-related sibling.
+//
+// 59 posts vs. 53 unique images, so 6 pairs still share a cover. The shared ones
+// are marked below and in the auto-post frontmatter; each needs one new photo
+// before every post can be visually unique. Add new photos to src/assets/blog/
+// and claim one of the marked slugs.
 const slugFeaturedMap: Record<string, string> = {
   // --- Original blog posts ---
   "truck-and-trailer-repair-partner": shopInterior,
@@ -101,7 +110,7 @@ const slugFeaturedMap: Record<string, string> = {
   "clever-trans-towing-partnership": teamWork,
   "semi-truck-full-diagnostics-tips": truckLaptopDiagnostics,
   "semi-truck-prices-2023-guide": blueCascadiaRepair,
-  "trailer-repair-and-maintenance": mechanicEngineWork,
+  "trailer-repair-and-maintenance": trailerFrameWelding,
   "heavy-duty-and-medium-duty-towing-services": aboutFleetReview,
   "synchronized-symphony-semi-towing": mechanicsWork,
   "overnight-heavy-duty-towing-challenges": aboutEngineRepair,
@@ -124,12 +133,12 @@ const slugFeaturedMap: Record<string, string> = {
   "truck-mechanic-near-me-phoeniz-az": truckMechanic,
   "semi-truck-repair-fast-and-reliable": detroitEngineService,
   "local-truck-repair-phoenix-complete-guide": aboutRepairShop,
-  "trailer-repair-near-me-in-phoenix-fast-reliable": shopFloorMechanic,
+  "trailer-repair-near-me-in-phoenix-fast-reliable": trailerDeckRepairYard,
   "truck-and-trailer-repair-near-me-shop-tips": truckEngineWide,
-  "commercial-truck-repair": shopFloorMechanic, // shares with trailer-repair-near-me (both shop floor/general)
+  "commercial-truck-repair": shopFloorMechanic,
   "mobile-truck-repair-phoenix-az-guide": mobileRepair, // shares with emergency-truck-repair (both mobile)
   "10-common-semi-truck-brake-problems": engineBrakeRepair, // shares with preventative-brake-maintenance (both brake)
-  "semi-truck-pre-summer-pm-checklist": expertTechnician, // shares with semi-ac-repair-and-cost (both maintenance/inspection)
+  "semi-truck-pre-summer-pm-checklist": shopBayToolStation,
 };
 
 /** Get the correct local featured image for a blog post by slug */
