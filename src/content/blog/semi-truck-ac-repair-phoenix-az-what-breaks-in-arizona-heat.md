@@ -5,7 +5,7 @@ excerpt: "Arizona heat pushes semi truck AC systems past their limits. Here's wh
 date: "June 23, 2026"
 readTime: "9"
 author: "CT Shop Team"
-image: "/blog-images/engine-repair.webp"
+image: "/blog-images/yard-hood-open-repair.webp"
 imageAlt: "Semi truck AC repair Phoenix AZ"
 category: "Truck & Trailer Maintenance Tips"
 metaDescription: "Semi truck AC repair in Phoenix AZ: what breaks first in Arizona heat, why it happens, and how CT Truck & Trailer Shop keeps fleets running all summer. 24/7 mobile repair."

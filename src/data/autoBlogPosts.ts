@@ -52,7 +52,8 @@ export const autoBlogPosts: BlogPost[] = Object.entries(modules)
       date: fm.date || "",
       category: fm.category || "Truck & Trailer Maintenance Tips",
       excerpt: fm.excerpt || "",
-      featuredImage: fm.featuredImage || "",
+      // n8n writes the cover as `image:`; without this every auto post fell back to shopInterior.
+      featuredImage: fm.featuredImage || fm.image || "",
       metaDescription: fm.metaDescription || fm.excerpt || "",
       content: body.trim(),
     };

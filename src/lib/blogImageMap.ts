@@ -61,6 +61,17 @@ import trailerFrameWelding from "@/assets/blog/trailer-frame-welding.webp";
 import shopBayToolStation from "@/assets/blog/shop-bay-tool-station.webp";
 import trailerDeckRepairYard from "@/assets/blog/trailer-deck-repair-yard.webp";
 
+// Newly added in-shop photos (October 2026 batch). The other five photos from this
+// batch are auto-post covers, referenced from public/blog-images/ in the .md frontmatter.
+import chassisFuelTankService from "@/assets/blog/chassis-fuel-tank-service.webp";
+import trailerWheelEndService from "@/assets/blog/trailer-wheel-end-service.webp";
+import shopFrontAxleWork from "@/assets/blog/shop-front-axle-work.webp";
+import shopBayHiVisTech from "@/assets/blog/shop-bay-hi-vis-tech.webp";
+import pickupTruckRepair from "@/assets/blog/pickup-truck-repair.webp";
+import workbenchPartsPrep from "@/assets/blog/workbench-parts-prep.webp";
+import transmissionYardTeardown from "@/assets/blog/transmission-yard-teardown.webp";
+import heroBg from "@/assets/hero-bg.webp";
+
 // Pool of images by category for inline content image replacement
 const categoryPools: Record<string, string[]> = {
   towing: [towingRecovery, nightTowing, towService, aboutTowTruck, craneLift, differentialCraneLift],
@@ -72,15 +83,16 @@ const categoryPools: Record<string, string[]> = {
   mobile: [mobileRepair, mobileTruckRepair, emergencyTruckRepair, fastTruckRepair],
   electrical: [fleetElectricalWork, expertTechnician, cabElectricalRepair],
   transmission: [transmissionRebuild, transmissionTeamwork],
-  general: [twoMechanicsPeterbilt, truckYard, mechanicsWork, teamWork, semiTruckService, truckMechanic],
+  general: [twoMechanicsPeterbilt, truckYard, mechanicsWork, teamWork, semiTruckService, truckMechanic, chassisFuelTankService, trailerWheelEndService, shopFrontAxleWork, shopBayHiVisTech, pickupTruckRepair, workbenchPartsPrep],
 };
 
 // Slug-to-featured-image mapping (each slug maps to a unique image where possible).
 //
-// 59 posts vs. 53 unique images, so 6 pairs still share a cover. The shared ones
-// are marked below and in the auto-post frontmatter; each needs one new photo
-// before every post can be visually unique. Add new photos to src/assets/blog/
-// and claim one of the marked slugs.
+// Several asset files are the same photo under two names (about-team = about-fleet-review,
+// about-repair-shop = mobile-repair, team-work = blog/mobile-truck-repair,
+// shop-bay-overview ~ blog/truck-mechanic, ...), so uniqueness is checked visually,
+// not by filename. 1 cover marked SHARED below still repeats another post's photo;
+// it needs one new photo. Add it to src/assets/blog/ and claim the SHARED slug.
 const slugFeaturedMap: Record<string, string> = {
   // --- Original blog posts ---
   "truck-and-trailer-repair-partner": shopInterior,
@@ -90,7 +102,7 @@ const slugFeaturedMap: Record<string, string> = {
   "semi-trailer-mechanic-services": trailerAxleRepair,
   "semi-ac-repair-and-cost": expertTechnician,
   "semi-trailer-tires-types": tireTechThumbsup,
-  "common-semi-truck-problems": engineRepair,
+  "common-semi-truck-problems": shopBayHiVisTech, // was engineRepair (same photo as aboutTowTruck)
   "semi-truck-fuel-efficiency": truckYard,
   "semi-trailer-maintenance-tips": trailerWeldingRepair,
   "24h-towing-services-benefits": nightTowing,
@@ -111,9 +123,9 @@ const slugFeaturedMap: Record<string, string> = {
   "semi-truck-full-diagnostics-tips": truckLaptopDiagnostics,
   "semi-truck-prices-2023-guide": blueCascadiaRepair,
   "trailer-repair-and-maintenance": trailerFrameWelding,
-  "heavy-duty-and-medium-duty-towing-services": aboutFleetReview,
+  "heavy-duty-and-medium-duty-towing-services": shopFrontAxleWork, // was aboutFleetReview (same photo as aboutTeam)
   "synchronized-symphony-semi-towing": mechanicsWork,
-  "overnight-heavy-duty-towing-challenges": aboutEngineRepair,
+  "overnight-heavy-duty-towing-challenges": chassisFuelTankService, // was aboutEngineRepair (same file as dieselEngineRepair)
   "day-in-the-life-of-a-tow-truck-driver": mechanicToolCart,
   "regular-pm-service-arizona": shopBayOverview,
   "trailer-air-system-issues": cabElectricalRepair,
@@ -121,8 +133,8 @@ const slugFeaturedMap: Record<string, string> = {
   "reliable-semi-truck-service-in-phoenix-arizona": ctShopTeam,
   "local-truck-repair-partner-phoenix": kenworthShopFront,
   "emergency-truck-repair-phoenix-arizona": emergencyTruckRepair,
-  "truck-diagnostics-guide-for-owner-operators": truckDiagnosticsLaptop,
-  "emergency-truck-repair-solutions": mobileTruckRepair,
+  "truck-diagnostics-guide-for-owner-operators": workbenchPartsPrep, // was truckDiagnosticsLaptop (same shot as truckDiagnostics)
+  "emergency-truck-repair-solutions": mobileTruckRepair, // SHARED: same photo as teamWork
 
   // --- Newer SEO blog posts ---
   "reliable-semi-truck-service-for-your-fleet": aboutTeam,
@@ -130,14 +142,14 @@ const slugFeaturedMap: Record<string, string> = {
   "emergency-truck-repair": mobileRepair,
   "fast-truck-repair-near-me": facility,
   "mobile-truck-repair-keeping-your-rig-rolling-when-the-shop-comes-to-you": cabEngineBayWork,
-  "truck-mechanic-near-me-phoeniz-az": truckMechanic,
+  "truck-mechanic-near-me-phoeniz-az": transmissionYardTeardown, // was truckMechanic (same shot as shopBayOverview)
   "semi-truck-repair-fast-and-reliable": detroitEngineService,
-  "local-truck-repair-phoenix-complete-guide": aboutRepairShop,
+  "local-truck-repair-phoenix-complete-guide": heroBg, // was aboutRepairShop (same photo as mobileRepair)
   "trailer-repair-near-me-in-phoenix-fast-reliable": trailerDeckRepairYard,
   "truck-and-trailer-repair-near-me-shop-tips": truckEngineWide,
   "commercial-truck-repair": shopFloorMechanic,
-  "mobile-truck-repair-phoenix-az-guide": mobileRepair, // shares with emergency-truck-repair (both mobile)
-  "10-common-semi-truck-brake-problems": engineBrakeRepair, // shares with preventative-brake-maintenance (both brake)
+  "mobile-truck-repair-phoenix-az-guide": pickupTruckRepair,
+  "10-common-semi-truck-brake-problems": trailerWheelEndService,
   "semi-truck-pre-summer-pm-checklist": shopBayToolStation,
 };
 

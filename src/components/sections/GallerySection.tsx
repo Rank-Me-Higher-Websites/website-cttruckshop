@@ -21,6 +21,16 @@ import trailerBrakeShop from "@/assets/trailer-brake-shop.webp";
 import mechanicHubRepair from "@/assets/mechanic-hub-repair.webp";
 import truckEngineWide from "@/assets/truck-engine-wide.webp";
 import trailerAxleRepair from "@/assets/trailer-axle-repair.webp";
+import chassisFuelTankService from "@/assets/blog/chassis-fuel-tank-service.webp";
+import trailerWheelEndService from "@/assets/blog/trailer-wheel-end-service.webp";
+import shopFrontAxleWork from "@/assets/blog/shop-front-axle-work.webp";
+import shopBayHiVisTech from "@/assets/blog/shop-bay-hi-vis-tech.webp";
+import mechanicToolCartTruck from "@/assets/blog/mechanic-tool-cart-truck.webp";
+import yardHoodOpenRepair from "@/assets/blog/yard-hood-open-repair.webp";
+import engineBayTentRepair from "@/assets/blog/engine-bay-tent-repair.webp";
+import workbenchPartsPrep from "@/assets/blog/workbench-parts-prep.webp";
+import tractorInspectionYard from "@/assets/blog/tractor-inspection-yard.webp";
+import fuelTankYardRepair from "@/assets/blog/fuel-tank-yard-repair.webp";
 
 const images = [
   { src: blueCascadiaRepair, alt: "Technician repairing Freightliner Cascadia" },
@@ -41,6 +51,16 @@ const images = [
   { src: trailerAxleRepair, alt: "Trailer axle repair" },
   { src: tireTechThumbsup, alt: "Mechanic giving thumbs up" },
   { src: dieselEngine, alt: "Diesel engine repair service" },
+  { src: yardHoodOpenRepair, alt: "Technicians working on a semi truck with the hood open" },
+  { src: trailerWheelEndService, alt: "Technician servicing a trailer wheel end" },
+  { src: shopBayHiVisTech, alt: "Technician in the CT Truck Shop service bay" },
+  { src: chassisFuelTankService, alt: "Mechanic servicing a tractor chassis" },
+  { src: shopFrontAxleWork, alt: "Technicians working on a truck front axle in the shop" },
+  { src: tractorInspectionYard, alt: "Technicians inspecting a semi truck in the yard" },
+  { src: engineBayTentRepair, alt: "Mechanic working inside a semi truck engine bay" },
+  { src: mechanicToolCartTruck, alt: "Mechanic with tool cart at a semi truck" },
+  { src: workbenchPartsPrep, alt: "Technician preparing parts at the shop workbench" },
+  { src: fuelTankYardRepair, alt: "Technicians repairing a semi truck fuel tank" },
 ];
 
 // Duplicate for infinite scroll effect

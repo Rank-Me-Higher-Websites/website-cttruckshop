@@ -5,7 +5,7 @@ excerpt: "A truck breakdown on I-10 or I-17 in Phoenix can cost $1,100+ per day 
 date: "June 23, 2026"
 readTime: "8"
 author: "CT Shop Team"
-image: "/blog-images/towing-recovery.webp"
+image: "/blog-images/fuel-tank-yard-repair.webp"
 imageAlt: "Truck breakdown I-10 Phoenix AZ emergency repair"
 category: "Emergency Roadside Assistance"
 metaDescription: "Truck breakdown on I-10 or I-17 in Phoenix AZ? Follow this 5-step guide to cut downtime in half. CT Truck & Trailer Shop: 24/7 mobile repair, all 9 OEMs, Phoenix metro."
