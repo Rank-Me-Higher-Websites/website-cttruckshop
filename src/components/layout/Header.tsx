@@ -4,6 +4,7 @@ import { Menu, Phone, Clock, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
+import { LANG, type Lang } from "@/i18n/lang";
 import { cn } from "@/lib/utils";
 import logo from "@/assets/ct-logo.webp";
 import xxiiLogo from "@/assets/xxii-logo.webp";
@@ -33,6 +34,28 @@ const aboutLinks = [
   { title: "News and Publications", href: "/blog" },
 ];
 
+// Top-level menu labels are a fixed-height row; the full translations
+// ("Servicio de reparación móvil en Arizona") wrap it to 3 lines and push the
+// header over the page, so es/ru get short menu-only labels here instead of
+// the page dictionary.
+const SHORT_NAV_LABELS: Partial<Record<Lang, Record<string, string>>> = {
+  es: {
+    "Mobile Repair Service Arizona": "Reparación móvil",
+    "Truck Repair Services": "Reparación de camiones",
+    "Trailer Repair Services": "Reparación de tráileres",
+    "About Us": "Nosotros",
+    Contact: "Contacto",
+  },
+  ru: {
+    "Mobile Repair Service Arizona": "Выездной ремонт",
+    "Truck Repair Services": "Ремонт грузовиков",
+    "Trailer Repair Services": "Ремонт прицепов",
+    "About Us": "О нас",
+    Contact: "Контакты",
+  },
+};
+const navLabel = (label: string): string => SHORT_NAV_LABELS[LANG]?.[label] ?? label;
+
 interface NavDropdownProps {
   label: string;
   items: { title: string; href: string }[];
@@ -50,11 +73,12 @@ const NavDropdown = ({ label, items, isActive }: NavDropdownProps) => {
     >
       <button
         className={cn(
-          "flex items-center gap-1.5 px-4 py-3 text-[15px] font-semibold tracking-wide transition-colors",
+          "flex items-center gap-1.5 px-3 xl:px-4 py-3 text-[14px] xl:text-[15px] font-semibold tracking-wide transition-colors",
+          LANG !== "en" && "whitespace-nowrap",
           isActive ? "text-accent" : "text-foreground hover:text-accent"
         )}
       >
-        {label}
+        <span data-no-translate={LANG !== "en" ? "" : undefined}>{navLabel(label)}</span>
         <ChevronDown className={cn("h-4 w-4 transition-transform", open && "rotate-180")} />
       </button>
 
@@ -167,11 +191,12 @@ const Header = () => {
               <Link
                 to="/contact"
                 className={cn(
-                  "px-4 py-3 text-[15px] font-semibold tracking-wide transition-colors",
+                  "px-3 xl:px-4 py-3 text-[14px] xl:text-[15px] font-semibold tracking-wide transition-colors",
+                  LANG !== "en" && "whitespace-nowrap",
                   location.pathname === "/contact" ? "text-accent" : "text-foreground hover:text-accent"
                 )}
               >
-                Contact
+                <span data-no-translate={LANG !== "en" ? "" : undefined}>{navLabel("Contact")}</span>
               </Link>
             </div>
 

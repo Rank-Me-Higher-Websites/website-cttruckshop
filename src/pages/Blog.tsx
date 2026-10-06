@@ -132,14 +132,16 @@ const Blog = () => {
 
           {/* Pagination */}
           {totalPages > 1 && (
-            <div className="flex items-center justify-center gap-2 mt-12">
+            <div className="flex flex-wrap items-center justify-center gap-2 mt-12">
               <button
                 onClick={() => goToPage(currentPage - 1)}
                 disabled={currentPage === 1}
+                aria-label="Previous page"
                 className="flex items-center gap-1 px-4 py-2 text-sm font-medium text-primary-foreground border border-accent/20 rounded-lg hover:border-accent/50 hover:text-accent transition-all disabled:opacity-30 disabled:cursor-not-allowed"
               >
                 <ChevronLeft className="h-4 w-4" />
-                Previous
+                {/* Arrow-only on phones so the row fits (11+ pages, longer es/ru words) */}
+                <span className="hidden sm:inline">Previous</span>
               </button>
 
               {Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
@@ -159,9 +161,10 @@ const Blog = () => {
               <button
                 onClick={() => goToPage(currentPage + 1)}
                 disabled={currentPage === totalPages}
+                aria-label="Next page"
                 className="flex items-center gap-1 px-4 py-2 text-sm font-medium text-primary-foreground border border-accent/20 rounded-lg hover:border-accent/50 hover:text-accent transition-all disabled:opacity-30 disabled:cursor-not-allowed"
               >
-                Next
+                <span className="hidden sm:inline">Next</span>
                 <ChevronRight className="h-4 w-4" />
               </button>
             </div>
