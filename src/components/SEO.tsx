@@ -1,5 +1,8 @@
 import { Helmet } from "react-helmet-async";
 import { useLocation } from "react-router-dom";
+import { LANG, LANGS, localizedPath, type Lang } from "@/i18n/lang";
+
+const OG_LOCALE: Record<Lang, string> = { en: "en_US", es: "es_US", ru: "ru_RU" };
 
 interface SEOProps {
   title: string;
@@ -24,7 +27,15 @@ const SEO = ({
   const fullTitle = `${title} | ${siteName}`;
   const defaultImage = "/og-image.jpg";
   const { pathname } = useLocation();
-  const canonicalUrl = canonical || `https://cttruckshop.com${pathname === "/" ? "" : pathname}`;
+  const origin = "https://cttruckshop.com";
+  // English URL of this page; `canonical` props are always the English URL.
+  const enUrl = canonical || `${origin}${pathname === "/" ? "" : pathname}`;
+  const enPath = enUrl.startsWith(origin) ? enUrl.slice(origin.length) || "/" : "/";
+  const urlFor = (lang: Lang) => {
+    const p = localizedPath(enPath, lang);
+    return `${origin}${p === "/" ? "" : p}`;
+  };
+  const canonicalUrl = urlFor(LANG);
 
   return (
     <Helmet>
@@ -36,7 +47,12 @@ const SEO = ({
       
       {/* Canonical URL */}
       <link rel="canonical" href={canonicalUrl} />
-      
+      {LANGS.map((l) => (
+        <link key={l} rel="alternate" hrefLang={l} href={urlFor(l)} />
+      ))}
+      <link rel="alternate" hrefLang="x-default" href={urlFor("en")} />
+      <meta property="og:locale" content={OG_LOCALE[LANG]} />
+
       {/* Open Graph / Facebook */}
       <meta property="og:type" content={ogType} />
       <meta property="og:title" content={fullTitle} />

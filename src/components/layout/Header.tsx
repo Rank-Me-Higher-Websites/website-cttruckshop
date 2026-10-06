@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, Phone, Clock, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import LanguageSwitcher from "@/components/LanguageSwitcher";
 import { cn } from "@/lib/utils";
 import logo from "@/assets/ct-logo.webp";
 import xxiiLogo from "@/assets/xxii-logo.webp";
@@ -176,6 +177,7 @@ const Header = () => {
 
             {/* CTA Button */}
             <div className="hidden lg:flex items-center gap-4 flex-shrink-0">
+              <LanguageSwitcher />
               <a href="tel:6028303232">
                 <Button variant="nav-cta" size="default">
                   <Phone className="h-4 w-4 mr-2" />
@@ -184,7 +186,8 @@ const Header = () => {
               </a>
             </div>
 
-            {/* Mobile Menu Trigger */}
+            {/* Mobile: language + menu trigger */}
+            <LanguageSwitcher className="lg:hidden ml-auto" />
             <Sheet open={mobileMenuOpen} onOpenChange={setMobileMenuOpen}>
               <SheetTrigger asChild className="lg:hidden">
                 <Button variant="ghost" size="icon">

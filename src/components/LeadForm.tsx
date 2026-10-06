@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
 import { Input } from "@/components/ui/input";
+import { LANG } from "@/i18n/lang";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Send } from "lucide-react";
 
@@ -56,6 +57,8 @@ const LeadForm = ({
         truckModel: formData.truckModel,
         service: formData.service,
         form_type: "quote",
+        // Site language the visitor used (en/es/ru), so the callback can match it.
+        language: LANG,
         source,
         submittedAt: new Date().toISOString(),
       };
@@ -64,6 +67,7 @@ const LeadForm = ({
         phone: formData.phone,
         email: formData.email,
         vehicle: formData.truckModel,
+        language: LANG,
         message: formData.service ? `Service requested: ${formData.service}` : "Quote request",
         source,
       };

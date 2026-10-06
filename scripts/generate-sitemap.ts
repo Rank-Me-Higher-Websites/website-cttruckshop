@@ -55,6 +55,27 @@ if (newEntries.length > 0) {
   result = result.replace(/\n*<\/urlset>\s*$/, block);
 }
 
+// Every English URL also exists under /es and /ru (see src/i18n/lang.ts).
+// Pages declare their language alternates via hreflang in their own <head>.
+const langEntries: string[] = [];
+for (const m of result.matchAll(/<url>\s*<loc>([^<]+)<\/loc>([\s\S]*?)<\/url>/g)) {
+  const loc = m[1].trim();
+  if (!loc.startsWith(SITE_URL)) continue;
+  const path = loc.slice(SITE_URL.length);
+  for (const lang of ["es", "ru"]) {
+    langEntries.push(`
+  <url>
+    <loc>${SITE_URL}/${lang}${path === "/" ? "" : path}</loc>${m[2].trimEnd()}
+  </url>`);
+  }
+}
+if (langEntries.length > 0) {
+  result = result.replace(
+    /\n*<\/urlset>\s*$/,
+    `\n  <!-- Spanish + Russian versions -->${langEntries.join("")}\n\n</urlset>\n`,
+  );
+}
+
 writeFileSync(DEST, result, "utf8");
 console.log(
   `Wrote dist/sitemap.xml — preserved existing entries + injected ${newEntries.length} new auto-post URL(s)`,

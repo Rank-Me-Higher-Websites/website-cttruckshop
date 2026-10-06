@@ -8,6 +8,7 @@ import { autoBlogPosts } from "@/data/autoBlogPosts";
 import { getFeaturedImage } from "@/lib/blogImageMap";
 import { ArrowLeft, ArrowRight, Calendar, Tag } from "lucide-react";
 import { createBreadcrumbSchema, createArticleSchema, createFAQSchema, BASE_URL } from "@/lib/schema";
+import { BASENAME } from "@/i18n/lang";
 
 // Cannibalization consolidation: these slugs should canonicalize to a single keeper
 // to consolidate ranking signals. Server-side 301s in serve.js handle direct hits;
@@ -59,7 +60,7 @@ const BlogPost = () => {
   const canonicalSlug = slug ? BLOG_CANONICAL_OVERRIDE[slug] : undefined;
   useEffect(() => {
     if (canonicalSlug && typeof window !== "undefined") {
-      window.location.replace(`/blog/${canonicalSlug}`);
+      window.location.replace(`${BASENAME}/blog/${canonicalSlug}`);
     }
   }, [canonicalSlug]);
 
@@ -135,7 +136,7 @@ const BlogPost = () => {
       <section className="section-padding bg-primary">
         <div className="container-custom">
           <div className="max-w-3xl mx-auto">
-            <BlogContent html={post.content} />
+            <BlogContent html={post.content} slug={post.slug} />
           </div>
         </div>
       </section>

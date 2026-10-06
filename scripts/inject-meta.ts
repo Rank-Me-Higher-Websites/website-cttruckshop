@@ -23,7 +23,7 @@ import {
   existsSync,
   readdirSync,
 } from "node:fs";
-import { fileURLToPath } from "node:url";
+import { fileURLToPath, pathToFileURL } from "node:url";
 import { dirname, join } from "node:path";
 
 const __filename = fileURLToPath(import.meta.url);
@@ -45,12 +45,12 @@ const shell = readFileSync(SHELL, "utf8");
 // We skip autoBlogPosts.ts (it uses Vite's import.meta.glob, not available
 // in plain Node) and instead read src/content/blog/*.md directly below.
 const servicePagesMod = await import(
-  join(ROOT, "src/data/servicePages.ts")
+  pathToFileURL(join(ROOT, "src/data/servicePages.ts")).href
 );
 const serviceAreasMod = await import(
-  join(ROOT, "src/data/serviceAreas.ts")
+  pathToFileURL(join(ROOT, "src/data/serviceAreas.ts")).href
 );
-const blogPostsMod = await import(join(ROOT, "src/data/blogPosts.ts"));
+const blogPostsMod = await import(pathToFileURL(join(ROOT, "src/data/blogPosts.ts")).href);
 
 const servicePages = servicePagesMod.servicePages as Record<
   string,
@@ -293,56 +293,123 @@ for (const post of [...blogPosts, ...autoBlogPosts]) {
 // Pre-strip route-variable tags from the shell once.
 const cleanShell = stripRouteVariableTags(shell);
 
-// Build per-route HTML files
+// Build per-route HTML files, once per language.
+// English stays unprefixed (/about); Spanish and Russian live under /es and /ru
+// (/es/about). Their <title>/<meta description> come from the same dictionaries
+// the client-side translator uses (src/i18n/dict/<lang>.json, keyed by the
+// whitespace-collapsed English text); anything missing falls back to English.
+type Lang = "en" | "es" | "ru";
+const LANGS: Lang[] = ["en", "es", "ru"];
+const OG_LOCALE: Record<Lang, string> = { en: "en_US", es: "es_US", ru: "ru_RU" };
+const norm = (s: string) => s.replace(/\s+/g, " ").trim();
+const dicts: Record<Lang, Record<string, string>> = { en: {}, es: {}, ru: {} };
+for (const lang of ["es", "ru"] as const) {
+  const p = join(ROOT, `src/i18n/dict/${lang}.json`);
+  if (existsSync(p)) dicts[lang] = JSON.parse(readFileSync(p, "utf8"));
+}
+// English strings with no translation yet; written to dist/i18n-missing.json so
+// new pages/posts can be spotted and added to src/i18n/dict/<lang>.json.
+const untranslated: Record<string, Set<string>> = { es: new Set(), ru: new Set() };
+const tr = (lang: Lang, s: string) => {
+  if (lang === "en" || !s) return s;
+  const hit = dicts[lang][norm(s)];
+  if (hit === undefined) untranslated[lang].add(norm(s));
+  return hit ?? s;
+};
+// Titles are "<page> | CT Truck & Trailer Shop" (or "<post> — ... Blog"):
+// translate the page part, keep the brand suffix.
+// Titles carry brand suffixes ("<page> | CT Truck & Trailer Shop",
+// "<post> — CT Truck & Trailer Shop Blog | ...", "<page> – CT Truck & Trailer Shop"):
+// translate the page part, keep the suffix as is.
+const BRAND_SUFFIX = /\s*[|–—-]\s*CT Truck (?:&|and) Trailer Shop(?: Blog)?\s*$/;
+function translateTitle(lang: Lang, t: string): string {
+  if (lang === "en") return t;
+  let core = t;
+  let suffix = "";
+  for (let m = core.match(BRAND_SUFFIX); m && m.index; m = core.match(BRAND_SUFFIX)) {
+    suffix = core.slice(m.index) + suffix;
+    core = core.slice(0, m.index);
+  }
+  return tr(lang, core) + suffix;
+}
+const urlFor = (lang: Lang, path: string) => {
+  const p = lang === "en" ? path : `/${lang}${path === "/" ? "" : path}`;
+  return `${BASE_URL}${p === "/" ? "" : p}`;
+};
+const alternates = (path: string) =>
+  LANGS.map((l) => `\n    <link rel="alternate" hreflang="${l}" href="${urlFor(l, path)}" />`).join("") +
+  `\n    <link rel="alternate" hreflang="x-default" href="${urlFor("en", path)}" />`;
+
 let written = 0;
 for (const page of pages) {
-  if (page.path === "/") continue; // index.html stays as-is for "/"
+  for (const lang of LANGS) {
+    if (lang === "en" && page.path === "/") {
+      // index.html keeps its hand-tuned English head; just add the language alternates.
+      // Guarded so re-running this script on the same dist/ doesn't duplicate them.
+      if (!shell.includes('hreflang="es"')) {
+        writeFileSync(SHELL, shell.replace(/<\/head>/i, `${alternates("/")}\n  </head>`), "utf8");
+      }
+      continue;
+    }
 
-  const dir = join(DIST, page.path);
-  mkdirSync(dir, { recursive: true });
+    const outPath = lang === "en" ? page.path : `/${lang}${page.path === "/" ? "" : page.path}`;
+    const dir = join(DIST, outPath);
+    mkdirSync(dir, { recursive: true });
 
-  const title = fullTitle(page.title);
-  const canonical = `${BASE_URL}${page.path}`;
-  const ogType = page.ogType || "website";
+    const title = translateTitle(lang, fullTitle(page.title));
+    const description = tr(lang, page.description);
+    const canonical = urlFor(lang, page.path);
+    const ogType = page.ogType || "website";
 
-  // Build the per-route head block.
-  const headBlock = `
+    // Build the per-route head block.
+    const headBlock = `
     <title>${escapeHtml(title)}</title>
     <meta name="title" content="${escapeHtml(title)}" />
-    <meta name="description" content="${escapeHtml(page.description)}" />
-    <link rel="canonical" href="${canonical}" />
+    <meta name="description" content="${escapeHtml(description)}" />
+    <link rel="canonical" href="${canonical}" />${alternates(page.path)}
     <meta property="og:type" content="${ogType}" />
     <meta property="og:url" content="${canonical}" />
     <meta property="og:title" content="${escapeHtml(title)}" />
-    <meta property="og:description" content="${escapeHtml(page.description)}" />
+    <meta property="og:description" content="${escapeHtml(description)}" />
     <meta property="og:site_name" content="${SITE}" />
     <meta property="og:image" content="${BASE_URL}/og-image.jpg" />
-    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale" content="${OG_LOCALE[lang]}" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:url" content="${canonical}" />
     <meta name="twitter:title" content="${escapeHtml(title)}" />
-    <meta name="twitter:description" content="${escapeHtml(page.description)}" />
+    <meta name="twitter:description" content="${escapeHtml(description)}" />
     <meta name="twitter:image" content="${BASE_URL}/og-image.jpg" />`;
 
-  const jsonLdBlock = (page.jsonLd || [])
-    .map(
-      (obj) =>
-        `\n    <script type="application/ld+json">${JSON.stringify(obj)}</script>`,
-    )
-    .join("");
+    const jsonLdBlock = (page.jsonLd || [])
+      .map(
+        (obj) =>
+          `\n    <script type="application/ld+json">${JSON.stringify(obj)}</script>`,
+      )
+      .join("");
 
-  // Inject head block + json-ld block just before </head>.
-  const html = cleanShell.replace(
-    /<\/head>/i,
-    `${headBlock}${jsonLdBlock}\n  </head>`,
+    // Inject head block + json-ld block just before </head>; set <html lang>.
+    const html = cleanShell
+      .replace(/<html lang="[^"]*">/i, `<html lang="${lang}">`)
+      .replace(/<\/head>/i, `${headBlock}${jsonLdBlock}\n  </head>`);
+
+    writeFileSync(join(dir, "index.html"), html, "utf8");
+    written++;
+  }
+}
+
+writeFileSync(
+  join(DIST, "i18n-missing.json"),
+  JSON.stringify({ es: [...untranslated.es].sort(), ru: [...untranslated.ru].sort() }, null, 1),
+  "utf8",
+);
+if (untranslated.es.size || untranslated.ru.size) {
+  console.warn(
+    `i18n: ${untranslated.es.size} es / ${untranslated.ru.size} ru title/description string(s) untranslated — see dist/i18n-missing.json`,
   );
-
-  writeFileSync(join(dir, "index.html"), html, "utf8");
-  written++;
 }
 
 console.log(
-  `Pre-injected meta for ${written} route(s) into dist/<route>/index.html`,
+  `Pre-injected meta for ${written} route(s) (en + es + ru) into dist/<route>/index.html`,
 );
 
 function escapeHtml(s: string): string {
