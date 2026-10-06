@@ -9,3 +9,4 @@ Vite + React SPA. Push to `main` auto-deploys (VPS 2.24.92.100 pulls, builds, Ca
 - Blog bodies are translated whole: `src/i18n/blog/{es,ru}/<slug>.json` (`{content}`), loaded by `BlogContent`. New n8n auto-posts have no translation → English body on /es and /ru until one is added. Add `data-no-translate` to anything the DOM translator must skip.
 - Build: `scripts/inject-meta.ts` writes per-route HTML for all 3 languages (translated title/description from the dicts, hreflang alternates, `<html lang>`); `scripts/generate-sitemap.ts` adds `/es` + `/ru` URLs.
 - Leads (`LeadForm.tsx` → n8n) carry `language` (en/es/ru); the service value stays English.
+- Top-level menu labels use short es/ru versions (`SHORT_NAV_LABELS` in `Header.tsx`), not the dicts — full translations wrap the fixed header to 3 lines and hide the top of every page (`main` has a fixed `lg:pt-28`). Keep new menu labels short in all languages.
